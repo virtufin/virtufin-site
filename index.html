@@ -26,6 +26,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
@@ -60,6 +61,7 @@
             <li class="divider-vertical"></li>
             
                 <li><a href="#">Documentation</a></li>
+                <li><a href="latest/api.html">API</a></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -89,7 +91,6 @@
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Welcome to Virtufin</a></li>
 <li><a class="reference internal" href="#code">Code</a></li>
-<li><a class="reference internal" href="#test">Test</a></li>
 </ul>
 </ul>
 </li>
@@ -137,7 +138,6 @@
 <li class="toctree-l1"><a class="reference internal" href="virtufin-base.html">Virtufin Base</a></li>
 </ul>
 </div>
-<p>..Virtufin Core&lt;virtufin-core/&gt;`_</p>
 </div>
 <div class="section" id="code">
 <h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
@@ -161,30 +161,13 @@
 <span class="o">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="test">
-<h1>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h1>
-<p>default implementations can be used out of the box:</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="nd">@RunWith</span><span class="o">(</span><span class="n">classOf</span><span class="o">[</span><span class="kt">Testkit</span><span class="o">])</span>
-<span class="k">class</span> <span class="nc">MyPostgresTest</span> <span class="k">extends</span> <span class="nc">DriverTest</span><span class="o">(</span><span class="nc">MyPostgresTest</span><span class="o">.</span><span class="n">tdb</span><span class="o">)</span>
-
-<span class="k">object</span> <span class="nc">MyPostgresTest</span> <span class="o">{</span>
-  <span class="k">def</span> <span class="n">tdb</span><span class="o">(</span><span class="n">cname</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">ExternalTestDB</span><span class="o">(</span><span class="s">&quot;mypostgres&quot;</span><span class="o">,</span> <span class="nc">MyPostgresDriver</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">override</span> <span class="k">def</span> <span class="n">getLocalTables</span><span class="o">(</span><span class="k">implicit</span> <span class="n">session</span><span class="k">:</span> <span class="kt">Session</span><span class="o">)</span> <span class="k">=</span> <span class="o">{</span>
-      <span class="k">val</span> <span class="n">tables</span> <span class="k">=</span> <span class="nc">ResultSetInvoker</span><span class="o">[(</span><span class="kt">String</span>,<span class="kt">String</span>,<span class="kt">String</span>, <span class="kt">String</span><span class="o">)](</span><span class="k">_</span><span class="o">.</span><span class="n">conn</span><span class="o">.</span><span class="n">getMetaData</span><span class="o">()</span>
-                    <span class="o">.</span><span class="n">getTables</span><span class="o">(</span><span class="s">&quot;&quot;</span><span class="o">,</span> <span class="s">&quot;public&quot;</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">))</span>
-      <span class="n">tables</span><span class="o">.</span><span class="n">list</span><span class="o">.</span><span class="n">filter</span><span class="o">(</span><span class="k">_</span><span class="o">.</span><span class="n">_4</span><span class="o">.</span><span class="n">toUpperCase</span> <span class="o">==</span> <span class="s">&quot;TABLE&quot;</span><span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="k">_</span><span class="o">.</span><span class="n">_3</span><span class="o">).</span><span class="n">sorted</span>
-    <span class="o">}</span>
-    <span class="k">override</span> <span class="k">def</span> <span class="n">getLocalSequences</span><span class="o">(</span><span class="k">implicit</span> <span class="n">session</span><span class="k">:</span> <span class="kt">Session</span><span class="o">)</span> <span class="k">=</span> <span class="o">{</span>
-      <span class="k">val</span> <span class="n">tables</span> <span class="k">=</span> <span class="nc">ResultSetInvoker</span><span class="o">[(</span><span class="kt">String</span>,<span class="kt">String</span>,<span class="kt">String</span>, <span class="kt">String</span><span class="o">)](</span><span class="k">_</span><span class="o">.</span><span class="n">conn</span><span class="o">.</span><span class="n">getMetaData</span><span class="o">()</span>
-                    <span class="o">.</span><span class="n">getTables</span><span class="o">(</span><span class="s">&quot;&quot;</span><span class="o">,</span> <span class="s">&quot;public&quot;</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">))</span>
-      <span class="n">tables</span><span class="o">.</span><span class="n">list</span><span class="o">.</span><span class="n">filter</span><span class="o">(</span><span class="k">_</span><span class="o">.</span><span class="n">_4</span><span class="o">.</span><span class="n">toUpperCase</span> <span class="o">==</span> <span class="s">&quot;SEQUENCE&quot;</span><span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="k">_</span><span class="o">.</span><span class="n">_3</span><span class="o">).</span><span class="n">sorted</span>
-    <span class="o">}</span>
-    <span class="k">override</span> <span class="k">lazy</span> <span class="k">val</span> <span class="n">capabilities</span> <span class="k">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">capabilities</span> <span class="o">+</span> <span class="nc">TestDB</span><span class="o">.</span><span class="n">plainSql</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
-</div>
+<div class="math">
+\[\oint_\Gamma f(\zeta)\, d\zeta\]</div>
+<p class="graphviz">
+<img src="_images/graphviz-726c4198e30dd69c657877724418a812d0964752.png" alt="digraph foo {
+      &quot;bar&quot; -&gt; &quot;baz&quot;;
+   }" />
+</p>
 </div>
 
 
