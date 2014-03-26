@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>trigger - virtufin.finance.simulation.trigger</title>
+          <meta name="description" content="trigger - virtufin.finance.simulation.trigger" />
+          <meta name="keywords" content="trigger virtufin.finance.simulation.trigger" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'virtufin.finance.simulation.trigger.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="../package.html" class="extype" name="virtufin.finance.simulation">simulation</a></p>
+        <h1>trigger</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trigger</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="virtufin.finance.simulation.trigger"><span>trigger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.finance.simulation.trigger.AccrualEnd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AccrualEndextendsAccrualEventwithProductwithSerializable"></a>
+      <a id="AccrualEnd:AccrualEnd"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AccrualEnd.html"><span class="name">AccrualEnd</span></a><span class="params">(<span name="time">time: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="accrualPeriod">accrualPeriod: <a href="../../product/feature/AccrualPeriod.html" class="extype" name="virtufin.finance.product.feature.AccrualPeriod">AccrualPeriod</a></span>)</span><span class="result"> extends <a href="AccrualEvent.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualEvent">AccrualEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.AccrualEvent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AccrualEventextendsTriggerEvent"></a>
+      <a id="AccrualEvent:AccrualEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AccrualEvent.html"><span class="name">AccrualEvent</span></a><span class="result"> extends <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.AccrualStart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AccrualStartextendsAccrualEventwithProductwithSerializable"></a>
+      <a id="AccrualStart:AccrualStart"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AccrualStart.html"><span class="name">AccrualStart</span></a><span class="params">(<span name="time">time: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="accrualPeriod">accrualPeriod: <a href="../../product/feature/AccrualPeriod.html" class="extype" name="virtufin.finance.product.feature.AccrualPeriod">AccrualPeriod</a></span>)</span><span class="result"> extends <a href="AccrualEvent.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualEvent">AccrualEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.AccrualsTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AccrualsTriggerextendsSimulationEventProjectorwithProductwithSerializable"></a>
+      <a id="AccrualsTrigger:AccrualsTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AccrualsTrigger.html"><span class="name">AccrualsTrigger</span></a><span class="params">(<span name="accruing">accruing: <a href="../../product/feature/Accruing.html" class="extype" name="virtufin.finance.product.feature.Accruing">Accruing</a></span>)</span><span class="result"> extends <a href="../../../simulation/SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.ExerciseOpportunitiesTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExerciseOpportunitiesTrigger[O&lt;:virtufin.finance.simulation.feature.Optional]extendsvirtufin.finance.simulation.trigger.SimpleTriggerwithProductwithSerializable"></a>
+      <a id="ExerciseOpportunitiesTrigger[O&lt;:Optional]:ExerciseOpportunitiesTrigger[O]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExerciseOpportunitiesTrigger.html"><span class="name">ExerciseOpportunitiesTrigger</span></a><span class="tparams">[<span name="O">O &lt;: <a href="../feature/Optional.html" class="extype" name="virtufin.finance.simulation.feature.Optional">Optional</a></span>]</span><span class="params">(<span name="optional">optional: <span class="extype" name="virtufin.finance.simulation.trigger.ExerciseOpportunitiesTrigger.O">O</span></span>, <span name="agent">agent: <a href="../package$$StatefulAgent.html" class="extype" name="virtufin.finance.simulation.StatefulAgent">StatefulAgent</a>[<span class="extype" name="virtufin.finance.simulation.feature.Optional.ValueType">StatefulSimulatedFeature._44.type.ValueType</span>] forSome {val _44: <span class="extype" name="virtufin.finance.simulation.trigger.ExerciseOpportunitiesTrigger.O">O</span>}</span>)</span><span class="result"> extends <a href="#SimpleTrigger=virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.TriggerEvent]" class="extmbr" name="virtufin.finance.simulation.trigger.SimpleTrigger">SimpleTrigger</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.ExerciseOpportunity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExerciseOpportunityextendsTriggerEventwithProductwithSerializable"></a>
+      <a id="ExerciseOpportunity:ExerciseOpportunity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExerciseOpportunity.html"><span class="name">ExerciseOpportunity</span></a><span class="params">(<span name="time">time: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>)</span><span class="result"> extends <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">*</p>
+    </li><li name="virtufin.finance.simulation.trigger.FixingEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FixingEvent[V]extendsTriggerEventwithProductwithSerializable"></a>
+      <a id="FixingEvent[V]:FixingEvent[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FixingEvent.html"><span class="name">FixingEvent</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="fixing">fixing: <a href="../../scenario/Fixing.html" class="extype" name="virtufin.finance.scenario.Fixing">Fixing</a>[<span class="extype" name="virtufin.finance.simulation.trigger.FixingEvent.V">V</span>]</span>, <span name="value">value: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="virtufin.finance.simulation.trigger.FixingEvent.V">V</span>]</span>)</span><span class="result"> extends <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.MaturityEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaturityEventextendsTriggerEventwithProductwithSerializable"></a>
+      <a id="MaturityEvent:MaturityEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MaturityEvent.html"><span class="name">MaturityEvent</span></a><span class="params">(<span name="time">time: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>)</span><span class="result"> extends <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.MaturityTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaturityTriggerextendsvirtufin.finance.simulation.trigger.SimpleTriggerwithProductwithSerializable"></a>
+      <a id="MaturityTrigger:MaturityTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MaturityTrigger.html"><span class="name">MaturityTrigger</span></a><span class="params">(<span name="maturityDate">maturityDate: <a href="../package.html#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a></span>)</span><span class="result"> extends <a href="#SimpleTrigger=virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.TriggerEvent]" class="extmbr" name="virtufin.finance.simulation.trigger.SimpleTrigger">SimpleTrigger</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.SettlementEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SettlementEventextendsTriggerEventwithProductwithSerializable"></a>
+      <a id="SettlementEvent:SettlementEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SettlementEvent.html"><span class="name">SettlementEvent</span></a><span class="params">(<span name="time">time: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>)</span><span class="result"> extends <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.SettlementsTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SettlementsTriggerextendsvirtufin.finance.simulation.trigger.SimpleTriggerwithProductwithSerializable"></a>
+      <a id="SettlementsTrigger:SettlementsTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SettlementsTrigger.html"><span class="name">SettlementsTrigger</span></a><span class="params">(<span name="settlementDates">settlementDates: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>)</span><span class="result"> extends <a href="#SimpleTrigger=virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.TriggerEvent]" class="extmbr" name="virtufin.finance.simulation.trigger.SimpleTrigger">SimpleTrigger</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.SimpleTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimpleTrigger=virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.TriggerEvent]"></a>
+      <a id="SimpleTrigger:SimpleTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SimpleTrigger</span><span class="result"> = <a href="../../../simulation/projector/SimpleProjector.html" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a>[<a href="../package.html#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a>, <a href="../package.html#DefaultStateType=virtufin.finance.scenario.Quotes" class="extmbr" name="virtufin.finance.simulation.DefaultStateType">DefaultStateType</a>, <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.SingleMarketObservableDerivativeFixingsTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SingleMarketObservableDerivativeFixingsTrigger[V]extendsvirtufin.finance.simulation.trigger.SimpleTriggerwithProductwithSerializable"></a>
+      <a id="SingleMarketObservableDerivativeFixingsTrigger[V]:SingleMarketObservableDerivativeFixingsTrigger[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleMarketObservableDerivativeFixingsTrigger.html"><span class="name">SingleMarketObservableDerivativeFixingsTrigger</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="marketObservable">marketObservable: <a href="../../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="virtufin.finance.simulation.trigger.SingleMarketObservableDerivativeFixingsTrigger.V">V</span>]</span>, <span name="fixingDates">fixingDates: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>)</span><span class="result"> extends <a href="#SimpleTrigger=virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.TriggerEvent]" class="extmbr" name="virtufin.finance.simulation.trigger.SimpleTrigger">SimpleTrigger</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Trigger for a <a href="../../product/feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">virtufin.finance.product.feature.SingleMarketObservableDerivative</a></p>
+    </li><li name="virtufin.finance.simulation.trigger.StartEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StartEventextendsTriggerEventwithProductwithSerializable"></a>
+      <a id="StartEvent:StartEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StartEvent.html"><span class="name">StartEvent</span></a><span class="params">(<span name="time">time: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>)</span><span class="result"> extends <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.StartTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StartTriggerextendsvirtufin.finance.simulation.trigger.SimpleTriggerwithProductwithSerializable"></a>
+      <a id="StartTrigger:StartTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StartTrigger.html"><span class="name">StartTrigger</span></a><span class="params">(<span name="startDate">startDate: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>)</span><span class="result"> extends <a href="#SimpleTrigger=virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.TriggerEvent]" class="extmbr" name="virtufin.finance.simulation.trigger.SimpleTrigger">SimpleTrigger</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="virtufin.finance.simulation.trigger.AccrualsTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AccrualsTrigger"></a>
+      <a id="AccrualsTrigger:AccrualsTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AccrualsTrigger$.html"><span class="name">AccrualsTrigger</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.MaturityTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaturityTrigger"></a>
+      <a id="MaturityTrigger:MaturityTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MaturityTrigger$.html"><span class="name">MaturityTrigger</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.SettlementsTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SettlementsTrigger"></a>
+      <a id="SettlementsTrigger:SettlementsTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SettlementsTrigger$.html"><span class="name">SettlementsTrigger</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.package#SimpleTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimpleTrigger(eventTime:virtufin.finance.simulation.DefaultTimeType,eventFactory:virtufin.finance.simulation.SimulationEvent=&gt;virtufin.finance.simulation.DefaultProjectedEventsType)(implicitd1:DummyImplicit,implicitd2:DummyImplicit,implicitd3:DummyImplicit):virtufin.simulation.projector.SimpleProjector[virtufin.util.Day,virtufin.finance.scenario.Quotes,virtufin.finance.simulation.DefaultProjectedEventsType]"></a>
+      <a id="SimpleTrigger(DefaultTimeType,(SimulationEvent)⇒DefaultProjectedEventsType)(DummyImplicit,DummyImplicit,DummyImplicit):SimpleProjector[Day,Quotes,DefaultProjectedEventsType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SimpleTrigger</span><span class="params">(<span name="eventTime">eventTime: <a href="../package.html#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a></span>, <span name="eventFactory">eventFactory: (<a href="../package.html#SimulationEvent=virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.SimulationEvent">SimulationEvent</a>) ⇒ <a href="../package.html#DefaultProjectedEventsType=virtufin.finance.simulation.package.TriggerEvents" class="extmbr" name="virtufin.finance.simulation.DefaultProjectedEventsType">DefaultProjectedEventsType</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="d1">d1: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>, <span name="d2">d2: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>, <span name="d3">d3: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>)</span><span class="result">: <a href="../../../simulation/projector/SimpleProjector.html" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a>[<a href="../../../util/Day.html" class="extype" name="virtufin.util.Day">Day</a>, <a href="../../scenario/Quotes.html" class="extype" name="virtufin.finance.scenario.Quotes">Quotes</a>, <a href="../package.html#DefaultProjectedEventsType=virtufin.finance.simulation.package.TriggerEvents" class="extmbr" name="virtufin.finance.simulation.DefaultProjectedEventsType">DefaultProjectedEventsType</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.package#SimpleTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimpleTrigger(eventTimes:scala.collection.SortedSet[virtufin.finance.simulation.DefaultTimeType],eventFactory:virtufin.finance.simulation.SimulationEvent=&gt;Option[virtufin.finance.simulation.DefaultProjectedEventsType])(implicitd1:DummyImplicit,implicitd2:DummyImplicit):virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.DefaultProjectedEventsType]"></a>
+      <a id="SimpleTrigger(SortedSet[DefaultTimeType],(SimulationEvent)⇒Option[DefaultProjectedEventsType])(DummyImplicit,DummyImplicit):SimpleProjector[DefaultTimeType,DefaultStateType,DefaultProjectedEventsType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SimpleTrigger</span><span class="params">(<span name="eventTimes">eventTimes: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../package.html#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a>]</span>, <span name="eventFactory">eventFactory: (<a href="../package.html#SimulationEvent=virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.SimulationEvent">SimulationEvent</a>) ⇒ <span class="extype" name="scala.Option">Option</span>[<a href="../package.html#DefaultProjectedEventsType=virtufin.finance.simulation.package.TriggerEvents" class="extmbr" name="virtufin.finance.simulation.DefaultProjectedEventsType">DefaultProjectedEventsType</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="d1">d1: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>, <span name="d2">d2: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>)</span><span class="result">: <a href="../../../simulation/projector/SimpleProjector.html" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a>[<a href="../package.html#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a>, <a href="../package.html#DefaultStateType=virtufin.finance.scenario.Quotes" class="extmbr" name="virtufin.finance.simulation.DefaultStateType">DefaultStateType</a>, <a href="../package.html#DefaultProjectedEventsType=virtufin.finance.simulation.package.TriggerEvents" class="extmbr" name="virtufin.finance.simulation.DefaultProjectedEventsType">DefaultProjectedEventsType</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.package#SimpleTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimpleTrigger(eventTimes:scala.collection.SortedSet[virtufin.finance.simulation.DefaultTimeType],eventFactory:virtufin.finance.simulation.SimulationEvent=&gt;virtufin.finance.simulation.DefaultProjectedEventsType)(implicitd:DummyImplicit):virtufin.simulation.projector.SimpleProjector[virtufin.finance.simulation.DefaultTimeType,virtufin.finance.simulation.DefaultStateType,virtufin.finance.simulation.DefaultProjectedEventsType]"></a>
+      <a id="SimpleTrigger(SortedSet[DefaultTimeType],(SimulationEvent)⇒DefaultProjectedEventsType)(DummyImplicit):SimpleProjector[DefaultTimeType,DefaultStateType,DefaultProjectedEventsType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SimpleTrigger</span><span class="params">(<span name="eventTimes">eventTimes: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../package.html#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a>]</span>, <span name="eventFactory">eventFactory: (<a href="../package.html#SimulationEvent=virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.SimulationEvent">SimulationEvent</a>) ⇒ <a href="../package.html#DefaultProjectedEventsType=virtufin.finance.simulation.package.TriggerEvents" class="extmbr" name="virtufin.finance.simulation.DefaultProjectedEventsType">DefaultProjectedEventsType</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="d">d: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>)</span><span class="result">: <a href="../../../simulation/projector/SimpleProjector.html" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a>[<a href="../package.html#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a>, <a href="../package.html#DefaultStateType=virtufin.finance.scenario.Quotes" class="extmbr" name="virtufin.finance.simulation.DefaultStateType">DefaultStateType</a>, <a href="../package.html#DefaultProjectedEventsType=virtufin.finance.simulation.package.TriggerEvents" class="extmbr" name="virtufin.finance.simulation.DefaultProjectedEventsType">DefaultProjectedEventsType</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.SingleMarketObservableDerivativeFixingsTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SingleMarketObservableDerivativeFixingsTrigger"></a>
+      <a id="SingleMarketObservableDerivativeFixingsTrigger:SingleMarketObservableDerivativeFixingsTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleMarketObservableDerivativeFixingsTrigger$.html"><span class="name">SingleMarketObservableDerivativeFixingsTrigger</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger.StartTrigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StartTrigger"></a>
+      <a id="StartTrigger:StartTrigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StartTrigger$.html"><span class="name">StartTrigger</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script>
+    </body>
+      </html>

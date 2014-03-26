@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>feature - virtufin.finance.product.feature</title>
+          <meta name="description" content="feature - virtufin.finance.product.feature" />
+          <meta name="keywords" content="feature virtufin.finance.product.feature" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'virtufin.finance.product.feature.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="../package.html" class="extype" name="virtufin.finance.product">product</a></p>
+        <h1>feature</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">feature</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Traits for describing <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>s of some financial product.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="virtufin.finance.product.feature"><span>feature</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.finance.product.feature.AccrualPeriod" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AccrualPeriodextendsProductwithSerializable"></a>
+      <a id="AccrualPeriod:AccrualPeriod"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AccrualPeriod.html"><span class="name">AccrualPeriod</span></a><span class="params">(<span name="startDate">startDate: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="endDate">endDate: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Accruing" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AccruingextendsFeature"></a>
+      <a id="Accruing:Accruing"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Accruing.html"><span class="name">Accruing</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.BermudanExercise" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BermudanExerciseextendsOptional"></a>
+      <a id="BermudanExercise:BermudanExercise"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BermudanExercise.html"><span class="name">BermudanExercise</span></a><span class="result"> extends <a href="Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">Optional</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.BilateralContract" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BilateralContractextendsFeature"></a>
+      <a id="BilateralContract:BilateralContract"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BilateralContract.html"><span class="name">BilateralContract</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.BuySell" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BuySellextendsAnyRef"></a>
+      <a id="BuySell:BuySell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BuySell.html"><span class="name">BuySell</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.BuySellFeature" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BuySellFeatureextendsFeature"></a>
+      <a id="BuySellFeature:BuySellFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BuySellFeature.html"><span class="name">BuySellFeature</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.CallPut" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallPutextendsAnyRef"></a>
+      <a id="CallPut:CallPut"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CallPut.html"><span class="name">CallPut</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.CallPutFeature" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallPutFeatureextendsFeature"></a>
+      <a id="CallPutFeature:CallPutFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CallPutFeature.html"><span class="name">CallPutFeature</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.CashSettled" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CashSettledextendsSettling"></a>
+      <a id="CashSettled:CashSettled"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CashSettled.html"><span class="name">CashSettled</span></a><span class="result"> extends <a href="Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.CompositeInstrument" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CompositeInstrumentextendsInstrument"></a>
+      <a id="CompositeInstrument:CompositeInstrument"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CompositeInstrument.html"><span class="name">CompositeInstrument</span></a><span class="result"> extends <a href="../Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Derivative" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Derivative[V]extendsFeature"></a>
+      <a id="Derivative[V]:Derivative[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Derivative.html"><span class="name">Derivative</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.EuropeanExercise" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EuropeanExerciseextendsOptionalwithSingleSettling"></a>
+      <a id="EuropeanExercise:EuropeanExercise"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="EuropeanExercise.html"><span class="name">EuropeanExercise</span></a><span class="result"> extends <a href="Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">Optional</a> with <a href="SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">*</p>
+    </li><li name="virtufin.finance.product.feature.EuropeanOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EuropeanOptionextendsSingleSettlingwithEuropeanExercisewithBilateralContractwithMaturing"></a>
+      <a id="EuropeanOption:EuropeanOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="EuropeanOption.html"><span class="name">EuropeanOption</span></a><span class="result"> extends <a href="SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a> with <a href="EuropeanExercise.html" class="extype" name="virtufin.finance.product.feature.EuropeanExercise">EuropeanExercise</a> with <a href="BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a> with <a href="Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.FixedPaymentContract" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FixedPaymentContract=virtufin.finance.product.feature.FixedPositionTransfers{typeTransferredInstrumentType=virtufin.finance.product.Currency}"></a>
+      <a id="FixedPaymentContract:FixedPaymentContract"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FixedPaymentContract</span><span class="result"> = <a href="FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a> { type TransferredInstrumentType = virtufin.finance.product.Currency }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.FixedPositionTransfers" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FixedPositionTransfersextendsSettling"></a>
+      <a id="FixedPositionTransfers:FixedPositionTransfers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FixedPositionTransfers.html"><span class="name">FixedPositionTransfers</span></a><span class="result"> extends <a href="Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Some predetermined <a href="../Position.html" class="extype" name="virtufin.finance.product.Position">virtufin.finance.product.Position</a>s are transferred at predetermined <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">virtufin.finance.Time</a>s
+</p>
+    </li><li name="virtufin.finance.product.feature.Maturing" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MaturingextendsFeature"></a>
+      <a id="Maturing:Maturing"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Maturing.html"><span class="name">Maturing</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Notional" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NotionalextendsFeature"></a>
+      <a id="Notional:Notional"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Notional.html"><span class="name">Notional</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Optional" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OptionalextendsFeature"></a>
+      <a id="Optional:Optional"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Optional.html"><span class="name">Optional</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.PlainVanillaInterestRateSwap" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlainVanillaInterestRateSwapextendsAnyRef"></a>
+      <a id="PlainVanillaInterestRateSwap:PlainVanillaInterestRateSwap"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlainVanillaInterestRateSwap.html"><span class="name">PlainVanillaInterestRateSwap</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Settling" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SettlingextendsTransacting"></a>
+      <a id="Settling:Settling"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Settling.html"><span class="name">Settling</span></a><span class="result"> extends <a href="Transacting.html" class="extype" name="virtufin.finance.product.feature.Transacting">Transacting</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Used, when the dates are known at which <a href="../PortfolioTransaction.html" class="extype" name="virtufin.finance.product.PortfolioTransaction">virtufin.finance.product.PortfolioTransaction</a>s may occur
+</p>
+    </li><li name="virtufin.finance.product.feature.SingleFixingDerivative" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SingleFixingDerivative[V]extendsSingleMarketObservableDerivative[V]"></a>
+      <a id="SingleFixingDerivative[V]:SingleFixingDerivative[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleFixingDerivative.html"><span class="name">SingleFixingDerivative</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <a href="SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a>[<span class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative.V">V</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.SingleMarketObservableDerivative" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SingleMarketObservableDerivative[V]extendsDerivative[V]"></a>
+      <a id="SingleMarketObservableDerivative[V]:SingleMarketObservableDerivative[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleMarketObservableDerivative.html"><span class="name">SingleMarketObservableDerivative</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <a href="Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a>[<span class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative.V">V</span>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a> which depends only of one <span class="extype" name="MarketObservable">MarketObservable</span></p>
+    </li><li name="virtufin.finance.product.feature.SingleSettling" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SingleSettlingextendsSettling"></a>
+      <a id="SingleSettling:SingleSettling"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleSettling.html"><span class="name">SingleSettling</span></a><span class="result"> extends <a href="Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a> with a single settlement date.</p>
+    </li><li name="virtufin.finance.product.feature.Starting" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StartingextendsFeature"></a>
+      <a id="Starting:Starting"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Starting.html"><span class="name">Starting</span></a><span class="result"> extends <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Striking" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StrikingextendsAnyRef"></a>
+      <a id="Striking:Striking"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Striking.html"><span class="name">Striking</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Transacting" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TransactingextendsAnyRef"></a>
+      <a id="Transacting:Transacting"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Transacting.html"><span class="name">Transacting</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">*
+Used, when the dates are known at which <a href="../Transaction.html" class="extype" name="virtufin.finance.product.Transaction">virtufin.finance.product.Transaction</a>s may occur
+</p>
+    </li><li name="virtufin.finance.product.feature.Transmutable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Transmutable[F&lt;:virtufin.finance.product.Feature]extendsAnyRef"></a>
+      <a id="Transmutable[F&lt;:Feature]:Transmutable[F]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Transmutable.html"><span class="name">Transmutable</span></a><span class="tparams">[<span name="F">F &lt;: <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">virtufin.finance.product.Feature</a> which may be convert into another <a href="../Feature.html" class="extype" name="virtufin.finance.product.Feature">virtufin.finance.product.Feature</a>, for instance
+a swaption, which may be converted into a swap after exercise.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="virtufin.finance.product.feature.AccrualPeriod" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AccrualPeriod"></a>
+      <a id="AccrualPeriod:AccrualPeriod"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AccrualPeriod$.html"><span class="name">AccrualPeriod</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.BilateralContract" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BilateralContract"></a>
+      <a id="BilateralContract:BilateralContract"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BilateralContract$.html"><span class="name">BilateralContract</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Buy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Buy"></a>
+      <a id="Buy:Buy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Buy$.html"><span class="name">Buy</span></a><span class="result"> extends <a href="BuySell.html" class="extype" name="virtufin.finance.product.feature.BuySell">BuySell</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Call" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Call"></a>
+      <a id="Call:Call"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Call$.html"><span class="name">Call</span></a><span class="result"> extends <a href="CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Derivative" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Derivative"></a>
+      <a id="Derivative:Derivative"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Derivative$.html"><span class="name">Derivative</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Put" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Put"></a>
+      <a id="Put:Put"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Put$.html"><span class="name">Put</span></a><span class="result"> extends <a href="CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.product.feature.Sell" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Sell"></a>
+      <a id="Sell:Sell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Sell$.html"><span class="name">Sell</span></a><span class="result"> extends <a href="BuySell.html" class="extype" name="virtufin.finance.product.feature.BuySell">BuySell</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script>
+    </body>
+      </html>

@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>model - virtufin.finance.model</title>
+          <meta name="description" content="model - virtufin.finance.model" />
+          <meta name="keywords" content="model virtufin.finance.model" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'virtufin.finance.model.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.finance">finance</a></p>
+        <h1>model</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">model</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="virtufin.finance.model"><span>model</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.finance.model.BlackParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlackParametersextendsProductwithSerializable"></a>
+      <a id="BlackParameters:BlackParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BlackParameters.html"><span class="name">BlackParameters</span></a><span class="params">(<span name="drift">drift: <span class="extype" name="scala.Double">Double</span></span>, <span name="volatility">volatility: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.BlackParametersIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlackParametersIdentifierextendsIdentifier[virtufin.finance.model.BlackParameters]withProductwithSerializable"></a>
+      <a id="BlackParametersIdentifier:BlackParametersIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BlackParametersIdentifier.html"><span class="name">BlackParametersIdentifier</span></a><span class="params">(<span name="marketObservable">marketObservable: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <a href="../../util/Identifier.html" class="extype" name="virtufin.util.Identifier">Identifier</a>[<a href="BlackParameters.html" class="extype" name="virtufin.finance.model.BlackParameters">BlackParameters</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Creates for a <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">virtufin.finance.scenario.MarketObservable</a> an <a href="../../util/Identifier.html" class="extype" name="virtufin.util.Identifier">virtufin.util.Identifier</a> , which can be used to look up in a <a href="ModelContext.html" class="extype" name="virtufin.finance.model.ModelContext">virtufin.finance.model.ModelContext</a></p>
+    </li><li name="virtufin.finance.model.BlackScholesParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlackScholesParametersextendsProductwithSerializable"></a>
+      <a id="BlackScholesParameters:BlackScholesParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BlackScholesParameters.html"><span class="name">BlackScholesParameters</span></a><span class="params">(<span name="rate">rate: <span class="extype" name="scala.Double">Double</span></span>, <span name="yield">yield: <span class="extype" name="scala.Double">Double</span></span>, <span name="volatility">volatility: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.Cashflows" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CashflowsextendsAssetwithProductwithSerializable"></a>
+      <a id="Cashflows:Cashflows"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Cashflows.html"><span class="name">Cashflows</span></a><span class="params">(<span name="currency">currency: <a href="../product/Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a></span>, <span name="amounts">amounts: <span class="extype" name="scala.Iterable">Iterable</span>[(<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>, <span class="extype" name="scala.Double">Double</span>)]</span>)</span><span class="result"> extends <a href="../product/Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A set of <a href="../product/package.html#Payment=virtufin.finance.product.Transfer[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Payment">virtufin.finance.product.Payment</a>s sharing the same <a href="../product/Currency.html" class="extype" name="virtufin.finance.product.Currency">virtufin.finance.product.Currency</a> and <a href="../product/Transfer.html#sourcePortfolio:virtufin.finance.product.PortfolioIdentifier" class="extmbr" name="virtufin.finance.product.Transfer#sourcePortfolio">virtufin.finance.product.Transfer.sourcePortfolio</a> or <span class="extype" name="">virtufin.finance.product.Transfer.targetPortfolio</span></p>
+    </li><li name="virtufin.finance.model.CashflowsPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CashflowsPricingModelextendsPricingModel[virtufin.finance.model.Cashflows]"></a>
+      <a id="CashflowsPricingModel:CashflowsPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CashflowsPricingModel.html"><span class="name">CashflowsPricingModel</span></a><span class="result"> extends <a href="PricingModel.html" class="extype" name="virtufin.finance.model.PricingModel">PricingModel</a>[<a href="Cashflows.html" class="extype" name="virtufin.finance.model.Cashflows">Cashflows</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.CurrencyPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CurrencyPricingModelextendsPricingModel[virtufin.finance.product.Currency]"></a>
+      <a id="CurrencyPricingModel:CurrencyPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CurrencyPricingModel.html"><span class="name">CurrencyPricingModel</span></a><span class="result"> extends <a href="PricingModel.html" class="extype" name="virtufin.finance.model.PricingModel">PricingModel</a>[<a href="../product/Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.DriverProcess" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DriverProcess[T]extendsAnyRef"></a>
+      <a id="DriverProcess[T]:DriverProcess[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DriverProcess.html"><span class="name">DriverProcess</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.EuropeanPlainVanillaOptionPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EuropeanPlainVanillaOptionPricingModelextendsPricingModel[virtufin.finance.product.EuropeanPlainVanillaOption]"></a>
+      <a id="EuropeanPlainVanillaOptionPricingModel:EuropeanPlainVanillaOptionPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EuropeanPlainVanillaOptionPricingModel.html"><span class="name">EuropeanPlainVanillaOptionPricingModel</span></a><span class="result"> extends <a href="PricingModel.html" class="extype" name="virtufin.finance.model.PricingModel">PricingModel</a>[<a href="../product/EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.InstrumentPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstrumentPricingModelextendsPricingModel[virtufin.finance.product.Instrument]"></a>
+      <a id="InstrumentPricingModel:InstrumentPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentPricingModel.html"><span class="name">InstrumentPricingModel</span></a><span class="result"> extends <a href="PricingModel.html" class="extype" name="virtufin.finance.model.PricingModel">PricingModel</a>[<a href="../product/Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.Model" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Model[-R&lt;:virtufin.finance.model.ModelRequest,+O]extendsAnyRef"></a>
+      <a id="Model[-R&lt;:ModelRequest,+O]:Model[R,O]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Model.html"><span class="name">Model</span></a><span class="tparams">[<span name="R">-R &lt;: <a href="ModelRequest.html" class="extype" name="virtufin.finance.model.ModelRequest">ModelRequest</a></span>, <span name="O">+O</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelContext" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModelContextextendsAnyRef"></a>
+      <a id="ModelContext:ModelContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelContext.html"><span class="name">ModelContext</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelDispatcher" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModelDispatcherextendsAnyRef"></a>
+      <a id="ModelDispatcher:ModelDispatcher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelDispatcher.html"><span class="name">ModelDispatcher</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelRegistry" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModelRegistryextendsAnyRef"></a>
+      <a id="ModelRegistry:ModelRegistry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelRegistry.html"><span class="name">ModelRegistry</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelRequest" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModelRequestextendsAnyRef"></a>
+      <a id="ModelRequest:ModelRequest"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelRequest.html"><span class="name">ModelRequest</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelResult[+T]=scala.util.Try[T]"></a>
+      <a id="ModelResult[+T]:ModelResult[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ModelResult</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> = <span class="extype" name="scala.util.Try">Try</span>[<span class="extype" name="virtufin.finance.model.ModelResult.T">T</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.MultivariateBlackParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MultivariateBlackParametersextendsProductwithSerializable"></a>
+      <a id="MultivariateBlackParameters:MultivariateBlackParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MultivariateBlackParameters.html"><span class="name">MultivariateBlackParameters</span></a><span class="params">(<span name="drifts">drifts: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="covariance">covariance: <a href="../../math/CovarianceMatrix.html" class="extype" name="virtufin.math.CovarianceMatrix">CovarianceMatrix</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"></p>
+    </li><li name="virtufin.finance.model.MultivariateRandomPathScenarioModelSpecification" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MultivariateRandomPathScenarioModelSpecification[R&lt;:virtufin.math.random.RandomPath[Double,org.apache.commons.math3.linear.RealVector]]extendsRandomScenarioModelSpecification[R,virtufin.math.lattice.Path[Double,org.apache.commons.math3.linear.RealVector]]"></a>
+      <a id="MultivariateRandomPathScenarioModelSpecification[R&lt;:RandomPath[Double,RealVector]]:MultivariateRandomPathScenarioModelSpecification[R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MultivariateRandomPathScenarioModelSpecification.html"><span class="name">MultivariateRandomPathScenarioModelSpecification</span></a><span class="tparams">[<span name="R">R &lt;: <a href="../../math/random/RandomPath.html" class="extype" name="virtufin.math.random.RandomPath">RandomPath</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="org.apache.commons.math3.linear.RealVector">RealVector</span>]</span>]</span><span class="result"> extends <a href="RandomScenarioModelSpecification.html" class="extype" name="virtufin.finance.model.RandomScenarioModelSpecification">RandomScenarioModelSpecification</a>[<span class="extype" name="virtufin.finance.model.MultivariateRandomPathScenarioModelSpecification.R">R</span>, <a href="../../math/lattice/Path.html" class="extype" name="virtufin.math.lattice.Path">Path</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="org.apache.commons.math3.linear.RealVector">RealVector</span>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PositionPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PositionPricingModelextendsPricingModel[virtufin.finance.product.Position[virtufin.finance.product.Instrument]]"></a>
+      <a id="PositionPricingModel:PositionPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PositionPricingModel.html"><span class="name">PositionPricingModel</span></a><span class="result"> extends <a href="PricingModel.html" class="extype" name="virtufin.finance.model.PricingModel">PricingModel</a>[<a href="../product/Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>[<a href="../product/Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PricePath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PricePathextendsProductwithSerializable"></a>
+      <a id="PricePath:PricePath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PricePath.html"><span class="name">PricePath</span></a><span class="params">(<span name="currency">currency: <a href="../product/Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a></span>, <span name="prices">prices: <a href="../../math/lattice/Path.html" class="extype" name="virtufin.math.lattice.Path">Path</a>[<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PricePathModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PricePathModel[-A&lt;:virtufin.finance.product.Asset]extendsModel[virtufin.finance.model.PricePathRequest[A],virtufin.finance.model.PricePath]"></a>
+      <a id="PricePathModel[-A&lt;:Asset]:PricePathModel[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PricePathModel.html"><span class="name">PricePathModel</span></a><span class="tparams">[<span name="A">-A &lt;: <a href="../product/Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a></span>]</span><span class="result"> extends <a href="Model.html" class="extype" name="virtufin.finance.model.Model">Model</a>[<a href="PricePathRequest.html" class="extype" name="virtufin.finance.model.PricePathRequest">PricePathRequest</a>[<span class="extype" name="virtufin.finance.model.PricePathModel.A">A</span>], <a href="PricePath.html" class="extype" name="virtufin.finance.model.PricePath">PricePath</a>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Model which calculates prices for an asset at a series of <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">virtufin.finance.Time</a>s in the future</p>
+    </li><li name="virtufin.finance.model.PricePathRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PricePathRequest[+A&lt;:virtufin.finance.product.Asset]extendsModelRequestwithProductwithSerializable"></a>
+      <a id="PricePathRequest[+A&lt;:Asset]:PricePathRequest[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PricePathRequest.html"><span class="name">PricePathRequest</span></a><span class="tparams">[<span name="A">+A &lt;: <a href="../product/Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a></span>]</span><span class="params">(<span name="asset">asset: <span class="extype" name="virtufin.finance.model.PricePathRequest.A">A</span></span>, <span name="modelDate">modelDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="scenario">scenario: <a href="../scenario/Scenario.html" class="extype" name="virtufin.finance.scenario.Scenario">Scenario</a></span>, <span name="pricingDates">pricingDates: <span class="extype" name="scala.Seq">Seq</span>[<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>)</span><span class="result"> extends <a href="ModelRequest.html" class="extype" name="virtufin.finance.model.ModelRequest">ModelRequest</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PricingModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PricingModel[-A&lt;:virtufin.finance.product.Asset]extendsModel[virtufin.finance.model.PricingRequest[A],virtufin.finance.product.Cash]"></a>
+      <a id="PricingModel[-A&lt;:Asset]:PricingModel[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PricingModel.html"><span class="name">PricingModel</span></a><span class="tparams">[<span name="A">-A &lt;: <a href="../product/Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a></span>]</span><span class="result"> extends <a href="Model.html" class="extype" name="virtufin.finance.model.Model">Model</a>[<a href="PricingRequest.html" class="extype" name="virtufin.finance.model.PricingRequest">PricingRequest</a>[<span class="extype" name="virtufin.finance.model.PricingModel.A">A</span>], <a href="../product/package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PricingRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PricingRequest[+A&lt;:virtufin.finance.product.Asset]extendsModelRequestwithProductwithSerializable"></a>
+      <a id="PricingRequest[+A&lt;:Asset]:PricingRequest[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PricingRequest.html"><span class="name">PricingRequest</span></a><span class="tparams">[<span name="A">+A &lt;: <a href="../product/Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a></span>]</span><span class="params">(<span name="asset">asset: <span class="extype" name="virtufin.finance.model.PricingRequest.A">A</span></span>, <span name="modelDate">modelDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="scenario">scenario: <a href="../scenario/Scenario.html" class="extype" name="virtufin.finance.scenario.Scenario">Scenario</a></span>)</span><span class="result"> extends <a href="ModelRequest.html" class="extype" name="virtufin.finance.model.ModelRequest">ModelRequest</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.RandomPathScenarioModelSpecification" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RandomPathScenarioModelSpecification[R&lt;:virtufin.math.random.RandomPath[Double,Double]]extendsRandomScenarioModelSpecification[R,virtufin.math.lattice.Path[Double,Double]]"></a>
+      <a id="RandomPathScenarioModelSpecification[R&lt;:RandomPath[Double,Double]]:RandomPathScenarioModelSpecification[R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RandomPathScenarioModelSpecification.html"><span class="name">RandomPathScenarioModelSpecification</span></a><span class="tparams">[<span name="R">R &lt;: <a href="../../math/random/RandomPath.html" class="extype" name="virtufin.math.random.RandomPath">RandomPath</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>]</span><span class="result"> extends <a href="RandomScenarioModelSpecification.html" class="extype" name="virtufin.finance.model.RandomScenarioModelSpecification">RandomScenarioModelSpecification</a>[<span class="extype" name="virtufin.finance.model.RandomPathScenarioModelSpecification.R">R</span>, <a href="../../math/lattice/Path.html" class="extype" name="virtufin.math.lattice.Path">Path</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.RandomScenarioModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RandomScenarioModel[R&lt;:virtufin.math.random.Random[V],V]extendsScenarioModel"></a>
+      <a id="RandomScenarioModel[R&lt;:Random[V],V]:RandomScenarioModel[R,V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RandomScenarioModel.html"><span class="name">RandomScenarioModel</span></a><span class="tparams">[<span name="R">R &lt;: <a href="../../math/random/Random.html" class="extype" name="virtufin.math.random.Random">Random</a>[<span class="extype" name="virtufin.finance.model.RandomScenarioModel.V">V</span>]</span>, <span name="V">V</span>]</span><span class="result"> extends <a href="ScenarioModel.html" class="extype" name="virtufin.finance.model.ScenarioModel">ScenarioModel</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.RandomScenarioModelSpecification" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RandomScenarioModelSpecification[R&lt;:virtufin.math.random.Random[V],V]extendsAnyRef"></a>
+      <a id="RandomScenarioModelSpecification[R&lt;:Random[V],V]:RandomScenarioModelSpecification[R,V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RandomScenarioModelSpecification.html"><span class="name">RandomScenarioModelSpecification</span></a><span class="tparams">[<span name="R">R &lt;: <a href="../../math/random/Random.html" class="extype" name="virtufin.math.random.Random">Random</a>[<span class="extype" name="virtufin.finance.model.RandomScenarioModelSpecification.V">V</span>]</span>, <span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ScenarioModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ScenarioModelextendsModel[virtufin.finance.model.ScenarioRequest,Seq[virtufin.finance.scenario.Scenario]]"></a>
+      <a id="ScenarioModel:ScenarioModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ScenarioModel.html"><span class="name">ScenarioModel</span></a><span class="result"> extends <a href="Model.html" class="extype" name="virtufin.finance.model.Model">Model</a>[<a href="ScenarioRequest.html" class="extype" name="virtufin.finance.model.ScenarioRequest">ScenarioRequest</a>, <span class="extype" name="scala.Seq">Seq</span>[<a href="../scenario/Scenario.html" class="extype" name="virtufin.finance.scenario.Scenario">Scenario</a>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ScenarioRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScenarioRequestextendsModelRequestwithProductwithSerializable"></a>
+      <a id="ScenarioRequest:ScenarioRequest"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ScenarioRequest.html"><span class="name">ScenarioRequest</span></a><span class="params">(<span name="marketObservables">marketObservables: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[_]]</span>, <span name="scenario">scenario: <a href="../scenario/Scenario.html" class="extype" name="virtufin.finance.scenario.Scenario">Scenario</a></span>, <span name="modelDate">modelDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>)</span><span class="result"> extends <a href="ModelRequest.html" class="extype" name="virtufin.finance.model.ModelRequest">ModelRequest</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="virtufin.finance.model.AssetPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AssetPricingModel"></a>
+      <a id="AssetPricingModel:AssetPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AssetPricingModel$.html"><span class="name">AssetPricingModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.BlackParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlackParameters"></a>
+      <a id="BlackParameters:BlackParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BlackParameters$.html"><span class="name">BlackParameters</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.BlackScholes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlackScholes"></a>
+      <a id="BlackScholes:BlackScholes"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BlackScholes$.html"><span class="name">BlackScholes</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.BlackScholesScenarioModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlackScholesScenarioModel"></a>
+      <a id="BlackScholesScenarioModel:BlackScholesScenarioModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BlackScholesScenarioModel$.html"><span class="name">BlackScholesScenarioModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.CashflowsPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CashflowsPricingModel"></a>
+      <a id="CashflowsPricingModel:CashflowsPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CashflowsPricingModel$.html"><span class="name">CashflowsPricingModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.EuropeanPlainVanillaOptionPricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EuropeanPlainVanillaOptionPricingModel"></a>
+      <a id="EuropeanPlainVanillaOptionPricingModel:EuropeanPlainVanillaOptionPricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EuropeanPlainVanillaOptionPricingModel$.html"><span class="name">EuropeanPlainVanillaOptionPricingModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelContext"></a>
+      <a id="ModelContext:ModelContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelContext$.html"><span class="name">ModelContext</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelDispatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelDispatcher"></a>
+      <a id="ModelDispatcher:ModelDispatcher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelDispatcher$.html"><span class="name">ModelDispatcher</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ModelRegistry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelRegistry"></a>
+      <a id="ModelRegistry:ModelRegistry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelRegistry$.html"><span class="name">ModelRegistry</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.Models" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Models"></a>
+      <a id="Models:Models"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Models$.html"><span class="name">Models</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.MultivariateBlackParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MultivariateBlackParameters"></a>
+      <a id="MultivariateBlackParameters:MultivariateBlackParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MultivariateBlackParameters$.html"><span class="name">MultivariateBlackParameters</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.MultivariateBlackScholesScenarioModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MultivariateBlackScholesScenarioModel"></a>
+      <a id="MultivariateBlackScholesScenarioModel:MultivariateBlackScholesScenarioModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MultivariateBlackScholesScenarioModel$.html"><span class="name">MultivariateBlackScholesScenarioModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PricePathModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PricePathModel"></a>
+      <a id="PricePathModel:PricePathModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PricePathModel$.html"><span class="name">PricePathModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PricingModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PricingModel"></a>
+      <a id="PricingModel:PricingModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PricingModel$.html"><span class="name">PricingModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.PricingModelRegistry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PricingModelRegistry"></a>
+      <a id="PricingModelRegistry:PricingModelRegistry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PricingModelRegistry$.html"><span class="name">PricingModelRegistry</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.ScenarioModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScenarioModel"></a>
+      <a id="ScenarioModel:ScenarioModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ScenarioModel$.html"><span class="name">ScenarioModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.model.SimpleModelRegistry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimpleModelRegistry"></a>
+      <a id="SimpleModelRegistry:SimpleModelRegistry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SimpleModelRegistry$.html"><span class="name">SimpleModelRegistry</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>

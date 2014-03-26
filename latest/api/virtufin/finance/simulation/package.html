@@ -1,0 +1,866 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>simulation - virtufin.finance.simulation</title>
+          <meta name="description" content="simulation - virtufin.finance.simulation" />
+          <meta name="keywords" content="simulation virtufin.finance.simulation" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'virtufin.finance.simulation.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.finance">finance</a></p>
+        <h1>simulation</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">simulation</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="virtufin.finance.simulation"><span>simulation</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.finance.simulation.Agent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AgentextendsAgent"></a>
+      <a id="Agent:Agent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Agent.html"><span class="name">Agent</span></a><span class="result"> extends <a href="../../simulation/Agent.html" class="extype" name="virtufin.simulation.Agent">simulation.Agent</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.Agents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Agents=virtufin.simulation.Agents"></a>
+      <a id="Agents:Agents"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Agents</span><span class="result"> = <a href="../../simulation/Agents.html" class="extype" name="virtufin.simulation.Agents">simulation.Agents</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.Clock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Clock=virtufin.simulation.Clock[virtufin.finance.simulation.package.DefaultTimeType]"></a>
+      <a id="Clock:Clock"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Clock</span><span class="result"> = <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<a href="../../simulation/Tick.html" class="extype" name="virtufin.simulation.Tick">simulation.Tick</a> { type TimeType = virtufin.finance.simulation.package.DefaultTimeType }]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultMessageGeneratingEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultMessageGeneratingEvent=AnyRef{typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}"></a>
+      <a id="DefaultMessageGeneratingEvent:DefaultMessageGeneratingEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultMessageGeneratingEvent</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { type EventType = virtufin.finance.simulation.package.DefaultMessageGeneratingEventType }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultMessageGeneratingEventType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultMessageGeneratingEventType=virtufin.finance.simulation.package.SimulationEvent"></a>
+      <a id="DefaultMessageGeneratingEventType:DefaultMessageGeneratingEventType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultMessageGeneratingEventType</span><span class="result"> = <a href="../../simulation/SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">simulation.SimulationEvent</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultProjectedEvents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultProjectedEvents=AnyRef{typeProjectedEventsType=virtufin.finance.simulation.package.DefaultProjectedEventsType}"></a>
+      <a id="DefaultProjectedEvents:DefaultProjectedEvents"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultProjectedEvents</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { type ProjectedEventsType = virtufin.finance.simulation.package.DefaultProjectedEventsType }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultProjectedEventsType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultProjectedEventsType=virtufin.finance.simulation.package.TriggerEvents"></a>
+      <a id="DefaultProjectedEventsType:DefaultProjectedEventsType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultProjectedEventsType</span><span class="result"> = <a href="../../simulation/SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultState=AnyRef{typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="DefaultState:DefaultState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultState</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { type StateType = virtufin.finance.simulation.package.DefaultStateType }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultStateType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultStateType=virtufin.finance.scenario.Quotes"></a>
+      <a id="DefaultStateType:DefaultStateType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultStateType</span><span class="result"> = <a href="../scenario/Quotes.html" class="extype" name="virtufin.finance.scenario.Quotes">Quotes</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultTime" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultTime=AnyRef{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
+      <a id="DefaultTime:DefaultTime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultTime</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { type TimeType = virtufin.finance.simulation.package.DefaultTimeType }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.DefaultTimeType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultTimeType=virtufin.finance.Time"></a>
+      <a id="DefaultTimeType:DefaultTimeType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultTimeType</span><span class="result"> = <a href="../../util/Day.html" class="extype" name="virtufin.util.Day">Day</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.EuropeanPlainVanillaOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EuropeanPlainVanillaOptionextendsStatefulCompositeSimulatedFeaturewithEuropeanOptionwithSingleMarketObservableDerivative[Double]"></a>
+      <a id="EuropeanPlainVanillaOption:EuropeanPlainVanillaOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EuropeanPlainVanillaOption.html"><span class="name">EuropeanPlainVanillaOption</span></a><span class="result"> extends <a href="feature/StatefulCompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.StatefulCompositeSimulatedFeature">StatefulCompositeSimulatedFeature</a> with <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.simulation.feature.EuropeanOption">EuropeanOption</a> with <a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.simulation.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt"></p>
+    </li><li name="virtufin.finance.simulation.Event" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EventextendsEvent"></a>
+      <a id="Event:Event"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Event.html"><span class="name">Event</span></a><span class="result"> extends <a href="../../simulation/Event.html" class="extype" name="virtufin.simulation.Event">simulation.Event</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.FixedLeg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FixedLegextendsStatelessCompositeSimulatedFeaturewithFixedPositionTransferswithFixedPositionTransfers"></a>
+      <a id="FixedLeg:FixedLeg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FixedLeg.html"><span class="name">FixedLeg</span></a><span class="result"> extends <a href="feature/StatelessCompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.StatelessCompositeSimulatedFeature">StatelessCompositeSimulatedFeature</a> with <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.simulation.feature.FixedPositionTransfers">FixedPositionTransfers</a> with <a href="../product/feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.FloatingLeg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FloatingLegextendsStatefulCompositeSimulatedFeaturewithSingleMarketObservableDerivative[Double]withSettlingwithCashSettled"></a>
+      <a id="FloatingLeg:FloatingLeg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatingLeg.html"><span class="name">FloatingLeg</span></a><span class="result"> extends <a href="feature/StatefulCompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.StatefulCompositeSimulatedFeature">StatefulCompositeSimulatedFeature</a> with <a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.simulation.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a>[<span class="extype" name="scala.Double">Double</span>] with <a href="feature/Settling.html" class="extype" name="virtufin.finance.simulation.feature.Settling">Settling</a> with <a href="../product/feature/CashSettled.html" class="extype" name="virtufin.finance.product.feature.CashSettled">CashSettled</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.GetPosition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetPositionextendsProductwithSerializable"></a>
+      <a id="GetPosition:GetPosition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GetPosition.html"><span class="name">GetPosition</span></a><span class="params">(<span name="identifier">identifier: <a href="../product/PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.MessagesEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MessagesEvent=virtufin.simulation.MessagesEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
+      <a id="MessagesEvent:MessagesEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MessagesEvent</span><span class="result"> = <a href="../../simulation/MessagesEvent.html" class="extype" name="virtufin.simulation.MessagesEvent">simulation.MessagesEvent</a> { type TimeType = virtufin.finance.simulation.package.DefaultTimeType }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.MessagesGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MessagesGenerator=virtufin.simulation.MessagesGeneratorwithvirtufin.finance.simulation.package.DefaultTimewithvirtufin.finance.simulation.package.DefaultMessageGeneratingEvent"></a>
+      <a id="MessagesGenerator:MessagesGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MessagesGenerator</span><span class="result"> = <a href="../../simulation/MessagesGenerator.html" class="extype" name="virtufin.simulation.MessagesGenerator">simulation.MessagesGenerator</a> with <a href="#DefaultTime=AnyRef{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}" class="extmbr" name="virtufin.finance.simulation.DefaultTime">DefaultTime</a> with <a href="#DefaultMessageGeneratingEvent=AnyRef{typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}" class="extmbr" name="virtufin.finance.simulation.DefaultMessageGeneratingEvent">DefaultMessageGeneratingEvent</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.MutableState" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MutableStateextendsMutableState"></a>
+      <a id="MutableState:MutableState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$MutableState.html"><span class="name">MutableState</span></a><span class="result"> extends <a href="../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">simulation.MutableState</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.PlainVanillaInterestRateSwap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlainVanillaInterestRateSwapextendsMultipleStatefulSimulatedFeatureInstances[virtufin.finance.simulation.state.FixingValues[Double]]"></a>
+      <a id="PlainVanillaInterestRateSwap:PlainVanillaInterestRateSwap"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PlainVanillaInterestRateSwap.html"><span class="name">PlainVanillaInterestRateSwap</span></a><span class="result"> extends <a href="feature/MultipleStatefulSimulatedFeatureInstances.html" class="extype" name="virtufin.finance.simulation.feature.MultipleStatefulSimulatedFeatureInstances">MultipleStatefulSimulatedFeatureInstances</a>[<a href="state/FixingValues.html" class="extype" name="virtufin.finance.simulation.state.FixingValues">FixingValues</a>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.PortfolioHierarchyAgent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PortfolioHierarchyAgentextendsAgentwithProductwithSerializable"></a>
+      <a id="PortfolioHierarchyAgent:PortfolioHierarchyAgent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PortfolioHierarchyAgent.html"><span class="name">PortfolioHierarchyAgent</span></a><span class="params">(<span name="portfolioHierarchy">portfolioHierarchy: <a href="../product/PortfolioHierarchy.html" class="extype" name="virtufin.finance.product.PortfolioHierarchy">PortfolioHierarchy</a></span>)</span><span class="result"> extends <a href="package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">Agent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.QuotesEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QuotesEvent=virtufin.simulation.StateEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="QuotesEvent:QuotesEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">QuotesEvent</span><span class="result"> = <a href="../../simulation/StateEvent.html" class="extype" name="virtufin.simulation.StateEvent">StateEvent</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.ScenarioFromQuotesEvents" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ScenarioFromQuotesEventsextendsAnyRef"></a>
+      <a id="ScenarioFromQuotesEvents:ScenarioFromQuotesEvents"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ScenarioFromQuotesEvents.html"><span class="name">ScenarioFromQuotesEvents</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.Simulatable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SimulatableextendsSimulatable"></a>
+      <a id="Simulatable:Simulatable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Simulatable.html"><span class="name">Simulatable</span></a><span class="result"> extends <a href="../../simulation/Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">simulation.Simulatable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.SimulatedFeature" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SimulatedFeatureextendsFeature"></a>
+      <a id="SimulatedFeature:SimulatedFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SimulatedFeature.html"><span class="name">SimulatedFeature</span></a><span class="result"> extends <a href="../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Combines <a href="#Trigger=virtufin.simulation.SimulationEventProjector{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType;typeProjectedEventsType=virtufin.finance.simulation.package.TriggerEvent}" class="extmbr" name="virtufin.finance.simulation.Trigger">virtufin.finance.simulation.Trigger</a>s with <a href="TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">virtufin.finance.simulation.TransactionsGenerator</a>s to yield <a href="../../simulation/MessagesGenerator.html" class="extype" name="virtufin.simulation.MessagesGenerator">virtufin.simulation.MessagesGenerator</a>s
+</p>
+    </li><li name="virtufin.finance.simulation.Simulation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Simulation=virtufin.simulation.Simulation{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="Simulation:Simulation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Simulation</span><span class="result"> = <a href="../../simulation/Simulation.html" class="extype" name="virtufin.simulation.Simulation">simulation.Simulation</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.SimulationEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimulationEvent=virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="SimulationEvent:SimulationEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SimulationEvent</span><span class="result"> = <a href="../../simulation/SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">simulation.SimulationEvent</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.Stateful" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StatefulextendsStateful"></a>
+      <a id="Stateful:Stateful"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Stateful.html"><span class="name">Stateful</span></a><span class="result"> extends <a href="../../simulation/Stateful.html" class="extype" name="virtufin.simulation.Stateful">simulation.Stateful</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.StatefulAgent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StatefulAgent[X&lt;:virtufin.finance.simulation.package.MutableState]extendspackage.AgentwithStateful"></a>
+      <a id="StatefulAgent[X&lt;:MutableState]:StatefulAgent[X]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$StatefulAgent.html"><span class="name">StatefulAgent</span></a><span class="tparams">[<span name="X">X &lt;: <a href="package$$MutableState.html" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a></span>]</span><span class="result"> extends <a href="package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">Agent</a> with <a href="../../simulation/Stateful.html" class="extype" name="virtufin.simulation.Stateful">simulation.Stateful</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.StatefulSimulatedFeature" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StatefulSimulatedFeatureextendsSimulatedFeature"></a>
+      <a id="StatefulSimulatedFeature:StatefulSimulatedFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="StatefulSimulatedFeature.html"><span class="name">StatefulSimulatedFeature</span></a><span class="result"> extends <a href="SimulatedFeature.html" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="SimulatedFeature.html" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>, which creates <a href="package$$StatefulAgent.html" class="extype" name="virtufin.finance.simulation.StatefulAgent">StatefulAgent</a>s
+</p>
+    </li><li name="virtufin.finance.simulation.Tick" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Tick=virtufin.simulation.Tick{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
+      <a id="Tick:Tick"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Tick</span><span class="result"> = <a href="../../simulation/Tick.html" class="extype" name="virtufin.simulation.Tick">simulation.Tick</a> { type TimeType = virtufin.finance.simulation.package.DefaultTimeType }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.TransactionsGenerator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TransactionsGeneratorextendsAnyRef"></a>
+      <a id="TransactionsGenerator:TransactionsGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TransactionsGenerator.html"><span class="name">TransactionsGenerator</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">This trait is used for creating <a href="../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">virtufin.finance.product.Transaction</a>s
+</p>
+    </li><li name="virtufin.finance.simulation.Trigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Trigger=virtufin.simulation.SimulationEventProjector{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType;typeProjectedEventsType=virtufin.finance.simulation.package.TriggerEvent}"></a>
+      <a id="Trigger:Trigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Trigger</span><span class="result"> = <a href="../../simulation/SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.TriggerEvent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TriggerEventextendsEvent"></a>
+      <a id="TriggerEvent:TriggerEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$TriggerEvent.html"><span class="name">TriggerEvent</span></a><span class="result"> extends <a href="../../simulation/Event.html" class="extype" name="virtufin.simulation.Event">simulation.Event</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.TriggerEvents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TriggerEvents=virtufin.simulation.SimultaneousEvents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventsType=virtufin.finance.simulation.package.TriggerEvent}"></a>
+      <a id="TriggerEvents:TriggerEvents"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TriggerEvents</span><span class="result"> = <a href="../../simulation/SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="virtufin.finance.simulation.package#Agents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Agents(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents"></a>
+      <a id="Agents(Timeout):simulation.Agents"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Agents</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="../../simulation/Agents.html" class="extype" name="virtufin.simulation.Agents">simulation.Agents</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.EuropeanPlainVanillaOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EuropeanPlainVanillaOption"></a>
+      <a id="EuropeanPlainVanillaOption:EuropeanPlainVanillaOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EuropeanPlainVanillaOption$.html"><span class="name">EuropeanPlainVanillaOption</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.FixedLeg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FixedLeg"></a>
+      <a id="FixedLeg:FixedLeg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FixedLeg$.html"><span class="name">FixedLeg</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.FloatingLeg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FloatingLeg"></a>
+      <a id="FloatingLeg:FloatingLeg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatingLeg$.html"><span class="name">FloatingLeg</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#MessagesEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MessagesEvent(time:virtufin.finance.simulation.package.DefaultTimeType,messages:Iterable[virtufin.simulation.Message]):virtufin.simulation.MessagesEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
+      <a id="MessagesEvent(DefaultTimeType,Iterable[Message]):simulation.MessagesEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MessagesEvent</span><span class="params">(<span name="time">time: <a href="#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a></span>, <span name="messages">messages: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../../simulation/Message.html" class="extype" name="virtufin.simulation.Message">Message</a>]</span>)</span><span class="result">: <a href="../../simulation/MessagesEvent.html" class="extype" name="virtufin.simulation.MessagesEvent">simulation.MessagesEvent</a> { type TimeType = virtufin.finance.simulation.package.DefaultTimeType }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#MessagesGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MessagesGenerator(generator:virtufin.finance.simulation.package.SimulationEvent=&gt;Iterable[virtufin.simulation.Message]):virtufin.simulation.MessagesGenerator{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}"></a>
+      <a id="MessagesGenerator((SimulationEvent)⇒Iterable[Message]):simulation.MessagesGenerator{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MessagesGenerator</span><span class="params">(<span name="generator">generator: (<a href="#SimulationEvent=virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.SimulationEvent">SimulationEvent</a>) ⇒ <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../../simulation/Message.html" class="extype" name="virtufin.simulation.Message">Message</a>]</span>)</span><span class="result">: <a href="../../simulation/MessagesGenerator.html" class="extype" name="virtufin.simulation.MessagesGenerator">simulation.MessagesGenerator</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.PlainVanillaInterestRateSwap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlainVanillaInterestRateSwap"></a>
+      <a id="PlainVanillaInterestRateSwap:PlainVanillaInterestRateSwap"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlainVanillaInterestRateSwap$.html"><span class="name">PlainVanillaInterestRateSwap</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#QuotesEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QuotesEvent(time:virtufin.finance.simulation.package.DefaultTimeType,quotes:virtufin.finance.simulation.package.DefaultStateType):virtufin.simulation.StateEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="QuotesEvent(DefaultTimeType,DefaultStateType):StateEvent{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">QuotesEvent</span><span class="params">(<span name="time">time: <a href="#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a></span>, <span name="quotes">quotes: <a href="#DefaultStateType=virtufin.finance.scenario.Quotes" class="extmbr" name="virtufin.finance.simulation.DefaultStateType">DefaultStateType</a></span>)</span><span class="result">: <a href="../../simulation/StateEvent.html" class="extype" name="virtufin.simulation.StateEvent">StateEvent</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.ScenarioFromQuotesEvents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScenarioFromQuotesEvents"></a>
+      <a id="ScenarioFromQuotesEvents:ScenarioFromQuotesEvents"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ScenarioFromQuotesEvents$.html"><span class="name">ScenarioFromQuotesEvents</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#Simulatable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Simulatable[A&lt;:virtufin.finance.simulation.package.Agent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}](agentFactory:()=&gt;A):virtufin.simulation.Simulatable{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType;typeAgentType=A}"></a>
+      <a id="Simulatable[A&lt;:Agent{.../*2definitionsintyperefinement*/}](()⇒A):simulation.Simulatable{.../*3definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Simulatable</span><span class="tparams">[<span name="A">A &lt;: <a href="package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">Agent</a> { ... /* 2 definitions in type refinement */ }</span>]</span><span class="params">(<span name="agentFactory">agentFactory: () ⇒ <span class="extype" name="virtufin.finance.simulation.Simulatable.A">A</span></span>)</span><span class="result">: <a href="../../simulation/Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">simulation.Simulatable</a> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#Simulation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Simulation(quotesEventsFactory:=&gt;play.api.libs.iteratee.Enumerator[virtufin.finance.simulation.package.QuotesEvent],agents:akka.actor.ActorRef)(implicitcontext:scala.concurrent.ExecutionContext,implicittimeout:akka.util.Timeout):virtufin.simulation.Simulation{typeTimeType=virtufin.util.Day;typeStateType}"></a>
+      <a id="Simulation(⇒Enumerator[QuotesEvent],ActorRef)(ExecutionContext,Timeout):simulation.Simulation{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Simulation</span><span class="params">(<span name="quotesEventsFactory">quotesEventsFactory: ⇒ <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<a href="#QuotesEvent=virtufin.simulation.StateEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.QuotesEvent">QuotesEvent</a>]</span>, <span name="agents">agents: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="context">context: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>, <span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="../../simulation/Simulation.html" class="extype" name="virtufin.simulation.Simulation">simulation.Simulation</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#Simulation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Simulation(clockFactory:=&gt;virtufin.finance.simulation.package.Clock,tickToStateEvent:virtufin.finance.simulation.package.Tick=&gt;virtufin.finance.simulation.package.QuotesEvent,agents:akka.actor.ActorRef)(implicitcontext:scala.concurrent.ExecutionContext,implicittimeout:akka.util.Timeout):virtufin.simulation.Simulation{typeTimeType=virtufin.util.Day;typeStateType}"></a>
+      <a id="Simulation(⇒Clock,(Tick)⇒QuotesEvent,ActorRef)(ExecutionContext,Timeout):simulation.Simulation{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Simulation</span><span class="params">(<span name="clockFactory">clockFactory: ⇒ <a href="#Clock=virtufin.simulation.Clock[virtufin.finance.simulation.package.DefaultTimeType]" class="extmbr" name="virtufin.finance.simulation.Clock">Clock</a></span>, <span name="tickToStateEvent">tickToStateEvent: (<a href="#Tick=virtufin.simulation.Tick{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}" class="extmbr" name="virtufin.finance.simulation.Tick">Tick</a>) ⇒ <a href="#QuotesEvent=virtufin.simulation.StateEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.QuotesEvent">QuotesEvent</a></span>, <span name="agents">agents: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="context">context: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>, <span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="../../simulation/Simulation.html" class="extype" name="virtufin.simulation.Simulation">simulation.Simulation</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#SimulationEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimulationEvent(time:virtufin.finance.simulation.package.DefaultTimeType,quotes:virtufin.finance.simulation.package.DefaultStateType,agents:akka.actor.ActorRef):virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="SimulationEvent(DefaultTimeType,DefaultStateType,ActorRef):simulation.SimulationEvent{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SimulationEvent</span><span class="params">(<span name="time">time: <a href="#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a></span>, <span name="quotes">quotes: <a href="#DefaultStateType=virtufin.finance.scenario.Quotes" class="extmbr" name="virtufin.finance.simulation.DefaultStateType">DefaultStateType</a></span>, <span name="agents">agents: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result">: <a href="../../simulation/SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">simulation.SimulationEvent</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.StatefulSimulatedFeature" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StatefulSimulatedFeature"></a>
+      <a id="StatefulSimulatedFeature:StatefulSimulatedFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StatefulSimulatedFeature$.html"><span class="name">StatefulSimulatedFeature</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#Tick" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Tick(time:virtufin.finance.simulation.package.DefaultTimeType):virtufin.finance.simulation.package.Tick"></a>
+      <a id="Tick(DefaultTimeType):Tick"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Tick</span><span class="params">(<span name="time">time: <a href="#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a></span>)</span><span class="result">: <a href="#Tick=virtufin.simulation.Tick{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}" class="extmbr" name="virtufin.finance.simulation.Tick">Tick</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.TransactionsGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TransactionsGenerator"></a>
+      <a id="TransactionsGenerator:TransactionsGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TransactionsGenerator$.html"><span class="name">TransactionsGenerator</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.Trigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Trigger"></a>
+      <a id="Trigger:Trigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Trigger$.html"><span class="name">Trigger</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.package#TriggerEvents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TriggerEvents(time:virtufin.finance.simulation.package.DefaultTimeType,events:Iterable[virtufin.finance.simulation.package.TriggerEvent]):virtufin.simulation.SimultaneousEvents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventsType=virtufin.finance.simulation.package.TriggerEvent}"></a>
+      <a id="TriggerEvents(DefaultTimeType,Iterable[TriggerEvent]):SimultaneousEvents{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TriggerEvents</span><span class="params">(<span name="time">time: <a href="#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a></span>, <span name="events">events: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a>]</span>)</span><span class="result">: <a href="../../simulation/SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.feature" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="feature"></a>
+      <a id="feature:feature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="feature/package.html"><span class="name">feature</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.state" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="state"></a>
+      <a id="state:state"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="state/package.html"><span class="name">state</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.transaction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="transaction"></a>
+      <a id="transaction:transaction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="transaction/package.html"><span class="name">transaction</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="virtufin.finance.simulation.trigger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="trigger"></a>
+      <a id="trigger:trigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="trigger/package.html"><span class="name">trigger</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>
