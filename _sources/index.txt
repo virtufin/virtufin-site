@@ -1,0 +1,40 @@
+Welcome to Virtufin
+===================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   documentation
+   virtufin-core
+   virtufin-base
+
+..Virtufin Core<virtufin-core/>`_
+
+Code
+====
+.. includecode:: ../../virtufin-core/src/main/scala/virtufin/finance/package.scala
+
+Test
+====
+default implementations can be used out of the box::
+
+  @RunWith(classOf[Testkit])
+  class MyPostgresTest extends DriverTest(MyPostgresTest.tdb)
+
+  object MyPostgresTest {
+    def tdb(cname: String) = new ExternalTestDB("mypostgres", MyPostgresDriver) {
+      override def getLocalTables(implicit session: Session) = {
+        val tables = ResultSetInvoker[(String,String,String, String)](_.conn.getMetaData()
+                      .getTables("", "public", null, null))
+        tables.list.filter(_._4.toUpperCase == "TABLE").map(_._3).sorted
+      }
+      override def getLocalSequences(implicit session: Session) = {
+        val tables = ResultSetInvoker[(String,String,String, String)](_.conn.getMetaData()
+                      .getTables("", "public", null, null))
+        tables.list.filter(_._4.toUpperCase == "SEQUENCE").map(_._3).sorted
+      }
+      override lazy val capabilities = driver.capabilities + TestDB.plainSql
+    }
+  }
