@@ -9,5 +9,5 @@ Contents:
    documentation
    virtufin-core
    virtufin-base
-
+   examples
 

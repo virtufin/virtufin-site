@@ -1,6 +1,7 @@
 Code
 ====
 .. includecode:: ../../virtufin-core/src/main/scala/virtufin/finance/package.scala
+   :linenos: 
 
 .. math:: \oint_\Gamma f(\zeta)\, d\zeta
 
