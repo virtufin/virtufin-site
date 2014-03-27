@@ -1,0 +1,10 @@
+Code
+====
+.. includecode:: ../../virtufin-core/src/main/scala/virtufin/finance/package.scala
+
+.. math:: \oint_\Gamma f(\zeta)\, d\zeta
+
+.. graphviz:: graph.dot
+
+.. DANGER::
+   Test                       
