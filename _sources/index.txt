@@ -6,8 +6,4 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   documentation
-   virtufin-core
-   virtufin-base
-   examples
 
