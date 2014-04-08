@@ -1,8 +1,8 @@
-.. _documentation:
+.. _modules:
 
-#############
-Documentation
-#############
+#######
+Modules
+#######
 
 :ref:`virtufin-core`
 	The basic building blocks of the library

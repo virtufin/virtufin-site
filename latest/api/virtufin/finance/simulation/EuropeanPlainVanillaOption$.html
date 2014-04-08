@@ -198,6 +198,19 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="virtufin.finance.simulation.EuropeanPlainVanillaOption#createDefaultExerciseStrategy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createDefaultExerciseStrategy(option:virtufin.finance.product.EuropeanPlainVanillaOption):virtufin.finance.simulation.EuropeanPlainVanillaOption.DefaultExerciseStrategy"></a>
+      <a id="createDefaultExerciseStrategy(product.EuropeanPlainVanillaOption):DefaultExerciseStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createDefaultExerciseStrategy</span><span class="params">(<span name="option">option: <a href="../product/EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">product.EuropeanPlainVanillaOption</a></span>)</span><span class="result">: <a href="EuropeanPlainVanillaOption$$DefaultExerciseStrategy.html" class="extype" name="virtufin.finance.simulation.EuropeanPlainVanillaOption.DefaultExerciseStrategy">DefaultExerciseStrategy</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -347,16 +360,16 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="virtufin.finance.simulation.EuropeanPlainVanillaOption#toSimulatable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="toSimulatable(option:virtufin.finance.product.EuropeanPlainVanillaOption)(implicitportfolioHierachyAgent:virtufin.simulation.AgentIdentifier,implicitexerciseStrategy:virtufin.finance.simulation.state.ExerciseStrategy[virtufin.finance.simulation.EuropeanPlainVanillaOption],implicittimeout:akka.util.Timeout):virtufin.finance.simulation.EuropeanPlainVanillaOption"></a>
-      <a id="toSimulatable(product.EuropeanPlainVanillaOption)(AgentIdentifier,ExerciseStrategy[EuropeanPlainVanillaOption],Timeout):EuropeanPlainVanillaOption"></a>
+    </li><li name="virtufin.finance.simulation.EuropeanPlainVanillaOption#toSimulatableEuropeanPlainVanillaOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toSimulatableEuropeanPlainVanillaOption(option:virtufin.finance.product.EuropeanPlainVanillaOption)(implicitportfolioHierarchyAgent:virtufin.simulation.AgentIdentifier,implicitcreateExerciseStrategy:virtufin.finance.product.EuropeanPlainVanillaOption=&gt;virtufin.finance.simulation.state.ExerciseStrategy[virtufin.finance.simulation.EuropeanPlainVanillaOption],implicittimeout:akka.util.Timeout):virtufin.finance.simulation.EuropeanPlainVanillaOption"></a>
+      <a id="toSimulatableEuropeanPlainVanillaOption(product.EuropeanPlainVanillaOption)(AgentIdentifier,(product.EuropeanPlainVanillaOption)⇒ExerciseStrategy[EuropeanPlainVanillaOption],Timeout):EuropeanPlainVanillaOption"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toSimulatable</span><span class="params">(<span name="option">option: <a href="../product/EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">product.EuropeanPlainVanillaOption</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="portfolioHierachyAgent">portfolioHierachyAgent: <a href="../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>, <span name="exerciseStrategy">exerciseStrategy: <a href="state/ExerciseStrategy.html" class="extype" name="virtufin.finance.simulation.state.ExerciseStrategy">ExerciseStrategy</a>[<a href="EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.simulation.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a>]</span>, <span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.simulation.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a></span>
+        <span class="name">toSimulatableEuropeanPlainVanillaOption</span><span class="params">(<span name="option">option: <a href="../product/EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">product.EuropeanPlainVanillaOption</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="portfolioHierarchyAgent">portfolioHierarchyAgent: <a href="../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>, <span name="createExerciseStrategy">createExerciseStrategy: (<a href="../product/EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">product.EuropeanPlainVanillaOption</a>) ⇒ <a href="state/ExerciseStrategy.html" class="extype" name="virtufin.finance.simulation.state.ExerciseStrategy">ExerciseStrategy</a>[<a href="EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.simulation.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a>]</span>, <span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.simulation.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a></span>
       </span>
       </h4>
       

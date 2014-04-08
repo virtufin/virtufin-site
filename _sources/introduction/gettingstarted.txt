@@ -1,0 +1,30 @@
+.. _gettingstarted:
+
+Getting Started
+===============
+
+Prerequisites
+-------------
+The following software needs to be installed:
+
+* `Git <http://git-scm.com/>`_, the revision control system 
+* `SBT <http://www.scala-sbt.org/>`_, the simple build tool for `Scala <http://www.scala-lang.org/>`_
+
+Example Project
+---------------
+
+The examples from the :ref:`concepts <concepts>` and :ref:`use cases <usecases>`
+chapters may be found on https://github.com/virtufin/virtufin-examples. 
+
+Clone the project by running
+
+.. code-block:: bash
+   
+   $ git clone https://github.com/virtufin/virtufin-examples.git
+
+Examples may now be run from sbt with the ``run`` command:
+
+.. code-block:: bash
+
+   $ cd virtufin-examples; sbt run
+

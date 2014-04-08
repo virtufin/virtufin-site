@@ -254,7 +254,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="virtufin.finance.model.CashflowsPricingModel#getModelParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getModelParameters(request:virtufin.finance.model.PricingRequest[virtufin.finance.model.Cashflows],modelContext:virtufin.finance.model.ModelContext):virtufin.finance.scenario.DiscountCurve"></a>
+      <a id="getModelParameters(request:virtufin.finance.model.PricingRequest[virtufin.finance.product.Cashflows],modelContext:virtufin.finance.model.ModelContext):virtufin.finance.scenario.DiscountCurve"></a>
       <a id="getModelParameters(PricingRequest[Cashflows],ModelContext):DiscountCurve"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -262,7 +262,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getModelParameters</span><span class="params">(<span name="request">request: <a href="PricingRequest.html" class="extype" name="virtufin.finance.model.PricingRequest">PricingRequest</a>[<a href="Cashflows.html" class="extype" name="virtufin.finance.model.Cashflows">Cashflows</a>]</span>, <span name="modelContext">modelContext: <a href="ModelContext.html" class="extype" name="virtufin.finance.model.ModelContext">ModelContext</a></span>)</span><span class="result">: <a href="../scenario/DiscountCurve.html" class="extype" name="virtufin.finance.scenario.DiscountCurve">DiscountCurve</a></span>
+        <span class="name">getModelParameters</span><span class="params">(<span name="request">request: <a href="PricingRequest.html" class="extype" name="virtufin.finance.model.PricingRequest">PricingRequest</a>[<a href="../product/Cashflows.html" class="extype" name="virtufin.finance.product.Cashflows">Cashflows</a>]</span>, <span name="modelContext">modelContext: <a href="ModelContext.html" class="extype" name="virtufin.finance.model.ModelContext">ModelContext</a></span>)</span><span class="result">: <a href="../scenario/DiscountCurve.html" class="extype" name="virtufin.finance.scenario.DiscountCurve">DiscountCurve</a></span>
       </span>
       </h4>
       
@@ -344,6 +344,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.finance.model.CashflowsPricingModel#price" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="price(cashflows:virtufin.finance.product.Cashflows,t:virtufin.finance.Time,discountCurve:Double=&gt;Double):virtufin.finance.product.Cash"></a>
+      <a id="price(Cashflows,Time,(Double)⇒Double):Cash"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">price</span><span class="params">(<span name="cashflows">cashflows: <a href="../product/Cashflows.html" class="extype" name="virtufin.finance.product.Cashflows">Cashflows</a></span>, <span name="t">t: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="discountCurve">discountCurve: (<span class="extype" name="scala.Double">Double</span>) ⇒ <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="../product/package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

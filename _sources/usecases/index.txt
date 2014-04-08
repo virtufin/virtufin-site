@@ -1,0 +1,12 @@
+.. _usecases:
+
+Use Cases
+=========
+
+.. toctree::
+   :maxdepth: 2
+
+   portfolioanalysis
+   scenarioanalysis
+   montecarlo
+   realtime

@@ -1,7 +1,16 @@
 Code
 ====
-.. includecode:: ../../virtufin-core/src/main/scala/virtufin/finance/package.scala
-   :linenos: 
+
+See :download:`package scala <../../virtufin-examples/src/main/scala/examples/simulation/MetronomeExample.scala>`.
+
+Cf. :api:`Metronome <virtufin/simulation/Metronome$>`
+
+.. includecode:: ../../virtufin-examples/src/main/scala/examples/simulation/MetronomeExample.scala
+   :linenos:
+
+.. literalinclude:: ../../virtufin-core/src/main/scala/virtufin/finance/package.scala
+   :emphasize-lines: 5, 7-
+   :linenos:
 
 .. math:: \oint_\Gamma f(\zeta)\, d\zeta
 

@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Monte Carlo Simulation &mdash; Virtufin 1.0-SNAPSHOT documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.1.0/lumen/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0-SNAPSHOT',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="../_static/virtufin.ico"/>
+    <link rel="top" title="Virtufin 1.0-SNAPSHOT documentation" href="../index.html" />
+    <link rel="up" title="Use Cases" href="index.html" />
+    <link rel="next" title="Real Time Simulation" href="realtime.html" />
+    <link rel="prev" title="Scenario Analysis" href="scenarioanalysis.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><img src="../_static/virtufin.png">
+          Virtufin</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0-SNAPSHOT</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+                <li><a href="../introduction/index.html">Getting Started</a></li>
+                <li><a href="../concepts/index.html">Concepts</a></li>
+                <li><a href="index.html">Use Cases</a></li>
+                <li><a href="../latest/api/index.html">API</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/motivation.html">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/gettingstarted.html">Getting Started</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/index.html">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/time.html">Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/quotes.html">Quotes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/agents.html">Agents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/simulation.html">Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/observers.html">Observers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../library/index.html">Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../library/virtufin-core.html">Virtufin Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../library/virtufin-base.html">Virtufin Base</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Use Cases</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="portfolioanalysis.html">Portfolio Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scenarioanalysis.html">Scenario Analysis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Monte Carlo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realtime.html">Real Time Simulation</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Monte Carlo Simulation</a><ul>
+<li><a class="reference internal" href="#stating-the-problem">Stating the Problem</a></li>
+<li><a class="reference internal" href="#the-impementation">The Impementation</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="scenarioanalysis.html" title="Previous Chapter: Scenario Analysis"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Scenario Analysi...</span>
+    </a>
+  </li>
+  <li>
+    <a href="realtime.html" title="Next Chapter: Real Time Simulation"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Real Time Simula... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="monte-carlo-simulation">
+<span id="montecarlo"></span><h1>Monte Carlo Simulation<a class="headerlink" href="#monte-carlo-simulation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="stating-the-problem">
+<h2>Stating the Problem<a class="headerlink" href="#stating-the-problem" title="Permalink to this headline">¶</a></h2>
+<p>In this example we consider a portfolio of <a class="reference external" href="/latest/api/#virtufin.finance.product.EuropeanPlainVanillaOption">plain vanilla options</a>.</p>
+<p>We are interested in simulating various
+<a class="reference external" href="/latest/api/#virtufin.finance.scenario.Scenario">scenarios</a> for the underlying
+<a class="reference external" href="/latest/api/#virtufin.finance.scenario.MarketObservable">market observables</a>
+and the perform the following analysis:</p>
+<ul class="simple">
+<li>calculate all the transactions within the portfolio</li>
+<li>filter cashflow  transaction from or to a particular portfolio node</li>
+<li>price the cashflow transactions</li>
+<li>aggregate the prices</li>
+</ul>
+</div>
+<div class="section" id="the-impementation">
+<h2>The Impementation<a class="headerlink" href="#the-impementation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="/latest/api/#virtufin.finance.scenario.Scenario">scenarios</a> are simulated with a <a class="reference external" href="/latest/api/#virtufin.finance.model.MultivariateBlackScholesScenarioModel$">multivariate Black-Scholes model</a></li>
+<li>The scenarios form an <a class="reference external" href="http://www.playframework.com/documentation/2.2.x/api/scala/index.html#play.api.libs.iteratee.Enumerator">Enumerator</a>, where each scenario is itself an <a class="reference external" href="http://www.playframework.com/documentation/2.2.x/api/scala/index.html#play.api.libs.iteratee.Enumerator">Enumerator</a> of <a class="reference external" href="/latest/api/#virtufin.finance.simulation.QuotesEvent">quotes events</a>.</li>
+<li>These <cite>Enumerators &lt;play.api.libs.iteratee.Enumerator&gt;</cite> are transformed by mapping, folding and filtering operaters, which are implemented as <a class="reference external" href="http://www.playframework.com/documentation/2.2.x/api/scala/index.html#play.api.libs.iteratee.Iteratee">Iteratees</a>.</li>
+</ul>
+<p>The source <a class="reference download internal" href="../_downloads/MonteCarloPricingExample.scala"><tt class="xref download docutils literal"><span class="pre">source</span> <span class="pre">code</span></tt></a>.</p>
+<div class="highlight-scala"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">package</span> <span class="nn">examples.finance.simulation</span>
+
+<span class="k">import</span> <span class="nn">examples.Example</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.model._</span>
+<span class="k">import</span> <span class="nn">virtufin.util._</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.scenario._</span>
+<span class="k">import</span> <span class="nn">virtufin.math.random.</span><span class="o">{</span><span class="nc">MultivariateWienerIncrements</span><span class="o">,</span> <span class="nc">UncorrelatedStandardNormalRandomNumberGenerator</span><span class="o">,</span> <span class="nc">RandomGenerator</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product._</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.Currency._</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.feature._</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.simulation._</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.simulation.EuropeanPlainVanillaOption._</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.Time</span>
+<span class="k">import</span> <span class="nn">virtufin.simulation.</span><span class="o">{</span><span class="nc">Message</span><span class="o">,</span> <span class="nc">AgentIdentifier</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.scenario.Price</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.model.BlackParametersIdentifier</span>
+<span class="k">import</span> <span class="nn">virtufin.math.Correlation</span>
+<span class="k">import</span> <span class="nn">virtufin.simulation.Agents.AddAgent</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.Stock</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.Position</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.PortfolioNode</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.PositionNode</span>
+<span class="c1">// implicit for converting to Simulatable</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.simulation.PortfolioHierarchyAgent._</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.model.ScenarioRequest</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.EuropeanPlainVanillaOption</span>
+<span class="c1">// implicit for Strategy and for converting to Simulatable</span>
+<span class="k">import</span> <span class="nn">virtufin.finance.product.EuropeanPlainVanillaOption._</span>
+<span class="k">import</span> <span class="nn">java.util.Calendar._</span>
+<span class="k">import</span> <span class="nn">akka.actor.</span><span class="o">{</span><span class="nc">Props</span><span class="o">,</span> <span class="nc">ActorSystem</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">akka.pattern._</span>
+<span class="k">import</span> <span class="nn">akka.util.Timeout</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.Future</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.duration._</span>
+<span class="k">import</span> <span class="nn">scala.collection.SortedSet</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.ExecutionContext.Implicits.global</span>
+<span class="k">import</span> <span class="nn">play.api.libs.iteratee.</span><span class="o">{</span><span class="nc">Enumeratee</span><span class="o">,</span> <span class="nc">Iteratee</span><span class="o">,</span> <span class="nc">Enumerator</span><span class="o">}</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Example for Monte Carlo valuation on a portfolio level</span>
+<span class="cm"> */</span>
+<span class="k">object</span> <span class="nc">MonteCarloPricingExample</span> <span class="k">extends</span> <span class="nc">Example</span> <span class="o">{</span>
+  <span class="c1">// The trades: two EuropeanPLainVanilla</span>
+
+  <span class="k">val</span> <span class="n">currency</span> <span class="k">=</span> <span class="nc">USD</span>
+
+  <span class="k">val</span> <span class="n">notional0</span> <span class="k">=</span> <span class="nc">Cash</span><span class="o">(</span><span class="mi">100</span><span class="o">,</span> <span class="n">currency</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">cp0</span> <span class="k">=</span> <span class="nc">Call</span>
+  <span class="k">val</span> <span class="n">strike0</span> <span class="k">=</span> <span class="mf">180.0</span>
+  <span class="k">val</span> <span class="n">underlying0</span> <span class="k">=</span> <span class="nc">Price</span><span class="o">(</span><span class="nc">Stock</span><span class="o">(</span><span class="s">&quot;GS&quot;</span><span class="o">),</span> <span class="n">currency</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">maturityDate0</span> <span class="k">=</span> <span class="nc">Day</span><span class="o">(</span><span class="mi">2015</span><span class="o">,</span> <span class="nc">NOVEMBER</span><span class="o">,</span> <span class="mi">18</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">buyerPortfolio0</span> <span class="k">=</span> <span class="s">&quot;client0&quot;</span>
+  <span class="k">val</span> <span class="n">sellerPortfolio0</span> <span class="k">=</span> <span class="s">&quot;bank&quot;</span>
+  <span class="k">val</span> <span class="n">trade0</span> <span class="k">=</span> <span class="nc">EuropeanPlainVanillaOption</span><span class="o">(</span><span class="n">notional0</span><span class="o">,</span> <span class="n">cp0</span><span class="o">,</span> <span class="n">strike0</span><span class="o">,</span> <span class="n">underlying0</span><span class="o">,</span> <span class="n">maturityDate0</span><span class="o">,</span> <span class="n">buyerPortfolio0</span><span class="o">,</span> <span class="n">sellerPortfolio0</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">id0</span> <span class="k">=</span> <span class="s">&quot;trade0&quot;</span>
+
+  <span class="k">val</span> <span class="n">notional1</span> <span class="k">=</span> <span class="nc">Cash</span><span class="o">(</span><span class="mi">200</span><span class="o">,</span> <span class="n">currency</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">cp1</span> <span class="k">=</span> <span class="nc">Call</span>
+  <span class="k">val</span> <span class="n">strike1</span> <span class="k">=</span> <span class="mf">200.0</span>
+  <span class="k">val</span> <span class="n">underlying1</span> <span class="k">=</span> <span class="nc">Price</span><span class="o">(</span><span class="nc">Stock</span><span class="o">(</span><span class="s">&quot;IBM&quot;</span><span class="o">),</span> <span class="n">currency</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">maturityDate1</span> <span class="k">=</span> <span class="nc">Day</span><span class="o">(</span><span class="mi">2014</span><span class="o">,</span> <span class="nc">NOVEMBER</span><span class="o">,</span> <span class="mi">18</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">buyerPortfolio1</span> <span class="k">=</span> <span class="s">&quot;client1&quot;</span>
+  <span class="k">val</span> <span class="n">sellerPortfolio1</span> <span class="k">=</span> <span class="s">&quot;bank&quot;</span>
+  <span class="k">val</span> <span class="n">trade1</span> <span class="k">=</span> <span class="nc">EuropeanPlainVanillaOption</span><span class="o">(</span><span class="n">notional1</span><span class="o">,</span> <span class="n">cp1</span><span class="o">,</span> <span class="n">strike1</span><span class="o">,</span> <span class="n">underlying1</span><span class="o">,</span> <span class="n">maturityDate1</span><span class="o">,</span> <span class="n">buyerPortfolio1</span><span class="o">,</span> <span class="n">sellerPortfolio1</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">id1</span> <span class="k">=</span> <span class="s">&quot;trade1&quot;</span>
+
+  <span class="c1">// Putting trades into PortfolioHierarchy</span>
+  <span class="k">val</span> <span class="n">portfolioHierarchy</span> <span class="k">=</span> <span class="nc">PortfolioHierarchy</span><span class="o">(</span>
+    <span class="nc">PortfolioNode</span><span class="o">(</span><span class="s">&quot;root&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span>
+      <span class="nc">PortfolioNode</span><span class="o">(</span><span class="n">buyerPortfolio0</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">,</span>
+        <span class="nc">List</span><span class="o">(</span>
+          <span class="nc">PositionNode</span><span class="o">(</span><span class="n">id0</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">,</span> <span class="nc">Position</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">trade0</span><span class="o">))</span>
+        <span class="o">)</span>
+      <span class="o">),</span>
+      <span class="nc">PortfolioNode</span><span class="o">(</span><span class="n">buyerPortfolio1</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">,</span>
+        <span class="nc">List</span><span class="o">(</span>
+          <span class="nc">PositionNode</span><span class="o">(</span><span class="n">id1</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">,</span> <span class="nc">Position</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">trade1</span><span class="o">))</span>
+        <span class="o">)</span>
+      <span class="o">)</span>
+    <span class="o">)</span>
+    <span class="o">)</span>
+  <span class="o">)</span>
+  <span class="k">implicit</span> <span class="k">val</span> <span class="n">portfolioHierarchyAgent</span><span class="k">:</span> <span class="kt">AgentIdentifier</span> <span class="o">=</span> <span class="s">&quot;portfolioHierarchy&quot;</span>
+
+  <span class="c1">// Observables and dates we need for model</span>
+  <span class="k">val</span> <span class="n">trades</span> <span class="k">=</span> <span class="nc">Seq</span><span class="o">((</span><span class="n">id0</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">trade0</span><span class="o">,</span> <span class="o">(</span><span class="n">id1</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">trade1</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">observables</span> <span class="k">=</span> <span class="n">trades</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">t</span> <span class="k">=&gt;</span> <span class="n">t</span><span class="o">.</span><span class="n">_2</span><span class="o">.</span><span class="n">marketObservable</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">fixings</span> <span class="k">=</span> <span class="n">trades</span><span class="o">.</span><span class="n">flatMap</span><span class="o">(</span><span class="n">t</span> <span class="k">=&gt;</span> <span class="n">t</span><span class="o">.</span><span class="n">_2</span><span class="o">.</span><span class="n">fixings</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">fixingDates</span> <span class="k">=</span> <span class="n">trades</span><span class="o">.</span><span class="n">flatMap</span><span class="o">(</span><span class="n">t</span> <span class="k">=&gt;</span> <span class="n">t</span><span class="o">.</span><span class="n">_2</span><span class="o">.</span><span class="n">fixingDates</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">settlementDates</span> <span class="k">=</span> <span class="n">trades</span><span class="o">.</span><span class="n">flatMap</span><span class="o">(</span><span class="n">t</span> <span class="k">=&gt;</span> <span class="n">t</span><span class="o">.</span><span class="n">_2</span><span class="o">.</span><span class="n">settlementDates</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">eventDates</span> <span class="k">=</span> <span class="nc">SortedSet</span><span class="o">[</span><span class="kt">Time</span><span class="o">](</span><span class="n">fixingDates</span> <span class="o">++</span> <span class="n">settlementDates</span><span class="k">:</span> <span class="k">_</span><span class="kt">*</span><span class="o">).</span><span class="n">toArray</span>
+
+  <span class="c1">// We will put these into the Agents object</span>
+  <span class="k">val</span> <span class="n">simulatables</span><span class="k">:</span> <span class="kt">Iterable</span><span class="o">[(</span><span class="kt">AgentIdentifier</span>, <span class="kt">Simulatable</span><span class="o">)]</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span>
+    <span class="o">(</span><span class="n">id0</span><span class="k">:</span> <span class="kt">AgentIdentifier</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="o">(</span><span class="n">trade0</span><span class="k">:</span> <span class="kt">Simulatable</span><span class="o">),</span>
+    <span class="o">(</span><span class="n">id1</span><span class="k">:</span> <span class="kt">AgentIdentifier</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="o">(</span><span class="n">trade1</span><span class="k">:</span> <span class="kt">Simulatable</span><span class="o">),</span>
+    <span class="n">portfolioHierarchyAgent</span> <span class="o">-&gt;</span> <span class="o">(</span><span class="n">portfolioHierarchy</span><span class="k">:</span> <span class="kt">Simulatable</span><span class="o">)</span>
+  <span class="o">)</span>
+
+  <span class="c1">// The scenario at t0</span>
+  <span class="k">val</span> <span class="n">x00</span> <span class="k">=</span> <span class="mf">180.0</span>
+  <span class="k">val</span> <span class="n">x01</span> <span class="k">=</span> <span class="mf">200.0</span>
+  <span class="k">val</span> <span class="n">t0</span> <span class="k">=</span> <span class="nc">Day</span><span class="o">(</span><span class="mi">2013</span><span class="o">,</span> <span class="nc">NOVEMBER</span><span class="o">,</span> <span class="mi">1</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">scenario</span> <span class="k">=</span> <span class="nc">Scenario</span><span class="o">(</span><span class="n">t0</span> <span class="o">-&gt;</span> <span class="nc">Quotes</span><span class="o">(</span><span class="n">underlying0</span> <span class="o">-&gt;</span> <span class="n">x00</span><span class="o">,</span> <span class="n">underlying1</span> <span class="o">-&gt;</span> <span class="n">x01</span><span class="o">))</span>
+
+
+  <span class="c1">// Some implicits for default values</span>
+
+  <span class="k">import</span> <span class="nn">RandomGenerator.defaultRandomGenerator</span>
+  <span class="k">import</span> <span class="nn">UncorrelatedStandardNormalRandomNumberGenerator.defaultUncorrelatedStandardRandomNumberGenerator</span>
+  <span class="k">import</span> <span class="nn">MultivariateWienerIncrements.defaultMultivariateWienerIncrements</span>
+  <span class="k">import</span> <span class="nn">MultivariateBlackScholesScenarioModel.defaultParametersToMultivariateGeometricBrownianMotion</span>
+
+  <span class="c1">// Setting up the Black-Scholes model for risk factors</span>
+  <span class="k">val</span> <span class="n">model</span> <span class="k">=</span> <span class="nc">MultivariateBlackScholesScenarioModel</span><span class="o">.</span><span class="n">apply</span>
+  <span class="k">val</span> <span class="n">request</span> <span class="k">=</span> <span class="nc">ScenarioRequest</span><span class="o">(</span><span class="n">observables</span><span class="o">,</span> <span class="n">scenario</span><span class="o">,</span> <span class="n">t0</span><span class="o">)</span>
+
+  <span class="c1">// Black parameters</span>
+  <span class="k">val</span> <span class="n">i0</span> <span class="k">=</span> <span class="n">underlying0</span><span class="k">:</span> <span class="kt">BlackParametersIdentifier</span>
+  <span class="k">val</span> <span class="n">mu0</span> <span class="k">=</span> <span class="mf">0.02</span>
+  <span class="k">val</span> <span class="n">sigma0</span> <span class="k">=</span> <span class="mf">0.4</span>
+  <span class="k">val</span> <span class="n">p0</span> <span class="k">=</span> <span class="nc">BlackParameters</span><span class="o">(</span><span class="n">mu0</span><span class="o">,</span> <span class="n">sigma0</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">i1</span> <span class="k">=</span> <span class="n">underlying1</span><span class="k">:</span> <span class="kt">BlackParametersIdentifier</span>
+  <span class="k">val</span> <span class="n">mu1</span> <span class="k">=</span> <span class="o">-</span><span class="mf">0.01</span>
+  <span class="k">val</span> <span class="n">sigma1</span> <span class="k">=</span> <span class="mf">0.3</span>
+  <span class="k">val</span> <span class="n">p1</span> <span class="k">=</span> <span class="nc">BlackParameters</span><span class="o">(</span><span class="n">mu1</span><span class="o">,</span> <span class="n">sigma1</span><span class="o">)</span>
+
+  <span class="k">val</span> <span class="n">correlation</span> <span class="k">=</span> <span class="nc">Correlation</span><span class="o">(</span><span class="n">underlying0</span><span class="o">,</span> <span class="n">underlying1</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">c</span> <span class="k">=</span> <span class="o">-</span><span class="mf">0.3</span>
+
+  <span class="k">val</span> <span class="n">mu</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="n">mu0</span><span class="o">,</span> <span class="n">mu1</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">b</span> <span class="k">=</span> <span class="nc">LookupBuilder</span><span class="o">()</span> <span class="o">+=</span> <span class="n">i0</span> <span class="o">-&gt;</span> <span class="n">p0</span> <span class="o">+=</span> <span class="n">i1</span> <span class="o">-&gt;</span> <span class="n">p1</span> <span class="o">+=</span> <span class="n">correlation</span> <span class="o">-&gt;</span> <span class="n">c</span>
+  <span class="k">val</span> <span class="n">parameters</span> <span class="k">=</span> <span class="nc">ModelContext</span><span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="n">build</span><span class="o">())</span>
+  <span class="k">val</span> <span class="n">blackParameters</span> <span class="k">=</span> <span class="nc">MultivariateBlackParameters</span><span class="o">.</span><span class="n">fromContext</span><span class="o">(</span><span class="n">observables</span><span class="o">,</span> <span class="n">parameters</span><span class="o">).</span><span class="n">get</span>
+
+  <span class="k">implicit</span> <span class="k">val</span> <span class="n">modelDispatcher</span> <span class="k">=</span> <span class="nc">ModelDispatcher</span><span class="o">()</span>
+  <span class="k">val</span> <span class="n">context</span> <span class="k">=</span> <span class="nc">MultivariateBlackScholesScenarioModel</span><span class="o">.</span><span class="n">modelContext</span><span class="o">(</span><span class="n">observables</span><span class="o">,</span> <span class="n">blackParameters</span><span class="o">,</span> <span class="n">eventDates</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">numberScenarios</span> <span class="k">=</span> <span class="mi">10</span>
+
+  <span class="k">def</span> <span class="n">scenarios</span> <span class="k">=</span> <span class="n">model</span><span class="o">.</span><span class="n">model</span><span class="o">(</span><span class="n">request</span><span class="o">,</span> <span class="n">context</span><span class="o">).</span><span class="n">get</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">s</span> <span class="k">=&gt;</span> <span class="nc">Enumerator</span><span class="o">.</span><span class="n">enumerate</span><span class="o">(</span><span class="n">s</span><span class="o">)).</span><span class="n">take</span><span class="o">(</span><span class="n">numberScenarios</span><span class="o">)</span>
+
+  <span class="k">def</span> <span class="n">scenarioEnumerator</span> <span class="k">=</span> <span class="nc">Enumerator</span><span class="o">.</span><span class="n">enumerate</span><span class="o">(</span><span class="n">scenarios</span><span class="o">)</span>
+
+  <span class="k">implicit</span> <span class="k">val</span> <span class="n">timeout</span> <span class="k">=</span> <span class="nc">Timeout</span><span class="o">(</span><span class="mi">10</span> <span class="n">seconds</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">system</span> <span class="k">=</span> <span class="nc">ActorSystem</span><span class="o">(</span><span class="s">&quot;MonteCarloPricingExample&quot;</span><span class="o">)</span>
+
+  <span class="k">def</span> <span class="n">createSimulation</span><span class="o">(</span><span class="n">system</span><span class="k">:</span> <span class="kt">ActorSystem</span><span class="o">,</span> <span class="n">scenario</span><span class="k">:</span> <span class="kt">Enumerator</span><span class="o">[</span><span class="kt">QuotesEvent</span><span class="o">],</span> <span class="n">simulatables</span><span class="k">:</span> <span class="kt">Iterable</span><span class="o">[(</span><span class="kt">AgentIdentifier</span>, <span class="kt">Simulatable</span><span class="o">)])</span><span class="k">:</span> <span class="kt">virtufin.finance.simulation.Simulation</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">agents</span> <span class="k">=</span> <span class="n">system</span><span class="o">.</span><span class="n">actorOf</span><span class="o">(</span><span class="nc">Props</span><span class="o">(</span><span class="nc">Agents</span><span class="o">))</span>
+    <span class="k">for</span> <span class="o">{</span>
+      <span class="n">f</span> <span class="k">&lt;-</span> <span class="nc">Future</span><span class="o">.</span><span class="n">traverse</span><span class="o">(</span><span class="n">simulatables</span><span class="o">)(</span><span class="n">t</span> <span class="k">=&gt;</span> <span class="n">agents</span> <span class="o">?</span> <span class="nc">AddAgent</span><span class="o">(</span><span class="n">t</span><span class="o">.</span><span class="n">_1</span><span class="o">,</span> <span class="n">t</span><span class="o">.</span><span class="n">_2</span><span class="o">))</span>
+    <span class="o">}</span> <span class="k">yield</span> <span class="n">f</span>
+    <span class="n">virtufin</span><span class="o">.</span><span class="n">finance</span><span class="o">.</span><span class="n">simulation</span><span class="o">.</span><span class="nc">Simulation</span><span class="o">(</span><span class="n">scenario</span><span class="o">,</span> <span class="n">agents</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="c1">// Create an Enumerator of Simulation objects</span>
+  <span class="k">def</span> <span class="n">simulations</span> <span class="k">=</span> <span class="n">scenarioEnumerator</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">s</span> <span class="k">=&gt;</span> <span class="n">createSimulation</span><span class="o">(</span><span class="n">system</span><span class="o">,</span> <span class="n">s</span><span class="o">,</span> <span class="n">simulatables</span><span class="o">))</span>
+
+  <span class="c1">// An Enumerator of an Enumerator of MessagesEvents</span>
+  <span class="k">def</span> <span class="n">transactions</span> <span class="k">=</span> <span class="n">simulations</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">s</span> <span class="k">=&gt;</span> <span class="n">s</span><span class="o">.</span><span class="n">generateTransactions</span><span class="o">())</span>
+
+  <span class="c1">// Transform that into an Enumerator of Lists of MessagesEvents</span>
+  <span class="k">val</span> <span class="n">collectTransactions</span> <span class="k">=</span> <span class="nc">Iteratee</span><span class="o">.</span><span class="n">fold</span><span class="o">(</span><span class="nc">List</span><span class="o">[</span><span class="kt">MessagesEvent</span><span class="o">]())((</span><span class="n">l</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">MessagesEvent</span><span class="o">],</span> <span class="n">x</span><span class="k">:</span> <span class="kt">MessagesEvent</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">l</span><span class="o">.::(</span><span class="n">x</span><span class="o">))</span>
+
+  <span class="c1">// Create a Cashflows object if the Message is a Transfer of Cash and if either the source</span>
+  <span class="c1">// or target Portfolio are as given in the argument. I.e. we filter out all the cashfrom from/to</span>
+  <span class="c1">// a specific Porfolio</span>
+  <span class="k">def</span> <span class="n">messageToCashflow</span><span class="o">(</span><span class="n">t</span><span class="k">:</span> <span class="kt">Day</span><span class="o">,</span> <span class="n">sourceOrTargetPortfolio</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">)</span><span class="k">:</span> <span class="kt">PartialFunction</span><span class="o">[</span><span class="kt">Message</span>, <span class="kt">Pair</span><span class="o">[</span><span class="kt">Day</span>, <span class="kt">Pair</span><span class="o">[</span><span class="kt">Currency</span>, <span class="kt">Double</span><span class="o">]]]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">case</span> <span class="nc">Message</span><span class="o">(</span><span class="n">m</span><span class="k">:</span> <span class="kt">Transfer</span><span class="o">[</span><span class="k">_</span><span class="o">],</span> <span class="n">id</span><span class="o">)</span> <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">asset</span><span class="o">.</span><span class="n">isInstanceOf</span><span class="o">[</span><span class="kt">Currency</span><span class="o">]</span> <span class="o">&amp;&amp;</span>
+      <span class="o">(</span><span class="n">m</span><span class="o">.</span><span class="n">sourcePortfolio</span> <span class="o">==</span> <span class="n">sourceOrTargetPortfolio</span> <span class="o">||</span> <span class="n">m</span><span class="o">.</span><span class="n">targetPortfolio</span> <span class="o">==</span> <span class="n">sourceOrTargetPortfolio</span><span class="o">)</span> <span class="k">=&gt;</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">m</span><span class="o">.</span><span class="n">sourcePortfolio</span> <span class="o">==</span> <span class="n">sourceOrTargetPortfolio</span><span class="o">)</span> <span class="n">t</span> <span class="o">-&gt;(</span><span class="n">m</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">asset</span><span class="o">.</span><span class="n">asInstanceOf</span><span class="o">[</span><span class="kt">Currency</span><span class="o">],</span> <span class="n">m</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">amount</span><span class="o">)</span>
+      <span class="k">else</span> <span class="n">t</span> <span class="o">-&gt;(</span><span class="n">m</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">asset</span><span class="o">.</span><span class="n">asInstanceOf</span><span class="o">[</span><span class="kt">Currency</span><span class="o">],</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">m</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">amount</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="k">def</span> <span class="n">messagesEventsToCashflows</span><span class="o">(</span><span class="n">messagesEvents</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">MessagesEvent</span><span class="o">],</span> <span class="n">sourceOrTargetPortfolio</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">)</span><span class="k">:</span> <span class="kt">Map</span><span class="o">[</span><span class="kt">Currency</span>, <span class="kt">Cashflows</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">x</span> <span class="k">=</span> <span class="n">messagesEvents</span><span class="o">.</span><span class="n">flatMap</span><span class="o">(</span><span class="n">e</span> <span class="k">=&gt;</span> <span class="n">e</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">m</span> <span class="k">=&gt;</span> <span class="n">messageToCashflow</span><span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="n">time</span><span class="o">,</span> <span class="n">sourceOrTargetPortfolio</span><span class="o">)(</span><span class="n">m</span><span class="o">)))</span>
+    <span class="n">x</span><span class="o">.</span><span class="n">groupBy</span><span class="o">(</span><span class="n">a</span> <span class="k">=&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">_2</span><span class="o">.</span><span class="n">_1</span><span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="n">b</span> <span class="k">=&gt;</span> <span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="n">_1</span><span class="o">,</span> <span class="n">b</span><span class="o">.</span><span class="n">_2</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">c</span> <span class="k">=&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">_1</span> <span class="o">-&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">_2</span><span class="o">.</span><span class="n">_2</span><span class="o">))).</span><span class="n">map</span><span class="o">(</span><span class="n">d</span> <span class="k">=&gt;</span> <span class="o">(</span><span class="n">d</span><span class="o">.</span><span class="n">_1</span><span class="o">,</span> <span class="nc">Cashflows</span><span class="o">(</span><span class="n">d</span><span class="o">.</span><span class="n">_1</span><span class="o">,</span> <span class="n">d</span><span class="o">.</span><span class="n">_2</span><span class="o">)))</span>
+  <span class="o">}</span>
+
+  <span class="k">val</span> <span class="n">sourceOrTargetPortfolio</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span> <span class="o">=</span> <span class="n">sellerPortfolio0</span>
+
+  <span class="c1">// Apply now the transformations:</span>
+  <span class="k">def</span> <span class="n">transactionsLists</span> <span class="k">=</span> <span class="n">transactions</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">t</span> <span class="k">=&gt;</span> <span class="n">t</span> <span class="o">|&gt;&gt;&gt;</span> <span class="n">collectTransactions</span><span class="o">)</span> <span class="o">&amp;&gt;</span> <span class="nc">Enumeratee</span><span class="o">.</span><span class="n">mapM</span><span class="o">(</span><span class="n">identity</span><span class="o">)</span>
+
+  <span class="c1">// This gives an Enumerator mapping currencies to Cashflows objects</span>
+  <span class="k">def</span> <span class="n">cashflows</span> <span class="k">=</span> <span class="n">transactionsLists</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">a</span> <span class="k">=&gt;</span> <span class="n">messagesEventsToCashflows</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">sourceOrTargetPortfolio</span><span class="o">))</span>
+
+  <span class="c1">// Value the cashflows</span>
+  <span class="k">def</span> <span class="n">value</span><span class="o">(</span><span class="n">cashflows</span><span class="k">:</span> <span class="kt">Map</span><span class="o">[</span><span class="kt">Currency</span>, <span class="kt">Cashflows</span><span class="o">],</span> <span class="n">modelDate</span><span class="k">:</span> <span class="kt">Day</span><span class="o">,</span> <span class="n">discountCurves</span><span class="k">:</span> <span class="kt">Map</span><span class="o">[</span><span class="kt">Currency</span>, <span class="kt">Double</span> <span class="k">=&gt;</span> <span class="kt">Double</span><span class="o">])</span><span class="k">:</span> <span class="kt">Map</span><span class="o">[</span><span class="kt">Currency</span>, <span class="kt">Cash</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="n">cashflows</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">c</span> <span class="k">=&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">_1</span> <span class="o">-&gt;</span> <span class="nc">CashflowsPricingModel</span><span class="o">.</span><span class="n">price</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="n">_2</span><span class="o">,</span> <span class="n">modelDate</span><span class="o">,</span> <span class="n">discountCurves</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="n">_1</span><span class="o">)))</span>
+  <span class="o">}</span>
+
+  <span class="k">val</span> <span class="n">r</span> <span class="k">=</span> <span class="mf">0.02</span>
+  <span class="k">val</span> <span class="n">discountCurves</span> <span class="k">=</span> <span class="nc">Map</span><span class="o">[</span><span class="kt">Currency</span>, <span class="kt">Double</span> <span class="k">=&gt;</span> <span class="kt">Double</span><span class="o">](</span><span class="nc">USD</span> <span class="o">-&gt;</span> <span class="o">(</span><span class="n">t</span> <span class="k">=&gt;</span> <span class="nc">Math</span><span class="o">.</span><span class="n">exp</span><span class="o">(-</span><span class="n">r</span><span class="o">*</span><span class="n">t</span><span class="o">)))</span>
+
+  <span class="k">def</span> <span class="n">values</span> <span class="k">=</span> <span class="n">cashflows</span> <span class="n">map</span> <span class="o">(</span><span class="n">c</span> <span class="k">=&gt;</span> <span class="n">value</span><span class="o">(</span><span class="n">c</span><span class="o">,</span> <span class="n">t0</span><span class="o">,</span> <span class="n">discountCurves</span><span class="o">))</span>
+
+  <span class="c1">// Output</span>
+  <span class="n">transactionsLists</span> <span class="o">|&gt;&gt;&gt;</span> <span class="nc">Iteratee</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">output</span><span class="o">)</span>
+  <span class="nc">Thread</span><span class="o">.</span><span class="n">sleep</span><span class="o">(</span><span class="mi">2000</span><span class="o">)</span>
+  <span class="n">output</span><span class="o">(</span><span class="s">&quot;\nCashflows&quot;</span><span class="o">)</span>
+  <span class="n">cashflows</span> <span class="o">|&gt;&gt;&gt;</span> <span class="nc">Iteratee</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">output</span><span class="o">)</span>
+  <span class="nc">Thread</span><span class="o">.</span><span class="n">sleep</span><span class="o">(</span><span class="mi">2000</span><span class="o">)</span>
+  <span class="n">output</span><span class="o">(</span><span class="s">&quot;\nValues&quot;</span><span class="o">)</span>
+  <span class="n">values</span> <span class="o">|&gt;&gt;&gt;</span> <span class="nc">Iteratee</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">output</span><span class="o">)</span>
+  <span class="nc">Thread</span><span class="o">.</span><span class="n">sleep</span><span class="o">(</span><span class="mi">2000</span><span class="o">)</span>
+  <span class="n">system</span><span class="o">.</span><span class="n">shutdown</span><span class="o">()</span>
+  <span class="nc">System</span><span class="o">.</span><span class="n">exit</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Running ths code yield the following output:</p>
+<div class="highlight-bash"><div class="highlight"><pre>List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>2669.363377, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client0<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>6900.902429, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client1<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>4117.334318, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client1<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>29281.996197, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client0<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>1857.522804, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client1<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>4968.698889, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client1<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>14980.942566, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client0<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>4333.790907, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client1<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>2770.420006, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client1<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">(</span>Message<span class="o">(</span>Transfer<span class="o">(</span>Cash<span class="o">(</span>10024.435569, USD<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>bank<span class="o">)</span>,PortfolioIdentifier<span class="o">(</span>client0<span class="o">))</span>,AgentIdentifier<span class="o">(</span>portfolioHierarchy<span class="o">))))</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+List<span class="o">(</span>MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,List<span class="o">())</span>, MessagesEvent<span class="o">(</span>Day<span class="o">(</span>2013, November, 1<span class="o">)</span>,List<span class="o">()))</span>
+
+Cashflows
+Map<span class="o">(</span>USD -&gt; Cashflows<span class="o">(</span>USD,List<span class="o">((</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,4967.989114466135<span class="o">))))</span>
+Map<span class="o">(</span>USD -&gt; Cashflows<span class="o">(</span>USD,List<span class="o">((</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,4665.598794006706<span class="o">))))</span>
+Map<span class="o">()</span>
+Map<span class="o">(</span>USD -&gt; Cashflows<span class="o">(</span>USD,List<span class="o">((</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,6368.779439485567<span class="o">)</span>, <span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,16343.207528521976<span class="o">))))</span>
+Map<span class="o">()</span>
+Map<span class="o">()</span>
+Map<span class="o">(</span>USD -&gt; Cashflows<span class="o">(</span>USD,List<span class="o">((</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,2681.339913159795<span class="o">)</span>, <span class="o">(</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,4146.811077381631<span class="o">))))</span>
+Map<span class="o">()</span>
+Map<span class="o">(</span>USD -&gt; Cashflows<span class="o">(</span>USD,List<span class="o">((</span>Day<span class="o">(</span>2014, November, 18<span class="o">)</span>,11939.497196500679<span class="o">))))</span>
+Map<span class="o">(</span>USD -&gt; Cashflows<span class="o">(</span>USD,List<span class="o">((</span>Day<span class="o">(</span>2015, November, 18<span class="o">)</span>,7539.569823950822<span class="o">))))</span>
+
+Values
+Map<span class="o">(</span>USD -&gt; Cash<span class="o">(</span>8397.493562, USD<span class="o">))</span>
+Map<span class="o">(</span>USD -&gt; Cash<span class="o">(</span>955.410539, USD<span class="o">))</span>
+Map<span class="o">(</span>USD -&gt; Cash<span class="o">(</span>5474.749431, USD<span class="o">))</span>
+Map<span class="o">(</span>USD -&gt; Cash<span class="o">(</span>36775.203131, USD<span class="o">))</span>
+Map<span class="o">(</span>USD -&gt; Cash<span class="o">(</span>4671.184973, USD<span class="o">))</span>
+Map<span class="o">()</span>
+Map<span class="o">(</span>USD -&gt; Cash<span class="o">(</span>5303.297247, USD<span class="o">))</span>
+Map<span class="o">()</span>
+Map<span class="o">()</span>
+Map<span class="o">(</span>USD -&gt; Cash<span class="o">(</span>4360.897814, USD<span class="o">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014 Häner Consulting. All Rights Reserved.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

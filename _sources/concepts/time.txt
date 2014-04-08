@@ -1,0 +1,22 @@
+.. _time:
+
+####
+Time
+####
+
+Time Point
+----------
+
+Points in time are represented by classes implementing
+the trait :api:`TimePoint <virtufin.util.TimePoint>`.
+
+Depending on the required granularity, there are different implementation
+of :api:`TimePoint <virtufin/util/TimePoint>`, such as
+
+* :api:`Day <virtufin.util.Day>`, where the granularity is a day
+* :api:`Date <virtufin.util.Date>`, a wrapper around :javaapi:`java.util.Date <java/util/Date>`, which has a granularity of milliseconds
+
+Tick
+----
+
+
