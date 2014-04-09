@@ -24,7 +24,7 @@ The Impementation
 
 * :api:`scenarios <virtufin.finance.scenario.Scenario>` are simulated with a :api:`multivariate Black-Scholes model <virtufin.finance.model.MultivariateBlackScholesScenarioModel$>`
 * The scenarios form an :playapi:`Enumerator <play.api.libs.iteratee.Enumerator>`, where each scenario is itself an :playapi:`Enumerator <play.api.libs.iteratee.Enumerator>` of :api:`quotes events <virtufin.finance.simulation.QuotesEvent>`.
-* These `Enumerators <play.api.libs.iteratee.Enumerator>` are transformed by mapping, folding and filtering operaters, which are implemented as :playapi:`Iteratees <play.api.libs.iteratee.Iteratee>`.
+* These :api:`Enumerators <play.api.libs.iteratee.Enumerator>` are transformed by mapping, folding and filtering operaters, which are implemented as :playapi:`Iteratees <play.api.libs.iteratee.Iteratee>`.
 
 The source :download:`source code <../../../virtufin-examples/src/main/scala/examples/finance/simulation/MonteCarloPricingExample.scala>`.
 
