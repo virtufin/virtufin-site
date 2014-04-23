@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>ForwardContract - virtufin - virtufin.finance.product.ForwardContract</title>
+          <meta name="description" content="ForwardContract - virtufin - virtufin.finance.product.ForwardContract" />
+          <meta name="keywords" content="ForwardContract virtufin virtufin.finance.product.ForwardContract" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'virtufin.finance.product.ForwardContract';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../../lib/class_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="package.html" class="extype" name="virtufin.finance.product">product</a></p>
+        <h1>ForwardContract</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ForwardContract</span><span class="tparams">[<span name="A">A &lt;: <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a></span>]</span><span class="params">(<span name="assetPosition">assetPosition: <a href="Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>[<span class="extype" name="virtufin.finance.product.ForwardContract.A">A</span>]</span>, <span name="payment">payment: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="settlementDate">settlementDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a> with <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a> with <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a> with <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Exchange at maturity date a asset position with a cash position, i.e. buy an asset at maturity at
+a pre-determined price.</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>type of the asset
+</p></dd><dt class="param">assetPosition</dt><dd class="cmt"><p>the asset position being bought/sold. A positive amount means buying, a negative selling.</p></dd><dt class="param">payment</dt><dd class="cmt"><p>the amount being paid. The amount is negative for buying an asset, and positive for selling an asset.</p></dd><dt class="param">settlementDate</dt><dd class="cmt"></dd><dt class="param">buyerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which buys the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and sells the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p></dd><dt class="param">sellerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which sells the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and buys the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a>, <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a>, <a href="feature/Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a>, <a href="feature/Transacting.html" class="extype" name="virtufin.finance.product.feature.Transacting">Transacting</a>, <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a>, <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>, <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a>, <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph246" viewBox="0.00 0.00 741.00 120.00" height="120pt" width="741pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph0"><polygon points="-4,4 -4,-116 737,-116 737,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph246_0"><g id="a_this class|graph246_0"><a xlink:title="virtufin.finance.product.ForwardContract (this class)" xlink:href="#inheritance-diagram"><polygon points="439,-50 307,-50 307,-24 439,-24 439,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-43" x="319" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-34.5" x="339" text-anchor="start">ForwardContract[A]</text></a></g></g><!-- node1 --><g class="node trait" id="graph246_1"><g id="a_trait|graph246_1"><a xlink:title="virtufin.finance.product.Instrument" xlink:href="Instrument.html#inheritance-diagram"><polygon points="92.25,-112 -0.25,-112 -0.25,-86 92.25,-86 92.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="32" text-anchor="start">Instrument</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph246_1_0"><g id="a_inheritance|graph246_1_0"><a xlink:title="ForwardContract[A] is a subtype of Instrument"><path d="M97.5771,-86.6822C98.7282,-86.4505 99.8704,-86.2228 101,-86 171.098,-72.1737 251.74,-58.1816 306.906,-48.9004" stroke="#d4d4d4" fill="none"></path><polygon points="97.033,-85.0071 92.4835,-87.7208 97.7323,-88.4365 97.033,-85.0071" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph246_2"><g id="a_trait|graph246_2"><a xlink:title="virtufin.finance.product.feature.BilateralContract" xlink:href="feature/BilateralContract.html#inheritance-diagram"><polygon points="229.25,-112 110.75,-112 110.75,-86 229.25,-86 229.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="123" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="143" text-anchor="start">BilateralContract</text></a></g></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph246_2_0"><g id="a_inheritance|graph246_2_0"><a xlink:title="ForwardContract[A] is a subtype of BilateralContract"><path d="M216.147,-84.3604C251.134,-74.0194 298.762,-59.9422 332.328,-50.0213" stroke="#d4d4d4" fill="none"></path><polygon points="215.379,-82.7626 211.08,-85.8581 216.371,-86.119 215.379,-82.7626" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph246_3"><g id="a_trait|graph246_3"><a xlink:title="virtufin.finance.product.feature.SingleSettling" xlink:href="feature/SingleSettling.html#inheritance-diagram"><polygon points="354,-112 248,-112 248,-86 354,-86 354,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="260" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="280" text-anchor="start">SingleSettling</text></a></g></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph246_3_0"><g id="a_inheritance|graph246_3_0"><a xlink:title="ForwardContract[A] is a subtype of SingleSettling"><path d="M319.532,-82.5563C331.643,-72.4643 347.234,-59.4716 358.451,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="318.291,-81.3128 315.57,-85.8581 320.532,-84.0015 318.291,-81.3128" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph246_4"><g id="a_trait|graph246_4"><a xlink:title="virtufin.finance.product.feature.FixedPositionTransfers" xlink:href="feature/FixedPositionTransfers.html#inheritance-diagram"><polygon points="520,-112 372,-112 372,-86 520,-86 520,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="384" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="404" text-anchor="start">FixedPositionTransfers</text></a></g></g><!-- node4&#45;&gt;node0 --><g class="edge inheritance" id="graph246_4_0"><g id="a_inheritance|graph246_4_0"><a xlink:title="ForwardContract[A] is a subtype of FixedPositionTransfers"><path d="M427.21,-82.5563C414.932,-72.4643 399.124,-59.4716 387.751,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="426.253,-84.0352 431.227,-85.8581 428.476,-81.3313 426.253,-84.0352" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node trait" id="graph246_5"><g id="a_trait|graph246_5"><a xlink:title="scala.Product"><polygon points="618,-112 538,-112 538,-86 618,-86 618,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="550" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="570" text-anchor="start">Product</text></a></g></g><!-- node5&#45;&gt;node0 --><g class="edge inheritance" id="graph246_5_0"><g id="a_inheritance|graph246_5_0"><a xlink:title="ForwardContract[A] is a subtype of Product"><path d="M532.869,-84.7909C497.495,-74.4375 448.674,-60.1484 414.317,-50.0928" stroke="#d4d4d4" fill="none"></path><polygon points="532.697,-86.5639 537.987,-86.289 533.68,-83.2049 532.697,-86.5639" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph246_6"><g id="a_trait|graph246_6"><a xlink:title="scala.Serializable"><polygon points="733.25,-112 636.75,-112 636.75,-86 733.25,-86 733.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="649" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="669" text-anchor="start">Serializable</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph246_6_0"><g id="a_inheritance|graph246_6_0"><a xlink:title="ForwardContract[A] is a subtype of Serializable"><path d="M631.452,-86.8859C629.952,-86.5859 628.466,-86.2901 627,-86 562.945,-73.3223 489.653,-59.55 438.315,-50.0227" stroke="#d4d4d4" fill="none"></path><polygon points="631.345,-88.6495 636.592,-87.9195 632.035,-85.2181 631.345,-88.6495" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="virtufin.finance.product.ForwardContract"><span>ForwardContract</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="virtufin.finance.product.feature.FixedPositionTransfers"><span>FixedPositionTransfers</span></li><li class="in" name="virtufin.finance.product.feature.SingleSettling"><span>SingleSettling</span></li><li class="in" name="virtufin.finance.product.feature.Settling"><span>Settling</span></li><li class="in" name="virtufin.finance.product.feature.Transacting"><span>Transacting</span></li><li class="in" name="virtufin.finance.product.feature.BilateralContract"><span>BilateralContract</span></li><li class="in" name="virtufin.finance.product.Feature"><span>Feature</span></li><li class="in" name="virtufin.finance.product.Instrument"><span>Instrument</span></li><li class="in" name="virtufin.finance.product.Asset"><span>Asset</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="virtufin.finance.product.ForwardContract#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(assetPosition:virtufin.finance.product.Position[A],payment:virtufin.finance.product.Cash,settlementDate:virtufin.finance.Time,buyerPortfolio:virtufin.finance.product.PortfolioIdentifier,sellerPortfolio:virtufin.finance.product.PortfolioIdentifier):virtufin.finance.product.ForwardContract[A]"></a>
+      <a id="&lt;init&gt;:ForwardContract[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ForwardContract</span><span class="params">(<span name="assetPosition">assetPosition: <a href="Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>[<span class="extype" name="virtufin.finance.product.ForwardContract.A">A</span>]</span>, <span name="payment">payment: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="settlementDate">settlementDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">assetPosition</dt><dd class="cmt"><p>the asset position being bought/sold. A positive amount means buying, a negative selling.</p></dd><dt class="param">payment</dt><dd class="cmt"><p>the amount being paid. The amount is negative for buying an asset, and positive for selling an asset.</p></dd><dt class="param">settlementDate</dt><dd class="cmt"></dd><dt class="param">buyerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which buys the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and sells the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p></dd><dt class="param">sellerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which sells the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and buys the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.finance.product.feature.FixedPositionTransfers.SettlementType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SettlementType=virtufin.finance.product.Transfer[FixedPositionTransfers.this.TransferredInstrumentType]"></a>
+      <a id="SettlementType:SettlementType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SettlementType</span><span class="result"> = <a href="Transfer.html" class="extype" name="virtufin.finance.product.Transfer">Transfer</a>[<a href="#TransferredInstrumentType=virtufin.finance.product.Instrument" class="extmbr" name="virtufin.finance.product.ForwardContract.TransferredInstrumentType">TransferredInstrumentType</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a> → <a href="feature/Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a></dd></dl></div>
+    </li><li name="virtufin.finance.product.ForwardContract.TransferredInstrumentType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TransferredInstrumentType=virtufin.finance.product.Instrument"></a>
+      <a id="TransferredInstrumentType:TransferredInstrumentType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TransferredInstrumentType</span><span class="result"> = <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> → <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="virtufin.finance.product.ForwardContract#assetPosition" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="assetPosition:virtufin.finance.product.Position[A]"></a>
+      <a id="assetPosition:Position[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">assetPosition</span><span class="result">: <a href="Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>[<span class="extype" name="virtufin.finance.product.ForwardContract.A">A</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the asset position being bought/sold.</p><div class="fullcomment"><div class="comment cmt"><p>the asset position being bought/sold. A positive amount means buying, a negative selling.</p></div></div>
+    </li><li name="virtufin.finance.product.ForwardContract#buyerPortfolio" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="buyerPortfolio:virtufin.finance.product.PortfolioIdentifier"></a>
+      <a id="buyerPortfolio:PortfolioIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buyerPortfolio</span><span class="result">: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">portfolio of the party, which buys the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and sells the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p><div class="fullcomment"><div class="comment cmt"><p>portfolio of the party, which buys the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and sells the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> → <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.finance.product.ForwardContract#payment" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="payment:virtufin.finance.product.Cash"></a>
+      <a id="payment:Cash"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">payment</span><span class="result">: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the amount being paid.</p><div class="fullcomment"><div class="comment cmt"><p>the amount being paid. The amount is negative for buying an asset, and positive for selling an asset.</p></div></div>
+    </li><li name="virtufin.finance.product.ForwardContract#sellerPortfolio" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sellerPortfolio:virtufin.finance.product.PortfolioIdentifier"></a>
+      <a id="sellerPortfolio:PortfolioIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sellerPortfolio</span><span class="result">: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">portfolio of the party, which sells the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and buys the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p><div class="fullcomment"><div class="comment cmt"><p>portfolio of the party, which sells the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and buys the <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> → <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a></dd></dl></div>
+    </li><li name="virtufin.finance.product.ForwardContract#settlementDate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="settlementDate:virtufin.finance.Time"></a>
+      <a id="settlementDate:Time"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">settlementDate</span><span class="result">: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> → <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a></dd></dl></div>
+    </li><li name="virtufin.finance.product.ForwardContract#settlementDates" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="settlementDates:scala.collection.SortedSet[virtufin.finance.Time]"></a>
+      <a id="settlementDates:SortedSet[Time]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">settlementDates</span><span class="result">: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> → <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a> → <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a> → <a href="feature/Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.finance.product.feature.Settling#transactionDates" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="transactionDates:scala.collection.SortedSet[virtufin.finance.Time]"></a>
+      <a id="transactionDates:SortedSet[Time]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transactionDates</span><span class="result">: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a> → <a href="feature/Transacting.html" class="extype" name="virtufin.finance.product.feature.Transacting">Transacting</a></dd></dl></div>
+    </li><li name="virtufin.finance.product.ForwardContract#transferPositions" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="transferPositions:Seq[(virtufin.finance.Time,virtufin.finance.product.Transfer[ForwardContract.this.TransferredInstrumentType])]"></a>
+      <a id="transferPositions:Seq[(Time,Transfer[TransferredInstrumentType])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transferPositions</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>, <a href="Transfer.html" class="extype" name="virtufin.finance.product.Transfer">Transfer</a>[<a href="#TransferredInstrumentType=virtufin.finance.product.Instrument" class="extmbr" name="virtufin.finance.product.ForwardContract.TransferredInstrumentType">TransferredInstrumentType</a>])]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> → <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="virtufin.finance.product.feature.FixedPositionTransfers">
+              <h3>Inherited from <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.feature.SingleSettling">
+              <h3>Inherited from <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.feature.Settling">
+              <h3>Inherited from <a href="feature/Settling.html" class="extype" name="virtufin.finance.product.feature.Settling">Settling</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.feature.Transacting">
+              <h3>Inherited from <a href="feature/Transacting.html" class="extype" name="virtufin.finance.product.feature.Transacting">Transacting</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.feature.BilateralContract">
+              <h3>Inherited from <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.Feature">
+              <h3>Inherited from <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.Instrument">
+              <h3>Inherited from <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.Asset">
+              <h3>Inherited from <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../lib/diagrams.js"></script>
+    </body>
+      </html>

@@ -84,6 +84,45 @@
       </span>
       </h4>
       
+    </li><li name="controllers.ReverseREST" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReverseRESTextendsAnyRef"></a>
+      <a id="ReverseREST:ReverseREST"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ReverseREST.html"><span class="name">ReverseREST</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="controllers.TemplatesPlugin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TemplatesPluginextendsTemplatesPlugin"></a>
+      <a id="TemplatesPlugin:TemplatesPlugin"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TemplatesPlugin.html"><span class="name">TemplatesPlugin</span></a><span class="result"> extends <span class="extype" name="securesocial.controllers.TemplatesPlugin">securesocial.controllers.TemplatesPlugin</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The default views plugin.</p>
+    </li><li name="controllers.WithProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WithProviderextendsAuthorizationwithProductwithSerializable"></a>
+      <a id="WithProvider:WithProvider"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WithProvider.html"><span class="name">WithProvider</span></a><span class="params">(<span name="provider">provider: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="securesocial.core.Authorization">Authorization</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
     </li><li name="controllers.routes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="routesextendsObject"></a>
       <a id="routes:routes"></a>
@@ -113,7 +152,20 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Application$.html"><span class="name">Application</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span></span>
+        <a href="Application$.html"><span class="name">Application</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span> with <span class="extype" name="securesocial.core.SecureSocial">SecureSocial</span> with <span class="extype" name="play.modules.reactivemongo.MongoController">MongoController</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="controllers.REST" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="REST"></a>
+      <a id="REST:REST"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="REST$.html"><span class="name">REST</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span> with <span class="extype" name="play.modules.reactivemongo.MongoController">MongoController</span> with <span class="extype" name="securesocial.core.SecureSocial">SecureSocial</span></span>
       </span>
       </h4>
       

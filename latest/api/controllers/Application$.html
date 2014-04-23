@@ -35,13 +35,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Application</span><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span></span>
+        <span class="name">Application</span><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span> with <span class="extype" name="securesocial.core.SecureSocial">SecureSocial</span> with <span class="extype" name="play.modules.reactivemongo.MongoController">MongoController</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="play.api.mvc.Controller">Controller</span>, <span class="extype" name="play.api.mvc.Rendering">Rendering</span>, <span class="extype" name="play.api.mvc.RequestExtractors">RequestExtractors</span>, <span class="extype" name="play.api.mvc.AcceptExtractors">AcceptExtractors</span>, <span class="extype" name="play.api.http.ContentTypes">ContentTypes</span>, <span class="extype" name="play.api.http.HeaderNames">HeaderNames</span>, <span class="extype" name="play.api.http.Status">play.api.http.Status</span>, <span class="extype" name="play.api.http.HttpProtocol">HttpProtocol</span>, <span class="extype" name="play.api.mvc.BodyParsers">BodyParsers</span>, <span class="extype" name="play.api.mvc.Results">Results</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="play.modules.reactivemongo.MongoController">MongoController</span>, <span class="extype" name="securesocial.core.SecureSocial">SecureSocial</span>, <span class="extype" name="play.api.mvc.Controller">Controller</span>, <span class="extype" name="play.api.mvc.Rendering">Rendering</span>, <span class="extype" name="play.api.mvc.RequestExtractors">RequestExtractors</span>, <span class="extype" name="play.api.mvc.AcceptExtractors">AcceptExtractors</span>, <span class="extype" name="play.api.http.ContentTypes">ContentTypes</span>, <span class="extype" name="play.api.http.HeaderNames">HeaderNames</span>, <span class="extype" name="play.api.http.Status">play.api.http.Status</span>, <span class="extype" name="play.api.http.HttpProtocol">HttpProtocol</span>, <span class="extype" name="play.api.mvc.BodyParsers">BodyParsers</span>, <span class="extype" name="play.api.mvc.Results">Results</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -59,7 +59,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="controllers.Application"><span>Application</span></li><li class="in" name="play.api.mvc.Controller"><span>Controller</span></li><li class="in" name="play.api.mvc.Rendering"><span>Rendering</span></li><li class="in" name="play.api.mvc.RequestExtractors"><span>RequestExtractors</span></li><li class="in" name="play.api.mvc.AcceptExtractors"><span>AcceptExtractors</span></li><li class="in" name="play.api.http.ContentTypes"><span>ContentTypes</span></li><li class="in" name="play.api.http.HeaderNames"><span>HeaderNames</span></li><li class="in" name="play.api.http.Status"><span>Status</span></li><li class="in" name="play.api.http.HttpProtocol"><span>HttpProtocol</span></li><li class="in" name="play.api.mvc.BodyParsers"><span>BodyParsers</span></li><li class="in" name="play.api.mvc.Results"><span>Results</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="controllers.Application"><span>Application</span></li><li class="in" name="play.modules.reactivemongo.MongoController"><span>MongoController</span></li><li class="in" name="securesocial.core.SecureSocial"><span>SecureSocial</span></li><li class="in" name="play.api.mvc.Controller"><span>Controller</span></li><li class="in" name="play.api.mvc.Rendering"><span>Rendering</span></li><li class="in" name="play.api.mvc.RequestExtractors"><span>RequestExtractors</span></li><li class="in" name="play.api.mvc.AcceptExtractors"><span>AcceptExtractors</span></li><li class="in" name="play.api.http.ContentTypes"><span>ContentTypes</span></li><li class="in" name="play.api.http.HeaderNames"><span>HeaderNames</span></li><li class="in" name="play.api.http.Status"><span>Status</span></li><li class="in" name="play.api.http.HttpProtocol"><span>HttpProtocol</span></li><li class="in" name="play.api.mvc.BodyParsers"><span>BodyParsers</span></li><li class="in" name="play.api.mvc.Results"><span>Results</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -81,7 +81,20 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="play.api.mvc.Results.Status" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="securesocial.core.SecureSocial.SecuredActionBuilder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SecuredActionBuilder[A]extendsActionBuilder[[A]securesocial.core.SecuredRequest[A]]"></a>
+      <a id="SecuredActionBuilder[A]:SecuredActionBuilder[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SecuredActionBuilder</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="play.api.mvc.ActionBuilder">ActionBuilder</span>[[A]<span class="extype" name="securesocial.core.SecuredRequest">SecuredRequest</span>[<span class="extype" name="securesocial.core.SecureSocial.&lt;refinement&gt;.R.A">A</span>]]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SecureSocial</dd></dl></div>
+    </li><li name="play.api.mvc.Results.Status" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="StatusextendsSimpleResult"></a>
       <a id="Status:Status"></a>
       <h4 class="signature">
@@ -530,6 +543,32 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HeaderNames</dd></dl></div>
+    </li><li name="play.modules.reactivemongo.MongoController#CONTENT_DISPOSITION_ATTACHMENT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CONTENT_DISPOSITION_ATTACHMENT:String"></a>
+      <a id="CONTENT_DISPOSITION_ATTACHMENT:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CONTENT_DISPOSITION_ATTACHMENT</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
+    </li><li name="play.modules.reactivemongo.MongoController#CONTENT_DISPOSITION_INLINE" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CONTENT_DISPOSITION_INLINE:String"></a>
+      <a id="CONTENT_DISPOSITION_INLINE:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CONTENT_DISPOSITION_INLINE</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
     </li><li name="play.api.http.HeaderNames#CONTENT_ENCODING" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="CONTENT_ENCODING:String"></a>
       <a id="CONTENT_ENCODING:String"></a>
@@ -674,7 +713,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Status</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#CSS" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="CSS(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="CSS(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="CSS(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -739,7 +778,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HeaderNames</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#EVENT_STREAM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="EVENT_STREAM(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="EVENT_STREAM(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="EVENT_STREAM(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -843,7 +882,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Status</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#FORM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="FORM(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="FORM(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="FORM(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -908,7 +947,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
     </li><li name="play.api.mvc.Results#Found" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Found(url:&lt;?&gt;):play.api.mvc.SimpleResult"></a>
+      <a id="Found(url:String):play.api.mvc.SimpleResult"></a>
       <a id="Found(String):SimpleResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -986,7 +1025,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HeaderNames</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#HTML" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="HTML(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="HTML(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="HTML(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1168,7 +1207,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#JAVASCRIPT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="JAVASCRIPT(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="JAVASCRIPT(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="JAVASCRIPT(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1181,7 +1220,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ContentTypes</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#JSON" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="JSON(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="JSON(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="JSON(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1337,7 +1376,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
     </li><li name="play.api.mvc.Results#MovedPermanently" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="MovedPermanently(url:&lt;?&gt;):play.api.mvc.SimpleResult"></a>
+      <a id="MovedPermanently(url:String):play.api.mvc.SimpleResult"></a>
       <a id="MovedPermanently(String):SimpleResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1779,7 +1818,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HeaderNames</dd></dl></div>
     </li><li name="play.api.mvc.Results#Redirect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Redirect(call:&lt;?&gt;):play.api.mvc.SimpleResult"></a>
+      <a id="Redirect(call:play.api.mvc.Call):play.api.mvc.SimpleResult"></a>
       <a id="Redirect(Call):SimpleResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1792,7 +1831,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
     </li><li name="play.api.mvc.Results#Redirect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Redirect(url:&lt;?&gt;,queryString:&lt;?&gt;,status:&lt;?&gt;):play.api.mvc.SimpleResult"></a>
+      <a id="Redirect(url:String,queryString:Map[String,Seq[String]],status:Int):play.api.mvc.SimpleResult"></a>
       <a id="Redirect(String,Map[String,Seq[String]],Int):SimpleResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1805,7 +1844,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
     </li><li name="play.api.mvc.Results#Redirect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Redirect(url:&lt;?&gt;,status:&lt;?&gt;):play.api.mvc.SimpleResult"></a>
+      <a id="Redirect(url:String,status:Int):play.api.mvc.SimpleResult"></a>
       <a id="Redirect(String,Int):SimpleResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1921,8 +1960,21 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Status</dd></dl></div>
+    </li><li name="securesocial.core.SecureSocial.SecuredAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SecuredAction"></a>
+      <a id="SecuredAction:SecuredAction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SecuredAction</span><span class="result"> extends <span class="extype" name="securesocial.core.SecureSocial.SecuredActionBuilder">SecuredActionBuilder</span>[<span class="extype" name="securesocial.core.SecuredRequest">SecuredRequest</span>[_]]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SecureSocial</dd></dl></div>
     </li><li name="play.api.mvc.Results#SeeOther" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="SeeOther(url:&lt;?&gt;):play.api.mvc.SimpleResult"></a>
+      <a id="SeeOther(url:String):play.api.mvc.SimpleResult"></a>
       <a id="SeeOther(String):SimpleResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1948,7 +2000,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
     </li><li name="play.api.mvc.Results#Status" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Status(code:&lt;?&gt;):Results.this.Status"></a>
+      <a id="Status(code:Int):Results.this.Status"></a>
       <a id="Status(Int):Status"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1987,7 +2039,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Status</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#TEXT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="TEXT(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="TEXT(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="TEXT(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2052,7 +2104,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HeaderNames</dd></dl></div>
     </li><li name="play.api.mvc.Results#TemporaryRedirect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="TemporaryRedirect(url:&lt;?&gt;):play.api.mvc.SimpleResult"></a>
+      <a id="TemporaryRedirect(url:String):play.api.mvc.SimpleResult"></a>
       <a id="TemporaryRedirect(String):SimpleResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2207,6 +2259,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
+    </li><li name="securesocial.core.SecureSocial.UserAwareAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UserAwareAction"></a>
+      <a id="UserAwareAction:UserAwareAction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UserAwareAction</span><span class="result"> extends <span class="extype" name="play.api.mvc.ActionBuilder">ActionBuilder</span>[<span class="extype" name="securesocial.core.RequestWithUser">RequestWithUser</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SecureSocial</dd></dl></div>
     </li><li name="play.api.http.HeaderNames#VARY" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="VARY:String"></a>
       <a id="VARY:String"></a>
@@ -2260,7 +2325,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HeaderNames</dd></dl></div>
     </li><li name="play.api.http.ContentTypes#XML" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="XML(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="XML(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="XML(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2338,7 +2403,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="play.api.mvc.Results#chunk" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="chunk(trailers:&lt;?&gt;):play.api.libs.iteratee.Enumeratee[Array[Byte],Array[Byte]]"></a>
+      <a id="chunk(trailers:Option[play.api.libs.iteratee.Iteratee[Array[Byte],Seq[(String,String)]]]):play.api.libs.iteratee.Enumeratee[Array[Byte],Array[Byte]]"></a>
       <a id="chunk(Option[Iteratee[Array[Byte],Seq[(String,String)]]]):Enumeratee[Array[Byte],Array[Byte]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2382,6 +2447,32 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="play.modules.reactivemongo.MongoController#connection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="connection:reactivemongo.api.MongoConnection"></a>
+      <a id="connection:MongoConnection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">connection</span><span class="result">: <span class="extype" name="reactivemongo.api.MongoConnection">MongoConnection</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
+    </li><li name="play.modules.reactivemongo.MongoController#db" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="db:reactivemongo.api.DefaultDB"></a>
+      <a id="db:DefaultDB"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">db</span><span class="result">: <span class="extype" name="reactivemongo.api.DefaultDB">DefaultDB</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
     </li><li name="play.api.mvc.Results#dechunk" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="dechunk:play.api.libs.iteratee.Enumeratee[Array[Byte],Array[Byte]]"></a>
       <a id="dechunk:Enumeratee[Array[Byte],Array[Byte]]"></a>
@@ -2395,6 +2486,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
+    </li><li name="play.modules.reactivemongo.MongoController#driver" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="driver:reactivemongo.api.MongoDriver"></a>
+      <a id="driver:MongoDriver"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">driver</span><span class="result">: <span class="extype" name="reactivemongo.api.MongoDriver">MongoDriver</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -2466,6 +2570,32 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="play.modules.reactivemongo.MongoController#gridFSBodyParser" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gridFSBodyParser[Structure,Reader[_],Writer[_],Id&lt;:reactivemongo.bson.BSONValue](gfs:reactivemongo.api.gridfs.GridFS[Structure,Reader,Writer],fileToSave:(String,Option[String])=&gt;reactivemongo.api.gridfs.FileToSave[Id])(implicitreadFileReader:Reader[reactivemongo.api.gridfs.ReadFile[Id]],implicitec:scala.concurrent.ExecutionContext):play.api.mvc.BodyParser[play.api.mvc.MultipartFormData[scala.concurrent.Future[reactivemongo.api.gridfs.ReadFile[Id]]]]"></a>
+      <a id="gridFSBodyParser[Structure,Reader[_],Writer[_],Id&lt;:BSONValue](GridFS[Structure,Reader,Writer],(String,Option[String])⇒FileToSave[Id])(Reader[ReadFile[Id]],ExecutionContext):BodyParser[MultipartFormData[Future[ReadFile[Id]]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gridFSBodyParser</span><span class="tparams">[<span name="Structure">Structure</span>, <span name="Reader">Reader<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="Writer">Writer<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="Id">Id &lt;: <span class="extype" name="reactivemongo.bson.BSONValue">BSONValue</span></span>]</span><span class="params">(<span name="gfs">gfs: <span class="extype" name="reactivemongo.api.gridfs.GridFS">GridFS</span>[<span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Structure">Structure</span>, <span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Reader">Reader</span>, <span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Writer">Writer</span>]</span>, <span name="fileToSave">fileToSave: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <span class="extype" name="reactivemongo.api.gridfs.FileToSave">FileToSave</span>[<span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Id">Id</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="readFileReader">readFileReader: <span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Reader">Reader</span>[<span class="extype" name="reactivemongo.api.gridfs.ReadFile">ReadFile</span>[<span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Id">Id</span>]]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="play.api.mvc.BodyParser">BodyParser</span>[<span class="extype" name="play.api.mvc.MultipartFormData">MultipartFormData</span>[<span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="reactivemongo.api.gridfs.ReadFile">ReadFile</span>[<span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Id">Id</span>]]]]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
+    </li><li name="play.modules.reactivemongo.MongoController#gridFSBodyParser" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gridFSBodyParser[Structure,Reader[_],Writer[_]](gfs:reactivemongo.api.gridfs.GridFS[Structure,Reader,Writer])(implicitreadFileReader:Reader[reactivemongo.api.gridfs.ReadFile[reactivemongo.bson.BSONValue]],implicitec:scala.concurrent.ExecutionContext):play.api.mvc.BodyParser[play.api.mvc.MultipartFormData[scala.concurrent.Future[reactivemongo.api.gridfs.ReadFile[reactivemongo.bson.BSONValue]]]]"></a>
+      <a id="gridFSBodyParser[Structure,Reader[_],Writer[_]](GridFS[Structure,Reader,Writer])(Reader[ReadFile[BSONValue]],ExecutionContext):BodyParser[MultipartFormData[Future[ReadFile[BSONValue]]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gridFSBodyParser</span><span class="tparams">[<span name="Structure">Structure</span>, <span name="Reader">Reader<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="Writer">Writer<span class="tparams">[<span name="_">_</span>]</span></span>]</span><span class="params">(<span name="gfs">gfs: <span class="extype" name="reactivemongo.api.gridfs.GridFS">GridFS</span>[<span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Structure">Structure</span>, <span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Reader">Reader</span>, <span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Writer">Writer</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="readFileReader">readFileReader: <span class="extype" name="play.modules.reactivemongo.MongoController.gridFSBodyParser.Reader">Reader</span>[<span class="extype" name="reactivemongo.api.gridfs.ReadFile">ReadFile</span>[<span class="extype" name="reactivemongo.bson.BSONValue">BSONValue</span>]]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="play.api.mvc.BodyParser">BodyParser</span>[<span class="extype" name="play.api.mvc.MultipartFormData">MultipartFormData</span>[<span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="reactivemongo.api.gridfs.ReadFile">ReadFile</span>[<span class="extype" name="reactivemongo.bson.BSONValue">BSONValue</span>]]]]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -2518,6 +2648,32 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Controller</dd></dl></div>
+    </li><li name="controllers.Application#linkResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="linkResult:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="linkResult:Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">linkResult</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="controllers.Application#logger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="logger:play.api.Logger"></a>
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <span class="extype" name="play.api.Logger">Logger</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -2557,6 +2713,32 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="controllers.Application#onlyTwitter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onlyTwitter:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="onlyTwitter:Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onlyTwitter</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="play.modules.reactivemongo.MongoController#serve" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serve[T&lt;:reactivemongo.api.gridfs.ReadFile[_&lt;:reactivemongo.bson.BSONValue],Structure,Reader[_],Writer[_]](gfs:reactivemongo.api.gridfs.GridFS[Structure,Reader,Writer],foundFile:reactivemongo.api.Cursor[T],dispositionMode:String)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[play.api.mvc.SimpleResult]"></a>
+      <a id="serve[T&lt;:ReadFile[_&lt;:BSONValue],Structure,Reader[_],Writer[_]](GridFS[Structure,Reader,Writer],Cursor[T],String)(ExecutionContext):Future[SimpleResult]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serve</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="reactivemongo.api.gridfs.ReadFile">ReadFile</span>[_ &lt;: <span class="extype" name="reactivemongo.bson.BSONValue">BSONValue</span>]</span>, <span name="Structure">Structure</span>, <span name="Reader">Reader<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="Writer">Writer<span class="tparams">[<span name="_">_</span>]</span></span>]</span><span class="params">(<span name="gfs">gfs: <span class="extype" name="reactivemongo.api.gridfs.GridFS">GridFS</span>[<span class="extype" name="play.modules.reactivemongo.MongoController.serve.Structure">Structure</span>, <span class="extype" name="play.modules.reactivemongo.MongoController.serve.Reader">Reader</span>, <span class="extype" name="play.modules.reactivemongo.MongoController.serve.Writer">Writer</span>]</span>, <span name="foundFile">foundFile: <span class="extype" name="reactivemongo.api.Cursor">Cursor</span>[<span class="extype" name="play.modules.reactivemongo.MongoController.serve.T">T</span>]</span>, <span name="dispositionMode">dispositionMode: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="play.api.mvc.SimpleResult">SimpleResult</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MongoController</dd></dl></div>
     </li><li name="play.api.mvc.Controller#session" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="session(implicitrequest:play.api.mvc.RequestHeader):play.api.mvc.Session"></a>
       <a id="session(RequestHeader):Session"></a>
@@ -2596,6 +2778,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="securesocial.core.SecureSocial#touch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="touch(authenticator:securesocial.core.Authenticator):Unit"></a>
+      <a id="touch(Authenticator):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">touch</span><span class="params">(<span name="authenticator">authenticator: <span class="extype" name="securesocial.core.Authenticator">Authenticator</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SecureSocial</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -2654,7 +2849,7 @@
               
         </dd></dl></div>
     </li><li name="play.api.http.ContentTypes#withCharset" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="withCharset(mimeType:&lt;?&gt;)(implicitcodec:&lt;?&gt;):String"></a>
+      <a id="withCharset(mimeType:String)(implicitcodec:play.api.mvc.Codec):String"></a>
       <a id="withCharset(String)(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2666,6 +2861,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ContentTypes</dd></dl></div>
+    </li><li name="controllers.Application#workbench" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="workbench:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="workbench:Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">workbench</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4>
+      
     </li></ol>
             </div>
 
@@ -2674,7 +2882,7 @@
         <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
               <ol><li name="play.api.mvc.Results#Async" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Async(promise:&lt;?&gt;):play.api.mvc.AsyncResult"></a>
+      <a id="Async(promise:scala.concurrent.Future[play.api.mvc.Result]):play.api.mvc.AsyncResult"></a>
       <a id="Async(Future[Result]):AsyncResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2694,7 +2902,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="play.api.mvc.Controller">
+        <div class="parent" name="play.modules.reactivemongo.MongoController">
+              <h3>Inherited from <span class="extype" name="play.modules.reactivemongo.MongoController">MongoController</span></h3>
+            </div><div class="parent" name="securesocial.core.SecureSocial">
+              <h3>Inherited from <span class="extype" name="securesocial.core.SecureSocial">SecureSocial</span></h3>
+            </div><div class="parent" name="play.api.mvc.Controller">
               <h3>Inherited from <span class="extype" name="play.api.mvc.Controller">Controller</span></h3>
             </div><div class="parent" name="play.api.mvc.Rendering">
               <h3>Inherited from <span class="extype" name="play.api.mvc.Rendering">Rendering</span></h3>

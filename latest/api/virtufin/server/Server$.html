@@ -90,7 +90,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Server$$AddService.html"><span class="name">AddService</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="serviceFactory">serviceFactory: <a href="Server$$ServiceFactory.html" class="extype" name="virtufin.server.Server.ServiceFactory">ServiceFactory</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Server$$AddService.html"><span class="name">AddService</span></a><span class="params">(<span name="id">id: <a href="../service/ServiceIdentifier.html" class="extype" name="virtufin.service.ServiceIdentifier">ServiceIdentifier</a></span>, <span name="serviceFactory">serviceFactory: <a href="Server$$ServiceFactory.html" class="extype" name="virtufin.server.Server.ServiceFactory">ServiceFactory</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -103,7 +103,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Server$$Message.html"><span class="name">Message</span></a><span class="params">(<span name="service">service: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="messageContent">messageContent: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Server$$Message.html"><span class="name">Message</span></a><span class="params">(<span name="messageContent">messageContent: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="service">service: <a href="../service/ServiceIdentifier.html" class="extype" name="virtufin.service.ServiceIdentifier">ServiceIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -116,7 +116,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Server$$RemoveService.html"><span class="name">RemoveService</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Server$$RemoveService.html"><span class="name">RemoveService</span></a><span class="params">(<span name="id">id: <a href="../service/ServiceIdentifier.html" class="extype" name="virtufin.service.ServiceIdentifier">ServiceIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -250,16 +250,46 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="virtufin.server.Server#defaultConfiguration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="defaultConfiguration:String"></a>
-      <a id="defaultConfiguration:String"></a>
+    </li><li name="virtufin.server.Server#defaultAkkaConfiguration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultAkkaConfiguration:String"></a>
+      <a id="defaultAkkaConfiguration:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">defaultConfiguration</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">defaultAkkaConfiguration</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The Akka configuration.</p><div class="fullcomment"><div class="comment cmt"><p>The Akka configuration. It should contain an entry <code>virtufin.services.config</code> with
+the file name of the Spring XML configuration defining the services.
+</p></div></div>
+    </li><li name="virtufin.server.Server#defaultServicesConfiguration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultServicesConfiguration:String"></a>
+      <a id="defaultServicesConfiguration:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultServicesConfiguration</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The default Spring XML bean configuration for the services.</p><div class="fullcomment"><div class="comment cmt"><p>The default Spring XML bean configuration for the services.
+This value is used if the Akka configuration file  does not contain the entry <code>virtufin.services.config</code>.
+</p></div></div>
+    </li><li name="virtufin.server.Server#defaultShutdownTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="defaultShutdownTimeout:scala.concurrent.duration.FiniteDuration"></a>
+      <a id="defaultShutdownTimeout:FiniteDuration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultShutdownTimeout</span><span class="result">: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>
       </span>
       </h4>
       
