@@ -155,18 +155,32 @@ the file name of the Spring XML configuration defining the services.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="virtufin.server.ServerRunner#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply(system:akka.actor.ActorSystem,shutdownTimeout:scala.concurrent.duration.FiniteDuration,services:(String,virtufin.server.Server.ServiceFactory)*):akka.actor.ActorRef"></a>
-      <a id="apply(ActorSystem,FiniteDuration,(String,ServiceFactory)*):ActorRef"></a>
+      <a id="apply(system:akka.actor.ActorSystem,config:com.typesafe.config.Config):akka.actor.ActorRef"></a>
+      <a id="apply(ActorSystem,Config):ActorRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>, <span name="shutdownTimeout">shutdownTimeout: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>, <span name="services">services: (<span class="extype" name="scala.Predef.String">String</span>, <a href="Server$$ServiceFactory.html" class="extype" name="virtufin.server.Server.ServiceFactory">ServiceFactory</a>)*</span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+        <span class="name">apply</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>, <span name="config">config: <span class="extype" name="com.typesafe.config.Config">Config</span></span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Creates a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor and adds some <span class="extype" name="Service">Service</span>s to it.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor and adds some <span class="extype" name="Service">Service</span>s to it.</p></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"></dd><dt class="param">shutdownTimeout</dt><dd class="cmt"></dd><dt class="param">services</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p><span class="extype" name="ActorRef">ActorRef</span> to the server actor
+      <p class="shortcomment cmt">Create a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> using a configuration file</p><div class="fullcomment"><div class="comment cmt"><p>Create a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> using a configuration file</p></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"></dd><dt class="param">config</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p><span class="extype" name="ActorRef">ActorRef</span> to the <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor
+</p></dd></dl></div>
+    </li><li name="virtufin.server.ServerRunner#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(system:akka.actor.ActorSystem,shutdownTimeout:scala.concurrent.duration.FiniteDuration,services:(virtufin.service.ServiceIdentifier,virtufin.server.Server.ServiceFactory)*):akka.actor.ActorRef"></a>
+      <a id="apply(ActorSystem,FiniteDuration,(ServiceIdentifier,ServiceFactory)*):ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>, <span name="shutdownTimeout">shutdownTimeout: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>, <span name="services">services: (<a href="../service/ServiceIdentifier.html" class="extype" name="virtufin.service.ServiceIdentifier">ServiceIdentifier</a>, <a href="Server$$ServiceFactory.html" class="extype" name="virtufin.server.Server.ServiceFactory">ServiceFactory</a>)*</span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Creates a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor and adds some <span class="extype" name="Service">Service</span>s to it.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor and adds some <span class="extype" name="Service">Service</span>s to it.</p></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"></dd><dt class="param">shutdownTimeout</dt><dd class="cmt"></dd><dt class="param">services</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p><span class="extype" name="ActorRef">ActorRef</span> to the <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor
 </p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
