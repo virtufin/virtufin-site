@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>MinimumValue - virtufin - virtufin.finance.simulation.state.MinimumValue</title>
-          <meta name="description" content="MinimumValue - virtufin - virtufin.finance.simulation.state.MinimumValue" />
-          <meta name="keywords" content="MinimumValue virtufin virtufin.finance.simulation.state.MinimumValue" />
+          <title>Transmute - virtufin - virtufin.finance.simulation.transaction.Transmute</title>
+          <meta name="description" content="Transmute - virtufin - virtufin.finance.simulation.transaction.Transmute" />
+          <meta name="keywords" content="Transmute virtufin virtufin.finance.simulation.transaction.Transmute" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'virtufin.finance.simulation.state.MinimumValue';
+            var hash = 'virtufin.finance.simulation.transaction.Transmute';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -24,28 +24,31 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img src="../../../../lib/trait_big.png" />
-        <p id="owner"><a href="../../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="../package.html" class="extype" name="virtufin.finance.simulation">simulation</a>.<a href="package.html" class="extype" name="virtufin.finance.simulation.state">state</a></p>
-        <h1>MinimumValue</h1>
+        <img src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="../package.html" class="extype" name="virtufin.finance.simulation">simulation</a>.<a href="package.html" class="extype" name="virtufin.finance.simulation.transaction">transaction</a></p>
+        <h1>Transmute</h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">MinimumValue</span><span class="result"> extends <a href="../package$$MutableState.html" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a></span>
+        <span class="name">Transmute</span><span class="params">(<span name="simulatable">simulatable: <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">Simulatable</a></span>, <span name="agentIdentifier">agentIdentifier: <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>)</span><span class="result"> extends <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">Transaction</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="virtufin.finance.simulation.state.MinimumValue">MinimumValue</a> with <a href="package$$CompositeMutableState.html" class="extype" name="virtufin.finance.simulation.state.CompositeMutableState">CompositeMutableState</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Changes a <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> into another <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> by removing the original
+<a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> from the <a href="../package.html#Agents=virtufin.simulation.Agents" class="extmbr" name="virtufin.finance.simulation.Agents">virtufin.finance.simulation.Agents</a> container and replacing it
+with a new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p></div><dl class="paramcmts block"><dt class="param">simulatable</dt><dd class="cmt"><p>the <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">virtufin.finance.simulation.Simulatable</a> which creates the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p></dd><dt class="param">agentIdentifier</dt><dd class="cmt"><p>the <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">virtufin.simulation.AgentIdentifier</a> of the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a>
+</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../package$$MutableState.html" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a>, <a href="../../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">simulation.MutableState</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">Transaction</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph129" viewBox="0.00 0.00 168.00 120.00" height="120pt" width="168pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph0"><polygon points="-4,4 -4,-116 164,-116 164,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph129_0"><g id="a_this trait|graph129_0"><a xlink:title="virtufin.finance.simulation.state.MinimumValue (this trait)" xlink:href="#inheritance-diagram"><polygon points="135.25,-50 24.75,-50 24.75,-24 135.25,-24 135.25,-50" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-43" x="37" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-34.5" x="57" text-anchor="start">MinimumValue</text></a></g></g><!-- node1 --><g class="node trait" id="graph129_1"><g id="a_trait|graph129_1"><a xlink:title="virtufin.finance.simulation.MutableState" xlink:href="../package$$MutableState.html#inheritance-diagram"><polygon points="132,-112 28,-112 28,-86 132,-86 132,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-105" x="40" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="60" text-anchor="start">MutableState</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph129_1_0"><g id="a_inheritance|graph129_1_0"><a xlink:title="MinimumValue is a subtype of MutableState"><path d="M80,-80.6826C80,-70.8961 80,-58.9026 80,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="78.2501,-80.8581 80,-85.8581 81.7501,-80.8581 78.2501,-80.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph122" viewBox="0.00 0.00 319.00 120.00" height="120pt" width="319pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph0"><polygon points="-4,4 -4,-116 315,-116 315,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph122_0"><g id="a_this class|graph122_0"><a xlink:title="virtufin.finance.simulation.transaction.Transmute (this class)" xlink:href="#inheritance-diagram"><polygon points="202.25,-50 109.75,-50 109.75,-24 202.25,-24 202.25,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-43" x="122" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-34.5" x="142" text-anchor="start">Transmute</text></a></g></g><!-- node1 --><g class="node trait" id="graph122_1"><g id="a_trait|graph122_1"><a xlink:title="virtufin.finance.product.Transaction" xlink:href="../../product/Transaction.html#inheritance-diagram"><polygon points="98,-112 0,-112 0,-86 98,-86 98,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-105" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="32" text-anchor="start">Transaction</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph122_1_0"><g id="a_inheritance|graph122_1_0"><a xlink:title="Transmute is a subtype of Transaction"><path d="M75.1436,-83.34C93.3253,-73.1447 117.274,-59.7155 134.379,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="74.1583,-81.8862 70.653,-85.8581 75.8701,-84.939 74.1583,-81.8862" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph122_2"><g id="a_trait|graph122_2"><a xlink:title="scala.Product"><polygon points="196,-112 116,-112 116,-86 196,-86 196,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-105" x="128" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="148" text-anchor="start">Product</text></a></g></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph122_2_0"><g id="a_inheritance|graph122_2_0"><a xlink:title="Transmute is a subtype of Product"><path d="M156,-80.6826C156,-70.8961 156,-58.9026 156,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="154.25,-80.8581 156,-85.8581 157.75,-80.8581 154.25,-80.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph122_3"><g id="a_trait|graph122_3"><a xlink:title="scala.Serializable"><polygon points="311.25,-112 214.75,-112 214.75,-86 311.25,-86 311.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-105" x="227" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="247" text-anchor="start">Serializable</text></a></g></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph122_3_0"><g id="a_inheritance|graph122_3_0"><a xlink:title="Transmute is a subtype of Serializable"><path d="M236.856,-83.34C218.675,-73.1447 194.726,-59.7155 177.621,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="236.13,-84.939 241.347,-85.8581 237.842,-81.8862 236.13,-84.939" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -63,7 +66,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.finance.simulation.state.MinimumValue"><span>MinimumValue</span></li><li class="in" name="virtufin.finance.simulation.MutableState"><span>MutableState</span></li><li class="in" name="virtufin.simulation.MutableState"><span>MutableState</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.finance.simulation.transaction.Transmute"><span>Transmute</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="virtufin.finance.product.Transaction"><span>Transaction</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -81,85 +84,31 @@
 
       <div id="template">
         <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="virtufin.finance.simulation.transaction.Transmute#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(simulatable:virtufin.finance.simulation.Simulatable,agentIdentifier:virtufin.simulation.AgentIdentifier):virtufin.finance.simulation.transaction.Transmute"></a>
+      <a id="&lt;init&gt;:Transmute"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Transmute</span><span class="params">(<span name="simulatable">simulatable: <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">Simulatable</a></span>, <span name="agentIdentifier">agentIdentifier: <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">simulatable</dt><dd class="cmt"><p>the <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">virtufin.finance.simulation.Simulatable</a> which creates the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p></dd><dt class="param">agentIdentifier</dt><dd class="cmt"><p>the <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">virtufin.simulation.AgentIdentifier</a> of the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a>
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="virtufin.finance.simulation.MutableState.MutationEventType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="MutationEventType=virtufin.finance.simulation.package.TriggerEvents"></a>
-      <a id="MutationEventType:(MinimumValue.this)#MutationEventType"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">MutationEventType</span><span class="result"> = <a href="../../../simulation/SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a> { ... /* 2 definitions in type refinement */ }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../package$$MutableState.html" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a> → <a href="../../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">MutableState</a></dd></dl></div>
-    </li><li name="virtufin.finance.simulation.MutableState.StateType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="StateType=virtufin.finance.simulation.package.DefaultStateType"></a>
-      <a id="StateType:(MinimumValue.this)#StateType"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">StateType</span><span class="result"> = <a href="../../scenario/Quotes.html" class="extype" name="virtufin.finance.scenario.Quotes">Quotes</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../package$$MutableState.html" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a></dd></dl></div>
-    </li><li name="virtufin.finance.simulation.MutableState.TimeType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="TimeType=virtufin.finance.simulation.package.DefaultTimeType"></a>
-      <a id="TimeType:(MinimumValue.this)#TimeType"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">TimeType</span><span class="result"> = <a href="../../../util/Day.html" class="extype" name="virtufin.util.Day">Day</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../package$$MutableState.html" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a> → <a href="../../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">MutableState</a></dd></dl></div>
-    </li></ol>
-            </div>
+        
 
         <div id="values" class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="virtufin.finance.simulation.state.MinimumValue#minimumMarketObservable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="minimumMarketObservable:virtufin.finance.scenario.MarketObservable[Double]"></a>
-      <a id="minimumMarketObservable:MarketObservable[Double]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">minimumMarketObservable</span><span class="result">: <a href="../../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="virtufin.finance.simulation.state.MinimumValue#minimumSamplingDates" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="minimumSamplingDates:scala.collection.SortedSet[virtufin.finance.Time]"></a>
-      <a id="minimumSamplingDates:SortedSet[Time]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">minimumSamplingDates</span><span class="result">: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>
-      </span>
-      </h4>
-      
-    </li></ol>
-            </div>
-
-        <div id="values" class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
@@ -225,6 +174,20 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="virtufin.finance.simulation.transaction.Transmute#agentIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="agentIdentifier:virtufin.simulation.AgentIdentifier"></a>
+      <a id="agentIdentifier:AgentIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">agentIdentifier</span><span class="result">: <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">virtufin.simulation.AgentIdentifier</a> of the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a>
+</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -270,19 +233,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -315,19 +265,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -341,34 +278,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="virtufin.finance.simulation.state.MinimumValue#minimumValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="minimumValue:Option[Double]"></a>
-      <a id="minimumValue:Option[Double]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">minimumValue</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Double">Double</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>current value of state
-</p></dd></dl></div>
-    </li><li name="virtufin.finance.simulation.state.MinimumValue#mutate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="mutate(events:virtufin.finance.simulation.TriggerEvents):Unit"></a>
-      <a id="mutate(TriggerEvents):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">mutate</span><span class="params">(<span name="events">events: <a href="../package.html#TriggerEvents=virtufin.simulation.SimultaneousEvents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventsType=virtufin.finance.simulation.package.TriggerEvent}" class="extmbr" name="virtufin.finance.simulation.TriggerEvents">TriggerEvents</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Transform the state depending on an event.</p><div class="fullcomment"><div class="comment cmt"><p>Transform the state depending on an event.</p></div><dl class="paramcmts block"><dt class="param">events</dt><dd class="cmt"><p>some events
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.simulation.state.MinimumValue">MinimumValue</a> → <a href="../../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">MutableState</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -408,6 +317,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.finance.simulation.transaction.Transmute#simulatable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="simulatable:virtufin.finance.simulation.Simulatable"></a>
+      <a id="simulatable:Simulatable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">simulatable</span><span class="result">: <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">Simulatable</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">virtufin.finance.simulation.Simulatable</a> which creates the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -421,19 +343,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -500,10 +409,16 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="virtufin.finance.simulation.MutableState">
-              <h3>Inherited from <a href="../package$$MutableState.html" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a></h3>
-            </div><div class="parent" name="virtufin.simulation.MutableState">
-              <h3>Inherited from <a href="../../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">simulation.MutableState</a></h3>
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="virtufin.finance.product.Transaction">
+              <h3>Inherited from <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">Transaction</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
