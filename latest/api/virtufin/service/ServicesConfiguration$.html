@@ -1,18 +1,22 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>Serialization - virtufin - virtufin.service.serialization.json.Serialization</title>
-          <meta name="description" content="Serialization - virtufin - virtufin.service.serialization.json.Serialization" />
-          <meta name="keywords" content="Serialization virtufin virtufin.service.serialization.json.Serialization" />
+          <title>ServicesConfiguration - virtufin - virtufin.service.ServicesConfiguration</title>
+          <meta name="description" content="ServicesConfiguration - virtufin - virtufin.service.ServicesConfiguration" />
+          <meta name="keywords" content="ServicesConfiguration virtufin virtufin.service.ServicesConfiguration" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
-      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
-            var url = '../../../../index.html';
-            var hash = 'virtufin.service.serialization.json.Serialization$';
+            var url = '../../index.html';
+            var hash = 'virtufin.service.ServicesConfiguration$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -24,9 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../lib/object_big.png" />
-        <p id="owner"><a href="../../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../../package.html" class="extype" name="virtufin.service">service</a>.<a href="../package.html" class="extype" name="virtufin.service.serialization">serialization</a>.<a href="package.html" class="extype" name="virtufin.service.serialization.json">json</a></p>
-        <h1>Serialization</h1>
+        <a href="ServicesConfiguration.html" title="Go to companion"><img src="../../lib/object_to_trait_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a>.<a href="package.html" class="extype" name="virtufin.service">service</a></p>
+        <h1><a href="ServicesConfiguration.html" title="Go to companion">ServicesConfiguration</a></h1> <span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -35,13 +43,11 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Serialization</span>
+        <span class="name">ServicesConfiguration</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p><span class="extype" name="play.api.libs.json.Format">play.api.libs.json.Format</span>s defining the serialization and de-serialization of
-objects.
-</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -61,7 +67,7 @@ objects.
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.service.serialization.json.Serialization"><span>Serialization</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.service.ServicesConfiguration"><span>ServicesConfiguration</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -81,26 +87,67 @@ objects.
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.service.ServicesConfiguration.ServiceFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServiceFactoryextendsProductwithSerializable"></a>
+      <a id="ServiceFactory:ServiceFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServicesConfiguration$$ServiceFactory.html"><span class="name">ServiceFactory</span></a><span class="params">(<span name="serviceClass">serviceClass: <span class="extype" name="scala.Predef.Class">Class</span>[_ &lt;: <a href="Service.html" class="extype" name="virtufin.service.Service">Service</a>]</span>, <span name="constructorArguments">constructorArguments: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@ServiceFactoryextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.service.ServicesConfiguration.ServiceIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServiceIdentifierextendsAnyValwithProductwithSerializable"></a>
+      <a id="ServiceIdentifier:ServiceIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServicesConfiguration$$ServiceIdentifier.html"><span class="name">ServiceIdentifier</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@ServiceIdentifierextendsAnyValwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.service.ServicesConfiguration.ServiceInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServiceInfoextendsProductwithSerializable"></a>
+      <a id="ServiceInfo:ServiceInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ServicesConfiguration$$ServiceInfo.html"><span class="name">ServiceInfo</span></a><span class="params">(<span name="identifier">identifier: <a href="ServicesConfiguration$$ServiceIdentifier.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceIdentifier">ServiceIdentifier</a></span>, <span name="factory">factory: <a href="ServicesConfiguration$$ServiceFactory.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceFactory">ServiceFactory</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@ServiceInfoextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -111,8 +158,12 @@ objects.
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -124,22 +175,13 @@ objects.
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -150,8 +192,29 @@ objects.
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="virtufin.service.ServicesConfiguration#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply(serviceInfo:virtufin.service.ServicesConfiguration.ServiceInfo*):virtufin.service.SimpleServicesConfiguration"></a>
+      <a id="apply(ServiceInfo*):SimpleServicesConfiguration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="serviceInfo">serviceInfo: <a href="ServicesConfiguration$$ServiceInfo.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceInfo">ServiceInfo</a>*</span>)</span><span class="result">: <a href="SimpleServicesConfiguration.html" class="extype" name="virtufin.service.SimpleServicesConfiguration">SimpleServicesConfiguration</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@apply(serviceInfo:virtufin.service.ServicesConfiguration.ServiceInfo*):virtufin.service.SimpleServicesConfiguration" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -163,7 +226,11 @@ objects.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -176,66 +243,18 @@ objects.
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="virtufin.service.serialization.json.Serialization#currencyFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="currencyFormat:play.api.libs.json.Format[virtufin.finance.product.Currency]"></a>
-      <a id="currencyFormat:Format[Currency]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">currencyFormat</span><span class="result">: <span class="extype" name="play.api.libs.json.Format">Format</span>[<a href="../../../finance/product/Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="virtufin.service.serialization.json.Serialization#currencyPricesFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="currencyPricesFormat:play.api.libs.json.Format[Seq[(virtufin.finance.product.Currency,Double)]]"></a>
-      <a id="currencyPricesFormat:Format[Seq[(Currency,Double)]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">currencyPricesFormat</span><span class="result">: <span class="extype" name="play.api.libs.json.Format">Format</span>[<span class="extype" name="scala.Seq">Seq</span>[(<a href="../../../finance/product/Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a>, <span class="extype" name="scala.Double">Double</span>)]]</span>
-      </span>
-      </h4>
-      
-    </li><li name="virtufin.service.serialization.json.Serialization#currencyPricesReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="currencyPricesReads:play.api.libs.json.Reads[Seq[(virtufin.finance.product.Currency,Double)]]"></a>
-      <a id="currencyPricesReads:Reads[Seq[(Currency,Double)]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">currencyPricesReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="scala.Seq">Seq</span>[(<a href="../../../finance/product/Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a>, <span class="extype" name="scala.Double">Double</span>)]]</span>
-      </span>
-      </h4>
-      
-    </li><li name="virtufin.service.serialization.json.Serialization#currencyPricesWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="currencyPricesWrites:play.api.libs.json.Writes[Seq[(virtufin.finance.product.Currency,Double)]]"></a>
-      <a id="currencyPricesWrites:Writes[Seq[(Currency,Double)]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">currencyPricesWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="scala.Seq">Seq</span>[(<a href="../../../finance/product/Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a>, <span class="extype" name="scala.Double">Double</span>)]]</span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -247,7 +266,11 @@ objects.
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -260,7 +283,11 @@ objects.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -273,66 +300,18 @@ objects.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[java.lang.Throwable]</span>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="virtufin.service.serialization.json.Serialization#foreignExchangeRateFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="foreignExchangeRateFormat:play.api.libs.json.Format[virtufin.finance.scenario.ForeignExchangeRate]"></a>
-      <a id="foreignExchangeRateFormat:Format[ForeignExchangeRate]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">foreignExchangeRateFormat</span><span class="result">: <span class="extype" name="play.api.libs.json.Format">Format</span>[<a href="../../../finance/scenario/package.html#ForeignExchangeRate=virtufin.finance.scenario.Price[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.scenario.ForeignExchangeRate">ForeignExchangeRate</a>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="virtufin.service.serialization.json.Serialization#foreignExchangeRateQuotesFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="foreignExchangeRateQuotesFormat:play.api.libs.json.Format[virtufin.finance.scenario.ForeignExchangeRateQuotes]"></a>
-      <a id="foreignExchangeRateQuotesFormat:Format[ForeignExchangeRateQuotes]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">foreignExchangeRateQuotesFormat</span><span class="result">: <span class="extype" name="play.api.libs.json.Format">Format</span>[<a href="../../../finance/scenario/ForeignExchangeRateQuotes.html" class="extype" name="virtufin.finance.scenario.ForeignExchangeRateQuotes">ForeignExchangeRateQuotes</a>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="virtufin.service.serialization.json.Serialization#foreignExchangeRateQuotesReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="foreignExchangeRateQuotesReads:play.api.libs.json.Reads[virtufin.finance.scenario.ForeignExchangeRateQuotes]"></a>
-      <a id="foreignExchangeRateQuotesReads:Reads[ForeignExchangeRateQuotes]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">foreignExchangeRateQuotesReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<a href="../../../finance/scenario/ForeignExchangeRateQuotes.html" class="extype" name="virtufin.finance.scenario.ForeignExchangeRateQuotes">ForeignExchangeRateQuotes</a>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="virtufin.service.serialization.json.Serialization#foreignExchangeRateQuotesWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="foreignExchangeRateQuotesWrites:play.api.libs.json.Writes[virtufin.finance.scenario.ForeignExchangeRateQuotes]"></a>
-      <a id="foreignExchangeRateQuotesWrites:Writes[ForeignExchangeRateQuotes]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">foreignExchangeRateQuotesWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<a href="../../../finance/scenario/ForeignExchangeRateQuotes.html" class="extype" name="virtufin.finance.scenario.ForeignExchangeRateQuotes">ForeignExchangeRateQuotes</a>]</span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -344,7 +323,11 @@ objects.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -357,7 +340,11 @@ objects.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -370,7 +357,11 @@ objects.
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -383,7 +374,11 @@ objects.
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -396,7 +391,11 @@ objects.
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -409,8 +408,46 @@ objects.
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.service.ServicesConfiguration#pairToServiceInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pairToServiceInfo(info:(virtufin.service.ServicesConfiguration.ServiceIdentifier,virtufin.service.ServicesConfiguration.ServiceFactory)):virtufin.service.ServicesConfiguration.ServiceInfo"></a>
+      <a id="pairToServiceInfo((ServiceIdentifier,ServiceFactory)):ServiceInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pairToServiceInfo</span><span class="params">(<span name="info">info: (<a href="ServicesConfiguration$$ServiceIdentifier.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceIdentifier">ServiceIdentifier</a>, <a href="ServicesConfiguration$$ServiceFactory.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceFactory">ServiceFactory</a>)</span>)</span><span class="result">: <a href="ServicesConfiguration$$ServiceInfo.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceInfo">ServiceInfo</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@pairToServiceInfo(info:(virtufin.service.ServicesConfiguration.ServiceIdentifier,virtufin.service.ServicesConfiguration.ServiceFactory)):virtufin.service.ServicesConfiguration.ServiceInfo" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.service.ServicesConfiguration#stringToServiceIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="stringToServiceIdentifier(name:String):virtufin.service.ServicesConfiguration.ServiceIdentifier"></a>
+      <a id="stringToServiceIdentifier(String):ServiceIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringToServiceIdentifier</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="ServicesConfiguration$$ServiceIdentifier.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceIdentifier">ServiceIdentifier</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@stringToServiceIdentifier(name:String):virtufin.service.ServicesConfiguration.ServiceIdentifier" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -422,7 +459,11 @@ objects.
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -435,7 +476,11 @@ objects.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -448,7 +493,11 @@ objects.
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -467,7 +516,11 @@ objects.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -486,7 +539,11 @@ objects.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.ServicesConfiguration$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -523,6 +580,7 @@ objects.
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

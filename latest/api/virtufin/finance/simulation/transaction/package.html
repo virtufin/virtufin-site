@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>transaction - virtufin - virtufin.finance.simulation.transaction</title>
@@ -9,6 +8,11 @@
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="../package.html" class="extype" name="virtufin.finance.simulation">simulation</a></p>
-        <h1>transaction</h1>
+        <h1>transaction</h1> <span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.transaction.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -73,9 +81,13 @@
       <span class="symbol">
         <a href="EuropeanOptionTransactionsGenerator.html"><span class="name">EuropeanOptionTransactionsGenerator</span></a><span class="tparams">[<span name="E">E &lt;: <a href="../feature/EuropeanOption.html" class="extype" name="virtufin.finance.simulation.feature.EuropeanOption">EuropeanOption</a></span>, <span name="S">S &lt;: <a href="../../product/PortfolioTransaction.html" class="extype" name="virtufin.finance.product.PortfolioTransaction">PortfolioTransaction</a></span>]</span><span class="result"> extends <a href="OptionalSettlingTransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.transaction.OptionalSettlingTransactionsGenerator">OptionalSettlingTransactionsGenerator</a>[<span class="extype" name="virtufin.finance.simulation.transaction.EuropeanOptionTransactionsGenerator.E">E</span>, <span class="extype" name="virtufin.finance.simulation.transaction.EuropeanOptionTransactionsGenerator.S">S</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.transaction.package@EuropeanOptionTransactionsGenerator[E&lt;:virtufin.finance.simulation.feature.EuropeanOption,S&lt;:virtufin.finance.product.PortfolioTransaction]extendsOptionalSettlingTransactionsGenerator[E,S]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="virtufin.finance.simulation.transaction.OptionalSettlingTransactionsGenerator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="virtufin.finance.simulation.transaction.OptionalSettlingTransactionsGenerator" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="OptionalSettlingTransactionsGenerator[O&lt;:virtufin.finance.simulation.feature.Optional,S&lt;:virtufin.finance.product.PortfolioTransaction]extendsTransactionsGenerator"></a>
       <a id="OptionalSettlingTransactionsGenerator[O&lt;:Optional,S&lt;:PortfolioTransaction]:OptionalSettlingTransactionsGenerator[O,S]"></a>
       <h4 class="signature">
@@ -86,8 +98,14 @@
       <span class="symbol">
         <a href="OptionalSettlingTransactionsGenerator.html"><span class="name">OptionalSettlingTransactionsGenerator</span></a><span class="tparams">[<span name="O">O &lt;: <a href="../feature/Optional.html" class="extype" name="virtufin.finance.simulation.feature.Optional">Optional</a></span>, <span name="S">S &lt;: <a href="../../product/PortfolioTransaction.html" class="extype" name="virtufin.finance.product.PortfolioTransaction">PortfolioTransaction</a></span>]</span><span class="result"> extends <a href="../TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">TransactionsGenerator</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Generates <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">virtufin.finance.product.Transaction</a>s for a <a href="../../product/feature/Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">virtufin.finance.product.feature.Optional</a>.</p>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.transaction.package@OptionalSettlingTransactionsGenerator[O&lt;:virtufin.finance.simulation.feature.Optional,S&lt;:virtufin.finance.product.PortfolioTransaction]extendsTransactionsGenerator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generates <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">virtufin.finance.product.Transaction</a>s for a <a href="../../product/feature/Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">virtufin.finance.product.feature.Optional</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Generates <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">virtufin.finance.product.Transaction</a>s for a <a href="../../product/feature/Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">virtufin.finance.product.feature.Optional</a>.
+It wraps a <span class="extype" name="ExerciseStrategy">ExerciseStrategy</span> around a <a href="SettlingTransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.transaction.SettlingTransactionsGenerator">SettlingTransactionsGenerator</a></p></div><dl class="paramcmts block"><dt class="tparam">O</dt><dd class="cmt"></dd><dt class="tparam">S</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="virtufin.finance.simulation.transaction.OptionalTransactionsGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="OptionalTransactionsGenerator[O&lt;:virtufin.finance.simulation.feature.Optional]extendsTransactionsGenerator"></a>
       <a id="OptionalTransactionsGenerator[O&lt;:Optional]:OptionalTransactionsGenerator[O]"></a>
@@ -99,9 +117,13 @@
       <span class="symbol">
         <a href="OptionalTransactionsGenerator.html"><span class="name">OptionalTransactionsGenerator</span></a><span class="tparams">[<span name="O">O &lt;: <a href="../feature/Optional.html" class="extype" name="virtufin.finance.simulation.feature.Optional">Optional</a></span>]</span><span class="result"> extends <a href="../TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">TransactionsGenerator</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This <a href="../TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">virtufin.finance.simulation.TransactionsGenerator</a> is just used for it's side-effects:</p>
-    </li><li name="virtufin.finance.simulation.transaction.SettlingTransactionsGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.transaction.package@OptionalTransactionsGenerator[O&lt;:virtufin.finance.simulation.feature.Optional]extendsTransactionsGenerator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This <a href="../TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">virtufin.finance.simulation.TransactionsGenerator</a> is just used for it's side-effects:</p>
+    </li><li name="virtufin.finance.simulation.transaction.SettlingTransactionsGenerator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="SettlingTransactionsGenerator[S&lt;:virtufin.finance.product.PortfolioTransaction]extendsTransactionsGenerator"></a>
       <a id="SettlingTransactionsGenerator[S&lt;:PortfolioTransaction]:SettlingTransactionsGenerator[S]"></a>
       <h4 class="signature">
@@ -112,9 +134,14 @@
       <span class="symbol">
         <a href="SettlingTransactionsGenerator.html"><span class="name">SettlingTransactionsGenerator</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../../product/PortfolioTransaction.html" class="extype" name="virtufin.finance.product.PortfolioTransaction">PortfolioTransaction</a></span>]</span><span class="result"> extends <a href="../TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">TransactionsGenerator</a></span>
       </span>
-      </h4>
-      <p class="comment cmt"></p>
-    </li><li name="virtufin.finance.simulation.transaction.Transmute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.transaction.package@SettlingTransactionsGenerator[S&lt;:virtufin.finance.product.PortfolioTransaction]extendsTransactionsGenerator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="virtufin.finance.simulation.transaction.Transmute" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="TransmuteextendsTransactionwithProductwithSerializable"></a>
       <a id="Transmute:Transmute"></a>
       <h4 class="signature">
@@ -125,10 +152,17 @@
       <span class="symbol">
         <a href="Transmute.html"><span class="name">Transmute</span></a><span class="params">(<span name="simulatable">simulatable: <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">Simulatable</a></span>, <span name="agentIdentifier">agentIdentifier: <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>)</span><span class="result"> extends <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">Transaction</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Changes a <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> into another <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> by removing the original
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.transaction.package@TransmuteextendsTransactionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Changes a <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> into another <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> by removing the original
 <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> from the <a href="../package.html#Agents=virtufin.simulation.Agents" class="extmbr" name="virtufin.finance.simulation.Agents">virtufin.finance.simulation.Agents</a> container and replacing it
-with a new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p>
+with a new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p><div class="fullcomment"><div class="comment cmt"><p>Changes a <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> into another <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> by removing the original
+<a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a> from the <a href="../package.html#Agents=virtufin.simulation.Agents" class="extmbr" name="virtufin.finance.simulation.Agents">virtufin.finance.simulation.Agents</a> container and replacing it
+with a new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p></div><dl class="paramcmts block"><dt class="param">simulatable</dt><dd class="cmt"><p>the <a href="../package$$Simulatable.html" class="extype" name="virtufin.finance.simulation.Simulatable">virtufin.finance.simulation.Simulatable</a> which creates the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a></p></dd><dt class="param">agentIdentifier</dt><dd class="cmt"><p>the <a href="../../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">virtufin.simulation.AgentIdentifier</a> of the new <a href="../package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">virtufin.finance.simulation.Agent</a>
+</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -147,8 +181,12 @@ with a new <a href="../package$$Agent.html" class="extype" name="virtufin.financ
       <span class="symbol">
         <a href="TransactionsGeneratorUtil$.html"><span class="name">TransactionsGeneratorUtil</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">Merges for multiple <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">virtufin.finance.simulation.TriggerEvent</a>s the <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">virtufin.finance.product.Transaction</a>s generated by each <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">virtufin.finance.simulation.TriggerEvent</a>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.transaction.package@TransactionsGeneratorUtil" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Merges for multiple <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">virtufin.finance.simulation.TriggerEvent</a>s the <a href="../../product/Transaction.html" class="extype" name="virtufin.finance.product.Transaction">virtufin.finance.product.Transaction</a>s generated by each <a href="../package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">virtufin.finance.simulation.TriggerEvent</a>
 </p>
     </li></ol>
             </div>
@@ -175,6 +213,7 @@ with a new <a href="../package$$Agent.html" class="extype" name="virtufin.financ
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

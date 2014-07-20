@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>simulation - virtufin - virtufin.simulation</title>
@@ -9,6 +8,11 @@
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../lib/package_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a></p>
-        <h1>simulation</h1>
+        <h1>simulation</h1> <span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -96,7 +104,11 @@
       <span class="symbol">
         <a href="Agent.html"><span class="name">Agent</span></a><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span> with <span class="extype" name="akka.actor.ActorLogging">ActorLogging</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@AgentextendsActorwithActorLogging" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.AgentIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AgentIdentifierextendsProductwithSerializable"></a>
@@ -109,7 +121,11 @@
       <span class="symbol">
         <a href="AgentIdentifier.html"><span class="name">AgentIdentifier</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@AgentIdentifierextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Agents" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="AgentsextendsAgent"></a>
@@ -122,8 +138,12 @@
       <span class="symbol">
         <a href="Agents.html"><span class="name">Agents</span></a><span class="result"> extends <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a></span>
       </span>
-      </h4>
-      <p class="comment cmt"><a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a> understand the following messages: <a href="Agents$$ListAgentIdentifiers$.html" class="extype" name="virtufin.simulation.Agents.ListAgentIdentifiers">virtufin.simulation.Agents.ListAgentIdentifiers</a>, <a href="Agents$$ProcessMessages.html" class="extype" name="virtufin.simulation.Agents.ProcessMessages">virtufin.simulation.Agents.ProcessMessages</a>, <a href="Agents$$AddAgent.html" class="extype" name="virtufin.simulation.Agents.AddAgent">virtufin.simulation.Agents.AddAgent</a>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@AgentsextendsAgent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a> understand the following messages: <a href="Agents$$ListAgentIdentifiers$.html" class="extype" name="virtufin.simulation.Agents.ListAgentIdentifiers">virtufin.simulation.Agents.ListAgentIdentifiers</a>, <a href="Agents$$ProcessMessages.html" class="extype" name="virtufin.simulation.Agents.ProcessMessages">virtufin.simulation.Agents.ProcessMessages</a>, <a href="Agents$$AddAgent.html" class="extype" name="virtufin.simulation.Agents.AddAgent">virtufin.simulation.Agents.AddAgent</a>
 and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.Agents.RemoveAgent">virtufin.simulation.Agents.RemoveAgent</a>
 </p>
     </li><li name="virtufin.simulation.Clock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -137,7 +157,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <span class="name">Clock</span><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.Clock.T">T</span>]</span>]</span><span class="result"> = <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<a href="Tick.html" class="extype" name="virtufin.simulation.Tick">Tick</a> { type TimeType = T }]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Clock[T&lt;:virtufin.util.TimePoint[T]]=play.api.libs.iteratee.Enumerator[virtufin.simulation.Tick{typeTimeType=T}]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Event" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="EventextendsAnyRef"></a>
@@ -150,7 +174,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Event.html"><span class="name">Event</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@EventextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.EventHistory" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="EventHistoryextendsEvent"></a>
@@ -163,7 +191,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="EventHistory.html"><span class="name">EventHistory</span></a><span class="result"> extends <a href="Event.html" class="extype" name="virtufin.simulation.Event">Event</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@EventHistoryextendsEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Message" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MessageextendsProductwithSerializable"></a>
@@ -176,7 +208,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Message.html"><span class="name">Message</span></a><span class="params">(<span name="messageContent">messageContent: <span class="extype" name="scala.Any">Any</span></span>, <span name="recipient">recipient: <a href="AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MessageextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.MessagesEvent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MessagesEventextendsEvent"></a>
@@ -189,7 +225,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="MessagesEvent.html"><span class="name">MessagesEvent</span></a><span class="result"> extends <a href="Event.html" class="extype" name="virtufin.simulation.Event">Event</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MessagesEventextendsEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.MessagesGenerator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MessagesGeneratorextendsAnyRef"></a>
@@ -202,7 +242,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="MessagesGenerator.html"><span class="name">MessagesGenerator</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MessagesGeneratorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.MessagesGeneratorWithState" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MessagesGeneratorWithStateextendsMessagesGenerator"></a>
@@ -215,7 +259,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="MessagesGeneratorWithState.html"><span class="name">MessagesGeneratorWithState</span></a><span class="result"> extends <a href="MessagesGenerator.html" class="extype" name="virtufin.simulation.MessagesGenerator">MessagesGenerator</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MessagesGeneratorWithStateextendsMessagesGenerator" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.MutableState" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MutableStateextendsAnyRef"></a>
@@ -228,8 +276,12 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="MutableState.html"><span class="name">MutableState</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Transforms the state of some <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">virtufin.simulation.Agent</a>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MutableStateextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Transforms the state of some <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">virtufin.simulation.Agent</a>
 </p>
     </li><li name="virtufin.simulation.Simulatable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SimulatableextendsAnyRef"></a>
@@ -242,7 +294,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Simulatable.html"><span class="name">Simulatable</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimulatableextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Simulation" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SimulationextendsAnyRef"></a>
@@ -255,7 +311,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Simulation.html"><span class="name">Simulation</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimulationextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.SimulationEvent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SimulationEventextendsStateEvent"></a>
@@ -268,9 +328,13 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="SimulationEvent.html"><span class="name">SimulationEvent</span></a><span class="result"> extends <a href="StateEvent.html" class="extype" name="virtufin.simulation.StateEvent">StateEvent</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimulationEventextendsStateEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="virtufin.simulation.SimulationEventProjector" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="virtufin.simulation.SimulationEventProjector" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="SimulationEventProjectorextendsAnyRef"></a>
       <a id="SimulationEventProjector:SimulationEventProjector"></a>
       <h4 class="signature">
@@ -281,8 +345,14 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="SimulationEventProjector.html"><span class="name">SimulationEventProjector</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The purpose of this class is to transform <a href="SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">virtufin.simulation.SimulationEvent</a>s into events, which are specific for some listeners.</p>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimulationEventProjectorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The purpose of this class is to transform <a href="SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">virtufin.simulation.SimulationEvent</a>s into events, which are specific for some listeners.</p><div class="fullcomment"><div class="comment cmt"><p>The purpose of this class is to transform <a href="SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">virtufin.simulation.SimulationEvent</a>s into events, which are specific for some listeners.
+For instance a stream of stock quote events may be transformed in some fixing events adapted to some particular option
+</p></div></div>
     </li><li name="virtufin.simulation.Simulations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Simulations=play.api.libs.iteratee.Enumerator[virtufin.simulation.Simulation]"></a>
       <a id="Simulations:Simulations"></a>
@@ -294,7 +364,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <span class="name">Simulations</span><span class="result"> = <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<a href="Simulation.html" class="extype" name="virtufin.simulation.Simulation">Simulation</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Simulations=play.api.libs.iteratee.Enumerator[virtufin.simulation.Simulation]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.SimultaneousEvents" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SimultaneousEventsextendsEvent"></a>
@@ -307,8 +381,12 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="SimultaneousEvents.html"><span class="name">SimultaneousEvents</span></a><span class="result"> extends <a href="Event.html" class="extype" name="virtufin.simulation.Event">Event</a></span>
       </span>
-      </h4>
-      <p class="comment cmt"><a href="Event.html" class="extype" name="virtufin.simulation.Event">virtufin.simulation.Event</a>s occurring at the same time
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimultaneousEventsextendsEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><a href="Event.html" class="extype" name="virtufin.simulation.Event">virtufin.simulation.Event</a>s occurring at the same time
 </p>
     </li><li name="virtufin.simulation.StateEvent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="StateEventextendsEvent"></a>
@@ -321,7 +399,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="StateEvent.html"><span class="name">StateEvent</span></a><span class="result"> extends <a href="Event.html" class="extype" name="virtufin.simulation.Event">Event</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@StateEventextendsEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Stateful" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="StatefulextendsAnyRef"></a>
@@ -334,8 +416,12 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Stateful.html"><span class="name">Stateful</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Trait for objects, which have a <a href="MutableState.html" class="extype" name="virtufin.simulation.MutableState">virtufin.simulation.MutableState</a>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@StatefulextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Trait for objects, which have a <a href="MutableState.html" class="extype" name="virtufin.simulation.MutableState">virtufin.simulation.MutableState</a>
 </p>
     </li><li name="virtufin.simulation.StatefulAgent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StatefulAgent=virtufin.simulation.Agentwithvirtufin.simulation.Stateful"></a>
@@ -348,9 +434,13 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <span class="name">StatefulAgent</span><span class="result"> = <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a> with <a href="Stateful.html" class="extype" name="virtufin.simulation.Stateful">Stateful</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@StatefulAgent=virtufin.simulation.Agentwithvirtufin.simulation.Stateful" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="virtufin.simulation.Tick" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="virtufin.simulation.Tick" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="TickextendsEvent"></a>
       <a id="Tick:Tick"></a>
       <h4 class="signature">
@@ -361,8 +451,13 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Tick.html"><span class="name">Tick</span></a><span class="result"> extends <a href="Event.html" class="extype" name="virtufin.simulation.Event">Event</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">An event, which only contains the <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">virtufin.util.TimePoint</a>.</p>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@TickextendsEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event, which only contains the <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">virtufin.util.TimePoint</a>.</p><div class="fullcomment"><div class="comment cmt"><p>An event, which only contains the <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">virtufin.util.TimePoint</a>. Used in <a href="#Clock[T&lt;:virtufin.util.TimePoint[T]]=play.api.libs.iteratee.Enumerator[virtufin.simulation.Tick{typeTimeType=T}]" class="extmbr" name="virtufin.simulation.Clock">virtufin.simulation.Clock</a>
+</p></div></div>
     </li></ol>
             </div>
 
@@ -381,7 +476,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Agent$.html"><span class="name">Agent</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Agent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.AgentIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AgentIdentifier"></a>
@@ -394,7 +493,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="AgentIdentifier$.html"><span class="name">AgentIdentifier</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@AgentIdentifier" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Agents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Agents"></a>
@@ -407,7 +510,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Agents$.html"><span class="name">Agents</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Agents" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Event" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Event"></a>
@@ -420,7 +527,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Event$.html"><span class="name">Event</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Event" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.EventHistory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="EventHistory"></a>
@@ -433,7 +544,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="EventHistory$.html"><span class="name">EventHistory</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@EventHistory" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.MessagesEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MessagesEvent"></a>
@@ -446,7 +561,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="MessagesEvent$.html"><span class="name">MessagesEvent</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MessagesEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.MessagesGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MessagesGenerator"></a>
@@ -459,7 +578,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="MessagesGenerator$.html"><span class="name">MessagesGenerator</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MessagesGenerator" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.MessagesGeneratorWithState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MessagesGeneratorWithState"></a>
@@ -472,7 +595,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="MessagesGeneratorWithState$.html"><span class="name">MessagesGeneratorWithState</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@MessagesGeneratorWithState" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Metronome" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Metronome"></a>
@@ -485,7 +612,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Metronome$.html"><span class="name">Metronome</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Metronome" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Simulatable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Simulatable"></a>
@@ -498,7 +629,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Simulatable$.html"><span class="name">Simulatable</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Simulatable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Simulation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Simulation"></a>
@@ -511,7 +646,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Simulation$.html"><span class="name">Simulation</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Simulation" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.SimulationEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SimulationEvent"></a>
@@ -524,7 +663,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="SimulationEvent$.html"><span class="name">SimulationEvent</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimulationEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.SimulationEventProjector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SimulationEventProjector"></a>
@@ -537,7 +680,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="SimulationEventProjector$.html"><span class="name">SimulationEventProjector</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimulationEventProjector" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Simulations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Simulations"></a>
@@ -550,7 +697,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Simulations$.html"><span class="name">Simulations</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Simulations" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.SimultaneousEvents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SimultaneousEvents"></a>
@@ -563,7 +714,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="SimultaneousEvents$.html"><span class="name">SimultaneousEvents</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@SimultaneousEvents" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.StateEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StateEvent"></a>
@@ -576,7 +731,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="StateEvent$.html"><span class="name">StateEvent</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@StateEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.Tick" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Tick"></a>
@@ -589,7 +748,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="Tick$.html"><span class="name">Tick</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@Tick" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.projector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="projector"></a>
@@ -602,7 +765,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="projector/package.html"><span class="name">projector</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@projector" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.state" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="state"></a>
@@ -615,7 +782,11 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <span class="symbol">
         <a href="state/package.html"><span class="name">state</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.package@state" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -646,6 +817,7 @@ and <a href="Agents$$RemoveAgent.html" class="extype" name="virtufin.simulation.
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

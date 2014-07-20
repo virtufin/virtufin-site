@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>Instrument - virtufin - virtufin.finance.product.Instrument</title>
@@ -9,6 +8,11 @@
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="package.html" class="extype" name="virtufin.finance.product">product</a></p>
-        <h1>Instrument</h1>
+        <h1>Instrument</h1> <span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -46,9 +54,9 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="feature/CompositeInstrument.html" class="extype" name="virtufin.finance.product.feature.CompositeInstrument">CompositeInstrument</a>, <a href="Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a>, <a href="EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a>, <a href="FixedLeg.html" class="extype" name="virtufin.finance.product.FixedLeg">FixedLeg</a>, <a href="FloatingLeg.html" class="extype" name="virtufin.finance.product.FloatingLeg">FloatingLeg</a>, <a href="ForwardContract.html" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a>, <a href="PhysicallySettledForwardContract.html" class="extype" name="virtufin.finance.product.PhysicallySettledForwardContract">PhysicallySettledForwardContract</a>, <a href="PlainVanillaInterestRateSwap.html" class="extype" name="virtufin.finance.product.PlainVanillaInterestRateSwap">PlainVanillaInterestRateSwap</a>, <a href="Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>, <a href="Stock.html" class="extype" name="virtufin.finance.product.Stock">Stock</a>, <a href="TransferContract.html" class="extype" name="virtufin.finance.product.TransferContract">TransferContract</a></div>
-        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="feature/CompositeInstrument.html" class="extype" name="virtufin.finance.product.feature.CompositeInstrument">CompositeInstrument</a>, <a href="Currency.html" class="extype" name="virtufin.finance.product.Currency">Currency</a>, <a href="EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a>, <a href="FixedLeg.html" class="extype" name="virtufin.finance.product.FixedLeg">FixedLeg</a>, <a href="FloatingLeg.html" class="extype" name="virtufin.finance.product.FloatingLeg">FloatingLeg</a>, <a href="ForwardContract.html" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a>, <a href="PhysicallySettledForwardContract.html" class="extype" name="virtufin.finance.product.PhysicallySettledForwardContract">PhysicallySettledForwardContract</a>, <a href="PlainVanillaInterestRateSwap.html" class="extype" name="virtufin.finance.product.PlainVanillaInterestRateSwap">PlainVanillaInterestRateSwap</a>, <a href="Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>, <a href="Stock.html" class="extype" name="virtufin.finance.product.Stock">Stock</a>, <a href="TransferContract.html" class="extype" name="virtufin.finance.product.TransferContract">TransferContract</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
                 <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph245" viewBox="0.00 0.00 1344.00 158.00" height="158pt" width="1344pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 1340,-154 1340,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph245_0"><g id="a_this trait|graph245_0"><a xlink:title="virtufin.finance.product.Instrument (this trait)" xlink:href="#inheritance-diagram"><polygon points="712.25,-88 619.75,-88 619.75,-62 712.25,-62 712.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-81" x="632" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="652" text-anchor="start">Instrument</text></a></g></g><!-- node1 --><g class="node trait" id="graph245_1"><g id="a_trait|graph245_1"><a xlink:title="virtufin.finance.product.feature.CompositeInstrument" xlink:href="feature/CompositeInstrument.html#inheritance-diagram"><polygon points="140,-26 0,-26 0,-0 140,-0 140,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">CompositeInstrument</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph245_0_1"><g id="a_inheritance|graph245_0_1"><a xlink:title="CompositeInstrument is a subtype of Instrument"><path d="M614.395,-70.2084C521.252,-63.1426 318.925,-46.776 149,-26 146.108,-25.6464 143.159,-25.2701 140.182,-24.8772" stroke="#d4d4d4" fill="none"></path><polygon points="614.441,-71.9669 619.559,-70.5992 614.706,-68.4769 614.441,-71.9669" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph245_2"><g id="a_class|graph245_2"><a xlink:title="virtufin.finance.product.Currency" xlink:href="Currency.html#inheritance-diagram"><polygon points="244,-26 158,-26 158,-0 244,-0 244,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="170" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="190" text-anchor="start">Currency</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph245_0_2"><g id="a_inheritance|graph245_0_2"><a xlink:title="Currency is a subtype of Instrument"><path d="M614.562,-69.872C536.176,-63.1648 382.282,-48.3587 253,-26 250.079,-25.4947 247.075,-24.9283 244.055,-24.3239" stroke="#d4d4d4" fill="none"></path><polygon points="614.485,-71.6216 619.615,-70.3021 614.782,-68.1342 614.485,-71.6216" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph245_3"><g id="a_class|graph245_3"><a xlink:title="virtufin.finance.product.EuropeanPlainVanillaOption" xlink:href="EuropeanPlainVanillaOption.html#inheritance-diagram"><polygon points="432,-26 262,-26 262,-0 432,-0 432,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="274" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="294" text-anchor="start">EuropeanPlainVanillaOption</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph245_0_3"><g id="a_inheritance|graph245_0_3"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Instrument"><path d="M614.692,-64.3495C559.308,-53.9325 471.001,-37.3231 411.09,-26.0545" stroke="#d4d4d4" fill="none"></path><polygon points="614.377,-66.071 619.615,-65.2755 615.024,-62.6313 614.377,-66.071" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph245_4"><g id="a_class|graph245_4"><a xlink:title="virtufin.finance.product.FixedLeg" xlink:href="FixedLeg.html#inheritance-diagram"><polygon points="536,-26 450,-26 450,-0 536,-0 536,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="462" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="482" text-anchor="start">FixedLeg</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph245_0_4"><g id="a_inheritance|graph245_0_4"><a xlink:title="FixedLeg is a subtype of Instrument"><path d="M625.937,-60.1054C596.191,-49.7889 556.032,-35.8609 527.661,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="625.693,-61.8731 630.991,-61.8581 626.84,-58.5663 625.693,-61.8731" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node class" id="graph245_5"><g id="a_class|graph245_5"><a xlink:title="virtufin.finance.product.FloatingLeg" xlink:href="FloatingLeg.html#inheritance-diagram"><polygon points="652,-26 554,-26 554,-0 652,-0 652,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="566" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="586" text-anchor="start">FloatingLeg</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph245_0_5"><g id="a_inheritance|graph245_0_5"><a xlink:title="FloatingLeg is a subtype of Instrument"><path d="M649.507,-58.2924C638.951,-48.2386 625.46,-35.3904 615.73,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="648.423,-59.677 653.251,-61.8581 650.837,-57.1425 648.423,-59.677" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph245_6"><g id="a_trait|graph245_6"><a xlink:title="virtufin.finance.product.ForwardContract" xlink:href="ForwardContract.html#inheritance-diagram"><polygon points="790,-26 670,-26 670,-0 790,-0 790,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="682" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="702" text-anchor="start">ForwardContract</text></a></g></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph245_0_6"><g id="a_inheritance|graph245_0_6"><a xlink:title="ForwardContract is a subtype of Instrument"><path d="M682.755,-58.2924C693.479,-48.2386 707.184,-35.3904 717.068,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="681.402,-57.1617 678.951,-61.8581 683.796,-59.7151 681.402,-57.1617" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node class" id="graph245_7"><g id="a_class|graph245_7"><a xlink:title="virtufin.finance.product.PlainVanillaInterestRateSwap" xlink:href="PlainVanillaInterestRateSwap.html#inheritance-diagram"><polygon points="985.25,-26 808.75,-26 808.75,-0 985.25,-0 985.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="821" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="841" text-anchor="start">PlainVanillaInterestRateSwap</text></a></g></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph245_0_7"><g id="a_inheritance|graph245_0_7"><a xlink:title="PlainVanillaInterestRateSwap is a subtype of Instrument"><path d="M717.743,-60.5602C757.586,-50.2114 812.17,-36.0339 850.606,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="716.868,-58.9794 712.468,-61.9303 717.748,-62.367 716.868,-58.9794" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node class" id="graph245_8"><g id="a_class|graph245_8"><a xlink:title="virtufin.finance.product.Position" xlink:href="Position.html#inheritance-diagram"><polygon points="1096.25,-26 1003.75,-26 1003.75,-0 1096.25,-0 1096.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="1016" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1036" text-anchor="start">Position[A]</text></a></g></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph245_0_8"><g id="a_inheritance|graph245_0_8"><a xlink:title="Position[A] is a subtype of Instrument"><path d="M717.67,-67.5074C782.438,-59.1236 896.765,-43.5133 994,-26 997.131,-25.436 1000.35,-24.8255 1003.6,-24.1889" stroke="#d4d4d4" fill="none"></path><polygon points="717.062,-65.8213 712.327,-68.1972 717.51,-69.2925 717.062,-65.8213" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node class" id="graph245_9"><g id="a_class|graph245_9"><a xlink:title="virtufin.finance.product.Stock" xlink:href="Stock.html#inheritance-diagram"><polygon points="1185,-26 1115,-26 1115,-0 1185,-0 1185,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="1127" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1147" text-anchor="start">Stock</text></a></g></g><!-- node0&#45;&gt;node9 --><g class="edge inheritance" id="graph245_0_9"><g id="a_inheritance|graph245_0_9"><a xlink:title="Stock is a subtype of Instrument"><path d="M717.789,-70.8915C800.28,-65.3687 966.358,-51.9102 1105,-26 1108.18,-25.4059 1111.46,-24.7044 1114.74,-23.9437" stroke="#d4d4d4" fill="none"></path><polygon points="717.351,-69.1666 712.477,-71.2439 717.582,-72.659 717.351,-69.1666" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node10 --><g class="node class" id="graph245_10"><g id="a_class|graph245_10"><a xlink:title="virtufin.finance.product.TransferContract" xlink:href="TransferContract.html#inheritance-diagram"><polygon points="1336.25,-26 1203.75,-26 1203.75,-0 1336.25,-0 1336.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="1216" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1236" text-anchor="start">TransferContract[A]</text></a></g></g><!-- node0&#45;&gt;node10 --><g class="edge inheritance" id="graph245_0_10"><g id="a_inheritance|graph245_0_10"><a xlink:title="TransferContract[A] is a subtype of Instrument"><path d="M717.617,-70.4433C812.263,-63.6691 1019.86,-47.6394 1194,-26 1197.18,-25.6047 1200.43,-25.178 1203.72,-24.7293" stroke="#d4d4d4" fill="none"></path><polygon points="717.234,-68.7161 712.371,-70.8175 717.483,-72.2072 717.234,-68.7161" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node11 --><g class="node trait" id="graph245_11"><g id="a_trait|graph245_11"><a xlink:title="virtufin.finance.product.Asset" xlink:href="Asset.html#inheritance-diagram"><polygon points="701,-150 631,-150 631,-124 701,-124 701,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="643" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="663" text-anchor="start">Asset</text></a></g></g><!-- node11&#45;&gt;node0 --><g class="edge inheritance" id="graph245_11_0"><g id="a_inheritance|graph245_11_0"><a xlink:title="Instrument is a subtype of Asset"><path d="M666,-118.683C666,-108.896 666,-96.9026 666,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="664.25,-118.858 666,-123.858 667.75,-118.858 664.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
@@ -96,19 +104,6 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -119,8 +114,12 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -132,22 +131,13 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -158,8 +148,12 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -171,7 +165,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -184,7 +182,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -203,7 +205,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -216,7 +222,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -229,7 +239,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -248,7 +262,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -261,7 +279,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -274,7 +296,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -287,7 +313,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -300,7 +330,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -313,7 +347,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -326,7 +364,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -339,7 +381,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -352,7 +398,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -371,7 +421,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -390,7 +444,11 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.Instrument@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -429,6 +487,7 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

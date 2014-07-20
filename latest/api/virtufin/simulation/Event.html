@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>Event - virtufin - virtufin.simulation.Event</title>
@@ -9,6 +8,11 @@
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <a href="Event$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a>.<a href="package.html" class="extype" name="virtufin.simulation">simulation</a></p>
-        <h1><a href="Event$.html" title="Go to companion">Event</a></h1>
+        <h1><a href="Event$.html" title="Go to companion">Event</a></h1> <span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -43,9 +51,9 @@
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="../finance/simulation/trigger/AccrualEnd.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualEnd">AccrualEnd</a>, <a href="../finance/simulation/trigger/AccrualEvent.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualEvent">AccrualEvent</a>, <a href="../finance/simulation/trigger/AccrualStart.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualStart">AccrualStart</a>, <a href="../finance/simulation/package$$Event.html" class="extype" name="virtufin.finance.simulation.Event">Event</a>, <a href="EventHistory.html" class="extype" name="virtufin.simulation.EventHistory">EventHistory</a>, <a href="../finance/simulation/trigger/ExerciseOpportunity.html" class="extype" name="virtufin.finance.simulation.trigger.ExerciseOpportunity">ExerciseOpportunity</a>, <a href="../finance/scenario/Fixing.html" class="extype" name="virtufin.finance.scenario.Fixing">Fixing</a>, <a href="../finance/simulation/trigger/FixingEvent.html" class="extype" name="virtufin.finance.simulation.trigger.FixingEvent">FixingEvent</a>, <a href="../finance/simulation/trigger/MaturityEvent.html" class="extype" name="virtufin.finance.simulation.trigger.MaturityEvent">MaturityEvent</a>, <a href="MessagesEvent.html" class="extype" name="virtufin.simulation.MessagesEvent">MessagesEvent</a>, <a href="../finance/scenario/ScenarioEvent.html" class="extype" name="virtufin.finance.scenario.ScenarioEvent">ScenarioEvent</a>, <a href="../finance/simulation/trigger/SettlementEvent.html" class="extype" name="virtufin.finance.simulation.trigger.SettlementEvent">SettlementEvent</a>, <a href="SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">SimulationEvent</a>, <a href="SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a>, <a href="../finance/simulation/trigger/StartEvent.html" class="extype" name="virtufin.finance.simulation.trigger.StartEvent">StartEvent</a>, <a href="StateEvent.html" class="extype" name="virtufin.simulation.StateEvent">StateEvent</a>, <a href="Tick.html" class="extype" name="virtufin.simulation.Tick">Tick</a>, <a href="../finance/simulation/package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a></div>
-        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="../finance/simulation/trigger/AccrualEnd.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualEnd">AccrualEnd</a>, <a href="../finance/simulation/trigger/AccrualEvent.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualEvent">AccrualEvent</a>, <a href="../finance/simulation/trigger/AccrualStart.html" class="extype" name="virtufin.finance.simulation.trigger.AccrualStart">AccrualStart</a>, <a href="../finance/simulation/package$$Event.html" class="extype" name="virtufin.finance.simulation.Event">Event</a>, <a href="EventHistory.html" class="extype" name="virtufin.simulation.EventHistory">EventHistory</a>, <a href="../finance/simulation/trigger/ExerciseOpportunity.html" class="extype" name="virtufin.finance.simulation.trigger.ExerciseOpportunity">ExerciseOpportunity</a>, <a href="../finance/scenario/Fixing.html" class="extype" name="virtufin.finance.scenario.Fixing">Fixing</a>, <a href="../finance/simulation/trigger/FixingEvent.html" class="extype" name="virtufin.finance.simulation.trigger.FixingEvent">FixingEvent</a>, <a href="../finance/simulation/trigger/MaturityEvent.html" class="extype" name="virtufin.finance.simulation.trigger.MaturityEvent">MaturityEvent</a>, <a href="MessagesEvent.html" class="extype" name="virtufin.simulation.MessagesEvent">MessagesEvent</a>, <a href="../finance/scenario/ScenarioEvent.html" class="extype" name="virtufin.finance.scenario.ScenarioEvent">ScenarioEvent</a>, <a href="../finance/simulation/trigger/SettlementEvent.html" class="extype" name="virtufin.finance.simulation.trigger.SettlementEvent">SettlementEvent</a>, <a href="SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">SimulationEvent</a>, <a href="SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a>, <a href="../finance/simulation/trigger/StartEvent.html" class="extype" name="virtufin.finance.simulation.trigger.StartEvent">StartEvent</a>, <a href="StateEvent.html" class="extype" name="virtufin.simulation.StateEvent">StateEvent</a>, <a href="Tick.html" class="extype" name="virtufin.simulation.Tick">Tick</a>, <a href="../finance/simulation/package$$TriggerEvent.html" class="extype" name="virtufin.finance.simulation.TriggerEvent">TriggerEvent</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
                 <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph49" viewBox="0.00 0.00 885.00 158.00" height="158pt" width="885pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 881,-154 881,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph49_0"><g id="a_this trait|graph49_0"><a xlink:title="virtufin.simulation.Event (this trait)" xlink:href="#inheritance-diagram"><polygon points="529.25,-88 458.75,-88 458.75,-62 529.25,-62 529.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="471" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="491" text-anchor="start">Event</text></a></g></g><!-- node1 --><g class="node trait" id="graph49_1"><g id="a_trait|graph49_1"><a xlink:title="virtufin.finance.simulation.Event" xlink:href="../finance/simulation/package$$Event.html#inheritance-diagram"><polygon points="154,-26 0,-26 0,-0 154,-0 154,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">finance.simulation.Event</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph49_0_1"><g id="a_inheritance|graph49_0_1"><a xlink:title="finance.simulation.Event is a subtype of Event"><path d="M453.187,-68.1276C383.976,-58.1692 242.512,-37.8147 154.149,-25.1006" stroke="#d4d4d4" fill="none"></path><polygon points="453.249,-69.9044 458.447,-68.8844 453.747,-66.4401 453.249,-69.9044" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph49_2"><g id="a_trait|graph49_2"><a xlink:title="virtufin.simulation.EventHistory" xlink:href="EventHistory.html#inheritance-diagram"><polygon points="274,-26 172,-26 172,-0 274,-0 274,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="184" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="204" text-anchor="start">EventHistory</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph49_0_2"><g id="a_inheritance|graph49_0_2"><a xlink:title="EventHistory is a subtype of Event"><path d="M453.476,-65.0279C405.682,-54.4462 326.174,-36.8431 274.172,-25.3296" stroke="#d4d4d4" fill="none"></path><polygon points="453.311,-66.7838 458.571,-66.156 454.068,-63.3665 453.311,-66.7838" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph49_3"><g id="a_trait|graph49_3"><a xlink:title="virtufin.simulation.MessagesEvent" xlink:href="MessagesEvent.html#inheritance-diagram"><polygon points="408,-26 292,-26 292,-0 408,-0 408,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="304" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="324" text-anchor="start">MessagesEvent</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph49_0_3"><g id="a_inheritance|graph49_0_3"><a xlink:title="MessagesEvent is a subtype of Event"><path d="M460.054,-59.8556C435.442,-49.601 402.507,-35.8781 379.097,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="459.571,-61.5504 464.859,-61.8581 460.917,-58.3196 459.571,-61.5504" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph49_4"><g id="a_trait|graph49_4"><a xlink:title="virtufin.simulation.SimultaneousEvents" xlink:href="SimultaneousEvents.html#inheritance-diagram"><polygon points="562,-26 426,-26 426,-0 562,-0 562,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="438" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="458" text-anchor="start">SimultaneousEvents</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph49_0_4"><g id="a_inheritance|graph49_0_4"><a xlink:title="SimultaneousEvents is a subtype of Event"><path d="M494,-56.6826C494,-46.8961 494,-34.9026 494,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="492.25,-56.8581 494,-61.8581 495.75,-56.8581 492.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node trait" id="graph49_5"><g id="a_trait|graph49_5"><a xlink:title="virtufin.simulation.StateEvent" xlink:href="StateEvent.html#inheritance-diagram"><polygon points="674,-26 580,-26 580,-0 674,-0 674,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="592" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="612" text-anchor="start">StateEvent</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph49_0_5"><g id="a_inheritance|graph49_0_5"><a xlink:title="StateEvent is a subtype of Event"><path d="M525.638,-59.7273C548.338,-49.4867 578.594,-35.8374 600.125,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="524.753,-58.2068 520.915,-61.8581 526.192,-61.3971 524.753,-58.2068" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph49_6"><g id="a_trait|graph49_6"><a xlink:title="virtufin.simulation.Tick" xlink:href="Tick.html#inheritance-diagram"><polygon points="756,-26 692,-26 692,-0 756,-0 756,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="704" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="724" text-anchor="start">Tick</text></a></g></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph49_0_6"><g id="a_inheritance|graph49_0_6"><a xlink:title="Tick is a subtype of Event"><path d="M534.317,-64.2072C572.657,-54.789 631.9,-39.9621 683,-26 685.862,-25.2181 688.83,-24.3875 691.802,-23.5427" stroke="#d4d4d4" fill="none"></path><polygon points="533.72,-62.5515 529.281,-65.4425 534.554,-65.9507 533.72,-62.5515" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node trait" id="graph49_7"><g id="a_trait|graph49_7"><a xlink:title="virtufin.finance.simulation.TriggerEvent" xlink:href="../finance/simulation/package$$TriggerEvent.html#inheritance-diagram"><polygon points="877.25,-26 774.75,-26 774.75,-0 877.25,-0 877.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="787" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="807" text-anchor="start">TriggerEvent</text></a></g></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph49_0_7"><g id="a_inheritance|graph49_0_7"><a xlink:title="TriggerEvent is a subtype of Event"><path d="M534.547,-67.0648C587.571,-57.939 683.328,-41.2649 765,-26 768.077,-25.4249 771.239,-24.8262 774.429,-24.2165" stroke="#d4d4d4" fill="none"></path><polygon points="534.182,-65.3518 529.551,-67.9241 534.775,-68.8012 534.182,-65.3518" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node class" id="graph49_8"><g id="a_class|graph49_8"><a xlink:title="scala.AnyRef"><polygon points="533,-150 455,-150 455,-124 533,-124 533,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-143" x="467" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="487" text-anchor="start">AnyRef</text></a></g></g><!-- node8&#45;&gt;node0 --><g class="edge inheritance" id="graph49_8_0"><g id="a_inheritance|graph49_8_0"><a xlink:title="Event is a subtype of AnyRef"><path d="M494,-118.683C494,-108.896 494,-96.9026 494,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="492.25,-118.858 494,-123.858 495.75,-118.858 492.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
@@ -99,7 +107,11 @@
       <span class="symbol">
         <span class="name">TimeType</span><span class="result"> &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<a href="#TimeType&lt;:virtufin.util.TimePoint[Event.this.TimeType]" class="extmbr" name="virtufin.simulation.Event.TimeType">TimeType</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@TimeType&lt;:virtufin.util.TimePoint[Event.this.TimeType]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -117,7 +129,11 @@
       <span class="symbol">
         <span class="name">time</span><span class="result">: <a href="#TimeType&lt;:virtufin.util.TimePoint[Event.this.TimeType]" class="extmbr" name="virtufin.simulation.Event.TimeType">TimeType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@time:Event.this.TimeType" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -125,19 +141,6 @@
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -148,8 +151,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -161,22 +168,13 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -187,8 +185,12 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -200,7 +202,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -213,7 +219,11 @@
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -232,7 +242,11 @@
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -245,7 +259,11 @@
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -258,7 +276,11 @@
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -277,7 +299,11 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -290,7 +316,11 @@
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -303,7 +333,11 @@
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -316,7 +350,11 @@
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -329,7 +367,11 @@
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -342,7 +384,11 @@
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -355,7 +401,11 @@
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -368,7 +418,11 @@
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -381,7 +435,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -400,7 +458,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -419,7 +481,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Event@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -456,6 +522,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
+
+
     </body>
       </html>
