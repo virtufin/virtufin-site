@@ -486,6 +486,7 @@ and the perform the following analysis:</p>
     <span class="o">)</span>
   <span class="o">)</span>
   <span class="k">implicit</span> <span class="k">val</span> <span class="n">portfolioHierarchyAgent</span><span class="k">:</span> <span class="kt">AgentIdentifier</span> <span class="o">=</span> <span class="s">&quot;portfolioHierarchy&quot;</span>
+  <span class="k">implicit</span> <span class="k">val</span> <span class="n">timeout</span> <span class="k">=</span> <span class="nc">Timeout</span><span class="o">(</span><span class="mi">10</span> <span class="n">seconds</span><span class="o">)</span>
 
   <span class="c1">// Observables and dates we need for model</span>
   <span class="k">val</span> <span class="n">trades</span> <span class="k">=</span> <span class="nc">Seq</span><span class="o">((</span><span class="n">id0</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">trade0</span><span class="o">,</span> <span class="o">(</span><span class="n">id1</span><span class="k">:</span> <span class="kt">PortfolioIdentifier</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">trade1</span><span class="o">)</span>
@@ -546,7 +547,6 @@ and the perform the following analysis:</p>
 
   <span class="k">def</span> <span class="n">scenarioEnumerator</span> <span class="k">=</span> <span class="nc">Enumerator</span><span class="o">.</span><span class="n">enumerate</span><span class="o">(</span><span class="n">scenarios</span><span class="o">)</span>
 
-  <span class="k">implicit</span> <span class="k">val</span> <span class="n">timeout</span> <span class="k">=</span> <span class="nc">Timeout</span><span class="o">(</span><span class="mi">10</span> <span class="n">seconds</span><span class="o">)</span>
   <span class="k">val</span> <span class="n">system</span> <span class="k">=</span> <span class="nc">ActorSystem</span><span class="o">(</span><span class="s">&quot;MonteCarloPricingExample&quot;</span><span class="o">)</span>
 
   <span class="k">def</span> <span class="n">createSimulation</span><span class="o">(</span><span class="n">system</span><span class="k">:</span> <span class="kt">ActorSystem</span><span class="o">,</span> <span class="n">scenario</span><span class="k">:</span> <span class="kt">Enumerator</span><span class="o">[</span><span class="kt">QuotesEvent</span><span class="o">],</span> <span class="n">simulatables</span><span class="k">:</span> <span class="kt">Iterable</span><span class="o">[(</span><span class="kt">AgentIdentifier</span>, <span class="kt">Simulatable</span><span class="o">)])</span><span class="k">:</span> <span class="kt">virtufin.finance.simulation.Simulation</span> <span class="o">=</span> <span class="o">{</span>

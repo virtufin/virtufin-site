@@ -85,6 +85,7 @@ object MonteCarloPricingExample extends Example {
     )
   )
   implicit val portfolioHierarchyAgent: AgentIdentifier = "portfolioHierarchy"
+  implicit val timeout = Timeout(10 seconds)
 
   // Observables and dates we need for model
   val trades = Seq((id0: PortfolioIdentifier) -> trade0, (id1: PortfolioIdentifier) -> trade1)
@@ -145,7 +146,6 @@ object MonteCarloPricingExample extends Example {
 
   def scenarioEnumerator = Enumerator.enumerate(scenarios)
 
-  implicit val timeout = Timeout(10 seconds)
   val system = ActorSystem("MonteCarloPricingExample")
 
   def createSimulation(system: ActorSystem, scenario: Enumerator[QuotesEvent], simulatables: Iterable[(AgentIdentifier, Simulatable)]): virtufin.finance.simulation.Simulation = {
