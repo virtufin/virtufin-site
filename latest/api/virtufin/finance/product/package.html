@@ -109,7 +109,8 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">An <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">virtufin.finance.product.Asset</a> may have a <a href="../scenario/Price.html" class="extype" name="virtufin.finance.scenario.Price">virtufin.finance.scenario.Price</a> in a given <a href="../scenario/Quotes.html" class="extype" name="virtufin.finance.scenario.Quotes">virtufin.finance.scenario.Quotes</a>.</p>
+      <p class="shortcomment cmt">An <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">virtufin.finance.product.Asset</a> may have a monetary value expressed in terms
+of a <a href="../scenario/Quote.html" class="extype" name="virtufin.finance.scenario.Quote">virtufin.finance.scenario.Quote</a>.</p>
     </li><li name="virtufin.finance.product.Buy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Buy[A&lt;:virtufin.finance.product.Instrument]=virtufin.finance.product.Exchange[virtufin.finance.product.Currency,A]"></a>
       <a id="Buy[A&lt;:Instrument]:Buy[A]"></a>
@@ -239,7 +240,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="EuropeanPlainVanillaOption.html"><span class="name">EuropeanPlainVanillaOption</span></a><span class="params">(<span name="notional">notional: <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="callPut">callPut: <a href="feature/CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a></span>, <span name="strike">strike: <span class="extype" name="scala.Double">Double</span></span>, <span name="underlying">underlying: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="maturityDate">maturityDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a> with <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.product.feature.EuropeanOption">EuropeanOption</a> with <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a>[<span class="extype" name="scala.Double">Double</span>] with <a href="feature/Striking.html" class="extype" name="virtufin.finance.product.feature.Striking">Striking</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="EuropeanPlainVanillaOption.html"><span class="name">EuropeanPlainVanillaOption</span></a><span class="params">(<span name="notional">notional: <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="callPut">callPut: <a href="feature/CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a></span>, <span name="strike">strike: <span class="extype" name="scala.Double">Double</span></span>, <span name="underlying">underlying: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="settlementDate">settlementDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a> with <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.product.feature.EuropeanOption">EuropeanOption</a> with <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a>[<span class="extype" name="scala.Double">Double</span>] with <a href="feature/Striking.html" class="extype" name="virtufin.finance.product.feature.Striking">Striking</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.finance.product.package@EuropeanPlainVanillaOptionextendsInstrumentwithEuropeanOptionwithSingleFixingDerivative[Double]withStrikingwithProductwithSerializable" title="Permalink" target="_top">
@@ -283,6 +284,23 @@
       <p class="shortcomment cmt">Describe some static properties, such as the strike, maturity, underlying of a financial product.</p><div class="fullcomment"><div class="comment cmt"><p>Describe some static properties, such as the strike, maturity, underlying of a financial product.
 A financial product can them represented as a case class extending some <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>s. For instance:</p><pre><span class="kw">case</span> <span class="kw">class</span> MyInstrument(notional:Notional, maturityDate:Time) <span class="kw">extends</span> Instrument <span class="kw">with</span> Notional <span class="kw">with</span> Maturing</pre><p>The dynamic behaviour of a <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a> is expressed by implementing it's sub-trait <a href="../simulation/SimulatedFeature.html" class="extype" name="virtufin.finance.simulation.SimulatedFeature">virtufin.finance.simulation.SimulatedFeature</a>.
 </p></div></div>
+    </li><li name="virtufin.finance.product.FeatureInfoExtractor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FeatureInfoExtractor[+F&lt;:virtufin.finance.product.Feature]extendsAnyRef"></a>
+      <a id="FeatureInfoExtractor[+F&lt;:Feature]:FeatureInfoExtractor[F]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FeatureInfoExtractor.html"><span class="name">FeatureInfoExtractor</span></a><span class="tparams">[<span name="F">+F &lt;: <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.package@FeatureInfoExtractor[+F&lt;:virtufin.finance.product.Feature]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="virtufin.finance.product.FixedLeg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FixedLegextendsInstrumentwithBilateralContractwithFixedPositionTransferswithNotionalwithStartingwithMaturingwithAccruingwithProductwithSerializable"></a>
       <a id="FixedLeg:FixedLeg"></a>
@@ -368,7 +386,7 @@ A financial product can them represented as a case class extending some <a href=
       </a>
     </span>
       
-    </li><li name="virtufin.finance.product.Instrument" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="virtufin.finance.product.Instrument" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="InstrumentextendsAsset"></a>
       <a id="Instrument:Instrument"></a>
       <h4 class="signature">
@@ -384,9 +402,10 @@ A financial product can them represented as a case class extending some <a href=
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">An <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">virtufin.finance.product.Instrument</a> is an <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">virtufin.finance.product.Asset</a>, which is actively traded in a quotes
-Examples for <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">virtufin.finance.product.Instrument</a>s are <a href="Currency.html" class="extype" name="virtufin.finance.product.Currency">virtufin.finance.product.Currency</a>es, stock, bonds
-Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">virtufin.finance.product.Asset</a>s which are not <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">virtufin.finance.product.Instrument</a> are  real-estate or factories.</p>
+      <p class="shortcomment cmt">An <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">virtufin.finance.product.Instrument</a> is a legal agreement, which refers to some <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a>s.</p><div class="fullcomment"><div class="comment cmt"><p>An <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">virtufin.finance.product.Instrument</a> is a legal agreement, which refers to some <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a>s.
+Typically <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">virtufin.finance.product.Instrument</a> are either equity, debt or foreign exchange rate based.
+Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">virtufin.finance.product.Asset</a>s  .
+</p></div></div>
     </li><li name="virtufin.finance.product.InterestRate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="InterestRateextendsAnyRef"></a>
       <a id="InterestRate:InterestRate"></a>
@@ -422,7 +441,7 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
     </span>
       
     </li><li name="virtufin.finance.product.PhysicallySettledForwardContract" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="PhysicallySettledForwardContract[A&lt;:virtufin.finance.product.Instrument]extendsForwardContractwithFixedPositionTransferswithProductwithSerializable"></a>
+      <a id="PhysicallySettledForwardContract[A&lt;:virtufin.finance.product.Instrument]extendsForwardContractwithFixedPositionTransferswithPhysicallySettledwithProductwithSerializable"></a>
       <a id="PhysicallySettledForwardContract[A&lt;:Instrument]:PhysicallySettledForwardContract[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -430,16 +449,16 @@ Counter-examples of <a href="Asset.html" class="extype" name="virtufin.finance.p
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="PhysicallySettledForwardContract.html"><span class="name">PhysicallySettledForwardContract</span></a><span class="tparams">[<span name="A">A &lt;: <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a></span>]</span><span class="params">(<span name="assetPosition">assetPosition: <a href="Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>[<span class="extype" name="virtufin.finance.product.PhysicallySettledForwardContract.A">A</span>]</span>, <span name="payment">payment: <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="settlementDate">settlementDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <a href="ForwardContract.html" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> with <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="PhysicallySettledForwardContract.html"><span class="name">PhysicallySettledForwardContract</span></a><span class="tparams">[<span name="A">A &lt;: <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a></span>]</span><span class="params">(<span name="assetPosition">assetPosition: <a href="Position.html" class="extype" name="virtufin.finance.product.Position">Position</a>[<span class="extype" name="virtufin.finance.product.PhysicallySettledForwardContract.A">A</span>]</span>, <span name="payment">payment: <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="settlementDate">settlementDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <a href="ForwardContract.html" class="extype" name="virtufin.finance.product.ForwardContract">ForwardContract</a> with <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.product.feature.FixedPositionTransfers">FixedPositionTransfers</a> with <a href="feature/PhysicallySettled.html" class="extype" name="virtufin.finance.product.feature.PhysicallySettled">PhysicallySettled</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.product.package@PhysicallySettledForwardContract[A&lt;:virtufin.finance.product.Instrument]extendsForwardContractwithFixedPositionTransferswithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.finance.product.package@PhysicallySettledForwardContract[A&lt;:virtufin.finance.product.Instrument]extendsForwardContractwithFixedPositionTransferswithPhysicallySettledwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">Exchange at maturity date a asset position with a cash position, i.</p><div class="fullcomment"><div class="comment cmt"><p>Exchange at maturity date a asset position with a cash position, i.e. buy an asset at maturity at
+      <p class="shortcomment cmt">Exchange at maturity date a asset position with a cash position, i.e.</p><div class="fullcomment"><div class="comment cmt"><p>Exchange at maturity date a asset position with a cash position, i.e. buy an asset at maturity at
 a pre-determined price.</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>type of the asset
-</p></dd><dt class="param">assetPosition</dt><dd class="cmt"><p>the asset position being bought/sold. A positive amount means buying, a negative selling.</p></dd><dt class="param">payment</dt><dd class="cmt"><p>the amount being paid. The amount is negative for buying an asset, and positive for selling an asset.</p></dd><dt class="param">settlementDate</dt><dd class="cmt"><p>date at which settlement occurs</p></dd><dt class="param">buyerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which buys the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and sells the <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a> if the asset position is positive</p></dd><dt class="param">sellerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which sells the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and buys the <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a> if the asset position is positive</p></dd></dl></div>
+</p></dd><dt class="param">assetPosition</dt><dd class="cmt"><p>the asset position being bought (when <a href="#Buy[A&lt;:virtufin.finance.product.Instrument]=virtufin.finance.product.Exchange[virtufin.finance.product.Currency,A]" class="extmbr" name="virtufin.finance.product.Buy">Buy</a>) or sold (when <a href="#Sell[A&lt;:virtufin.finance.product.Instrument]=virtufin.finance.product.Exchange[A,virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Sell">Sell</a>)</p></dd><dt class="param">payment</dt><dd class="cmt"><p>the amount being paid (when <a href="#Buy[A&lt;:virtufin.finance.product.Instrument]=virtufin.finance.product.Exchange[virtufin.finance.product.Currency,A]" class="extmbr" name="virtufin.finance.product.Buy">Buy</a>) or received (when <a href="#Sell[A&lt;:virtufin.finance.product.Instrument]=virtufin.finance.product.Exchange[A,virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Sell">Sell</a>)</p></dd><dt class="param">settlementDate</dt><dd class="cmt"><p>date at which settlement occurs</p></dd><dt class="param">buyerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which buys the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and sells the <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a> if the asset position is positive</p></dd><dt class="param">sellerPortfolio</dt><dd class="cmt"><p>portfolio of the party, which sells the <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a> and buys the <a href="#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a> if the asset position is positive</p></dd></dl></div>
     </li><li name="virtufin.finance.product.PlainVanillaInterestRateSwap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="PlainVanillaInterestRateSwapextendsInstrumentwithBilateralContractwithFixedPositionTransferswithNotionalwithStartingwithMaturingwithAccruingwithCashSettledwithSingleMarketObservableDerivative[Double]withProductwithSerializable"></a>
       <a id="PlainVanillaInterestRateSwap:PlainVanillaInterestRateSwap"></a>
@@ -836,6 +855,23 @@ a pre-determined price.</p></div><dl class="paramcmts block"><dt class="tparam">
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.finance.product.package@Feature" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.product.FeatureInfoExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FeatureInfoExtractor"></a>
+      <a id="FeatureInfoExtractor:FeatureInfoExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FeatureInfoExtractor$.html"><span class="name">FeatureInfoExtractor</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.package@FeatureInfoExtractor" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>

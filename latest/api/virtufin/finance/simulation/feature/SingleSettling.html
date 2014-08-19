@@ -50,7 +50,7 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A <a href="Settling.html" class="extype" name="virtufin.finance.simulation.feature.Settling">Settling</a> with a single settlement date.
 </p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="virtufin.finance.simulation.feature.SingleSettling">SingleSettling</a> with <a href="CompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.CompositeSimulatedFeature">CompositeSimulatedFeature</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="Settling.html" class="extype" name="virtufin.finance.simulation.feature.Settling">Settling</a>, <a href="../SimulatedFeature.html" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>, <a href="../../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>, <a href="../../product/feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">product.feature.SingleSettling</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Settling.html" class="extype" name="virtufin.finance.simulation.feature.Settling">Settling</a>, <a href="../SimulatedFeature.html" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>, <a href="../../product/feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">product.feature.SingleSettling</a>, <a href="../../product/feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">product.feature.Maturing</a>, <a href="../../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="EuropeanExercise.html" class="extype" name="virtufin.finance.simulation.feature.EuropeanExercise">EuropeanExercise</a>, <a href="EuropeanOption.html" class="extype" name="virtufin.finance.simulation.feature.EuropeanOption">EuropeanOption</a>, <a href="../EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.simulation.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a></div>
@@ -75,7 +75,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.finance.simulation.feature.SingleSettling"><span>SingleSettling</span></li><li class="in" name="virtufin.finance.simulation.feature.Settling"><span>Settling</span></li><li class="in" name="virtufin.finance.simulation.SimulatedFeature"><span>SimulatedFeature</span></li><li class="in" name="virtufin.finance.product.Feature"><span>Feature</span></li><li class="in" name="virtufin.finance.product.feature.SingleSettling"><span>SingleSettling</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.finance.simulation.feature.SingleSettling"><span>SingleSettling</span></li><li class="in" name="virtufin.finance.simulation.feature.Settling"><span>Settling</span></li><li class="in" name="virtufin.finance.simulation.SimulatedFeature"><span>SimulatedFeature</span></li><li class="in" name="virtufin.finance.product.feature.SingleSettling"><span>SingleSettling</span></li><li class="in" name="virtufin.finance.product.feature.Maturing"><span>Maturing</span></li><li class="in" name="virtufin.finance.product.Feature"><span>Feature</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -443,6 +443,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="virtufin.finance.product.feature.SingleSettling#maturityDate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maturityDate:virtufin.finance.Time"></a>
+      <a id="maturityDate:Time"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maturityDate</span><span class="result">: <a href="../../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.finance.simulation.feature.SingleSettling@maturityDate:virtufin.finance.Time" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../product/feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a> → <a href="../../product/feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -627,10 +644,12 @@
               <h3>Inherited from <a href="Settling.html" class="extype" name="virtufin.finance.simulation.feature.Settling">Settling</a></h3>
             </div><div class="parent" name="virtufin.finance.simulation.SimulatedFeature">
               <h3>Inherited from <a href="../SimulatedFeature.html" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a></h3>
-            </div><div class="parent" name="virtufin.finance.product.Feature">
-              <h3>Inherited from <a href="../../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></h3>
             </div><div class="parent" name="virtufin.finance.product.feature.SingleSettling">
               <h3>Inherited from <a href="../../product/feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">product.feature.SingleSettling</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.feature.Maturing">
+              <h3>Inherited from <a href="../../product/feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">product.feature.Maturing</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.Feature">
+              <h3>Inherited from <a href="../../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
