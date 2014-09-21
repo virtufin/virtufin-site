@@ -312,6 +312,42 @@
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">stream</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>the <span class="extype" name="JsValue">JsValue</span> as <span class="extype" name="Option">Option</span> or None if not found
 </p></dd></dl></div>
+    </li><li name="virtufin.service.serialization.json.JsonUtil#getJsonResourcePaths" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getJsonResourcePaths(packageName:String,directoryResourcePath:String):Iterable[String]"></a>
+      <a id="getJsonResourcePaths(String,String):Iterable[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getJsonResourcePaths</span><span class="params">(<span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="directoryResourcePath">directoryResourcePath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.service.serialization.json.JsonUtil$@getJsonResourcePaths(packageName:String,directoryResourcePath:String):Iterable[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">packageName</dt><dd class="cmt"></dd><dt class="param">directoryResourcePath</dt><dd class="cmt"><p>path to directory</p></dd><dt>returns</dt><dd class="cmt"><p>resource paths to all Json resources in the directory
+</p></dd></dl></div>
+    </li><li name="virtufin.service.serialization.json.JsonUtil#getJsonURLs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getJsonURLs(packageName:String,directoryResourcePath:String):Iterable[java.net.URL]"></a>
+      <a id="getJsonURLs(String,String):Iterable[URL]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getJsonURLs</span><span class="params">(<span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="directoryResourcePath">directoryResourcePath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="java.net.URL">URL</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#virtufin.service.serialization.json.JsonUtil$@getJsonURLs(packageName:String,directoryResourcePath:String):Iterable[java.net.URL]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">packageName</dt><dd class="cmt"></dd><dt class="param">directoryResourcePath</dt><dd class="cmt"><p>path to directory</p></dd><dt>returns</dt><dd class="cmt"><p>URLs to all Json resources in the directory
+</p></dd></dl></div>
     </li><li name="virtufin.service.serialization.json.JsonUtil#getJsonValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getJsonValue(packageName:String,resourcePath:String):play.api.libs.json.JsValue"></a>
       <a id="getJsonValue(String,String):JsValue"></a>
@@ -432,7 +468,7 @@
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">jsonResourcePath</dt><dd class="cmt"><p>the path of the Json resource including the extension .json</p></dd><dt class="param">patchResourcePath</dt><dd class="cmt"><p>the path of the patch resource including the extension .json-mergepatch</p></dd><dt>returns</dt><dd class="cmt"><p>
+      <p class="shortcomment cmt">Patch Json according to <a href="http://tools.ietf.org/html/rfc6902" target="_blank">IETF RFC 6902</a></p><div class="fullcomment"><div class="comment cmt"><p>Patch Json according to <a href="http://tools.ietf.org/html/rfc6902" target="_blank">IETF RFC 6902</a></p></div><dl class="paramcmts block"><dt class="param">jsonResourcePath</dt><dd class="cmt"><p>the path of the Json resource including the extension .json</p></dd><dt class="param">patchResourcePath</dt><dd class="cmt"><p>the path of the patch resource including the extension .json-epatch</p></dd><dt>returns</dt><dd class="cmt"><p>the patched Json resource or None if either the resource or the patch do not exist
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
