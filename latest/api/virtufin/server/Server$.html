@@ -1,4 +1,5 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
           <title>Server - virtufin - virtufin.server.Server</title>
@@ -8,11 +9,6 @@
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../lib/template.js"></script>
-      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
-      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <a href="Server.html" title="Go to companion"><img src="../../lib/object_to_class_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a>.<a href="package.html" class="extype" name="virtufin.server">server</a></p>
-        <h1><a href="Server.html" title="Go to companion">Server</a></h1> <span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1><a href="Server.html" title="Go to companion">Server</a></h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -98,13 +90,9 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Server$$AddService.html"><span class="name">AddService</span></a><span class="params">(<span name="id">id: <a href="../service/ServicesConfiguration$$ServiceIdentifier.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceIdentifier">ServiceIdentifier</a></span>, <span name="serviceFactory">serviceFactory: <a href="../service/ServicesConfiguration$$ServiceFactory.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceFactory">ServiceFactory</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Server$$AddService.html"><span class="name">AddService</span></a><span class="params">(<span name="id">id: <a href="../service/ServiceIdentifier.html" class="extype" name="virtufin.service.ServiceIdentifier">ServiceIdentifier</a></span>, <span name="serviceFactory">serviceFactory: <a href="Server$$ServiceFactory.html" class="extype" name="virtufin.server.Server.ServiceFactory">ServiceFactory</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@AddServiceextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="virtufin.server.Server.Message" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MessageextendsProductwithSerializable"></a>
@@ -115,13 +103,9 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Server$$Message.html"><span class="name">Message</span></a><span class="params">(<span name="messageContent">messageContent: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="service">service: <a href="../service/ServicesConfiguration$$ServiceIdentifier.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceIdentifier">ServiceIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Server$$Message.html"><span class="name">Message</span></a><span class="params">(<span name="messageContent">messageContent: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="service">service: <a href="../service/ServiceIdentifier.html" class="extype" name="virtufin.service.ServiceIdentifier">ServiceIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@MessageextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="virtufin.server.Server.RemoveService" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RemoveServiceextendsProductwithSerializable"></a>
@@ -132,13 +116,22 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Server$$RemoveService.html"><span class="name">RemoveService</span></a><span class="params">(<span name="id">id: <a href="../service/ServicesConfiguration$$ServiceIdentifier.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceIdentifier">ServiceIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Server$$RemoveService.html"><span class="name">RemoveService</span></a><span class="params">(<span name="id">id: <a href="../service/ServiceIdentifier.html" class="extype" name="virtufin.service.ServiceIdentifier">ServiceIdentifier</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@RemoveServiceextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
+      
+    </li><li name="virtufin.server.Server.ServiceFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServiceFactoryextendsProductwithSerializable"></a>
+      <a id="ServiceFactory:ServiceFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Server$$ServiceFactory.html"><span class="name">ServiceFactory</span></a><span class="params">(<span name="serviceClass">serviceClass: <span class="extype" name="scala.Predef.Class">Class</span>[_ &lt;: <a href="../service/Service.html" class="extype" name="virtufin.service.Service">Service</a>]</span>, <span name="constructorArguments">constructorArguments: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
       
     </li></ol>
             </div>
@@ -148,6 +141,19 @@
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -158,12 +164,8 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -175,13 +177,22 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@##():Int" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -192,12 +203,8 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="virtufin.server.Server.ListServices" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ListServices"></a>
       <a id="ListServices:ListServices"></a>
@@ -209,11 +216,7 @@
       <span class="symbol">
         <a href="Server$$ListServices$.html"><span class="name">ListServices</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@ListServices" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -226,11 +229,7 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -243,11 +242,7 @@
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@clone():Object" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -266,11 +261,7 @@
       <span class="symbol">
         <span class="name">defaultAkkaConfiguration</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@defaultAkkaConfiguration:String" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The Akka configuration.</p><div class="fullcomment"><div class="comment cmt"><p>The Akka configuration. It should contain an entry <code>virtufin.services.config</code> with
 the file name of the Spring XML configuration defining the services.
 </p></div></div>
@@ -285,11 +276,7 @@ the file name of the Spring XML configuration defining the services.
       <span class="symbol">
         <span class="name">defaultServicesConfiguration</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@defaultServicesConfiguration:String" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The default Spring XML bean configuration for the services.</p><div class="fullcomment"><div class="comment cmt"><p>The default Spring XML bean configuration for the services.
 This value is used if the Akka configuration file  does not contain the entry <code>virtufin.services.config</code>.
 </p></div></div>
@@ -304,11 +291,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">defaultShutdownTimeout</span><span class="result">: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@defaultShutdownTimeout:scala.concurrent.duration.FiniteDuration" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -321,11 +304,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -338,11 +317,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -355,11 +330,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -378,11 +349,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -395,11 +362,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -412,30 +375,8 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="virtufin.server.Server#main" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="main(args:Array[String]):Unit"></a>
-      <a id="main(Array[String]):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">main</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@main(args:Array[String]):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Runs server with services defined by a <span class="extype" name="SpringServicesConfiguration">SpringServicesConfiguration</span></p><div class="fullcomment"><div class="comment cmt"><p>Runs server with services defined by a <span class="extype" name="SpringServicesConfiguration">SpringServicesConfiguration</span></p></div><dl class="paramcmts block"><dt class="param">args</dt><dd class="cmt"><p>
-</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -447,11 +388,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -464,11 +401,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -481,48 +414,8 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="virtufin.server.Server#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="run(system:akka.actor.ActorSystem,config:com.typesafe.config.Config,servicesConfiguration:virtufin.service.ServicesConfiguration):akka.actor.ActorRef"></a>
-      <a id="run(ActorSystem,Config,ServicesConfiguration):ActorRef"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">run</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>, <span name="config">config: <span class="extype" name="com.typesafe.config.Config">Config</span></span>, <span name="servicesConfiguration">servicesConfiguration: <a href="../service/ServicesConfiguration.html" class="extype" name="virtufin.service.ServicesConfiguration">ServicesConfiguration</a></span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@run(system:akka.actor.ActorSystem,config:com.typesafe.config.Config,servicesConfiguration:virtufin.service.ServicesConfiguration):akka.actor.ActorRef" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> using a configuration file</p><div class="fullcomment"><div class="comment cmt"><p>Create a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> using a configuration file</p></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"></dd><dt class="param">config</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p><span class="extype" name="ActorRef">ActorRef</span> to the <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor
-</p></dd></dl></div>
-    </li><li name="virtufin.server.Server#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="run(system:akka.actor.ActorSystem,shutdownTimeout:scala.concurrent.duration.FiniteDuration,servicesConfiguration:virtufin.service.ServicesConfiguration):akka.actor.ActorRef"></a>
-      <a id="run(ActorSystem,FiniteDuration,ServicesConfiguration):ActorRef"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">run</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>, <span name="shutdownTimeout">shutdownTimeout: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>, <span name="servicesConfiguration">servicesConfiguration: <a href="../service/ServicesConfiguration.html" class="extype" name="virtufin.service.ServicesConfiguration">ServicesConfiguration</a></span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@run(system:akka.actor.ActorSystem,shutdownTimeout:scala.concurrent.duration.FiniteDuration,servicesConfiguration:virtufin.service.ServicesConfiguration):akka.actor.ActorRef" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Creates a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor and adds some <a href="../service/Service.html" class="extype" name="virtufin.service.Service">virtufin.service.Service</a>s to it.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor and adds some <a href="../service/Service.html" class="extype" name="virtufin.service.Service">virtufin.service.Service</a>s to it.</p></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"></dd><dt class="param">shutdownTimeout</dt><dd class="cmt"></dd><dt class="param">servicesConfiguration</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p><span class="extype" name="ActorRef">ActorRef</span> to the <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor
-</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -534,11 +427,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -551,11 +440,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@toString():String" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -568,11 +453,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -591,11 +472,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -614,11 +491,7 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -655,7 +528,6 @@ This value is used if the Akka configuration file  does not contain the entry <c
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
     </body>
       </html>
