@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>math - virtufin - virtufin.math</title>
@@ -9,6 +8,11 @@
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../lib/package_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a></p>
-        <h1>math</h1>
+        <h1>math</h1> <span class="permalink">
+      <a href="../../index.html#virtufin.math.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -42,7 +50,7 @@
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block diagram-container" id="content-diagram-container">
                 <span class="toggle diagram-link">Content Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph69" viewBox="0.00 0.00 140.00 220.00" height="220pt" width="140pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 216)" class="graph" id="graph0"><polygon points="-4,4 -4,-216 136,-216 136,4 -4,4" stroke="white" fill="white"></polygon><!-- node0 --><g class="node trait" id="graph69_0"><g id="a_trait|graph69_0"><a xlink:title="virtufin.math.SymmetricMatrix" xlink:href="SymmetricMatrix.html#inheritance-diagram"><polygon points="132,-150 0,-150 0,-124 132,-124 132,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-143" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="32" text-anchor="start">SymmetricMatrix[V]</text></a></g></g><!-- node2 --><g class="node trait" id="graph69_2"><g id="a_trait|graph69_2"><a xlink:title="virtufin.math.CovarianceMatrix" xlink:href="CovarianceMatrix.html#inheritance-diagram"><polygon points="127.25,-88 4.75,-88 4.75,-62 127.25,-62 127.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="17" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="37" text-anchor="start">CovarianceMatrix</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph69_0_2"><g id="a_inheritance|graph69_0_2"><a xlink:title="CovarianceMatrix is a subtype of SymmetricMatrix[V]"><path d="M66,-118.683C66,-108.896 66,-96.9026 66,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="64.2501,-118.858 66,-123.858 67.7501,-118.858 64.2501,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node1 --><g class="node trait" id="graph69_1"><g id="a_trait|graph69_1"><a xlink:title="virtufin.math.Matrix" xlink:href="Matrix.html#inheritance-diagram"><polygon points="108.25,-212 23.75,-212 23.75,-186 108.25,-186 108.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-205" x="36" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-196.5" x="56" text-anchor="start">Matrix[V]</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph69_1_0"><g id="a_inheritance|graph69_1_0"><a xlink:title="SymmetricMatrix[V] is a subtype of Matrix[V]"><path d="M66,-180.683C66,-170.896 66,-158.903 66,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="64.2501,-180.858 66,-185.858 67.7501,-180.858 64.2501,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph69_3"><g id="a_trait|graph69_3"><a xlink:title="virtufin.math.CorrelationMatrix" xlink:href="CorrelationMatrix.html#inheritance-diagram"><polygon points="126.25,-26 5.75,-26 5.75,-0 126.25,-0 126.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="18" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="38" text-anchor="start">CorrelationMatrix</text></a></g></g><!-- node2&#45;&gt;node3 --><g class="edge inheritance" id="graph69_2_3"><g id="a_inheritance|graph69_2_3"><a xlink:title="CorrelationMatrix is a subtype of CovarianceMatrix"><path d="M66,-56.6826C66,-46.8961 66,-34.9026 66,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="64.2501,-56.8581 66,-61.8581 67.7501,-56.8581 64.2501,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph60" viewBox="0.00 0.00 140.00 220.00" height="220pt" width="140pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 216)" class="graph" id="graph0"><polygon points="-4,4 -4,-216 136,-216 136,4 -4,4" stroke="white" fill="white"></polygon><!-- node0 --><g class="node trait" id="graph60_0"><g id="a_trait|graph60_0"><a xlink:title="virtufin.math.SymmetricMatrix" xlink:href="SymmetricMatrix.html#inheritance-diagram"><polygon points="132,-150 0,-150 0,-124 132,-124 132,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-143" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="32" text-anchor="start">SymmetricMatrix[V]</text></a></g></g><!-- node2 --><g class="node trait" id="graph60_2"><g id="a_trait|graph60_2"><a xlink:title="virtufin.math.CovarianceMatrix" xlink:href="CovarianceMatrix.html#inheritance-diagram"><polygon points="127.25,-88 4.75,-88 4.75,-62 127.25,-62 127.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="17" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="37" text-anchor="start">CovarianceMatrix</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph60_0_2"><g id="a_inheritance|graph60_0_2"><a xlink:title="CovarianceMatrix is a subtype of SymmetricMatrix[V]"><path d="M66,-118.683C66,-108.896 66,-96.9026 66,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="64.2501,-118.858 66,-123.858 67.7501,-118.858 64.2501,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node1 --><g class="node trait" id="graph60_1"><g id="a_trait|graph60_1"><a xlink:title="virtufin.math.Matrix" xlink:href="Matrix.html#inheritance-diagram"><polygon points="108.25,-212 23.75,-212 23.75,-186 108.25,-186 108.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-205" x="36" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-196.5" x="56" text-anchor="start">Matrix[V]</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph60_1_0"><g id="a_inheritance|graph60_1_0"><a xlink:title="SymmetricMatrix[V] is a subtype of Matrix[V]"><path d="M66,-180.683C66,-170.896 66,-158.903 66,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="64.2501,-180.858 66,-185.858 67.7501,-180.858 64.2501,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph60_3"><g id="a_trait|graph60_3"><a xlink:title="virtufin.math.CorrelationMatrix" xlink:href="CorrelationMatrix.html#inheritance-diagram"><polygon points="126.25,-26 5.75,-26 5.75,-0 126.25,-0 126.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="18" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="38" text-anchor="start">CorrelationMatrix</text></a></g></g><!-- node2&#45;&gt;node3 --><g class="edge inheritance" id="graph60_2_3"><g id="a_inheritance|graph60_2_3"><a xlink:title="CorrelationMatrix is a subtype of CovarianceMatrix"><path d="M66,-56.6826C66,-46.8961 66,-34.9026 66,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="64.2501,-56.8581 66,-61.8581 67.7501,-56.8581 64.2501,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -73,7 +81,11 @@
       <span class="symbol">
         <a href="Correlation.html"><span class="name">Correlation</span></a><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span name="x1">x1: <span class="extype" name="virtufin.math.Correlation.X">X</span></span>, <span name="x2">x2: <span class="extype" name="virtufin.math.Correlation.X">X</span></span>)</span><span class="result"> extends <a href="../util/Identifier.html" class="extype" name="virtufin.util.Identifier">Identifier</a>[<span class="extype" name="scala.Double">Double</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@Correlation[X]extendsIdentifier[Double]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.CorrelationMatrix" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="CorrelationMatrixextendsCovarianceMatrix"></a>
@@ -86,7 +98,11 @@
       <span class="symbol">
         <a href="CorrelationMatrix.html"><span class="name">CorrelationMatrix</span></a><span class="result"> extends <a href="CovarianceMatrix.html" class="extype" name="virtufin.math.CovarianceMatrix">CovarianceMatrix</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@CorrelationMatrixextendsCovarianceMatrix" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.CovarianceMatrix" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="CovarianceMatrixextendsSymmetricMatrix[Double]"></a>
@@ -99,7 +115,11 @@
       <span class="symbol">
         <a href="CovarianceMatrix.html"><span class="name">CovarianceMatrix</span></a><span class="result"> extends <a href="SymmetricMatrix.html" class="extype" name="virtufin.math.SymmetricMatrix">SymmetricMatrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@CovarianceMatrixextendsSymmetricMatrix[Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.Matrix" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Matrix[V]extendsAnyRef"></a>
@@ -112,7 +132,11 @@
       <span class="symbol">
         <a href="Matrix.html"><span class="name">Matrix</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@Matrix[V]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.SymmetricMatrix" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SymmetricMatrix[V]extendsMatrix[V]"></a>
@@ -125,7 +149,11 @@
       <span class="symbol">
         <a href="SymmetricMatrix.html"><span class="name">SymmetricMatrix</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <a href="Matrix.html" class="extype" name="virtufin.math.Matrix">Matrix</a>[<span class="extype" name="virtufin.math.SymmetricMatrix.V">V</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@SymmetricMatrix[V]extendsMatrix[V]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -145,7 +173,11 @@
       <span class="symbol">
         <a href="CorrelationMatrix$.html"><span class="name">CorrelationMatrix</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@CorrelationMatrix" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.CovarianceMatrix" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="CovarianceMatrix"></a>
@@ -158,7 +190,11 @@
       <span class="symbol">
         <a href="CovarianceMatrix$.html"><span class="name">CovarianceMatrix</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@CovarianceMatrix" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.Matrix" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Matrix"></a>
@@ -171,7 +207,11 @@
       <span class="symbol">
         <a href="Matrix$.html"><span class="name">Matrix</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@Matrix" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.SymmetricMatrix" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SymmetricMatrix"></a>
@@ -184,7 +224,11 @@
       <span class="symbol">
         <a href="SymmetricMatrix$.html"><span class="name">SymmetricMatrix</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@SymmetricMatrix" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.lattice" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="lattice"></a>
@@ -197,7 +241,11 @@
       <span class="symbol">
         <a href="lattice/package.html"><span class="name">lattice</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@lattice" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.math.random" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="random"></a>
@@ -210,7 +258,11 @@
       <span class="symbol">
         <a href="random/package.html"><span class="name">random</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.math.package@random" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -237,6 +289,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

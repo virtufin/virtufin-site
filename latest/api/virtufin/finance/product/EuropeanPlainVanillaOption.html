@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>EuropeanPlainVanillaOption - virtufin - virtufin.finance.product.EuropeanPlainVanillaOption</title>
@@ -9,6 +8,11 @@
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="package.html" class="extype" name="virtufin.finance.product">product</a></p>
-        <h1>EuropeanPlainVanillaOption</h1>
+        <h1>EuropeanPlainVanillaOption</h1> <span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -35,17 +43,17 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">EuropeanPlainVanillaOption</span><span class="params">(<span name="notional">notional: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="callPut">callPut: <a href="feature/CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a></span>, <span name="strike">strike: <span class="extype" name="scala.Double">Double</span></span>, <span name="underlying">underlying: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="maturityDate">maturityDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a> with <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.product.feature.EuropeanOption">EuropeanOption</a> with <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a>[<span class="extype" name="scala.Double">Double</span>] with <a href="feature/Striking.html" class="extype" name="virtufin.finance.product.feature.Striking">Striking</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">EuropeanPlainVanillaOption</span><span class="params">(<span name="notional">notional: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="callPut">callPut: <a href="feature/CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a></span>, <span name="strike">strike: <span class="extype" name="scala.Double">Double</span></span>, <span name="underlying">underlying: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="settlementDate">settlementDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span><span class="result"> extends <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a> with <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.product.feature.EuropeanOption">EuropeanOption</a> with <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a>[<span class="extype" name="scala.Double">Double</span>] with <a href="feature/Striking.html" class="extype" name="virtufin.finance.product.feature.Striking">Striking</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="feature/Striking.html" class="extype" name="virtufin.finance.product.feature.Striking">Striking</a>, <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a>[<span class="extype" name="scala.Double">Double</span>], <a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a>[<span class="extype" name="scala.Double">Double</span>], <a href="feature/Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a>[<span class="extype" name="scala.Double">Double</span>], <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.product.feature.EuropeanOption">EuropeanOption</a>, <a href="feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a>, <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a>, <a href="feature/EuropeanExercise.html" class="extype" name="virtufin.finance.product.feature.EuropeanExercise">EuropeanExercise</a>, <a href="feature/Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">Optional</a>, <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>, <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a>, <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a>, <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="feature/Striking.html" class="extype" name="virtufin.finance.product.feature.Striking">Striking</a>, <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a>[<span class="extype" name="scala.Double">Double</span>], <a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a>[<span class="extype" name="scala.Double">Double</span>], <a href="feature/Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a>[<span class="extype" name="scala.Double">Double</span>], <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.product.feature.EuropeanOption">EuropeanOption</a>, <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a>, <a href="feature/EuropeanExercise.html" class="extype" name="virtufin.finance.product.feature.EuropeanExercise">EuropeanExercise</a>, <a href="feature/Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">Optional</a>, <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a>, <a href="feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a>, <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>, <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a>, <a href="Asset.html" class="extype" name="virtufin.finance.product.Asset">Asset</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph236" viewBox="0.00 0.00 747.00 120.00" height="120pt" width="747pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph0"><polygon points="-4,4 -4,-116 743,-116 743,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph236_0"><g id="a_this class|graph236_0"><a xlink:title="virtufin.finance.product.EuropeanPlainVanillaOption (this class)" xlink:href="#inheritance-diagram"><polygon points="497,-50 327,-50 327,-24 497,-24 497,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-43" x="339" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-34.5" x="359" text-anchor="start">EuropeanPlainVanillaOption</text></a></g></g><!-- node1 --><g class="node trait" id="graph236_1"><g id="a_trait|graph236_1"><a xlink:title="virtufin.finance.product.Instrument" xlink:href="Instrument.html#inheritance-diagram"><polygon points="92.25,-112 -0.25,-112 -0.25,-86 92.25,-86 92.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="32" text-anchor="start">Instrument</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph236_1_0"><g id="a_inheritance|graph236_1_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Instrument"><path d="M97.5462,-86.8379C99.0462,-86.5504 100.533,-86.2705 102,-86 177.784,-72.025 264.501,-58.8342 326.912,-49.8303" stroke="#d4d4d4" fill="none"></path><polygon points="96.979,-85.1655 92.4069,-87.8409 97.6495,-88.6006 96.979,-85.1655" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph236_2"><g id="a_trait|graph236_2"><a xlink:title="virtufin.finance.product.feature.EuropeanOption" xlink:href="feature/EuropeanOption.html#inheritance-diagram"><polygon points="229,-112 111,-112 111,-86 229,-86 229,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="123" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="143" text-anchor="start">EuropeanOption</text></a></g></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph236_2_0"><g id="a_inheritance|graph236_2_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of EuropeanOption"><path d="M223.697,-84.6868C265.48,-74.3272 322.966,-60.0746 363.397,-50.0504" stroke="#d4d4d4" fill="none"></path><polygon points="223.113,-83.0284 218.681,-85.9303 223.955,-86.4255 223.113,-83.0284" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph236_3"><g id="a_trait|graph236_3"><a xlink:title="virtufin.finance.product.feature.SingleFixingDerivative" xlink:href="feature/SingleFixingDerivative.html#inheritance-diagram"><polygon points="428.25,-112 247.75,-112 247.75,-86 428.25,-86 428.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="260" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="280" text-anchor="start">SingleFixingDerivative[Double]</text></a></g></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph236_3_0"><g id="a_inheritance|graph236_3_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of SingleFixingDerivative[Double]"><path d="M357.047,-82.5563C369.494,-72.4643 385.518,-59.4716 397.047,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="355.757,-81.3497 352.975,-85.8581 357.961,-84.0684 355.757,-81.3497" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph236_4"><g id="a_trait|graph236_4"><a xlink:title="virtufin.finance.product.feature.Striking" xlink:href="feature/Striking.html#inheritance-diagram"><polygon points="525.25,-112 446.75,-112 446.75,-86 525.25,-86 525.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="459" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="479" text-anchor="start">Striking</text></a></g></g><!-- node4&#45;&gt;node0 --><g class="edge inheritance" id="graph236_4_0"><g id="a_inheritance|graph236_4_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Striking"><path d="M466.953,-82.5563C454.506,-72.4643 438.482,-59.4716 426.953,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="466.039,-84.0684 471.025,-85.8581 468.243,-81.3497 466.039,-84.0684" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node trait" id="graph236_5"><g id="a_trait|graph236_5"><a xlink:title="scala.Product"><polygon points="624,-112 544,-112 544,-86 624,-86 624,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="556" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="576" text-anchor="start">Product</text></a></g></g><!-- node5&#45;&gt;node0 --><g class="edge inheritance" id="graph236_5_0"><g id="a_inheritance|graph236_5_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Product"><path d="M544.169,-84.1054C514.595,-73.7889 474.668,-59.8609 446.461,-50.0213" stroke="#d4d4d4" fill="none"></path><polygon points="543.896,-85.8635 549.193,-85.8581 545.049,-82.5588 543.896,-85.8635" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph236_6"><g id="a_trait|graph236_6"><a xlink:title="scala.Serializable"><polygon points="739.25,-112 642.75,-112 642.75,-86 739.25,-86 739.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="655" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="675" text-anchor="start">Serializable</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph236_6_0"><g id="a_inheritance|graph236_6_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Serializable"><path d="M637.788,-86.5566C589.104,-76.0868 517.329,-60.6515 467.836,-50.0078" stroke="#d4d4d4" fill="none"></path><polygon points="637.464,-88.2769 642.72,-87.6173 638.2,-84.8551 637.464,-88.2769" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph242" viewBox="0.00 0.00 747.00 120.00" height="120pt" width="747pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph0"><polygon points="-4,4 -4,-116 743,-116 743,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph242_0"><g id="a_this class|graph242_0"><a xlink:title="virtufin.finance.product.EuropeanPlainVanillaOption (this class)" xlink:href="#inheritance-diagram"><polygon points="497,-50 327,-50 327,-24 497,-24 497,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-43" x="339" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-34.5" x="359" text-anchor="start">EuropeanPlainVanillaOption</text></a></g></g><!-- node1 --><g class="node trait" id="graph242_1"><g id="a_trait|graph242_1"><a xlink:title="virtufin.finance.product.Instrument" xlink:href="Instrument.html#inheritance-diagram"><polygon points="92.25,-112 -0.25,-112 -0.25,-86 92.25,-86 92.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="32" text-anchor="start">Instrument</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph242_1_0"><g id="a_inheritance|graph242_1_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Instrument"><path d="M97.5462,-86.8379C99.0462,-86.5504 100.533,-86.2705 102,-86 177.784,-72.025 264.501,-58.8342 326.912,-49.8303" stroke="#d4d4d4" fill="none"></path><polygon points="96.979,-85.1655 92.4069,-87.8409 97.6495,-88.6006 96.979,-85.1655" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph242_2"><g id="a_trait|graph242_2"><a xlink:title="virtufin.finance.product.feature.EuropeanOption" xlink:href="feature/EuropeanOption.html#inheritance-diagram"><polygon points="229,-112 111,-112 111,-86 229,-86 229,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="123" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="143" text-anchor="start">EuropeanOption</text></a></g></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph242_2_0"><g id="a_inheritance|graph242_2_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of EuropeanOption"><path d="M223.697,-84.6868C265.48,-74.3272 322.966,-60.0746 363.397,-50.0504" stroke="#d4d4d4" fill="none"></path><polygon points="223.113,-83.0284 218.681,-85.9303 223.955,-86.4255 223.113,-83.0284" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph242_3"><g id="a_trait|graph242_3"><a xlink:title="virtufin.finance.product.feature.SingleFixingDerivative" xlink:href="feature/SingleFixingDerivative.html#inheritance-diagram"><polygon points="428.25,-112 247.75,-112 247.75,-86 428.25,-86 428.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="260" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="280" text-anchor="start">SingleFixingDerivative[Double]</text></a></g></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph242_3_0"><g id="a_inheritance|graph242_3_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of SingleFixingDerivative[Double]"><path d="M357.047,-82.5563C369.494,-72.4643 385.518,-59.4716 397.047,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="355.757,-81.3497 352.975,-85.8581 357.961,-84.0684 355.757,-81.3497" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph242_4"><g id="a_trait|graph242_4"><a xlink:title="virtufin.finance.product.feature.Striking" xlink:href="feature/Striking.html#inheritance-diagram"><polygon points="525.25,-112 446.75,-112 446.75,-86 525.25,-86 525.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="459" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="479" text-anchor="start">Striking</text></a></g></g><!-- node4&#45;&gt;node0 --><g class="edge inheritance" id="graph242_4_0"><g id="a_inheritance|graph242_4_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Striking"><path d="M466.953,-82.5563C454.506,-72.4643 438.482,-59.4716 426.953,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="466.039,-84.0684 471.025,-85.8581 468.243,-81.3497 466.039,-84.0684" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node trait" id="graph242_5"><g id="a_trait|graph242_5"><a xlink:title="scala.Product"><polygon points="624,-112 544,-112 544,-86 624,-86 624,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="556" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="576" text-anchor="start">Product</text></a></g></g><!-- node5&#45;&gt;node0 --><g class="edge inheritance" id="graph242_5_0"><g id="a_inheritance|graph242_5_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Product"><path d="M544.169,-84.1054C514.595,-73.7889 474.668,-59.8609 446.461,-50.0213" stroke="#d4d4d4" fill="none"></path><polygon points="543.896,-85.8635 549.193,-85.8581 545.049,-82.5588 543.896,-85.8635" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph242_6"><g id="a_trait|graph242_6"><a xlink:title="scala.Serializable"><polygon points="739.25,-112 642.75,-112 642.75,-86 739.25,-86 739.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-105" x="655" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-96.5" x="675" text-anchor="start">Serializable</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph242_6_0"><g id="a_inheritance|graph242_6_0"><a xlink:title="EuropeanPlainVanillaOption is a subtype of Serializable"><path d="M637.788,-86.5566C589.104,-76.0868 517.329,-60.6515 467.836,-50.0078" stroke="#d4d4d4" fill="none"></path><polygon points="637.464,-88.2769 642.72,-87.6173 638.2,-84.8551 637.464,-88.2769" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -63,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.finance.product.EuropeanPlainVanillaOption"><span>EuropeanPlainVanillaOption</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="virtufin.finance.product.feature.Striking"><span>Striking</span></li><li class="in" name="virtufin.finance.product.feature.SingleFixingDerivative"><span>SingleFixingDerivative</span></li><li class="in" name="virtufin.finance.product.feature.SingleMarketObservableDerivative"><span>SingleMarketObservableDerivative</span></li><li class="in" name="virtufin.finance.product.feature.Derivative"><span>Derivative</span></li><li class="in" name="virtufin.finance.product.feature.EuropeanOption"><span>EuropeanOption</span></li><li class="in" name="virtufin.finance.product.feature.Maturing"><span>Maturing</span></li><li class="in" name="virtufin.finance.product.feature.BilateralContract"><span>BilateralContract</span></li><li class="in" name="virtufin.finance.product.feature.EuropeanExercise"><span>EuropeanExercise</span></li><li class="in" name="virtufin.finance.product.feature.Optional"><span>Optional</span></li><li class="in" name="virtufin.finance.product.Feature"><span>Feature</span></li><li class="in" name="virtufin.finance.product.feature.SingleSettling"><span>SingleSettling</span></li><li class="in" name="virtufin.finance.product.Instrument"><span>Instrument</span></li><li class="in" name="virtufin.finance.product.Asset"><span>Asset</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.finance.product.EuropeanPlainVanillaOption"><span>EuropeanPlainVanillaOption</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="virtufin.finance.product.feature.Striking"><span>Striking</span></li><li class="in" name="virtufin.finance.product.feature.SingleFixingDerivative"><span>SingleFixingDerivative</span></li><li class="in" name="virtufin.finance.product.feature.SingleMarketObservableDerivative"><span>SingleMarketObservableDerivative</span></li><li class="in" name="virtufin.finance.product.feature.Derivative"><span>Derivative</span></li><li class="in" name="virtufin.finance.product.feature.EuropeanOption"><span>EuropeanOption</span></li><li class="in" name="virtufin.finance.product.feature.BilateralContract"><span>BilateralContract</span></li><li class="in" name="virtufin.finance.product.feature.EuropeanExercise"><span>EuropeanExercise</span></li><li class="in" name="virtufin.finance.product.feature.Optional"><span>Optional</span></li><li class="in" name="virtufin.finance.product.feature.SingleSettling"><span>SingleSettling</span></li><li class="in" name="virtufin.finance.product.feature.Maturing"><span>Maturing</span></li><li class="in" name="virtufin.finance.product.Feature"><span>Feature</span></li><li class="in" name="virtufin.finance.product.Instrument"><span>Instrument</span></li><li class="in" name="virtufin.finance.product.Asset"><span>Asset</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -84,7 +92,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="virtufin.finance.product.EuropeanPlainVanillaOption#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(notional:virtufin.finance.product.Cash,callPut:virtufin.finance.product.feature.CallPut,strike:Double,underlying:virtufin.finance.scenario.MarketObservable[Double],maturityDate:virtufin.finance.Time,buyerPortfolio:virtufin.finance.product.PortfolioIdentifier,sellerPortfolio:virtufin.finance.product.PortfolioIdentifier):virtufin.finance.product.EuropeanPlainVanillaOption"></a>
+      <a id="&lt;init&gt;(notional:virtufin.finance.product.Cash,callPut:virtufin.finance.product.feature.CallPut,strike:Double,underlying:virtufin.finance.scenario.MarketObservable[Double],settlementDate:virtufin.finance.Time,buyerPortfolio:virtufin.finance.product.PortfolioIdentifier,sellerPortfolio:virtufin.finance.product.PortfolioIdentifier):virtufin.finance.product.EuropeanPlainVanillaOption"></a>
       <a id="&lt;init&gt;:EuropeanPlainVanillaOption"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,9 +100,13 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">EuropeanPlainVanillaOption</span><span class="params">(<span name="notional">notional: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="callPut">callPut: <a href="feature/CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a></span>, <span name="strike">strike: <span class="extype" name="scala.Double">Double</span></span>, <span name="underlying">underlying: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="maturityDate">maturityDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span>
+        <span class="name">EuropeanPlainVanillaOption</span><span class="params">(<span name="notional">notional: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>, <span name="callPut">callPut: <a href="feature/CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a></span>, <span name="strike">strike: <span class="extype" name="scala.Double">Double</span></span>, <span name="underlying">underlying: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="settlementDate">settlementDate: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>, <span name="buyerPortfolio">buyerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>, <span name="sellerPortfolio">sellerPortfolio: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@&lt;init&gt;(notional:virtufin.finance.product.Cash,callPut:virtufin.finance.product.feature.CallPut,strike:Double,underlying:virtufin.finance.scenario.MarketObservable[Double],settlementDate:virtufin.finance.Time,buyerPortfolio:virtufin.finance.product.PortfolioIdentifier,sellerPortfolio:virtufin.finance.product.PortfolioIdentifier):virtufin.finance.product.EuropeanPlainVanillaOption" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -106,19 +118,6 @@
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -129,8 +128,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -142,22 +145,13 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -168,8 +162,12 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -181,7 +179,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#buyerPortfolio" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="buyerPortfolio:virtufin.finance.product.PortfolioIdentifier"></a>
@@ -194,7 +196,11 @@
       <span class="symbol">
         <span class="name">buyerPortfolio</span><span class="result">: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@buyerPortfolio:virtufin.finance.product.PortfolioIdentifier" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a> → <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a></dd></dl></div>
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#callPut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="callPut:virtufin.finance.product.feature.CallPut"></a>
@@ -207,7 +213,11 @@
       <span class="symbol">
         <span class="name">callPut</span><span class="result">: <a href="feature/CallPut.html" class="extype" name="virtufin.finance.product.feature.CallPut">CallPut</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@callPut:virtufin.finance.product.feature.CallPut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -220,7 +230,11 @@
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -239,7 +253,11 @@
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#exerciseDate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="exerciseDate:virtufin.finance.Time"></a>
@@ -252,7 +270,11 @@
       <span class="symbol">
         <span class="name">exerciseDate</span><span class="result">: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@exerciseDate:virtufin.finance.Time" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a> → <a href="feature/EuropeanExercise.html" class="extype" name="virtufin.finance.product.feature.EuropeanExercise">EuropeanExercise</a></dd></dl></div>
     </li><li name="virtufin.finance.product.feature.EuropeanExercise#exerciseDates" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="exerciseDates:scala.collection.SortedSet[virtufin.finance.Time]"></a>
@@ -265,7 +287,11 @@
       <span class="symbol">
         <span class="name">exerciseDates</span><span class="result">: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@exerciseDates:scala.collection.SortedSet[virtufin.finance.Time]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/EuropeanExercise.html" class="extype" name="virtufin.finance.product.feature.EuropeanExercise">EuropeanExercise</a> → <a href="feature/Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">Optional</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -278,7 +304,11 @@
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -297,7 +327,11 @@
       <span class="symbol">
         <span class="name">fixing</span><span class="result">: <a href="../scenario/Fixing.html" class="extype" name="virtufin.finance.scenario.Fixing">Fixing</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@fixing:virtufin.finance.scenario.Fixing[Double]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a> → <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a></dd></dl></div>
     </li><li name="virtufin.finance.product.feature.SingleFixingDerivative#fixingDates" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fixingDates:scala.collection.SortedSet[virtufin.finance.Time]"></a>
@@ -310,7 +344,11 @@
       <span class="symbol">
         <span class="name">fixingDates</span><span class="result">: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@fixingDates:scala.collection.SortedSet[virtufin.finance.Time]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a> → <a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a> → <a href="feature/Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a></dd></dl></div>
     </li><li name="virtufin.finance.product.feature.SingleMarketObservableDerivative#fixings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fixings:Set[virtufin.finance.scenario.Fixing[V]]"></a>
@@ -323,7 +361,11 @@
       <span class="symbol">
         <span class="name">fixings</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../scenario/Fixing.html" class="extype" name="virtufin.finance.scenario.Fixing">Fixing</a>[<span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@fixings:Set[virtufin.finance.scenario.Fixing[V]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a> → <a href="feature/Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
@@ -336,7 +378,11 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -349,7 +395,11 @@
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="virtufin.finance.product.feature.SingleFixingDerivative#marketObservable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="marketObservable:virtufin.finance.scenario.MarketObservable[V]"></a>
@@ -362,7 +412,11 @@
       <span class="symbol">
         <span class="name">marketObservable</span><span class="result">: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@marketObservable:virtufin.finance.scenario.MarketObservable[V]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleFixingDerivative">SingleFixingDerivative</a> → <a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a></dd></dl></div>
     </li><li name="virtufin.finance.product.feature.SingleMarketObservableDerivative#marketObservables" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="marketObservables:Set[virtufin.finance.scenario.MarketObservable[V]]"></a>
@@ -375,21 +429,29 @@
       <span class="symbol">
         <span class="name">marketObservables</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@marketObservables:Set[virtufin.finance.scenario.MarketObservable[V]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.product.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a> → <a href="feature/Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a></dd></dl></div>
-    </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#maturityDate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="virtufin.finance.product.feature.SingleSettling#maturityDate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="maturityDate:virtufin.finance.Time"></a>
       <a id="maturityDate:Time"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">maturityDate</span><span class="result">: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a> → <a href="feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@maturityDate:virtufin.finance.Time" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a> → <a href="feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -401,7 +463,11 @@
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -414,7 +480,11 @@
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -427,7 +497,11 @@
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#notional" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="notional:virtufin.finance.product.Cash"></a>
@@ -440,7 +514,11 @@
       <span class="symbol">
         <span class="name">notional</span><span class="result">: <a href="package.html#Cash=virtufin.finance.product.Position[virtufin.finance.product.Currency]" class="extmbr" name="virtufin.finance.product.Cash">Cash</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@notional:virtufin.finance.product.Cash" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#sellerPortfolio" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="sellerPortfolio:virtufin.finance.product.PortfolioIdentifier"></a>
@@ -453,7 +531,11 @@
       <span class="symbol">
         <span class="name">sellerPortfolio</span><span class="result">: <a href="PortfolioIdentifier.html" class="extype" name="virtufin.finance.product.PortfolioIdentifier">PortfolioIdentifier</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@sellerPortfolio:virtufin.finance.product.PortfolioIdentifier" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a> → <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a></dd></dl></div>
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#settlementDate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="settlementDate:virtufin.finance.Time"></a>
@@ -466,7 +548,11 @@
       <span class="symbol">
         <span class="name">settlementDate</span><span class="result">: <a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@settlementDate:virtufin.finance.Time" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a> → <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a></dd></dl></div>
     </li><li name="virtufin.finance.product.feature.SingleSettling#settlementDates" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="settlementDates:scala.collection.SortedSet[virtufin.finance.Time]"></a>
@@ -479,7 +565,11 @@
       <span class="symbol">
         <span class="name">settlementDates</span><span class="result">: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<a href="../package.html#Time=virtufin.util.Day" class="extmbr" name="virtufin.finance.Time">Time</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@settlementDates:scala.collection.SortedSet[virtufin.finance.Time]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a></dd></dl></div>
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#strike" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="strike:Double"></a>
@@ -492,7 +582,11 @@
       <span class="symbol">
         <span class="name">strike</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@strike:Double" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.product.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a> → <a href="feature/Striking.html" class="extype" name="virtufin.finance.product.feature.Striking">Striking</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -505,7 +599,11 @@
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="virtufin.finance.product.EuropeanPlainVanillaOption#underlying" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="underlying:virtufin.finance.scenario.MarketObservable[Double]"></a>
@@ -518,7 +616,11 @@
       <span class="symbol">
         <span class="name">underlying</span><span class="result">: <a href="../scenario/MarketObservable.html" class="extype" name="virtufin.finance.scenario.MarketObservable">MarketObservable</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@underlying:virtufin.finance.scenario.MarketObservable[Double]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -531,7 +633,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -550,7 +656,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -569,7 +679,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.product.EuropeanPlainVanillaOption@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -604,18 +718,18 @@
               <h3>Inherited from <a href="feature/Derivative.html" class="extype" name="virtufin.finance.product.feature.Derivative">Derivative</a>[<span class="extype" name="scala.Double">Double</span>]</h3>
             </div><div class="parent" name="virtufin.finance.product.feature.EuropeanOption">
               <h3>Inherited from <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.product.feature.EuropeanOption">EuropeanOption</a></h3>
-            </div><div class="parent" name="virtufin.finance.product.feature.Maturing">
-              <h3>Inherited from <a href="feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a></h3>
             </div><div class="parent" name="virtufin.finance.product.feature.BilateralContract">
               <h3>Inherited from <a href="feature/BilateralContract.html" class="extype" name="virtufin.finance.product.feature.BilateralContract">BilateralContract</a></h3>
             </div><div class="parent" name="virtufin.finance.product.feature.EuropeanExercise">
               <h3>Inherited from <a href="feature/EuropeanExercise.html" class="extype" name="virtufin.finance.product.feature.EuropeanExercise">EuropeanExercise</a></h3>
             </div><div class="parent" name="virtufin.finance.product.feature.Optional">
               <h3>Inherited from <a href="feature/Optional.html" class="extype" name="virtufin.finance.product.feature.Optional">Optional</a></h3>
-            </div><div class="parent" name="virtufin.finance.product.Feature">
-              <h3>Inherited from <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></h3>
             </div><div class="parent" name="virtufin.finance.product.feature.SingleSettling">
               <h3>Inherited from <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.product.feature.SingleSettling">SingleSettling</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.feature.Maturing">
+              <h3>Inherited from <a href="feature/Maturing.html" class="extype" name="virtufin.finance.product.feature.Maturing">Maturing</a></h3>
+            </div><div class="parent" name="virtufin.finance.product.Feature">
+              <h3>Inherited from <a href="Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></h3>
             </div><div class="parent" name="virtufin.finance.product.Instrument">
               <h3>Inherited from <a href="Instrument.html" class="extype" name="virtufin.finance.product.Instrument">Instrument</a></h3>
             </div><div class="parent" name="virtufin.finance.product.Asset">
@@ -640,6 +754,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

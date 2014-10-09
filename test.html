@@ -148,8 +148,111 @@
       
   <div class="section" id="code">
 <h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
-<p>See <tt class="xref download docutils literal"><span class="pre">package</span> <span class="pre">scala</span></tt>.</p>
+<p>See <a class="reference download internal" href="_downloads/MetronomeExample.scala"><tt class="xref download docutils literal"><span class="pre">package</span> <span class="pre">scala</span></tt></a>.</p>
 <p>Cf. <a class="reference external" href="/latest/api/#virtufin/simulation/Metronome$">Metronome</a></p>
+<div class="highlight-scala"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51</pre></div></td><td class="code"><div class="highlight"><pre><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2011-2014 Haener Consulting. All rights reserved.</span>
+<span class="cm"> */</span>
+
+<span class="k">package</span> <span class="nn">examples.simulation</span>
+
+<span class="k">import</span> <span class="nn">java.util.Calendar</span>
+<span class="k">import</span> <span class="nn">play.api.libs.iteratee.Iteratee</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.</span><span class="o">{</span><span class="nc">Await</span><span class="o">,</span> <span class="nc">ExecutionContext</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">virtufin.util._</span>
+<span class="k">import</span> <span class="nn">virtufin.simulation._</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.duration._</span>
+<span class="k">import</span> <span class="nn">ExecutionContext.Implicits.global</span>
+<span class="k">import</span> <span class="nn">examples.Example</span>
+
+<span class="k">object</span> <span class="nc">MetronomeExample</span> <span class="k">extends</span> <span class="nc">Example</span> <span class="o">{</span>
+  <span class="c1">// Metronome emitting 0, 1, 2,...</span>
+  <span class="c1">// emitting events as fast as possible</span>
+  <span class="k">val</span> <span class="n">delayInt</span> <span class="k">=</span> <span class="nc">Duration</span><span class="o">.</span><span class="nc">Zero</span>
+  <span class="k">val</span> <span class="n">nMax</span> <span class="k">=</span> <span class="mi">10000</span>
+
+  <span class="k">def</span> <span class="n">metronomeInt</span> <span class="k">=</span> <span class="nc">Metronome</span><span class="o">(</span><span class="n">delayInt</span><span class="o">,</span> <span class="n">n</span> <span class="k">=&gt;</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">nMax</span><span class="o">)</span>
+
+  <span class="c1">// Metronome emitting from start date monthly dates for 1 years</span>
+  <span class="c1">// events emitted every second</span>
+  <span class="k">val</span> <span class="n">delayDay</span> <span class="k">=</span> <span class="mi">1</span> <span class="n">second</span>
+  <span class="k">val</span> <span class="n">startDate</span> <span class="k">=</span> <span class="nc">Day</span><span class="o">(</span><span class="mi">2014</span><span class="o">,</span> <span class="nc">Calendar</span><span class="o">.</span><span class="nc">NOVEMBER</span><span class="o">,</span> <span class="mi">1</span><span class="o">)</span>
+
+  <span class="k">import</span> <span class="nn">FiniteSchedule._</span>
+
+  <span class="k">val</span> <span class="n">schedule</span> <span class="k">=</span> <span class="nc">Schedule</span><span class="o">(</span><span class="nc">Term</span><span class="o">.</span><span class="n">M1</span><span class="o">)</span> <span class="n">until</span> <span class="nc">Term</span><span class="o">.</span><span class="n">Y1</span>
+  <span class="k">val</span> <span class="n">dates</span> <span class="k">=</span> <span class="n">schedule</span><span class="o">.</span><span class="n">generateTimes</span><span class="o">(</span><span class="n">startDate</span><span class="o">)</span>
+
+  <span class="k">def</span> <span class="n">metronomeDay</span> <span class="k">=</span> <span class="nc">Metronome</span><span class="o">(</span><span class="n">dates</span><span class="o">,</span> <span class="n">delayDay</span><span class="o">)</span>
+
+  <span class="c1">// Iteratees:</span>
+  <span class="c1">// adds all values emitted by metronomeInt</span>
+  <span class="k">val</span> <span class="n">adder</span> <span class="k">=</span> <span class="nc">Iteratee</span><span class="o">.</span><span class="n">fold</span><span class="o">[</span><span class="kt">Int</span>, <span class="kt">Int</span><span class="o">](</span><span class="mi">0</span><span class="o">)((</span><span class="n">l</span><span class="k">:</span> <span class="kt">Int</span><span class="o">,</span> <span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">l</span> <span class="o">+</span> <span class="n">x</span><span class="o">)</span>
+  <span class="c1">// prints days</span>
+  <span class="k">val</span> <span class="n">printerDay</span> <span class="k">=</span> <span class="nc">Iteratee</span><span class="o">.</span><span class="n">foreach</span><span class="o">[</span><span class="kt">Day</span><span class="o">](</span><span class="n">d</span> <span class="k">=&gt;</span> <span class="n">output</span><span class="o">(</span><span class="n">s</span><span class="s">&quot;${new java.util.Date()} -&gt; $d&quot;</span><span class="o">)).</span><span class="n">map</span><span class="o">(</span><span class="k">_</span> <span class="k">=&gt;</span> <span class="n">println</span><span class="o">(</span><span class="s">&quot;Done&quot;</span><span class="o">))</span>
+  <span class="c1">// stores all values emitted by the metronomeDay</span>
+  <span class="k">val</span> <span class="n">collectorDays</span> <span class="k">=</span> <span class="nc">Iteratee</span><span class="o">.</span><span class="n">fold</span><span class="o">(</span><span class="nc">List</span><span class="o">[</span><span class="kt">Day</span><span class="o">]())((</span><span class="n">l</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Day</span><span class="o">],</span> <span class="n">x</span><span class="k">:</span> <span class="kt">Day</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">l</span><span class="o">.::(</span><span class="n">x</span><span class="o">))</span>
+
+  <span class="c1">// Run the Iteratees</span>
+  <span class="k">val</span> <span class="n">resultAdd</span> <span class="k">=</span> <span class="nc">Await</span><span class="o">.</span><span class="n">result</span><span class="o">(</span><span class="n">metronomeInt</span> <span class="o">|&gt;&gt;&gt;</span> <span class="n">adder</span><span class="o">,</span> <span class="mi">20</span> <span class="n">seconds</span><span class="o">)</span>
+  <span class="n">output</span><span class="o">(</span><span class="s">&quot;Sum is &quot;</span> <span class="o">+</span> <span class="n">resultAdd</span><span class="o">)</span>
+  <span class="nc">Await</span><span class="o">.</span><span class="n">result</span><span class="o">(</span><span class="n">metronomeDay</span> <span class="o">|&gt;&gt;&gt;</span> <span class="n">printerDay</span><span class="o">,</span> <span class="mi">20</span> <span class="n">seconds</span><span class="o">)</span>
+  <span class="k">val</span> <span class="n">resultCollectDays</span> <span class="k">=</span> <span class="nc">Await</span><span class="o">.</span><span class="n">result</span><span class="o">(</span><span class="n">metronomeDay</span> <span class="o">|&gt;&gt;&gt;</span> <span class="n">collectorDays</span><span class="o">,</span> <span class="mi">20</span> <span class="n">seconds</span><span class="o">)</span>
+  <span class="n">output</span><span class="o">(</span><span class="s">&quot;Days collected: &quot;</span> <span class="o">+</span> <span class="n">resultCollectDays</span><span class="o">.</span><span class="n">reverse</span><span class="o">)</span>
+  <span class="nc">System</span><span class="o">.</span><span class="n">exit</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
 <div class="highlight-scala"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3

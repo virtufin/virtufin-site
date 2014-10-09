@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>SimpleProjector - virtufin - virtufin.simulation.projector.SimpleProjector</title>
@@ -9,6 +8,11 @@
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.simulation">simulation</a>.<a href="package.html" class="extype" name="virtufin.simulation.projector">projector</a></p>
-        <h1>SimpleProjector</h1>
+        <h1>SimpleProjector</h1> <span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -39,16 +47,17 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A <a href="../SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a> which emits at pre-specified <span class="extype" name="TimePoint">TimePoint</span> some <a href="../SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a></p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"></dd><dt class="tparam">S</dt><dd class="cmt"></dd><dt class="tparam">E</dt><dd class="cmt"><p>
+</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="../SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="../../finance/simulation/trigger/ExerciseOpportunitiesTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.ExerciseOpportunitiesTrigger">ExerciseOpportunitiesTrigger</a>, <a href="../../finance/simulation/trigger/MaturityTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.MaturityTrigger">MaturityTrigger</a>, <a href="../../finance/simulation/trigger/SettlementsTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.SettlementsTrigger">SettlementsTrigger</a>, <a href="../../finance/simulation/trigger/SingleMarketObservableDerivativeFixingsTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.SingleMarketObservableDerivativeFixingsTrigger">SingleMarketObservableDerivativeFixingsTrigger</a>, <a href="../../finance/simulation/trigger/StartTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.StartTrigger">StartTrigger</a></div>
-        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="../../finance/simulation/trigger/ExerciseOpportunitiesTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.ExerciseOpportunitiesTrigger">ExerciseOpportunitiesTrigger</a>, <a href="../../finance/simulation/trigger/MaturityTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.MaturityTrigger">MaturityTrigger</a>, <a href="../../finance/simulation/trigger/SettlementsTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.SettlementsTrigger">SettlementsTrigger</a>, <a href="../../finance/simulation/trigger/SingleMarketObservableDerivativeFixingsTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.SingleMarketObservableDerivativeFixingsTrigger">SingleMarketObservableDerivativeFixingsTrigger</a>, <a href="../../finance/simulation/trigger/StartTrigger.html" class="extype" name="virtufin.finance.simulation.trigger.StartTrigger">StartTrigger</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph46" viewBox="0.00 0.00 886.00 158.00" height="158pt" width="886pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 882,-154 882,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph46_0"><g id="a_this class|graph46_0"><a xlink:title="virtufin.simulation.projector.SimpleProjector (this class)" xlink:href="#inheritance-diagram"><polygon points="479,-88 327,-88 327,-62 479,-62 479,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-81" x="339" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="359" text-anchor="start">SimpleProjector[T, S, E]</text></a></g></g><!-- node1 --><g class="node class" id="graph46_1"><g id="a_class|graph46_1"><a xlink:title="virtufin.finance.simulation.trigger.ExerciseOpportunitiesTrigger" xlink:href="../../finance/simulation/trigger/ExerciseOpportunitiesTrigger.html#inheritance-diagram"><polygon points="188,-26 -1.42109e-14,-26 -1.42109e-14,-0 188,-0 188,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">ExerciseOpportunitiesTrigger[O]</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph46_0_1"><g id="a_inheritance|graph46_0_1"><a xlink:title="ExerciseOpportunitiesTrigger[O] is a subtype of SimpleProjector[T, S, E]"><path d="M335.734,-60.9387C282.28,-50.5593 208.104,-36.1561 156.06,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="335.599,-62.695 340.841,-61.9303 336.266,-59.2592 335.599,-62.695" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph46_2"><g id="a_class|graph46_2"><a xlink:title="virtufin.finance.simulation.trigger.MaturityTrigger" xlink:href="../../finance/simulation/trigger/MaturityTrigger.html#inheritance-diagram"><polygon points="319.25,-26 206.75,-26 206.75,-0 319.25,-0 319.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="219" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="239" text-anchor="start">MaturityTrigger</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph46_0_2"><g id="a_inheritance|graph46_0_2"><a xlink:title="MaturityTrigger is a subtype of SimpleProjector[T, S, E]"><path d="M369.996,-59.8556C346.069,-49.601 314.049,-35.8781 291.289,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="369.384,-61.497 374.669,-61.8581 370.763,-58.2799 369.384,-61.497" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph46_3"><g id="a_class|graph46_3"><a xlink:title="virtufin.finance.simulation.trigger.SettlementsTrigger" xlink:href="../../finance/simulation/trigger/SettlementsTrigger.html#inheritance-diagram"><polygon points="468,-26 338,-26 338,-0 468,-0 468,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="350" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="370" text-anchor="start">SettlementsTrigger</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph46_0_3"><g id="a_inheritance|graph46_0_3"><a xlink:title="SettlementsTrigger is a subtype of SimpleProjector[T, S, E]"><path d="M403,-56.6826C403,-46.8961 403,-34.9026 403,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="401.25,-56.8581 403,-61.8581 404.75,-56.8581 401.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph46_4"><g id="a_class|graph46_4"><a xlink:title="virtufin.finance.simulation.trigger.SingleMarketObservableDerivativeFixingsTrigger" xlink:href="../../finance/simulation/trigger/SingleMarketObservableDerivativeFixingsTrigger.html#inheritance-diagram"><polygon points="761.25,-26 486.75,-26 486.75,-0 761.25,-0 761.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="499" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="519" text-anchor="start">SingleMarketObservableDerivativeFixingsTrigger[V]</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph46_0_4"><g id="a_inheritance|graph46_0_4"><a xlink:title="SingleMarketObservableDerivativeFixingsTrigger[V] is a subtype of SimpleProjector[T, S, E]"><path d="M452.503,-60.5602C490.621,-50.2114 542.842,-36.0339 579.614,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="451.824,-58.9313 447.457,-61.9303 452.741,-62.309 451.824,-58.9313" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node class" id="graph46_5"><g id="a_class|graph46_5"><a xlink:title="virtufin.finance.simulation.trigger.StartTrigger" xlink:href="../../finance/simulation/trigger/StartTrigger.html#inheritance-diagram"><polygon points="878,-26 780,-26 780,-0 878,-0 878,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="792" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="812" text-anchor="start">StartTrigger</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph46_0_5"><g id="a_inheritance|graph46_0_5"><a xlink:title="StartTrigger is a subtype of SimpleProjector[T, S, E]"><path d="M484.442,-65.0192C558.974,-56.4041 672.204,-42.3198 770,-26 773.196,-25.4666 776.483,-24.8865 779.793,-24.2787" stroke="#d4d4d4" fill="none"></path><polygon points="483.91,-63.3188 479.143,-65.63 484.311,-66.7958 483.91,-63.3188" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph46_6"><g id="a_trait|graph46_6"><a xlink:title="virtufin.simulation.SimulationEventProjector" xlink:href="../SimulationEventProjector.html#inheritance-diagram"><polygon points="482,-150 324,-150 324,-124 482,-124 482,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="336" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="356" text-anchor="start">SimulationEventProjector</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph46_6_0"><g id="a_inheritance|graph46_6_0"><a xlink:title="SimpleProjector[T, S, E] is a subtype of SimulationEventProjector"><path d="M403,-118.683C403,-108.896 403,-96.9026 403,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="401.25,-118.858 403,-123.858 404.75,-118.858 401.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph37" viewBox="0.00 0.00 886.00 158.00" height="158pt" width="886pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 882,-154 882,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph37_0"><g id="a_this class|graph37_0"><a xlink:title="virtufin.simulation.projector.SimpleProjector (this class)" xlink:href="#inheritance-diagram"><polygon points="479,-88 327,-88 327,-62 479,-62 479,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-81" x="339" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="359" text-anchor="start">SimpleProjector[T, S, E]</text></a></g></g><!-- node1 --><g class="node class" id="graph37_1"><g id="a_class|graph37_1"><a xlink:title="virtufin.finance.simulation.trigger.ExerciseOpportunitiesTrigger" xlink:href="../../finance/simulation/trigger/ExerciseOpportunitiesTrigger.html#inheritance-diagram"><polygon points="188,-26 -1.42109e-14,-26 -1.42109e-14,-0 188,-0 188,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">ExerciseOpportunitiesTrigger[O]</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph37_0_1"><g id="a_inheritance|graph37_0_1"><a xlink:title="ExerciseOpportunitiesTrigger[O] is a subtype of SimpleProjector[T, S, E]"><path d="M335.734,-60.9387C282.28,-50.5593 208.104,-36.1561 156.06,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="335.599,-62.695 340.841,-61.9303 336.266,-59.2592 335.599,-62.695" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph37_2"><g id="a_class|graph37_2"><a xlink:title="virtufin.finance.simulation.trigger.MaturityTrigger" xlink:href="../../finance/simulation/trigger/MaturityTrigger.html#inheritance-diagram"><polygon points="319.25,-26 206.75,-26 206.75,-0 319.25,-0 319.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="219" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="239" text-anchor="start">MaturityTrigger</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph37_0_2"><g id="a_inheritance|graph37_0_2"><a xlink:title="MaturityTrigger is a subtype of SimpleProjector[T, S, E]"><path d="M369.996,-59.8556C346.069,-49.601 314.049,-35.8781 291.289,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="369.384,-61.497 374.669,-61.8581 370.763,-58.2799 369.384,-61.497" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph37_3"><g id="a_class|graph37_3"><a xlink:title="virtufin.finance.simulation.trigger.SettlementsTrigger" xlink:href="../../finance/simulation/trigger/SettlementsTrigger.html#inheritance-diagram"><polygon points="468,-26 338,-26 338,-0 468,-0 468,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="350" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="370" text-anchor="start">SettlementsTrigger</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph37_0_3"><g id="a_inheritance|graph37_0_3"><a xlink:title="SettlementsTrigger is a subtype of SimpleProjector[T, S, E]"><path d="M403,-56.6826C403,-46.8961 403,-34.9026 403,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="401.25,-56.8581 403,-61.8581 404.75,-56.8581 401.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph37_4"><g id="a_class|graph37_4"><a xlink:title="virtufin.finance.simulation.trigger.SingleMarketObservableDerivativeFixingsTrigger" xlink:href="../../finance/simulation/trigger/SingleMarketObservableDerivativeFixingsTrigger.html#inheritance-diagram"><polygon points="761.25,-26 486.75,-26 486.75,-0 761.25,-0 761.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="499" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="519" text-anchor="start">SingleMarketObservableDerivativeFixingsTrigger[V]</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph37_0_4"><g id="a_inheritance|graph37_0_4"><a xlink:title="SingleMarketObservableDerivativeFixingsTrigger[V] is a subtype of SimpleProjector[T, S, E]"><path d="M452.503,-60.5602C490.621,-50.2114 542.842,-36.0339 579.614,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="451.824,-58.9313 447.457,-61.9303 452.741,-62.309 451.824,-58.9313" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node class" id="graph37_5"><g id="a_class|graph37_5"><a xlink:title="virtufin.finance.simulation.trigger.StartTrigger" xlink:href="../../finance/simulation/trigger/StartTrigger.html#inheritance-diagram"><polygon points="878,-26 780,-26 780,-0 878,-0 878,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="792" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="812" text-anchor="start">StartTrigger</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph37_0_5"><g id="a_inheritance|graph37_0_5"><a xlink:title="StartTrigger is a subtype of SimpleProjector[T, S, E]"><path d="M484.442,-65.0192C558.974,-56.4041 672.204,-42.3198 770,-26 773.196,-25.4666 776.483,-24.8865 779.793,-24.2787" stroke="#d4d4d4" fill="none"></path><polygon points="483.91,-63.3188 479.143,-65.63 484.311,-66.7958 483.91,-63.3188" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph37_6"><g id="a_trait|graph37_6"><a xlink:title="virtufin.simulation.SimulationEventProjector" xlink:href="../SimulationEventProjector.html#inheritance-diagram"><polygon points="482,-150 324,-150 324,-124 482,-124 482,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="336" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="356" text-anchor="start">SimulationEventProjector</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph37_6_0"><g id="a_inheritance|graph37_6_0"><a xlink:title="SimpleProjector[T, S, E] is a subtype of SimulationEventProjector"><path d="M403,-118.683C403,-108.896 403,-96.9026 403,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="401.25,-118.858 403,-123.858 404.75,-118.858 401.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -97,7 +106,11 @@
       <span class="symbol">
         <span class="name">SimpleProjector</span><span class="params">(<span name="eventTime">eventTime: <span class="extype" name="virtufin.simulation.projector.SimpleProjector.T">T</span></span>, <span name="eventFactory">eventFactory: (<a href="../SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">SimulationEvent</a> { ... /* 2 definitions in type refinement */ }) ⇒ <span class="extype" name="virtufin.simulation.projector.SimpleProjector.E">E</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="d1">d1: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>, <span name="d2">d2: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>, <span name="d3">d3: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@&lt;init&gt;(eventTime:T,eventFactory:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}=&gt;E)(implicitd1:DummyImplicit,implicitd2:DummyImplicit,implicitd3:DummyImplicit):virtufin.simulation.projector.SimpleProjector[T,S,E]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.projector.SimpleProjector#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;init&gt;(eventTime:T,eventFactory:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}=&gt;Option[E])(implicitd1:DummyImplicit,implicitd2:DummyImplicit):virtufin.simulation.projector.SimpleProjector[T,S,E]"></a>
@@ -110,7 +123,11 @@
       <span class="symbol">
         <span class="name">SimpleProjector</span><span class="params">(<span name="eventTime">eventTime: <span class="extype" name="virtufin.simulation.projector.SimpleProjector.T">T</span></span>, <span name="eventFactory">eventFactory: (<a href="../SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">SimulationEvent</a> { ... /* 2 definitions in type refinement */ }) ⇒ <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="virtufin.simulation.projector.SimpleProjector.E">E</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="d1">d1: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>, <span name="d2">d2: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@&lt;init&gt;(eventTime:T,eventFactory:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}=&gt;Option[E])(implicitd1:DummyImplicit,implicitd2:DummyImplicit):virtufin.simulation.projector.SimpleProjector[T,S,E]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.simulation.projector.SimpleProjector#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;init&gt;(eventTimes:scala.collection.SortedSet[T],eventFactory:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}=&gt;E)(implicitd:DummyImplicit):virtufin.simulation.projector.SimpleProjector[T,S,E]"></a>
@@ -123,9 +140,13 @@
       <span class="symbol">
         <span class="name">SimpleProjector</span><span class="params">(<span name="eventTimes">eventTimes: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<span class="extype" name="virtufin.simulation.projector.SimpleProjector.T">T</span>]</span>, <span name="eventFactory">eventFactory: (<a href="../SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">SimulationEvent</a> { ... /* 2 definitions in type refinement */ }) ⇒ <span class="extype" name="virtufin.simulation.projector.SimpleProjector.E">E</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="d">d: <span class="extype" name="scala.Predef.DummyImplicit">DummyImplicit</span></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@&lt;init&gt;(eventTimes:scala.collection.SortedSet[T],eventFactory:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}=&gt;E)(implicitd:DummyImplicit):virtufin.simulation.projector.SimpleProjector[T,S,E]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="virtufin.simulation.projector.SimpleProjector#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="virtufin.simulation.projector.SimpleProjector#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;init&gt;(eventTimes:scala.collection.SortedSet[T],eventFactory:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}=&gt;Option[E]):virtufin.simulation.projector.SimpleProjector[T,S,E]"></a>
       <a id="&lt;init&gt;:SimpleProjector[T,S,E]"></a>
       <h4 class="signature">
@@ -136,8 +157,12 @@
       <span class="symbol">
         <span class="name">SimpleProjector</span><span class="params">(<span name="eventTimes">eventTimes: <span class="extype" name="scala.collection.SortedSet">SortedSet</span>[<span class="extype" name="virtufin.simulation.projector.SimpleProjector.T">T</span>]</span>, <span name="eventFactory">eventFactory: (<a href="../SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">SimulationEvent</a> { ... /* 2 definitions in type refinement */ }) ⇒ <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="virtufin.simulation.projector.SimpleProjector.E">E</span>]</span>)</span>
       </span>
-      </h4>
-      
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@&lt;init&gt;(eventTimes:scala.collection.SortedSet[T],eventFactory:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}=&gt;Option[E]):virtufin.simulation.projector.SimpleProjector[T,S,E]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">eventTimes</dt><dd class="cmt"></dd><dt class="param">eventFactory</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
 
@@ -154,7 +179,11 @@
       <span class="symbol">
         <span class="name">ProjectedEventsType</span><span class="result"> = <span class="extype" name="virtufin.simulation.projector.SimpleProjector.E">E</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@ProjectedEventsType=E" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a> → <a href="../SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a></dd></dl></div>
     </li><li name="virtufin.simulation.projector.SimpleProjector.StateType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="StateType=S"></a>
@@ -167,7 +196,11 @@
       <span class="symbol">
         <span class="name">StateType</span><span class="result"> = <span class="extype" name="virtufin.simulation.projector.SimpleProjector.S">S</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@StateType=S" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a> → <a href="../SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a></dd></dl></div>
     </li><li name="virtufin.simulation.projector.SimpleProjector.TimeType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="TimeType=T"></a>
@@ -180,7 +213,11 @@
       <span class="symbol">
         <span class="name">TimeType</span><span class="result"> = <span class="extype" name="virtufin.simulation.projector.SimpleProjector.T">T</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@TimeType=T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a> → <a href="../SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a></dd></dl></div>
     </li></ol>
             </div>
@@ -190,19 +227,6 @@
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -213,8 +237,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -226,22 +254,13 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -252,8 +271,12 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -265,7 +288,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -278,7 +305,11 @@
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -297,7 +328,11 @@
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -310,7 +345,11 @@
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -323,7 +362,11 @@
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -342,7 +385,11 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -355,7 +402,11 @@
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -368,7 +419,11 @@
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -381,7 +436,11 @@
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -394,7 +453,11 @@
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -407,7 +470,11 @@
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="virtufin.simulation.projector.SimpleProjector#project" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="project(e:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}):virtufin.simulation.SimultaneousEvents{typeTimeType=T;typeEventsType=E}"></a>
@@ -420,7 +487,11 @@
       <span class="symbol">
         <span class="name">project</span><span class="params">(<span name="e">e: <a href="../SimulationEvent.html" class="extype" name="virtufin.simulation.SimulationEvent">SimulationEvent</a> { ... /* 2 definitions in type refinement */ }</span>)</span><span class="result">: <a href="../SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a> { ... /* 2 definitions in type refinement */ }</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@project(e:virtufin.simulation.SimulationEvent{typeTimeType=T;typeStateType=S}):virtufin.simulation.SimultaneousEvents{typeTimeType=T;typeEventsType=E}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.simulation.projector.SimpleProjector">SimpleProjector</a> → <a href="../SimulationEventProjector.html" class="extype" name="virtufin.simulation.SimulationEventProjector">SimulationEventProjector</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -433,7 +504,11 @@
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -446,7 +521,11 @@
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -459,7 +538,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -478,7 +561,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -497,7 +584,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.simulation.projector.SimpleProjector@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -536,6 +627,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

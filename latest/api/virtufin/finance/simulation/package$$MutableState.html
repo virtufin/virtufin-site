@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>MutableState - virtufin - virtufin.finance.simulation.MutableState</title>
@@ -9,6 +8,11 @@
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="package.html" class="extype" name="virtufin.finance.simulation">simulation</a></p>
-        <h1>MutableState</h1>
+        <h1>MutableState</h1> <span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -43,12 +51,12 @@
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">simulation.MutableState</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="state/Accumulator.html" class="extype" name="virtufin.finance.simulation.state.Accumulator">Accumulator</a>, <a href="state/package$$CompositeMutableState.html" class="extype" name="virtufin.finance.simulation.state.CompositeMutableState">CompositeMutableState</a>, <a href="state/EuropeanExerciseState.html" class="extype" name="virtufin.finance.simulation.state.EuropeanExerciseState">EuropeanExerciseState</a>, <a href="state/ExerciseState.html" class="extype" name="virtufin.finance.simulation.state.ExerciseState">ExerciseState</a>, <a href="state/FixingValue.html" class="extype" name="virtufin.finance.simulation.state.FixingValue">FixingValue</a>, <a href="state/FixingValueHistory.html" class="extype" name="virtufin.finance.simulation.state.FixingValueHistory">FixingValueHistory</a>, <a href="state/FixingValues.html" class="extype" name="virtufin.finance.simulation.state.FixingValues">FixingValues</a>, <a href="state/MaximumValue.html" class="extype" name="virtufin.finance.simulation.state.MaximumValue">MaximumValue</a>, <a href="state/MinimumValue.html" class="extype" name="virtufin.finance.simulation.state.MinimumValue">MinimumValue</a></div>
-        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="state/Accumulator.html" class="extype" name="virtufin.finance.simulation.state.Accumulator">Accumulator</a>, <a href="state/package$$CompositeMutableState.html" class="extype" name="virtufin.finance.simulation.state.CompositeMutableState">CompositeMutableState</a>, <a href="state/EuropeanExerciseState.html" class="extype" name="virtufin.finance.simulation.state.EuropeanExerciseState">EuropeanExerciseState</a>, <a href="state/ExerciseState.html" class="extype" name="virtufin.finance.simulation.state.ExerciseState">ExerciseState</a>, <a href="state/FixingValue.html" class="extype" name="virtufin.finance.simulation.state.FixingValue">FixingValue</a>, <a href="state/FixingValueHistory.html" class="extype" name="virtufin.finance.simulation.state.FixingValueHistory">FixingValueHistory</a>, <a href="state/FixingValues.html" class="extype" name="virtufin.finance.simulation.state.FixingValues">FixingValues</a>, <a href="state/MaximumValue.html" class="extype" name="virtufin.finance.simulation.state.MaximumValue">MaximumValue</a>, <a href="state/MinimumValue.html" class="extype" name="virtufin.finance.simulation.state.MinimumValue">MinimumValue</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph112" viewBox="0.00 0.00 1087.00 158.00" height="158pt" width="1087pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 1083,-154 1083,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph112_0"><g id="a_this trait|graph112_0"><a xlink:title="virtufin.finance.simulation.MutableState (this trait)" xlink:href="#inheritance-diagram"><polygon points="594,-88 490,-88 490,-62 594,-62 594,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-81" x="502" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="522" text-anchor="start">MutableState</text></a></g></g><!-- node1 --><g class="node trait" id="graph112_1"><g id="a_trait|graph112_1"><a xlink:title="virtufin.finance.simulation.state.Accumulator" xlink:href="state/Accumulator.html#inheritance-diagram"><polygon points="100.25,-26 -0.25,-26 -0.25,-0 100.25,-0 100.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">Accumulator</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph112_0_1"><g id="a_inheritance|graph112_0_1"><a xlink:title="Accumulator is a subtype of MutableState"><path d="M484.584,-69.2175C401.623,-61.9454 243.528,-46.731 110,-26 106.851,-25.5111 103.616,-24.9719 100.358,-24.4011" stroke="#d4d4d4" fill="none"></path><polygon points="484.806,-70.9934 489.939,-69.685 485.11,-67.5066 484.806,-70.9934" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph112_2"><g id="a_trait|graph112_2"><a xlink:title="virtufin.finance.simulation.state.CompositeMutableState" xlink:href="state/package$$CompositeMutableState.html#inheritance-diagram"><polygon points="271,-26 119,-26 119,-0 271,-0 271,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="131" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="151" text-anchor="start">CompositeMutableState</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph112_0_2"><g id="a_inheritance|graph112_0_2"><a xlink:title="CompositeMutableState is a subtype of MutableState"><path d="M484.666,-64.0864C424.286,-53.6459 329.182,-37.2015 264.555,-26.0268" stroke="#d4d4d4" fill="none"></path><polygon points="484.45,-65.8248 489.675,-64.9524 485.046,-62.376 484.45,-65.8248" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph112_3"><g id="a_trait|graph112_3"><a xlink:title="virtufin.finance.simulation.state.ExerciseState" xlink:href="state/ExerciseState.html#inheritance-diagram"><polygon points="396.25,-26 289.75,-26 289.75,-0 396.25,-0 396.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="302" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="322" text-anchor="start">ExerciseState</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph112_0_3"><g id="a_inheritance|graph112_0_3"><a xlink:title="ExerciseState is a subtype of MutableState"><path d="M496.762,-60.3604C462.464,-50.0194 415.775,-35.9422 382.871,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="496.437,-62.0902 501.729,-61.8581 497.447,-58.7392 496.437,-62.0902" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph112_4"><g id="a_trait|graph112_4"><a xlink:title="virtufin.finance.simulation.state.FixingValue" xlink:href="state/FixingValue.html#inheritance-diagram"><polygon points="525,-26 415,-26 415,-0 525,-0 525,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="427" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="447" text-anchor="start">FixingValue[V]</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph112_0_4"><g id="a_inheritance|graph112_0_4"><a xlink:title="FixingValue[V] is a subtype of MutableState"><path d="M523.468,-58.5563C511.357,-48.4643 495.766,-35.4716 484.549,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="522.468,-60.0015 527.43,-61.8581 524.709,-57.3128 522.468,-60.0015" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node trait" id="graph112_5"><g id="a_trait|graph112_5"><a xlink:title="virtufin.finance.simulation.state.FixingValueHistory" xlink:href="state/FixingValueHistory.html#inheritance-diagram"><polygon points="684.25,-26 543.75,-26 543.75,-0 684.25,-0 684.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="556" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="576" text-anchor="start">FixingValueHistory[V]</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph112_0_5"><g id="a_inheritance|graph112_0_5"><a xlink:title="FixingValueHistory[V] is a subtype of MutableState"><path d="M560.532,-58.5563C572.643,-48.4643 588.234,-35.4716 599.451,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="559.291,-57.3128 556.57,-61.8581 561.532,-60.0015 559.291,-57.3128" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph112_6"><g id="a_trait|graph112_6"><a xlink:title="virtufin.finance.simulation.state.FixingValues" xlink:href="state/FixingValues.html#inheritance-diagram"><polygon points="817.25,-26 702.75,-26 702.75,-0 817.25,-0 817.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="715" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="735" text-anchor="start">FixingValues[V]</text></a></g></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph112_0_6"><g id="a_inheritance|graph112_0_6"><a xlink:title="FixingValues[V] is a subtype of MutableState"><path d="M590.831,-60.5602C628.432,-50.2114 679.944,-36.0339 716.217,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="590.21,-58.9161 585.853,-61.9303 591.138,-62.2907 590.21,-58.9161" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node trait" id="graph112_7"><g id="a_trait|graph112_7"><a xlink:title="virtufin.finance.simulation.state.MaximumValue" xlink:href="state/MaximumValue.html#inheritance-diagram"><polygon points="950,-26 836,-26 836,-0 950,-0 950,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="848" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="868" text-anchor="start">MaximumValue</text></a></g></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph112_0_7"><g id="a_inheritance|graph112_0_7"><a xlink:title="MaximumValue is a subtype of MutableState"><path d="M599.212,-64.4994C656.586,-54.932 747.454,-39.6713 826,-26 829.26,-25.4326 832.608,-24.8458 835.986,-24.2506" stroke="#d4d4d4" fill="none"></path><polygon points="598.754,-62.8015 594.109,-65.35 599.329,-66.2539 598.754,-62.8015" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node trait" id="graph112_8"><g id="a_trait|graph112_8"><a xlink:title="virtufin.finance.simulation.state.MinimumValue" xlink:href="state/MinimumValue.html#inheritance-diagram"><polygon points="1079.25,-26 968.75,-26 968.75,-0 1079.25,-0 1079.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="981" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1001" text-anchor="start">MinimumValue</text></a></g></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph112_0_8"><g id="a_inheritance|graph112_0_8"><a xlink:title="MinimumValue is a subtype of MutableState"><path d="M599.36,-68.6427C679.903,-60.8371 831.002,-45.1594 959,-26 962.178,-25.5243 965.438,-25.0092 968.724,-24.4688" stroke="#d4d4d4" fill="none"></path><polygon points="598.966,-66.9225 594.158,-69.1454 599.303,-70.4062 598.966,-66.9225" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node trait" id="graph112_9"><g id="a_trait|graph112_9"><a xlink:title="virtufin.simulation.MutableState" xlink:href="../../simulation/MutableState.html#inheritance-diagram"><polygon points="618,-150 466,-150 466,-124 618,-124 618,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="478" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="498" text-anchor="start">simulation.MutableState</text></a></g></g><!-- node9&#45;&gt;node0 --><g class="edge inheritance" id="graph112_9_0"><g id="a_inheritance|graph112_9_0"><a xlink:title="MutableState is a subtype of simulation.MutableState"><path d="M542,-118.683C542,-108.896 542,-96.9026 542,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="540.25,-118.858 542,-123.858 543.75,-118.858 540.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph103" viewBox="0.00 0.00 1087.00 158.00" height="158pt" width="1087pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 1083,-154 1083,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph103_0"><g id="a_this trait|graph103_0"><a xlink:title="virtufin.finance.simulation.MutableState (this trait)" xlink:href="#inheritance-diagram"><polygon points="594,-88 490,-88 490,-62 594,-62 594,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-81" x="502" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="522" text-anchor="start">MutableState</text></a></g></g><!-- node1 --><g class="node trait" id="graph103_1"><g id="a_trait|graph103_1"><a xlink:title="virtufin.finance.simulation.state.Accumulator" xlink:href="state/Accumulator.html#inheritance-diagram"><polygon points="100.25,-26 -0.25,-26 -0.25,-0 100.25,-0 100.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">Accumulator</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph103_0_1"><g id="a_inheritance|graph103_0_1"><a xlink:title="Accumulator is a subtype of MutableState"><path d="M484.584,-69.2175C401.623,-61.9454 243.528,-46.731 110,-26 106.851,-25.5111 103.616,-24.9719 100.358,-24.4011" stroke="#d4d4d4" fill="none"></path><polygon points="484.806,-70.9934 489.939,-69.685 485.11,-67.5066 484.806,-70.9934" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph103_2"><g id="a_trait|graph103_2"><a xlink:title="virtufin.finance.simulation.state.CompositeMutableState" xlink:href="state/package$$CompositeMutableState.html#inheritance-diagram"><polygon points="271,-26 119,-26 119,-0 271,-0 271,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="131" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="151" text-anchor="start">CompositeMutableState</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph103_0_2"><g id="a_inheritance|graph103_0_2"><a xlink:title="CompositeMutableState is a subtype of MutableState"><path d="M484.666,-64.0864C424.286,-53.6459 329.182,-37.2015 264.555,-26.0268" stroke="#d4d4d4" fill="none"></path><polygon points="484.45,-65.8248 489.675,-64.9524 485.046,-62.376 484.45,-65.8248" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph103_3"><g id="a_trait|graph103_3"><a xlink:title="virtufin.finance.simulation.state.ExerciseState" xlink:href="state/ExerciseState.html#inheritance-diagram"><polygon points="396.25,-26 289.75,-26 289.75,-0 396.25,-0 396.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="302" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="322" text-anchor="start">ExerciseState</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph103_0_3"><g id="a_inheritance|graph103_0_3"><a xlink:title="ExerciseState is a subtype of MutableState"><path d="M496.762,-60.3604C462.464,-50.0194 415.775,-35.9422 382.871,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="496.437,-62.0902 501.729,-61.8581 497.447,-58.7392 496.437,-62.0902" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph103_4"><g id="a_trait|graph103_4"><a xlink:title="virtufin.finance.simulation.state.FixingValue" xlink:href="state/FixingValue.html#inheritance-diagram"><polygon points="525,-26 415,-26 415,-0 525,-0 525,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="427" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="447" text-anchor="start">FixingValue[V]</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph103_0_4"><g id="a_inheritance|graph103_0_4"><a xlink:title="FixingValue[V] is a subtype of MutableState"><path d="M523.468,-58.5563C511.357,-48.4643 495.766,-35.4716 484.549,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="522.468,-60.0015 527.43,-61.8581 524.709,-57.3128 522.468,-60.0015" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node trait" id="graph103_5"><g id="a_trait|graph103_5"><a xlink:title="virtufin.finance.simulation.state.FixingValueHistory" xlink:href="state/FixingValueHistory.html#inheritance-diagram"><polygon points="684.25,-26 543.75,-26 543.75,-0 684.25,-0 684.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="556" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="576" text-anchor="start">FixingValueHistory[V]</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph103_0_5"><g id="a_inheritance|graph103_0_5"><a xlink:title="FixingValueHistory[V] is a subtype of MutableState"><path d="M560.532,-58.5563C572.643,-48.4643 588.234,-35.4716 599.451,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="559.291,-57.3128 556.57,-61.8581 561.532,-60.0015 559.291,-57.3128" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph103_6"><g id="a_trait|graph103_6"><a xlink:title="virtufin.finance.simulation.state.FixingValues" xlink:href="state/FixingValues.html#inheritance-diagram"><polygon points="817.25,-26 702.75,-26 702.75,-0 817.25,-0 817.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="715" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="735" text-anchor="start">FixingValues[V]</text></a></g></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph103_0_6"><g id="a_inheritance|graph103_0_6"><a xlink:title="FixingValues[V] is a subtype of MutableState"><path d="M590.831,-60.5602C628.432,-50.2114 679.944,-36.0339 716.217,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="590.21,-58.9161 585.853,-61.9303 591.138,-62.2907 590.21,-58.9161" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node trait" id="graph103_7"><g id="a_trait|graph103_7"><a xlink:title="virtufin.finance.simulation.state.MaximumValue" xlink:href="state/MaximumValue.html#inheritance-diagram"><polygon points="950,-26 836,-26 836,-0 950,-0 950,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="848" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="868" text-anchor="start">MaximumValue</text></a></g></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph103_0_7"><g id="a_inheritance|graph103_0_7"><a xlink:title="MaximumValue is a subtype of MutableState"><path d="M599.212,-64.4994C656.586,-54.932 747.454,-39.6713 826,-26 829.26,-25.4326 832.608,-24.8458 835.986,-24.2506" stroke="#d4d4d4" fill="none"></path><polygon points="598.754,-62.8015 594.109,-65.35 599.329,-66.2539 598.754,-62.8015" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node trait" id="graph103_8"><g id="a_trait|graph103_8"><a xlink:title="virtufin.finance.simulation.state.MinimumValue" xlink:href="state/MinimumValue.html#inheritance-diagram"><polygon points="1079.25,-26 968.75,-26 968.75,-0 1079.25,-0 1079.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19" x="981" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1001" text-anchor="start">MinimumValue</text></a></g></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph103_0_8"><g id="a_inheritance|graph103_0_8"><a xlink:title="MinimumValue is a subtype of MutableState"><path d="M599.36,-68.6427C679.903,-60.8371 831.002,-45.1594 959,-26 962.178,-25.5243 965.438,-25.0092 968.724,-24.4688" stroke="#d4d4d4" fill="none"></path><polygon points="598.966,-66.9225 594.158,-69.1454 599.303,-70.4062 598.966,-66.9225" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node trait" id="graph103_9"><g id="a_trait|graph103_9"><a xlink:title="virtufin.simulation.MutableState" xlink:href="../../simulation/MutableState.html#inheritance-diagram"><polygon points="618,-150 466,-150 466,-124 618,-124 618,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="478" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="498" text-anchor="start">simulation.MutableState</text></a></g></g><!-- node9&#45;&gt;node0 --><g class="edge inheritance" id="graph103_9_0"><g id="a_inheritance|graph103_9_0"><a xlink:title="MutableState is a subtype of simulation.MutableState"><path d="M542,-118.683C542,-108.896 542,-96.9026 542,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="540.25,-118.858 542,-123.858 543.75,-118.858 540.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -99,7 +107,11 @@
       <span class="symbol">
         <span class="name">MutationEventType</span><span class="result"> = <a href="../../simulation/SimultaneousEvents.html" class="extype" name="virtufin.simulation.SimultaneousEvents">SimultaneousEvents</a> { ... /* 2 definitions in type refinement */ }</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@MutationEventType=virtufin.finance.simulation.package.TriggerEvents" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a> → <a href="../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">MutableState</a></dd></dl></div>
     </li><li name="virtufin.finance.simulation.MutableState.StateType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StateType=virtufin.finance.simulation.package.DefaultStateType"></a>
@@ -112,7 +124,11 @@
       <span class="symbol">
         <span class="name">StateType</span><span class="result"> = <a href="../scenario/Quotes.html" class="extype" name="virtufin.finance.scenario.Quotes">Quotes</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@StateType=virtufin.finance.simulation.package.DefaultStateType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.finance.simulation.MutableState.TimeType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="TimeType=virtufin.finance.simulation.package.DefaultTimeType"></a>
@@ -125,7 +141,11 @@
       <span class="symbol">
         <span class="name">TimeType</span><span class="result"> = <a href="../../util/Day.html" class="extype" name="virtufin.util.Day">Day</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@TimeType=virtufin.finance.simulation.package.DefaultTimeType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.finance.simulation.MutableState">MutableState</a> → <a href="../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">MutableState</a></dd></dl></div>
     </li></ol>
             </div>
@@ -143,7 +163,11 @@
       <span class="symbol">
         <span class="name">mutate</span><span class="params">(<span name="event">event: <a href="#MutationEventType=virtufin.finance.simulation.package.TriggerEvents" class="extmbr" name="virtufin.finance.simulation.MutableState.MutationEventType">MutationEventType</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@mutate(event:MutableState.this.MutationEventType):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Transform the state depending on an event.</p><div class="fullcomment"><div class="comment cmt"><p>Transform the state depending on an event.</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>some event
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../simulation/MutableState.html" class="extype" name="virtufin.simulation.MutableState">MutableState</a></dd></dl></div>
     </li></ol>
@@ -152,19 +176,6 @@
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -175,8 +186,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -188,22 +203,13 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -214,8 +220,12 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -227,7 +237,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -240,7 +254,11 @@
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -259,7 +277,11 @@
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -272,7 +294,11 @@
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -285,7 +311,11 @@
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -304,7 +334,11 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -317,7 +351,11 @@
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -330,7 +368,11 @@
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -343,7 +385,11 @@
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -356,7 +402,11 @@
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -369,7 +419,11 @@
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -382,7 +436,11 @@
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -395,7 +453,11 @@
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -408,7 +470,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -427,7 +493,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -446,7 +516,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package$$MutableState@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -485,6 +559,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

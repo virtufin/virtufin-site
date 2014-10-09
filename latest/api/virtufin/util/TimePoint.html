@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>TimePoint - virtufin - virtufin.util.TimePoint</title>
@@ -9,6 +8,11 @@
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../lib/trait_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a>.<a href="package.html" class="extype" name="virtufin.util">util</a></p>
-        <h1>TimePoint</h1>
+        <h1>TimePoint</h1> <span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -43,12 +51,12 @@
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.math.Ordered">Ordered</span>[<span class="extype" name="virtufin.util.TimePoint.T">T</span>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<span class="extype" name="virtufin.util.TimePoint.T">T</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="Date.html" class="extype" name="virtufin.util.Date">Date</a>, <a href="Day.html" class="extype" name="virtufin.util.Day">Day</a>, <a href="DayHigh.html" class="extype" name="virtufin.util.DayHigh">DayHigh</a>, <a href="DayLow.html" class="extype" name="virtufin.util.DayLow">DayLow</a>, <a href="EndOfDay.html" class="extype" name="virtufin.util.EndOfDay">EndOfDay</a>, <a href="Natural.html" class="extype" name="virtufin.util.Natural">Natural</a></div>
-        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="Date.html" class="extype" name="virtufin.util.Date">Date</a>, <a href="Day.html" class="extype" name="virtufin.util.Day">Day</a>, <a href="DayHigh.html" class="extype" name="virtufin.util.DayHigh">DayHigh</a>, <a href="DayLow.html" class="extype" name="virtufin.util.DayLow">DayLow</a>, <a href="EndOfDay.html" class="extype" name="virtufin.util.EndOfDay">EndOfDay</a>, <a href="Natural.html" class="extype" name="virtufin.util.Natural">Natural</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph17" viewBox="0.00 0.00 563.00 158.00" height="158pt" width="563pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 559,-154 559,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph17_0"><g id="a_this trait|graph17_0"><a xlink:title="virtufin.util.TimePoint (this trait)" xlink:href="#inheritance-diagram"><polygon points="309,-88 207,-88 207,-62 309,-62 309,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="219" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="239" text-anchor="start">TimePoint[T]</text></a></g></g><!-- node1 --><g class="node class" id="graph17_1"><g id="a_class|graph17_1"><a xlink:title="virtufin.util.Date" xlink:href="Date.html#inheritance-diagram"><polygon points="66,-26 0,-26 0,-0 66,-0 66,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">Date</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph17_0_1"><g id="a_inheritance|graph17_0_1"><a xlink:title="Date is a subtype of TimePoint[T]"><path d="M206.054,-60.6962C169.379,-51.2248 119.111,-38.0851 75,-26 72.2207,-25.2386 69.3411,-24.4388 66.4522,-23.6288" stroke="#d4d4d4" fill="none"></path><polygon points="205.632,-62.3944 210.91,-61.9494 206.506,-59.0054 205.632,-62.3944" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph17_2"><g id="a_class|graph17_2"><a xlink:title="virtufin.util.Day" xlink:href="Day.html#inheritance-diagram"><polygon points="147.25,-26 84.75,-26 84.75,-0 147.25,-0 147.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="97" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="117" text-anchor="start">Day</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph17_0_2"><g id="a_inheritance|graph17_0_2"><a xlink:title="Day is a subtype of TimePoint[T]"><path d="M224.525,-59.8556C200.256,-49.601 167.778,-35.8781 144.693,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="223.977,-61.524 229.264,-61.8581 225.34,-58.3 223.977,-61.524" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph17_3"><g id="a_class|graph17_3"><a xlink:title="virtufin.util.DayHigh" xlink:href="DayHigh.html#inheritance-diagram"><polygon points="250,-26 166,-26 166,-0 250,-0 250,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="178" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="198" text-anchor="start">DayHigh</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph17_0_3"><g id="a_inheritance|graph17_0_3"><a xlink:title="DayHigh is a subtype of TimePoint[T]"><path d="M244.467,-57.7607C236.157,-47.7889 225.69,-35.2278 218.103,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="243.336,-59.1373 247.882,-61.8581 246.025,-56.8966 243.336,-59.1373" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph17_4"><g id="a_class|graph17_4"><a xlink:title="virtufin.util.DayLow" xlink:href="DayLow.html#inheritance-diagram"><polygon points="349.25,-26 268.75,-26 268.75,-0 349.25,-0 349.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="281" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="301" text-anchor="start">DayLow</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph17_0_4"><g id="a_inheritance|graph17_0_4"><a xlink:title="DayLow is a subtype of TimePoint[T]"><path d="M271.577,-58.0271C280.089,-48.0135 290.887,-35.3091 298.695,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="270.225,-56.915 268.321,-61.8581 272.892,-59.1818 270.225,-56.915" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node class" id="graph17_5"><g id="a_class|graph17_5"><a xlink:title="virtufin.util.EndOfDay" xlink:href="EndOfDay.html#inheritance-diagram"><polygon points="458.25,-26 367.75,-26 367.75,-0 458.25,-0 458.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="380" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="400" text-anchor="start">EndOfDay</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph17_0_5"><g id="a_inheritance|graph17_0_5"><a xlink:title="EndOfDay is a subtype of TimePoint[T]"><path d="M294.225,-59.9773C320.842,-49.6739 356.631,-35.8202 381.945,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="293.398,-58.4211 289.367,-61.8581 294.661,-61.6851 293.398,-58.4211" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node class" id="graph17_6"><g id="a_class|graph17_6"><a xlink:title="virtufin.util.Natural" xlink:href="Natural.html#inheritance-diagram"><polygon points="555,-26 477,-26 477,-0 555,-0 555,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="489" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="509" text-anchor="start">Natural</text></a></g></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph17_0_6"><g id="a_inheritance|graph17_0_6"><a xlink:title="Natural is a subtype of TimePoint[T]"><path d="M314.203,-61.3231C356.306,-51.7705 415.309,-38.2646 467,-26 470.238,-25.2317 473.595,-24.427 476.963,-23.6138" stroke="#d4d4d4" fill="none"></path><polygon points="313.643,-59.6556 309.154,-62.4681 314.417,-63.0689 313.643,-59.6556" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node trait" id="graph17_7"><g id="a_trait|graph17_7"><a xlink:title="scala.math.Ordered"><polygon points="305,-150 211,-150 211,-124 305,-124 305,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-143" x="223" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="243" text-anchor="start">Ordered[T]</text></a></g></g><!-- node7&#45;&gt;node0 --><g class="edge inheritance" id="graph17_7_0"><g id="a_inheritance|graph17_7_0"><a xlink:title="TimePoint[T] is a subtype of Ordered[T]"><path d="M258,-118.683C258,-108.896 258,-96.9026 258,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="256.25,-118.858 258,-123.858 259.75,-118.858 256.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph6" viewBox="0.00 0.00 563.00 158.00" height="158pt" width="563pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 559,-154 559,4 -4,4" stroke="white" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph6_0"><g id="a_this trait|graph6_0"><a xlink:title="virtufin.util.TimePoint (this trait)" xlink:href="#inheritance-diagram"><polygon points="309,-88 207,-88 207,-62 309,-62 309,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="219" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="239" text-anchor="start">TimePoint[T]</text></a></g></g><!-- node1 --><g class="node class" id="graph6_1"><g id="a_class|graph6_1"><a xlink:title="virtufin.util.Date" xlink:href="Date.html#inheritance-diagram"><polygon points="66,-26 0,-26 0,-0 66,-0 66,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">Date</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph6_0_1"><g id="a_inheritance|graph6_0_1"><a xlink:title="Date is a subtype of TimePoint[T]"><path d="M206.054,-60.6962C169.379,-51.2248 119.111,-38.0851 75,-26 72.2207,-25.2386 69.3411,-24.4388 66.4522,-23.6288" stroke="#d4d4d4" fill="none"></path><polygon points="205.632,-62.3944 210.91,-61.9494 206.506,-59.0054 205.632,-62.3944" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph6_2"><g id="a_class|graph6_2"><a xlink:title="virtufin.util.Day" xlink:href="Day.html#inheritance-diagram"><polygon points="147.25,-26 84.75,-26 84.75,-0 147.25,-0 147.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="97" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="117" text-anchor="start">Day</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph6_0_2"><g id="a_inheritance|graph6_0_2"><a xlink:title="Day is a subtype of TimePoint[T]"><path d="M224.525,-59.8556C200.256,-49.601 167.778,-35.8781 144.693,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="223.977,-61.524 229.264,-61.8581 225.34,-58.3 223.977,-61.524" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph6_3"><g id="a_class|graph6_3"><a xlink:title="virtufin.util.DayHigh" xlink:href="DayHigh.html#inheritance-diagram"><polygon points="250,-26 166,-26 166,-0 250,-0 250,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="178" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="198" text-anchor="start">DayHigh</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph6_0_3"><g id="a_inheritance|graph6_0_3"><a xlink:title="DayHigh is a subtype of TimePoint[T]"><path d="M244.467,-57.7607C236.157,-47.7889 225.69,-35.2278 218.103,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="243.336,-59.1373 247.882,-61.8581 246.025,-56.8966 243.336,-59.1373" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph6_4"><g id="a_class|graph6_4"><a xlink:title="virtufin.util.DayLow" xlink:href="DayLow.html#inheritance-diagram"><polygon points="349.25,-26 268.75,-26 268.75,-0 349.25,-0 349.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="281" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="301" text-anchor="start">DayLow</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph6_0_4"><g id="a_inheritance|graph6_0_4"><a xlink:title="DayLow is a subtype of TimePoint[T]"><path d="M271.577,-58.0271C280.089,-48.0135 290.887,-35.3091 298.695,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="270.225,-56.915 268.321,-61.8581 272.892,-59.1818 270.225,-56.915" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node class" id="graph6_5"><g id="a_class|graph6_5"><a xlink:title="virtufin.util.EndOfDay" xlink:href="EndOfDay.html#inheritance-diagram"><polygon points="458.25,-26 367.75,-26 367.75,-0 458.25,-0 458.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="380" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="400" text-anchor="start">EndOfDay</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph6_0_5"><g id="a_inheritance|graph6_0_5"><a xlink:title="EndOfDay is a subtype of TimePoint[T]"><path d="M294.225,-59.9773C320.842,-49.6739 356.631,-35.8202 381.945,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="293.398,-58.4211 289.367,-61.8581 294.661,-61.6851 293.398,-58.4211" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node class" id="graph6_6"><g id="a_class|graph6_6"><a xlink:title="virtufin.util.Natural" xlink:href="Natural.html#inheritance-diagram"><polygon points="555,-26 477,-26 477,-0 555,-0 555,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="489" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="509" text-anchor="start">Natural</text></a></g></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph6_0_6"><g id="a_inheritance|graph6_0_6"><a xlink:title="Natural is a subtype of TimePoint[T]"><path d="M314.203,-61.3231C356.306,-51.7705 415.309,-38.2646 467,-26 470.238,-25.2317 473.595,-24.427 476.963,-23.6138" stroke="#d4d4d4" fill="none"></path><polygon points="313.643,-59.6556 309.154,-62.4681 314.417,-63.0689 313.643,-59.6556" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node trait" id="graph6_7"><g id="a_trait|graph6_7"><a xlink:title="scala.math.Ordered"><polygon points="305,-150 211,-150 211,-124 305,-124 305,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-143" x="223" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-134.5" x="243" text-anchor="start">Ordered[T]</text></a></g></g><!-- node7&#45;&gt;node0 --><g class="edge inheritance" id="graph6_7_0"><g id="a_inheritance|graph6_7_0"><a xlink:title="TimePoint[T] is a subtype of Ordered[T]"><path d="M258,-118.683C258,-108.896 258,-96.9026 258,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="256.25,-118.858 258,-123.858 259.75,-118.858 256.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -101,7 +109,11 @@
       <span class="symbol">
         <span class="name">compare</span><span class="params">(<span name="that">that: <span class="extype" name="virtufin.util.TimePoint.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@compare(that:A):Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
     </li></ol>
             </div>
@@ -109,19 +121,6 @@
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -132,8 +131,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -145,7 +148,11 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.math.Ordered#&lt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;(that:A):Boolean"></a>
@@ -158,7 +165,11 @@
       <span class="symbol">
         <span title="gt4s: $less" class="name">&lt;</span><span class="params">(<span name="that">that: <span class="extype" name="virtufin.util.TimePoint.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@&lt;(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
     </li><li name="scala.math.Ordered#&lt;=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;=(that:A):Boolean"></a>
@@ -171,22 +182,13 @@
       <span class="symbol">
         <span title="gt4s: $less$eq" class="name">&lt;=</span><span class="params">(<span name="that">that: <span class="extype" name="virtufin.util.TimePoint.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@&lt;=(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -197,8 +199,12 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.math.Ordered#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&gt;(that:A):Boolean"></a>
       <a id="&gt;(T):Boolean"></a>
@@ -210,7 +216,11 @@
       <span class="symbol">
         <span title="gt4s: $greater" class="name">&gt;</span><span class="params">(<span name="that">that: <span class="extype" name="virtufin.util.TimePoint.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@&gt;(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
     </li><li name="scala.math.Ordered#&gt;=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&gt;=(that:A):Boolean"></a>
@@ -223,7 +233,11 @@
       <span class="symbol">
         <span title="gt4s: $greater$eq" class="name">&gt;=</span><span class="params">(<span name="that">that: <span class="extype" name="virtufin.util.TimePoint.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@&gt;=(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -236,7 +250,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -249,7 +267,11 @@
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -268,7 +290,11 @@
       <span class="symbol">
         <span class="name">compareTo</span><span class="params">(<span name="that">that: <span class="extype" name="virtufin.util.TimePoint.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@compareTo(that:A):Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -281,7 +307,11 @@
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -294,7 +324,11 @@
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -307,7 +341,11 @@
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -326,7 +364,11 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -339,7 +381,11 @@
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -352,7 +398,11 @@
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -365,7 +415,11 @@
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -378,7 +432,11 @@
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -391,7 +449,11 @@
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -404,7 +466,11 @@
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -417,7 +483,11 @@
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -430,7 +500,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -449,7 +523,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -468,7 +546,11 @@
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.TimePoint@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -509,6 +591,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
+
+
     </body>
       </html>

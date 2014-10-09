@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>util - virtufin - virtufin.util</title>
@@ -9,6 +8,11 @@
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -26,7 +30,11 @@
       <div id="definition">
         <img src="../../lib/package_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a></p>
-        <h1>util</h1>
+        <h1>util</h1> <span class="permalink">
+      <a href="../../index.html#virtufin.util.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -45,7 +53,7 @@
         </div><div class="toggleContainer block diagram-container" id="content-diagram-container">
                 <span class="toggle diagram-link">Content Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph13" viewBox="0.00 0.00 1509.00 96.00" height="96pt" width="1509pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 92)" class="graph" id="graph0"><polygon points="-4,4 -4,-92 1505,-92 1505,4 -4,4" stroke="white" fill="white"></polygon><!-- node0 --><g class="node class" id="graph13_0"><g id="a_class|graph13_0"><a xlink:title="virtufin.util.Years" xlink:href="Years.html#inheritance-diagram"><polygon points="70.25,-26 -0.25,-26 -0.25,-0 70.25,-0 70.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">Years</text></a></g></g><!-- node1 --><g class="node trait" id="graph13_1"><g id="a_trait|graph13_1"><a xlink:title="virtufin.util.Tree" xlink:href="Tree.html#inheritance-diagram"><polygon points="411,-88 333,-88 333,-62 411,-62 411,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="345" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="365" text-anchor="start">Tree[V]</text></a></g></g><!-- node6 --><g class="node trait" id="graph13_6"><g id="a_trait|graph13_6"><a xlink:title="virtufin.util.Node" xlink:href="Node.html#inheritance-diagram"><polygon points="364.25,-26 271.75,-26 271.75,-0 364.25,-0 364.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="284" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="304" text-anchor="start">Node[T, V]</text></a></g></g><!-- node1&#45;&gt;node6 --><g class="edge inheritance" id="graph13_1_6"><g id="a_inheritance|graph13_1_6"><a xlink:title="Node[T, V] is a subtype of Tree[V]"><path d="M357.624,-58.0271C348.612,-48.0135 337.178,-35.3091 328.911,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="356.427,-59.3123 361.072,-61.8581 359.028,-56.9709 356.427,-59.3123" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node trait" id="graph13_9"><g id="a_trait|graph13_9"><a xlink:title="virtufin.util.Leaf" xlink:href="Leaf.html#inheritance-diagram"><polygon points="471.25,-26 382.75,-26 382.75,-0 471.25,-0 471.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="395" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="415" text-anchor="start">Leaf[T, V]</text></a></g></g><!-- node1&#45;&gt;node9 --><g class="edge inheritance" id="graph13_1_9"><g id="a_inheritance|graph13_1_9"><a xlink:title="Leaf[T, V] is a subtype of Tree[V]"><path d="M386.642,-58.0271C395.821,-48.0135 407.467,-35.3091 415.886,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="385.219,-56.9898 383.13,-61.8581 387.799,-59.3548 385.219,-56.9898" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph13_2"><g id="a_trait|graph13_2"><a xlink:title="virtufin.util.TimePoint" xlink:href="TimePoint.html#inheritance-diagram"><polygon points="837,-88 735,-88 735,-62 837,-62 837,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="747" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="767" text-anchor="start">TimePoint[T]</text></a></g></g><!-- node7 --><g class="node class" id="graph13_7"><g id="a_class|graph13_7"><a xlink:title="virtufin.util.Natural" xlink:href="Natural.html#inheritance-diagram"><polygon points="568,-26 490,-26 490,-0 568,-0 568,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="502" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="522" text-anchor="start">Natural</text></a></g></g><!-- node2&#45;&gt;node7 --><g class="edge inheritance" id="graph13_2_7"><g id="a_inheritance|graph13_2_7"><a xlink:title="Natural is a subtype of TimePoint[T]"><path d="M729.78,-61.3961C687.668,-51.8805 628.661,-38.3888 577,-26 574.076,-25.2989 571.055,-24.5652 568.017,-23.8209" stroke="#d4d4d4" fill="none"></path><polygon points="729.567,-63.1421 734.83,-62.5365 730.338,-59.7281 729.567,-63.1421" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node11 --><g class="node class" id="graph13_11"><g id="a_class|graph13_11"><a xlink:title="virtufin.util.EndOfDay" xlink:href="EndOfDay.html#inheritance-diagram"><polygon points="677.25,-26 586.75,-26 586.75,-0 677.25,-0 677.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="599" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="619" text-anchor="start">EndOfDay</text></a></g></g><!-- node2&#45;&gt;node11 --><g class="edge inheritance" id="graph13_2_11"><g id="a_inheritance|graph13_2_11"><a xlink:title="EndOfDay is a subtype of TimePoint[T]"><path d="M750.008,-59.9773C723.563,-49.6739 688.005,-35.8202 662.855,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="749.542,-61.6735 754.836,-61.8581 750.812,-58.4123 749.542,-61.6735" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node13 --><g class="node class" id="graph13_13"><g id="a_class|graph13_13"><a xlink:title="virtufin.util.DayLow" xlink:href="DayLow.html#inheritance-diagram"><polygon points="776.25,-26 695.75,-26 695.75,-0 776.25,-0 776.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="708" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="728" text-anchor="start">DayLow</text></a></g></g><!-- node2&#45;&gt;node13 --><g class="edge inheritance" id="graph13_2_13"><g id="a_inheritance|graph13_2_13"><a xlink:title="DayLow is a subtype of TimePoint[T]"><path d="M772.467,-57.7607C764.157,-47.7889 753.69,-35.2278 746.103,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="771.336,-59.1373 775.882,-61.8581 774.025,-56.8966 771.336,-59.1373" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node14 --><g class="node class" id="graph13_14"><g id="a_class|graph13_14"><a xlink:title="virtufin.util.DayHigh" xlink:href="DayHigh.html#inheritance-diagram"><polygon points="879,-26 795,-26 795,-0 879,-0 879,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="807" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="827" text-anchor="start">DayHigh</text></a></g></g><!-- node2&#45;&gt;node14 --><g class="edge inheritance" id="graph13_2_14"><g id="a_inheritance|graph13_2_14"><a xlink:title="DayHigh is a subtype of TimePoint[T]"><path d="M799.577,-58.0271C808.089,-48.0135 818.887,-35.3091 826.695,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="798.225,-56.915 796.321,-61.8581 800.892,-59.1818 798.225,-56.915" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15 --><g class="node class" id="graph13_15"><g id="a_class|graph13_15"><a xlink:title="virtufin.util.Day" xlink:href="Day.html#inheritance-diagram"><polygon points="960.25,-26 897.75,-26 897.75,-0 960.25,-0 960.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="910" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="930" text-anchor="start">Day</text></a></g></g><!-- node2&#45;&gt;node15 --><g class="edge inheritance" id="graph13_2_15"><g id="a_inheritance|graph13_2_15"><a xlink:title="Day is a subtype of TimePoint[T]"><path d="M819.711,-59.8556C844.151,-49.601 876.857,-35.8781 900.105,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="818.872,-58.3098 814.938,-61.8581 820.226,-61.5372 818.872,-58.3098" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node16 --><g class="node class" id="graph13_16"><g id="a_class|graph13_16"><a xlink:title="virtufin.util.Date" xlink:href="Date.html#inheritance-diagram"><polygon points="1045,-26 979,-26 979,-0 1045,-0 1045,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="991" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1011" text-anchor="start">Date</text></a></g></g><!-- node2&#45;&gt;node16 --><g class="edge inheritance" id="graph13_2_16"><g id="a_inheritance|graph13_2_16"><a xlink:title="Date is a subtype of TimePoint[T]"><path d="M837.545,-60.7094C874.242,-51.1914 924.7,-37.9904 969,-26 972.142,-25.1495 975.411,-24.2551 978.68,-23.3541" stroke="#d4d4d4" fill="none"></path><polygon points="837.088,-59.02 832.687,-61.9687 837.966,-62.408 837.088,-59.02" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph13_3"><g id="a_trait|graph13_3"><a xlink:title="virtufin.util.Term" xlink:href="Term.html#inheritance-diagram"><polygon points="168,-88 88,-88 88,-62 168,-62 168,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="100" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="120" text-anchor="start">Term[T]</text></a></g></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph13_3_0"><g id="a_inheritance|graph13_3_0"><a xlink:title="Years is a subtype of Term[T]"><path d="M104.874,-59.0801C89.1219,-48.9173 68.533,-35.6342 53.7919,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="104.03,-60.618 109.18,-61.8581 105.927,-57.6769 104.03,-60.618" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node class" id="graph13_8"><g id="a_class|graph13_8"><a xlink:title="virtufin.util.Months" xlink:href="Months.html#inheritance-diagram"><polygon points="167,-26 89,-26 89,-0 167,-0 167,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="101" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="121" text-anchor="start">Months</text></a></g></g><!-- node3&#45;&gt;node8 --><g class="edge inheritance" id="graph13_3_8"><g id="a_inheritance|graph13_3_8"><a xlink:title="Months is a subtype of Term[T]"><path d="M128,-56.6826C128,-46.8961 128,-34.9026 128,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="126.25,-56.8581 128,-61.8581 129.75,-56.8581 126.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node12 --><g class="node class" id="graph13_12"><g id="a_class|graph13_12"><a xlink:title="virtufin.util.Days" xlink:href="Days.html#inheritance-diagram"><polygon points="253,-26 185,-26 185,-0 253,-0 253,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="197" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="217" text-anchor="start">Days</text></a></g></g><!-- node3&#45;&gt;node12 --><g class="edge inheritance" id="graph13_3_12"><g id="a_inheritance|graph13_3_12"><a xlink:title="Days is a subtype of Term[T]"><path d="M150.628,-59.0801C166.042,-48.9173 186.188,-35.6342 200.612,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="149.626,-57.6448 146.415,-61.8581 151.553,-60.5668 149.626,-57.6448" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph13_4"><g id="a_trait|graph13_4"><a xlink:title="virtufin.util.Schedule" xlink:href="Schedule.html#inheritance-diagram"><polygon points="1326.25,-88 1227.75,-88 1227.75,-62 1326.25,-62 1326.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="1240" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="1260" text-anchor="start">Schedule[T]</text></a></g></g><!-- node5 --><g class="node class" id="graph13_5"><g id="a_class|graph13_5"><a xlink:title="virtufin.util.RegularSchedule" xlink:href="RegularSchedule.html#inheritance-diagram"><polygon points="1197,-26 1063,-26 1063,-0 1197,-0 1197,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="1075" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1095" text-anchor="start">RegularSchedule[T]</text></a></g></g><!-- node4&#45;&gt;node5 --><g class="edge inheritance" id="graph13_4_5"><g id="a_inheritance|graph13_4_5"><a xlink:title="RegularSchedule[T] is a subtype of Schedule[T]"><path d="M1242.35,-59.8556C1217.22,-49.601 1183.6,-35.8781 1159.7,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1241.96,-61.5888 1247.25,-61.8581 1243.28,-58.3483 1241.96,-61.5888" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node10 --><g class="node class" id="graph13_10"><g id="a_class|graph13_10"><a xlink:title="virtufin.util.FiniteSchedule" xlink:href="FiniteSchedule.html#inheritance-diagram"><polygon points="1338.25,-26 1215.75,-26 1215.75,-0 1338.25,-0 1338.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="1228" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1248" text-anchor="start">FiniteSchedule[T]</text></a></g></g><!-- node4&#45;&gt;node10 --><g class="edge inheritance" id="graph13_4_10"><g id="a_inheritance|graph13_4_10"><a xlink:title="FiniteSchedule[T] is a subtype of Schedule[T]"><path d="M1277,-56.6826C1277,-46.8961 1277,-34.9026 1277,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1275.25,-56.8581 1277,-61.8581 1278.75,-56.8581 1275.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node17 --><g class="node class" id="graph13_17"><g id="a_class|graph13_17"><a xlink:title="virtufin.util.AdjustableSchedule" xlink:href="AdjustableSchedule.html#inheritance-diagram"><polygon points="1501.25,-26 1356.75,-26 1356.75,-0 1501.25,-0 1501.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="1369" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1389" text-anchor="start">AdjustableSchedule[T]</text></a></g></g><!-- node4&#45;&gt;node17 --><g class="edge inheritance" id="graph13_4_17"><g id="a_inheritance|graph13_4_17"><a xlink:title="AdjustableSchedule[T] is a subtype of Schedule[T]"><path d="M1312.52,-59.9773C1338.63,-49.6739 1373.72,-35.8202 1398.55,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="1311.77,-58.3944 1307.76,-61.8581 1313.05,-61.65 1311.77,-58.3944" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph1" viewBox="0.00 0.00 1509.00 96.00" height="96pt" width="1509pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 92)" class="graph" id="graph0"><polygon points="-4,4 -4,-92 1505,-92 1505,4 -4,4" stroke="white" fill="white"></polygon><!-- node0 --><g class="node class" id="graph1_0"><g id="a_class|graph1_0"><a xlink:title="virtufin.util.Years" xlink:href="Years.html#inheritance-diagram"><polygon points="70.25,-26 -0.25,-26 -0.25,-0 70.25,-0 70.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="32" text-anchor="start">Years</text></a></g></g><!-- node1 --><g class="node trait" id="graph1_1"><g id="a_trait|graph1_1"><a xlink:title="virtufin.util.Tree" xlink:href="Tree.html#inheritance-diagram"><polygon points="411,-88 333,-88 333,-62 411,-62 411,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="345" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="365" text-anchor="start">Tree[V]</text></a></g></g><!-- node6 --><g class="node trait" id="graph1_6"><g id="a_trait|graph1_6"><a xlink:title="virtufin.util.Node" xlink:href="Node.html#inheritance-diagram"><polygon points="364.25,-26 271.75,-26 271.75,-0 364.25,-0 364.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="284" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="304" text-anchor="start">Node[T, V]</text></a></g></g><!-- node1&#45;&gt;node6 --><g class="edge inheritance" id="graph1_1_6"><g id="a_inheritance|graph1_1_6"><a xlink:title="Node[T, V] is a subtype of Tree[V]"><path d="M357.624,-58.0271C348.612,-48.0135 337.178,-35.3091 328.911,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="356.427,-59.3123 361.072,-61.8581 359.028,-56.9709 356.427,-59.3123" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node trait" id="graph1_9"><g id="a_trait|graph1_9"><a xlink:title="virtufin.util.Leaf" xlink:href="Leaf.html#inheritance-diagram"><polygon points="471.25,-26 382.75,-26 382.75,-0 471.25,-0 471.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-19" x="395" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="415" text-anchor="start">Leaf[T, V]</text></a></g></g><!-- node1&#45;&gt;node9 --><g class="edge inheritance" id="graph1_1_9"><g id="a_inheritance|graph1_1_9"><a xlink:title="Leaf[T, V] is a subtype of Tree[V]"><path d="M386.642,-58.0271C395.821,-48.0135 407.467,-35.3091 415.886,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="385.219,-56.9898 383.13,-61.8581 387.799,-59.3548 385.219,-56.9898" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph1_2"><g id="a_trait|graph1_2"><a xlink:title="virtufin.util.TimePoint" xlink:href="TimePoint.html#inheritance-diagram"><polygon points="837,-88 735,-88 735,-62 837,-62 837,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="747" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="767" text-anchor="start">TimePoint[T]</text></a></g></g><!-- node7 --><g class="node class" id="graph1_7"><g id="a_class|graph1_7"><a xlink:title="virtufin.util.Natural" xlink:href="Natural.html#inheritance-diagram"><polygon points="568,-26 490,-26 490,-0 568,-0 568,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="502" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="522" text-anchor="start">Natural</text></a></g></g><!-- node2&#45;&gt;node7 --><g class="edge inheritance" id="graph1_2_7"><g id="a_inheritance|graph1_2_7"><a xlink:title="Natural is a subtype of TimePoint[T]"><path d="M729.78,-61.3961C687.668,-51.8805 628.661,-38.3888 577,-26 574.076,-25.2989 571.055,-24.5652 568.017,-23.8209" stroke="#d4d4d4" fill="none"></path><polygon points="729.567,-63.1421 734.83,-62.5365 730.338,-59.7281 729.567,-63.1421" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node11 --><g class="node class" id="graph1_11"><g id="a_class|graph1_11"><a xlink:title="virtufin.util.EndOfDay" xlink:href="EndOfDay.html#inheritance-diagram"><polygon points="677.25,-26 586.75,-26 586.75,-0 677.25,-0 677.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="599" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="619" text-anchor="start">EndOfDay</text></a></g></g><!-- node2&#45;&gt;node11 --><g class="edge inheritance" id="graph1_2_11"><g id="a_inheritance|graph1_2_11"><a xlink:title="EndOfDay is a subtype of TimePoint[T]"><path d="M750.008,-59.9773C723.563,-49.6739 688.005,-35.8202 662.855,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="749.542,-61.6735 754.836,-61.8581 750.812,-58.4123 749.542,-61.6735" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node13 --><g class="node class" id="graph1_13"><g id="a_class|graph1_13"><a xlink:title="virtufin.util.DayLow" xlink:href="DayLow.html#inheritance-diagram"><polygon points="776.25,-26 695.75,-26 695.75,-0 776.25,-0 776.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="708" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="728" text-anchor="start">DayLow</text></a></g></g><!-- node2&#45;&gt;node13 --><g class="edge inheritance" id="graph1_2_13"><g id="a_inheritance|graph1_2_13"><a xlink:title="DayLow is a subtype of TimePoint[T]"><path d="M772.467,-57.7607C764.157,-47.7889 753.69,-35.2278 746.103,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="771.336,-59.1373 775.882,-61.8581 774.025,-56.8966 771.336,-59.1373" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node14 --><g class="node class" id="graph1_14"><g id="a_class|graph1_14"><a xlink:title="virtufin.util.DayHigh" xlink:href="DayHigh.html#inheritance-diagram"><polygon points="879,-26 795,-26 795,-0 879,-0 879,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="807" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="827" text-anchor="start">DayHigh</text></a></g></g><!-- node2&#45;&gt;node14 --><g class="edge inheritance" id="graph1_2_14"><g id="a_inheritance|graph1_2_14"><a xlink:title="DayHigh is a subtype of TimePoint[T]"><path d="M799.577,-58.0271C808.089,-48.0135 818.887,-35.3091 826.695,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="798.225,-56.915 796.321,-61.8581 800.892,-59.1818 798.225,-56.915" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15 --><g class="node class" id="graph1_15"><g id="a_class|graph1_15"><a xlink:title="virtufin.util.Day" xlink:href="Day.html#inheritance-diagram"><polygon points="960.25,-26 897.75,-26 897.75,-0 960.25,-0 960.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="910" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="930" text-anchor="start">Day</text></a></g></g><!-- node2&#45;&gt;node15 --><g class="edge inheritance" id="graph1_2_15"><g id="a_inheritance|graph1_2_15"><a xlink:title="Day is a subtype of TimePoint[T]"><path d="M819.711,-59.8556C844.151,-49.601 876.857,-35.8781 900.105,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="818.872,-58.3098 814.938,-61.8581 820.226,-61.5372 818.872,-58.3098" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node16 --><g class="node class" id="graph1_16"><g id="a_class|graph1_16"><a xlink:title="virtufin.util.Date" xlink:href="Date.html#inheritance-diagram"><polygon points="1045,-26 979,-26 979,-0 1045,-0 1045,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="991" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1011" text-anchor="start">Date</text></a></g></g><!-- node2&#45;&gt;node16 --><g class="edge inheritance" id="graph1_2_16"><g id="a_inheritance|graph1_2_16"><a xlink:title="Date is a subtype of TimePoint[T]"><path d="M837.545,-60.7094C874.242,-51.1914 924.7,-37.9904 969,-26 972.142,-25.1495 975.411,-24.2551 978.68,-23.3541" stroke="#d4d4d4" fill="none"></path><polygon points="837.088,-59.02 832.687,-61.9687 837.966,-62.408 837.088,-59.02" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph1_3"><g id="a_trait|graph1_3"><a xlink:title="virtufin.util.Term" xlink:href="Term.html#inheritance-diagram"><polygon points="168,-88 88,-88 88,-62 168,-62 168,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="100" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="120" text-anchor="start">Term[T]</text></a></g></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph1_3_0"><g id="a_inheritance|graph1_3_0"><a xlink:title="Years is a subtype of Term[T]"><path d="M104.874,-59.0801C89.1219,-48.9173 68.533,-35.6342 53.7919,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="104.03,-60.618 109.18,-61.8581 105.927,-57.6769 104.03,-60.618" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node class" id="graph1_8"><g id="a_class|graph1_8"><a xlink:title="virtufin.util.Months" xlink:href="Months.html#inheritance-diagram"><polygon points="167,-26 89,-26 89,-0 167,-0 167,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="101" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="121" text-anchor="start">Months</text></a></g></g><!-- node3&#45;&gt;node8 --><g class="edge inheritance" id="graph1_3_8"><g id="a_inheritance|graph1_3_8"><a xlink:title="Months is a subtype of Term[T]"><path d="M128,-56.6826C128,-46.8961 128,-34.9026 128,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="126.25,-56.8581 128,-61.8581 129.75,-56.8581 126.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node12 --><g class="node class" id="graph1_12"><g id="a_class|graph1_12"><a xlink:title="virtufin.util.Days" xlink:href="Days.html#inheritance-diagram"><polygon points="253,-26 185,-26 185,-0 253,-0 253,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="197" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="217" text-anchor="start">Days</text></a></g></g><!-- node3&#45;&gt;node12 --><g class="edge inheritance" id="graph1_3_12"><g id="a_inheritance|graph1_3_12"><a xlink:title="Days is a subtype of Term[T]"><path d="M150.628,-59.0801C166.042,-48.9173 186.188,-35.6342 200.612,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="149.626,-57.6448 146.415,-61.8581 151.553,-60.5668 149.626,-57.6448" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph1_4"><g id="a_trait|graph1_4"><a xlink:title="virtufin.util.Schedule" xlink:href="Schedule.html#inheritance-diagram"><polygon points="1326.25,-88 1227.75,-88 1227.75,-62 1326.25,-62 1326.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-81" x="1240" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-72.5" x="1260" text-anchor="start">Schedule[T]</text></a></g></g><!-- node5 --><g class="node class" id="graph1_5"><g id="a_class|graph1_5"><a xlink:title="virtufin.util.RegularSchedule" xlink:href="RegularSchedule.html#inheritance-diagram"><polygon points="1197,-26 1063,-26 1063,-0 1197,-0 1197,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="1075" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1095" text-anchor="start">RegularSchedule[T]</text></a></g></g><!-- node4&#45;&gt;node5 --><g class="edge inheritance" id="graph1_4_5"><g id="a_inheritance|graph1_4_5"><a xlink:title="RegularSchedule[T] is a subtype of Schedule[T]"><path d="M1242.35,-59.8556C1217.22,-49.601 1183.6,-35.8781 1159.7,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1241.96,-61.5888 1247.25,-61.8581 1243.28,-58.3483 1241.96,-61.5888" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node10 --><g class="node class" id="graph1_10"><g id="a_class|graph1_10"><a xlink:title="virtufin.util.FiniteSchedule" xlink:href="FiniteSchedule.html#inheritance-diagram"><polygon points="1338.25,-26 1215.75,-26 1215.75,-0 1338.25,-0 1338.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="1228" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1248" text-anchor="start">FiniteSchedule[T]</text></a></g></g><!-- node4&#45;&gt;node10 --><g class="edge inheritance" id="graph1_4_10"><g id="a_inheritance|graph1_4_10"><a xlink:title="FiniteSchedule[T] is a subtype of Schedule[T]"><path d="M1277,-56.6826C1277,-46.8961 1277,-34.9026 1277,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1275.25,-56.8581 1277,-61.8581 1278.75,-56.8581 1275.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node17 --><g class="node class" id="graph1_17"><g id="a_class|graph1_17"><a xlink:title="virtufin.util.AdjustableSchedule" xlink:href="AdjustableSchedule.html#inheritance-diagram"><polygon points="1501.25,-26 1356.75,-26 1356.75,-0 1501.25,-0 1501.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19" x="1369" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-10.5" x="1389" text-anchor="start">AdjustableSchedule[T]</text></a></g></g><!-- node4&#45;&gt;node17 --><g class="edge inheritance" id="graph1_4_17"><g id="a_inheritance|graph1_4_17"><a xlink:title="AdjustableSchedule[T] is a subtype of Schedule[T]"><path d="M1312.52,-59.9773C1338.63,-49.6739 1373.72,-35.8202 1398.55,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="1311.77,-58.3944 1307.76,-61.8581 1313.05,-61.65 1311.77,-58.3944" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -96,7 +104,11 @@
       <span class="symbol">
         <a href="AdjustableSchedule.html"><span class="name">AdjustableSchedule</span></a><span class="tparams">[<span name="T">T &lt;: <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.util.AdjustableSchedule.T">T</span>]</span>]</span><span class="params">(<span name="schedule">schedule: <a href="Schedule.html" class="extype" name="virtufin.util.Schedule">Schedule</a>[<span class="extype" name="virtufin.util.AdjustableSchedule.T">T</span>]</span>)</span><span class="result"> extends <a href="Schedule.html" class="extype" name="virtufin.util.Schedule">Schedule</a>[<span class="extype" name="virtufin.util.AdjustableSchedule.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@AdjustableSchedule[T&lt;:virtufin.util.TimePoint[T]]extendsSchedule[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Date" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DateextendsTimePoint[virtufin.util.Date]withProductwithSerializable"></a>
@@ -109,7 +121,11 @@
       <span class="symbol">
         <a href="Date.html"><span class="name">Date</span></a><span class="params">(<span name="epoch">epoch: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<a href="Date.html" class="extype" name="virtufin.util.Date">Date</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DateextendsTimePoint[virtufin.util.Date]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Day" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DayextendsTimePoint[virtufin.util.Day]withProductwithSerializable"></a>
@@ -122,7 +138,11 @@
       <span class="symbol">
         <a href="Day.html"><span class="name">Day</span></a><span class="params">(<span name="year">year: <span class="extype" name="scala.Int">Int</span></span>, <span name="month">month: <span class="extype" name="scala.Int">Int</span></span>, <span name="day">day: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<a href="Day.html" class="extype" name="virtufin.util.Day">Day</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DayextendsTimePoint[virtufin.util.Day]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.DayHigh" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DayHighextendsTimePoint[virtufin.util.DayHigh]withProductwithSerializable"></a>
@@ -135,7 +155,11 @@
       <span class="symbol">
         <a href="DayHigh.html"><span class="name">DayHigh</span></a><span class="params">(<span name="year">year: <span class="extype" name="scala.Int">Int</span></span>, <span name="month">month: <span class="extype" name="scala.Int">Int</span></span>, <span name="day">day: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<a href="DayHigh.html" class="extype" name="virtufin.util.DayHigh">DayHigh</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DayHighextendsTimePoint[virtufin.util.DayHigh]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.DayLow" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DayLowextendsTimePoint[virtufin.util.DayLow]withProductwithSerializable"></a>
@@ -148,7 +172,11 @@
       <span class="symbol">
         <a href="DayLow.html"><span class="name">DayLow</span></a><span class="params">(<span name="year">year: <span class="extype" name="scala.Int">Int</span></span>, <span name="month">month: <span class="extype" name="scala.Int">Int</span></span>, <span name="day">day: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<a href="DayLow.html" class="extype" name="virtufin.util.DayLow">DayLow</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DayLowextendsTimePoint[virtufin.util.DayLow]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Days" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DaysextendsTerm[virtufin.util.Day]withProductwithSerializable"></a>
@@ -161,7 +189,11 @@
       <span class="symbol">
         <a href="Days.html"><span class="name">Days</span></a><span class="params">(<span name="days">days: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="Term.html" class="extype" name="virtufin.util.Term">Term</a>[<a href="Day.html" class="extype" name="virtufin.util.Day">Day</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DaysextendsTerm[virtufin.util.Day]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.EndOfDay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="EndOfDayextendsTimePoint[virtufin.util.EndOfDay]withOrdered[virtufin.util.EndOfDay]withProductwithSerializable"></a>
@@ -174,7 +206,11 @@
       <span class="symbol">
         <a href="EndOfDay.html"><span class="name">EndOfDay</span></a><span class="params">(<span name="year">year: <span class="extype" name="scala.Int">Int</span></span>, <span name="month">month: <span class="extype" name="scala.Int">Int</span></span>, <span name="day">day: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<a href="EndOfDay.html" class="extype" name="virtufin.util.EndOfDay">EndOfDay</a>] with <span class="extype" name="scala.Ordered">Ordered</span>[<a href="EndOfDay.html" class="extype" name="virtufin.util.EndOfDay">EndOfDay</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@EndOfDayextendsTimePoint[virtufin.util.EndOfDay]withOrdered[virtufin.util.EndOfDay]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.FiniteSchedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FiniteSchedule[T&lt;:virtufin.util.TimePoint[T]]extendsSchedule[T]withProductwithSerializable"></a>
@@ -187,7 +223,11 @@
       <span class="symbol">
         <a href="FiniteSchedule.html"><span class="name">FiniteSchedule</span></a><span class="tparams">[<span name="T">T &lt;: <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.util.FiniteSchedule.T">T</span>]</span>]</span><span class="params">(<span name="schedule">schedule: <a href="Schedule.html" class="extype" name="virtufin.util.Schedule">Schedule</a>[<span class="extype" name="virtufin.util.FiniteSchedule.T">T</span>]</span>, <span name="tenor">tenor: <a href="Term.html" class="extype" name="virtufin.util.Term">Term</a>[<span class="extype" name="virtufin.util.FiniteSchedule.T">T</span>]</span>)</span><span class="result"> extends <a href="Schedule.html" class="extype" name="virtufin.util.Schedule">Schedule</a>[<span class="extype" name="virtufin.util.FiniteSchedule.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@FiniteSchedule[T&lt;:virtufin.util.TimePoint[T]]extendsSchedule[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.HolidayCalendar" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="HolidayCalendarextendsAnyRef"></a>
@@ -200,7 +240,11 @@
       <span class="symbol">
         <a href="HolidayCalendar.html"><span class="name">HolidayCalendar</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@HolidayCalendarextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Identifier" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Identifier[V]extendsAnyRef"></a>
@@ -213,21 +257,30 @@
       <span class="symbol">
         <a href="Identifier.html"><span class="name">Identifier</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Identifier[V]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="virtufin.util.Leaf" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Leaf[+T&lt;:virtufin.util.Tree[V],+V]extendsTree[V]"></a>
-      <a id="Leaf[+T&lt;:Tree[V],+V]:Leaf[T,V]"></a>
+    </li><li name="virtufin.util.Leaf" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Leaf[+T&lt;:virtufin.util.Tree[V],V]extendsTree[V]"></a>
+      <a id="Leaf[+T&lt;:Tree[V],V]:Leaf[T,V]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Leaf.html"><span class="name">Leaf</span></a><span class="tparams">[<span name="T">+T &lt;: <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Leaf.V">V</span>]</span>, <span name="V">+V</span>]</span><span class="result"> extends <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Leaf.V">V</span>]</span>
+        <a href="Leaf.html"><span class="name">Leaf</span></a><span class="tparams">[<span name="T">+T &lt;: <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Leaf.V">V</span>]</span>, <span name="V">V</span>]</span><span class="result"> extends <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Leaf.V">V</span>]</span>
       </span>
-      </h4>
-      
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Leaf[+T&lt;:virtufin.util.Tree[V],V]extendsTree[V]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"></dd><dt class="tparam">V</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="virtufin.util.Lookup" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="LookupextendsAnyRef"></a>
       <a id="Lookup:Lookup"></a>
@@ -239,7 +292,11 @@
       <span class="symbol">
         <a href="Lookup.html"><span class="name">Lookup</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@LookupextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.LookupBuilder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="LookupBuilderextendsAnyRef"></a>
@@ -252,7 +309,11 @@
       <span class="symbol">
         <a href="LookupBuilder.html"><span class="name">LookupBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@LookupBuilderextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Manager" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Manager[T]extendsIterable[virtufin.util.Identifier[T]]"></a>
@@ -265,7 +326,11 @@
       <span class="symbol">
         <a href="Manager.html"><span class="name">Manager</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<a href="Identifier.html" class="extype" name="virtufin.util.Identifier">Identifier</a>[<span class="extype" name="virtufin.util.Manager.T">T</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Manager[T]extendsIterable[virtufin.util.Identifier[T]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Months" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MonthsextendsTerm[virtufin.util.Day]withProductwithSerializable"></a>
@@ -278,7 +343,11 @@
       <span class="symbol">
         <a href="Months.html"><span class="name">Months</span></a><span class="params">(<span name="months">months: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="Term.html" class="extype" name="virtufin.util.Term">Term</a>[<a href="Day.html" class="extype" name="virtufin.util.Day">Day</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@MonthsextendsTerm[virtufin.util.Day]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Natural" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NaturalextendsTimePoint[virtufin.util.Natural]withProductwithSerializable"></a>
@@ -291,21 +360,48 @@
       <span class="symbol">
         <a href="Natural.html"><span class="name">Natural</span></a><span class="params">(<span name="n">n: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<a href="Natural.html" class="extype" name="virtufin.util.Natural">Natural</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@NaturalextendsTimePoint[virtufin.util.Natural]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="virtufin.util.Node" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Node[+T&lt;:virtufin.util.Tree[V],+V]extendsTree[V]withIterable[T]"></a>
-      <a id="Node[+T&lt;:Tree[V],+V]:Node[T,V]"></a>
+    </li><li name="virtufin.util.Node" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Node[+T&lt;:virtufin.util.Tree[V],V]extendsTree[V]withIterable[T]"></a>
+      <a id="Node[+T&lt;:Tree[V],V]:Node[T,V]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Node.html"><span class="name">Node</span></a><span class="tparams">[<span name="T">+T &lt;: <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Node.V">V</span>]</span>, <span name="V">+V</span>]</span><span class="result"> extends <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Node.V">V</span>] with <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="virtufin.util.Node.T">T</span>]</span>
+        <a href="Node.html"><span class="name">Node</span></a><span class="tparams">[<span name="T">+T &lt;: <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Node.V">V</span>]</span>, <span name="V">V</span>]</span><span class="result"> extends <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.Node.V">V</span>] with <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="virtufin.util.Node.T">T</span>]</span>
       </span>
-      </h4>
-      
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Node[+T&lt;:virtufin.util.Tree[V],V]extendsTree[V]withIterable[T]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"></dd><dt class="tparam">V</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="virtufin.util.Path" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Path[V]extendsAnyRef"></a>
+      <a id="Path[V]:Path[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Path.html"><span class="name">Path</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Path[V]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">V</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="virtufin.util.RegularSchedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RegularSchedule[T&lt;:virtufin.util.TimePoint[T]]extendsSchedule[T]withProductwithSerializable"></a>
       <a id="RegularSchedule[T&lt;:TimePoint[T]]:RegularSchedule[T]"></a>
@@ -317,7 +413,11 @@
       <span class="symbol">
         <a href="RegularSchedule.html"><span class="name">RegularSchedule</span></a><span class="tparams">[<span name="T">T &lt;: <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.util.RegularSchedule.T">T</span>]</span>]</span><span class="params">(<span name="frequency">frequency: <a href="Term.html" class="extype" name="virtufin.util.Term">Term</a>[<span class="extype" name="virtufin.util.RegularSchedule.T">T</span>]</span>)</span><span class="result"> extends <a href="Schedule.html" class="extype" name="virtufin.util.Schedule">Schedule</a>[<span class="extype" name="virtufin.util.RegularSchedule.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@RegularSchedule[T&lt;:virtufin.util.TimePoint[T]]extendsSchedule[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Schedule" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Schedule[T&lt;:virtufin.util.TimePoint[T]]extendsAnyRef"></a>
@@ -330,7 +430,11 @@
       <span class="symbol">
         <a href="Schedule.html"><span class="name">Schedule</span></a><span class="tparams">[<span name="T">T &lt;: <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.util.Schedule.T">T</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Schedule[T&lt;:virtufin.util.TimePoint[T]]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.ScheduleAdjustment" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ScheduleAdjustment[T&lt;:virtufin.util.TimePoint[T]]extendsAnyRef"></a>
@@ -343,7 +447,11 @@
       <span class="symbol">
         <a href="ScheduleAdjustment.html"><span class="name">ScheduleAdjustment</span></a><span class="tparams">[<span name="T">T &lt;: <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.util.ScheduleAdjustment.T">T</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@ScheduleAdjustment[T&lt;:virtufin.util.TimePoint[T]]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Term" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Term[T&lt;:virtufin.util.TimePoint[T]]extendsAnyRef"></a>
@@ -356,7 +464,11 @@
       <span class="symbol">
         <a href="Term.html"><span class="name">Term</span></a><span class="tparams">[<span name="T">T &lt;: <a href="TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.util.Term.T">T</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Term[T&lt;:virtufin.util.TimePoint[T]]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.TimePoint" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="TimePoint[T]extendsOrdered[T]"></a>
@@ -369,21 +481,48 @@
       <span class="symbol">
         <a href="TimePoint.html"><span class="name">TimePoint</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Ordered">Ordered</span>[<span class="extype" name="virtufin.util.TimePoint.T">T</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@TimePoint[T]extendsOrdered[T]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="virtufin.util.Tree" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Tree[+V]extendsAnyRef"></a>
-      <a id="Tree[+V]:Tree[V]"></a>
+    </li><li name="virtufin.util.Tree" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Tree[V]extendsAnyRef"></a>
+      <a id="Tree[V]:Tree[V]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Tree.html"><span class="name">Tree</span></a><span class="tparams">[<span name="V">+V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Tree.html"><span class="name">Tree</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
-      
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Tree[V]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">V</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="virtufin.util.TreeBuilder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TreeBuilder[T&lt;:virtufin.util.Tree[V],V]extendsAnyRef"></a>
+      <a id="TreeBuilder[T&lt;:Tree[V],V]:TreeBuilder[T,V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeBuilder.html"><span class="name">TreeBuilder</span></a><span class="tparams">[<span name="T">T &lt;: <a href="Tree.html" class="extype" name="virtufin.util.Tree">Tree</a>[<span class="extype" name="virtufin.util.TreeBuilder.V">V</span>]</span>, <span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@TreeBuilder[T&lt;:virtufin.util.Tree[V],V]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"></dd><dt class="tparam">V</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="virtufin.util.UnorderedPair" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="UnorderedPair[T]extendsProductwithSerializable"></a>
       <a id="UnorderedPair[T]:UnorderedPair[T]"></a>
@@ -395,7 +534,11 @@
       <span class="symbol">
         <a href="UnorderedPair.html"><span class="name">UnorderedPair</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="element1">element1: <span class="extype" name="virtufin.util.UnorderedPair.T">T</span></span>, <span name="element2">element2: <span class="extype" name="virtufin.util.UnorderedPair.T">T</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@UnorderedPair[T]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Years" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="YearsextendsTerm[virtufin.util.Day]withProductwithSerializable"></a>
@@ -408,7 +551,11 @@
       <span class="symbol">
         <a href="Years.html"><span class="name">Years</span></a><span class="params">(<span name="years">years: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="Term.html" class="extype" name="virtufin.util.Term">Term</a>[<a href="Day.html" class="extype" name="virtufin.util.Day">Day</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@YearsextendsTerm[virtufin.util.Day]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -428,7 +575,11 @@
       <span class="symbol">
         <a href="AdjustableSchedule$.html"><span class="name">AdjustableSchedule</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@AdjustableSchedule" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Date" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Date"></a>
@@ -441,7 +592,11 @@
       <span class="symbol">
         <a href="Date$.html"><span class="name">Date</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Date" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.DateUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DateUtil"></a>
@@ -454,7 +609,11 @@
       <span class="symbol">
         <a href="DateUtil$.html"><span class="name">DateUtil</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DateUtil" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Day" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Day"></a>
@@ -467,7 +626,11 @@
       <span class="symbol">
         <a href="Day$.html"><span class="name">Day</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Day" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.DayHigh" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DayHigh"></a>
@@ -480,7 +643,11 @@
       <span class="symbol">
         <a href="DayHigh$.html"><span class="name">DayHigh</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DayHigh" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.DayLow" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DayLow"></a>
@@ -493,7 +660,11 @@
       <span class="symbol">
         <a href="DayLow$.html"><span class="name">DayLow</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@DayLow" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.EndOfDay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="EndOfDay"></a>
@@ -506,7 +677,11 @@
       <span class="symbol">
         <a href="EndOfDay$.html"><span class="name">EndOfDay</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@EndOfDay" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.FiniteSchedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FiniteSchedule"></a>
@@ -519,7 +694,11 @@
       <span class="symbol">
         <a href="FiniteSchedule$.html"><span class="name">FiniteSchedule</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@FiniteSchedule" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.HolidayCalendar" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HolidayCalendar"></a>
@@ -532,7 +711,11 @@
       <span class="symbol">
         <a href="HolidayCalendar$.html"><span class="name">HolidayCalendar</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@HolidayCalendar" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Identifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Identifier"></a>
@@ -545,7 +728,11 @@
       <span class="symbol">
         <a href="Identifier$.html"><span class="name">Identifier</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Identifier" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Leaf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Leaf"></a>
@@ -558,7 +745,11 @@
       <span class="symbol">
         <a href="Leaf$.html"><span class="name">Leaf</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Leaf" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Lookup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Lookup"></a>
@@ -571,7 +762,11 @@
       <span class="symbol">
         <a href="Lookup$.html"><span class="name">Lookup</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Lookup" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.LookupBuilder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="LookupBuilder"></a>
@@ -584,7 +779,11 @@
       <span class="symbol">
         <a href="LookupBuilder$.html"><span class="name">LookupBuilder</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@LookupBuilder" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Manager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Manager"></a>
@@ -597,7 +796,11 @@
       <span class="symbol">
         <a href="Manager$.html"><span class="name">Manager</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Manager" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Natural" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Natural"></a>
@@ -610,7 +813,11 @@
       <span class="symbol">
         <a href="Natural$.html"><span class="name">Natural</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Natural" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Node" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Node"></a>
@@ -623,7 +830,28 @@
       <span class="symbol">
         <a href="Node$.html"><span class="name">Node</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Node" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.util.Path" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Path"></a>
+      <a id="Path:Path"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Path$.html"><span class="name">Path</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Path" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.RegularSchedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RegularSchedule"></a>
@@ -636,7 +864,11 @@
       <span class="symbol">
         <a href="RegularSchedule$.html"><span class="name">RegularSchedule</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@RegularSchedule" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Schedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Schedule"></a>
@@ -649,7 +881,11 @@
       <span class="symbol">
         <a href="Schedule$.html"><span class="name">Schedule</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Schedule" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.ScheduleAdjustment" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ScheduleAdjustment"></a>
@@ -662,7 +898,11 @@
       <span class="symbol">
         <a href="ScheduleAdjustment$.html"><span class="name">ScheduleAdjustment</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@ScheduleAdjustment" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="virtufin.util.Term" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Term"></a>
@@ -675,7 +915,45 @@
       <span class="symbol">
         <a href="Term$.html"><span class="name">Term</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Term" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.util.Tree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Tree"></a>
+      <a id="Tree:Tree"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Tree$.html"><span class="name">Tree</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@Tree" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.util.TreeBuilder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TreeBuilder"></a>
+      <a id="TreeBuilder:TreeBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeBuilder$.html"><span class="name">TreeBuilder</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.util.package@TreeBuilder" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -706,6 +984,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
+
+
     </body>
       </html>
