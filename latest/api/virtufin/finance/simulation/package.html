@@ -127,6 +127,40 @@
       </a>
     </span>
       
+    </li><li name="virtufin.finance.simulation.AgentsManager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="AgentsManager:AgentsManager"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AgentsManager</span><span class="result"> = <a href="../../simulation/AgentsManager.html" class="extype" name="virtufin.simulation.AgentsManager">simulation.AgentsManager</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package@AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation.AgentsManagerActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AgentsManagerActor=virtufin.simulation.AgentsManagerActor[virtufin.finance.simulation.package.DefaultTimeType,virtufin.finance.simulation.package.DefaultStateType]"></a>
+      <a id="AgentsManagerActor:AgentsManagerActor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AgentsManagerActor</span><span class="result"> = <a href="../../simulation/AgentsManagerActor.html" class="extype" name="virtufin.simulation.AgentsManagerActor">simulation.AgentsManagerActor</a>[<a href="#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a>, <a href="#DefaultStateType=virtufin.finance.scenario.Quotes" class="extmbr" name="virtufin.finance.simulation.DefaultStateType">DefaultStateType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package@AgentsManagerActor=virtufin.simulation.AgentsManagerActor[virtufin.finance.simulation.package.DefaultTimeType,virtufin.finance.simulation.package.DefaultStateType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="virtufin.finance.simulation.Clock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Clock=virtufin.simulation.Clock[virtufin.finance.simulation.package.DefaultTimeType]"></a>
       <a id="Clock:Clock"></a>
@@ -699,18 +733,86 @@
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="virtufin.finance.simulation#Agents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Agents(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents"></a>
-      <a id="Agents(Timeout):simulation.Agents"></a>
+      <a id="Agents(agentsManager:virtufin.finance.simulation.package.AgentsManager,messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="Agents(AgentsManager,MessageDispatcher)(Timeout):simulation.Agents{.../*2definitionsintyperefinement*/}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Agents</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="../../simulation/Agents.html" class="extype" name="virtufin.simulation.Agents">simulation.Agents</a></span>
+        <span class="name">Agents</span><span class="params">(<span name="agentsManager">agentsManager: <a href="#AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.AgentsManager">AgentsManager</a></span>, <span name="messageDispatcher">messageDispatcher: <a href="../../simulation/MessageDispatcher.html" class="extype" name="virtufin.simulation.MessageDispatcher">MessageDispatcher</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="../../simulation/Agents.html" class="extype" name="virtufin.simulation.Agents">simulation.Agents</a> { ... /* 2 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@Agents(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.finance.simulation.package@Agents(agentsManager:virtufin.finance.simulation.package.AgentsManager,messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation#Agents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Agents(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="Agents(Timeout):simulation.Agents{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Agents</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="../../simulation/Agents.html" class="extype" name="virtufin.simulation.Agents">simulation.Agents</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package@Agents(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation#AgentsManager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AgentsManager(system:akka.actor.ActorSystem):virtufin.finance.simulation.package.AgentsManager"></a>
+      <a id="AgentsManager(ActorSystem):AgentsManager"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AgentsManager</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>)</span><span class="result">: <a href="#AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.AgentsManager">AgentsManager</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package@AgentsManager(system:akka.actor.ActorSystem):virtufin.finance.simulation.package.AgentsManager" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation#AgentsManager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AgentsManager(system:akka.actor.ActorSystem,resolverBuilder:virtufin.util.ResolverBuilder[virtufin.simulation.AgentIdentifier,akka.actor.ActorRef]):virtufin.finance.simulation.package.AgentsManager"></a>
+      <a id="AgentsManager(ActorSystem,ResolverBuilder[AgentIdentifier,ActorRef]):AgentsManager"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AgentsManager</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>, <span name="resolverBuilder">resolverBuilder: <a href="../../util/ResolverBuilder.html" class="extype" name="virtufin.util.ResolverBuilder">ResolverBuilder</a>[<a href="../../simulation/AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a>, <span class="extype" name="akka.actor.ActorRef">ActorRef</span>]</span>)</span><span class="result">: <a href="#AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.AgentsManager">AgentsManager</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package@AgentsManager(system:akka.actor.ActorSystem,resolverBuilder:virtufin.util.ResolverBuilder[virtufin.simulation.AgentIdentifier,akka.actor.ActorRef]):virtufin.finance.simulation.package.AgentsManager" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation#AgentsManagerActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AgentsManagerActor(agentsManager:virtufin.finance.simulation.package.AgentsManager):virtufin.finance.simulation.package.AgentsManagerActor"></a>
+      <a id="AgentsManagerActor(AgentsManager):AgentsManagerActor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AgentsManagerActor</span><span class="params">(<span name="agentsManager">agentsManager: <a href="#AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.AgentsManager">AgentsManager</a></span>)</span><span class="result">: <a href="#AgentsManagerActor=virtufin.simulation.AgentsManagerActor[virtufin.finance.simulation.package.DefaultTimeType,virtufin.finance.simulation.package.DefaultStateType]" class="extmbr" name="virtufin.finance.simulation.AgentsManagerActor">AgentsManagerActor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package@AgentsManagerActor(agentsManager:virtufin.finance.simulation.package.AgentsManager):virtufin.finance.simulation.package.AgentsManagerActor" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>

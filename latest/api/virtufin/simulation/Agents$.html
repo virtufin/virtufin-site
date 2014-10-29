@@ -221,18 +221,18 @@ removed from the list of <span class="extype" name="ActorRef">ActorRef</span>s t
     </span>
       
     </li><li name="virtufin.simulation.Agents#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[T&lt;:virtufin.util.TimePoint[T],S](implicittimeout:akka.util.Timeout):virtufin.simulation.Agents"></a>
-      <a id="apply[T&lt;:TimePoint[T],S](Timeout):Agents"></a>
+      <a id="apply[T&lt;:virtufin.util.TimePoint[T],S](agentsManager:virtufin.simulation.AgentsManager{typeTimeType=T;typeStateType=S},messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=T;typeStateType=S}"></a>
+      <a id="apply[T&lt;:TimePoint[T],S](AgentsManager{.../*2definitionsintyperefinement*/},MessageDispatcher)(Timeout):Agents{.../*2definitionsintyperefinement*/}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.Agents.apply.T">T</span>]</span>, <span name="S">S</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a></span>
+        <span class="name">apply</span><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.Agents.apply.T">T</span>]</span>, <span name="S">S</span>]</span><span class="params">(<span name="agentsManager">agentsManager: <a href="AgentsManager.html" class="extype" name="virtufin.simulation.AgentsManager">AgentsManager</a> { ... /* 2 definitions in type refinement */ }</span>, <span name="messageDispatcher">messageDispatcher: <a href="MessageDispatcher.html" class="extype" name="virtufin.simulation.MessageDispatcher">MessageDispatcher</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a> { ... /* 2 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.simulation.Agents$@apply[T&lt;:virtufin.util.TimePoint[T],S](implicittimeout:akka.util.Timeout):virtufin.simulation.Agents" title="Permalink" target="_top">
+      <a href="../../index.html#virtufin.simulation.Agents$@apply[T&lt;:virtufin.util.TimePoint[T],S](agentsManager:virtufin.simulation.AgentsManager{typeTimeType=T;typeStateType=S},messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=T;typeStateType=S}" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
     </span>
@@ -561,7 +561,28 @@ removed from the list of <span class="extype" name="ActorRef">ActorRef</span>s t
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="virtufin.simulation.Agents#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[T&lt;:virtufin.util.TimePoint[T],S](implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=T;typeStateType=S}"></a>
+      <a id="apply[T&lt;:TimePoint[T],S](Timeout):Agents{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: use Code(Agents(agentsManager, messageDispatcher))">apply</span><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.Agents.apply.T">T</span>]</span>, <span name="S">S</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Agents$@apply[T&lt;:virtufin.util.TimePoint[T],S](implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=T;typeStateType=S}" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"></dd><dt class="tparam">S</dt><dd class="cmt"></dd><dt class="param">timeout</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Deprecated</dt><dd class="cmt"><p>use </p><pre>Agents(agentsManager, messageDispatcher)</pre></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
