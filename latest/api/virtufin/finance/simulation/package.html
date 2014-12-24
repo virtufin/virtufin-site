@@ -144,23 +144,6 @@
       </a>
     </span>
       
-    </li><li name="virtufin.finance.simulation.AgentsManagerActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="AgentsManagerActor=virtufin.simulation.AgentsManagerActor[virtufin.finance.simulation.package.DefaultTimeType,virtufin.finance.simulation.package.DefaultStateType]"></a>
-      <a id="AgentsManagerActor:AgentsManagerActor"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">AgentsManagerActor</span><span class="result"> = <a href="../../simulation/AgentsManagerActor.html" class="extype" name="virtufin.simulation.AgentsManagerActor">simulation.AgentsManagerActor</a>[<a href="#DefaultTimeType=virtufin.finance.Time" class="extmbr" name="virtufin.finance.simulation.DefaultTimeType">DefaultTimeType</a>, <a href="#DefaultStateType=virtufin.finance.scenario.Quotes" class="extmbr" name="virtufin.finance.simulation.DefaultStateType">DefaultStateType</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@AgentsManagerActor=virtufin.simulation.AgentsManagerActor[virtufin.finance.simulation.package.DefaultTimeType,virtufin.finance.simulation.package.DefaultStateType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="virtufin.finance.simulation.Clock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Clock=virtufin.simulation.Clock[virtufin.finance.simulation.package.DefaultTimeType]"></a>
       <a id="Clock:Clock"></a>
@@ -382,23 +365,6 @@
       </a>
     </span>
       
-    </li><li name="virtufin.finance.simulation.MessageProcessor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MessageProcessorextendsAnyRef"></a>
-      <a id="MessageProcessor:MessageProcessor"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="MessageProcessor.html"><span class="name">MessageProcessor</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@MessageProcessorextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">This trait is used used for composing methods, which process <a href="../../simulation/Message.html" class="extype" name="virtufin.simulation.Message">virtufin.simulation.Message</a>s.</p>
     </li><li name="virtufin.finance.simulation.MessagesEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MessagesEvent=virtufin.simulation.MessagesEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
       <a id="MessagesEvent:MessagesEvent"></a>
@@ -417,7 +383,7 @@
     </span>
       
     </li><li name="virtufin.finance.simulation.MessagesGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MessagesGenerator=virtufin.simulation.MessagesGeneratorwithvirtufin.finance.simulation.package.DefaultTimewithvirtufin.finance.simulation.package.DefaultMessageGeneratingEvent"></a>
+      <a id="MessagesGenerator=virtufin.simulation.simulatable.MessagesGeneratorwithvirtufin.finance.simulation.package.DefaultTimewithvirtufin.finance.simulation.package.DefaultMessageGeneratingEvent"></a>
       <a id="MessagesGenerator:MessagesGenerator"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -425,10 +391,10 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">MessagesGenerator</span><span class="result"> = <a href="../../simulation/MessagesGenerator.html" class="extype" name="virtufin.simulation.MessagesGenerator">simulation.MessagesGenerator</a> with <a href="#DefaultTime=AnyRef{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}" class="extmbr" name="virtufin.finance.simulation.DefaultTime">DefaultTime</a> with <a href="#DefaultMessageGeneratingEvent=AnyRef{typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}" class="extmbr" name="virtufin.finance.simulation.DefaultMessageGeneratingEvent">DefaultMessageGeneratingEvent</a></span>
+        <span class="name">MessagesGenerator</span><span class="result"> = <a href="../../simulation/simulatable/MessagesGenerator.html" class="extype" name="virtufin.simulation.simulatable.MessagesGenerator">simulation.simulatable.MessagesGenerator</a> with <a href="#DefaultTime=AnyRef{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}" class="extmbr" name="virtufin.finance.simulation.DefaultTime">DefaultTime</a> with <a href="#DefaultMessageGeneratingEvent=AnyRef{typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}" class="extmbr" name="virtufin.finance.simulation.DefaultMessageGeneratingEvent">DefaultMessageGeneratingEvent</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@MessagesGenerator=virtufin.simulation.MessagesGeneratorwithvirtufin.finance.simulation.package.DefaultTimewithvirtufin.finance.simulation.package.DefaultMessageGeneratingEvent" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.finance.simulation.package@MessagesGenerator=virtufin.simulation.simulatable.MessagesGeneratorwithvirtufin.finance.simulation.package.DefaultTimewithvirtufin.finance.simulation.package.DefaultMessageGeneratingEvent" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -551,7 +517,7 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">Combines <a href="#Trigger=virtufin.simulation.SimulationEventProjector{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType;typeProjectedEventsType=virtufin.finance.simulation.package.TriggerEvent}" class="extmbr" name="virtufin.finance.simulation.Trigger">virtufin.finance.simulation.Trigger</a>s with <a href="TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">virtufin.finance.simulation.TransactionsGenerator</a>s to yield <a href="../../simulation/MessagesGenerator.html" class="extype" name="virtufin.simulation.MessagesGenerator">virtufin.simulation.MessagesGenerator</a>s
+      <p class="shortcomment cmt">Combines <a href="#Trigger=virtufin.simulation.SimulationEventProjector{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType;typeProjectedEventsType=virtufin.finance.simulation.package.TriggerEvent}" class="extmbr" name="virtufin.finance.simulation.Trigger">virtufin.finance.simulation.Trigger</a>s with <a href="TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">virtufin.finance.simulation.TransactionsGenerator</a>s to yield <span class="extype" name="virtufin.simulation.MessagesGenerator">virtufin.simulation.MessagesGenerator</span>s
 </p>
     </li><li name="virtufin.finance.simulation.Simulation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Simulation=virtufin.simulation.Simulation{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
@@ -733,7 +699,7 @@
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="virtufin.finance.simulation#Agents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Agents(agentsManager:virtufin.finance.simulation.package.AgentsManager,messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}"></a>
+      <a id="Agents(agentsManager:virtufin.finance.simulation.package.AgentsManager,messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=agentsManager.TimeType;typeStateType=agentsManager.StateType}"></a>
       <a id="Agents(AgentsManager,MessageDispatcher)(Timeout):simulation.Agents{.../*2definitionsintyperefinement*/}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -744,7 +710,7 @@
         <span class="name">Agents</span><span class="params">(<span name="agentsManager">agentsManager: <a href="#AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.AgentsManager">AgentsManager</a></span>, <span name="messageDispatcher">messageDispatcher: <a href="../../simulation/MessageDispatcher.html" class="extype" name="virtufin.simulation.MessageDispatcher">MessageDispatcher</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="timeout">timeout: <span class="extype" name="akka.util.Timeout">Timeout</span></span>)</span><span class="result">: <a href="../../simulation/Agents.html" class="extype" name="virtufin.simulation.Agents">simulation.Agents</a> { ... /* 2 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@Agents(agentsManager:virtufin.finance.simulation.package.AgentsManager,messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.finance.simulation.package@Agents(agentsManager:virtufin.finance.simulation.package.AgentsManager,messageDispatcher:virtufin.simulation.MessageDispatcher)(implicittimeout:akka.util.Timeout):virtufin.simulation.Agents{typeTimeType=agentsManager.TimeType;typeStateType=agentsManager.StateType}" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -800,23 +766,6 @@
       </a>
     </span>
       
-    </li><li name="virtufin.finance.simulation#AgentsManagerActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="AgentsManagerActor(agentsManager:virtufin.finance.simulation.package.AgentsManager):virtufin.finance.simulation.package.AgentsManagerActor"></a>
-      <a id="AgentsManagerActor(AgentsManager):AgentsManagerActor"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">AgentsManagerActor</span><span class="params">(<span name="agentsManager">agentsManager: <a href="#AgentsManager=virtufin.simulation.AgentsManager{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.AgentsManager">AgentsManager</a></span>)</span><span class="result">: <a href="#AgentsManagerActor=virtufin.simulation.AgentsManagerActor[virtufin.finance.simulation.package.DefaultTimeType,virtufin.finance.simulation.package.DefaultStateType]" class="extmbr" name="virtufin.finance.simulation.AgentsManagerActor">AgentsManagerActor</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@AgentsManagerActor(agentsManager:virtufin.finance.simulation.package.AgentsManager):virtufin.finance.simulation.package.AgentsManagerActor" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="virtufin.finance.simulation.EuropeanPlainVanillaOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="EuropeanPlainVanillaOption"></a>
       <a id="EuropeanPlainVanillaOption:EuropeanPlainVanillaOption"></a>
@@ -868,23 +817,6 @@
       </a>
     </span>
       
-    </li><li name="virtufin.finance.simulation.MessageProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MessageProcessor"></a>
-      <a id="MessageProcessor:MessageProcessor"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="MessageProcessor$.html"><span class="name">MessageProcessor</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@MessageProcessor" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="virtufin.finance.simulation#MessagesEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MessagesEvent(time:virtufin.finance.simulation.package.DefaultTimeType,messages:Iterable[virtufin.simulation.Message]):virtufin.simulation.MessagesEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
       <a id="MessagesEvent(DefaultTimeType,Iterable[Message]):simulation.MessagesEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType}"></a>
@@ -903,18 +835,18 @@
     </span>
       
     </li><li name="virtufin.finance.simulation#MessagesGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MessagesGenerator(generator:virtufin.finance.simulation.package.SimulationEvent=&gt;Iterable[virtufin.simulation.Message]):virtufin.simulation.MessagesGenerator{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}"></a>
-      <a id="MessagesGenerator((SimulationEvent)⇒Iterable[Message]):simulation.MessagesGenerator{.../*2definitionsintyperefinement*/}"></a>
+      <a id="MessagesGenerator(generator:virtufin.finance.simulation.package.SimulationEvent=&gt;Iterable[virtufin.simulation.Message]):virtufin.simulation.simulatable.MessagesGenerator{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}"></a>
+      <a id="MessagesGenerator((SimulationEvent)⇒Iterable[Message]):simulation.simulatable.MessagesGenerator{.../*2definitionsintyperefinement*/}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">MessagesGenerator</span><span class="params">(<span name="generator">generator: (<a href="#SimulationEvent=virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.SimulationEvent">SimulationEvent</a>) ⇒ <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../../simulation/Message.html" class="extype" name="virtufin.simulation.Message">Message</a>]</span>)</span><span class="result">: <a href="../../simulation/MessagesGenerator.html" class="extype" name="virtufin.simulation.MessagesGenerator">simulation.MessagesGenerator</a> { ... /* 2 definitions in type refinement */ }</span>
+        <span class="name">MessagesGenerator</span><span class="params">(<span name="generator">generator: (<a href="#SimulationEvent=virtufin.simulation.SimulationEvent{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType}" class="extmbr" name="virtufin.finance.simulation.SimulationEvent">SimulationEvent</a>) ⇒ <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../../simulation/Message.html" class="extype" name="virtufin.simulation.Message">Message</a>]</span>)</span><span class="result">: <a href="../../simulation/simulatable/MessagesGenerator.html" class="extype" name="virtufin.simulation.simulatable.MessagesGenerator">simulation.simulatable.MessagesGenerator</a> { ... /* 2 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.finance.simulation.package@MessagesGenerator(generator:virtufin.finance.simulation.package.SimulationEvent=&gt;Iterable[virtufin.simulation.Message]):virtufin.simulation.MessagesGenerator{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.finance.simulation.package@MessagesGenerator(generator:virtufin.finance.simulation.package.SimulationEvent=&gt;Iterable[virtufin.simulation.Message]):virtufin.simulation.simulatable.MessagesGenerator{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeEventType=virtufin.finance.simulation.package.DefaultMessageGeneratingEventType}" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -1204,6 +1136,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.finance.simulation.package@trigger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation.util" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="util"></a>
+      <a id="util:util"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="util/package.html"><span class="name">util</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.package@util" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>

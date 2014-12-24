@@ -90,25 +90,25 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="virtufin.simulation.AgentsManagerActor.AddAgent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AddAgent[T&lt;:virtufin.util.TimePoint[T],S]extendsProductwithSerializable"></a>
-      <a id="AddAgent[T&lt;:TimePoint[T],S]:AddAgent[T,S]"></a>
+      <a id="AddAgentextendsProductwithSerializable"></a>
+      <a id="AddAgent:AddAgent"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="AgentsManagerActor$$AddAgent.html"><span class="name">AddAgent</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.AgentsManagerActor.AddAgent.T">T</span>]</span>, <span name="S">S</span>]</span><span class="params">(<span name="identifier">identifier: <a href="AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>, <span name="simulatable">simulatable: <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a> { ... /* 2 definitions in type refinement */ }</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="AgentsManagerActor$$AddAgent.html"><span class="name">AddAgent</span></a><span class="params">(<span name="identifier">identifier: <a href="AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a></span>, <span name="simulatable">simulatable: <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.simulation.AgentsManagerActor$@AddAgent[T&lt;:virtufin.util.TimePoint[T],S]extendsProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../index.html#virtufin.simulation.AgentsManagerActor$@AddAgentextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
     </span>
       <p class="shortcomment cmt">Adds an <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a> with a specific <a href="AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a> to an <a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a> with a specific <a href="AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a> to an <a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a>. If the <a href="Agents.html" class="extype" name="virtufin.simulation.Agents">Agents</a> object
 already contains an agent with the same <a href="AgentIdentifier.html" class="extype" name="virtufin.simulation.AgentIdentifier">AgentIdentifier</a>, the corresponding <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a>
-is replaced by the agent created by the <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a> given in the argument.</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"></dd><dt class="tparam">S</dt><dd class="cmt"><p>
-</p></dd><dt class="param">identifier</dt><dd class="cmt"></dd><dt class="param">simulatable</dt><dd class="cmt"></dd></dl></div>
+is replaced by the agent created by the <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a> given in the argument.</p></div><dl class="paramcmts block"><dt class="param">identifier</dt><dd class="cmt"></dd><dt class="param">simulatable</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="virtufin.simulation.AgentsManagerActor.GetActorRef" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="GetActorRefextendsProductwithSerializable"></a>
       <a id="GetActorRef:GetActorRef"></a>
@@ -480,6 +480,23 @@ which may reside within an <span class="extype" name="Actor">Actor</span></p></d
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.simulation.AgentsManagerActor#props" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="props[T&lt;:virtufin.util.TimePoint[T],S](agentsManager:virtufin.simulation.AgentsManager{typeTimeType=T;typeStateType=S}):akka.actor.Props"></a>
+      <a id="props[T&lt;:TimePoint[T],S](AgentsManager{.../*2definitionsintyperefinement*/}):Props"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">props</span><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.AgentsManagerActor.props.T">T</span>]</span>, <span name="S">S</span>]</span><span class="params">(<span name="agentsManager">agentsManager: <a href="AgentsManager.html" class="extype" name="virtufin.simulation.AgentsManager">AgentsManager</a> { ... /* 2 definitions in type refinement */ }</span>)</span><span class="result">: <span class="extype" name="akka.actor.Props">Props</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.AgentsManagerActor$@props[T&lt;:virtufin.util.TimePoint[T],S](agentsManager:virtufin.simulation.AgentsManager{typeTimeType=T;typeStateType=S}):akka.actor.Props" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

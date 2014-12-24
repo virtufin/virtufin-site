@@ -145,18 +145,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="virtufin.simulation.Simulatable#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[T&lt;:virtufin.util.TimePoint[T],S,A&lt;:virtufin.simulation.Agent{typeTimeType=T;typeStateType=S}](c:()=&gt;A):virtufin.simulation.Simulatable{typeTimeType=T;typeStateType=S;typeAgentType=A}"></a>
-      <a id="apply[T&lt;:TimePoint[T],S,A&lt;:Agent{.../*2definitionsintyperefinement*/}](()⇒A):Simulatable{.../*3definitionsintyperefinement*/}"></a>
+      <a id="apply[A&lt;:virtufin.simulation.Agent](c:()=&gt;A):virtufin.simulation.Simulatable{typeAgentType=A}"></a>
+      <a id="apply[A&lt;:Agent](()⇒A):Simulatable{typeAgentType=A}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.Simulatable.apply.T">T</span>]</span>, <span name="S">S</span>, <span name="A">A &lt;: <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a> { ... /* 2 definitions in type refinement */ }</span>]</span><span class="params">(<span name="c">c: () ⇒ <span class="extype" name="virtufin.simulation.Simulatable.apply.A">A</span></span>)</span><span class="result">: <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a> { ... /* 3 definitions in type refinement */ }</span>
+        <span class="name">apply</span><span class="tparams">[<span name="A">A &lt;: <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a></span>]</span><span class="params">(<span name="c">c: () ⇒ <span class="extype" name="virtufin.simulation.Simulatable.apply.A">A</span></span>)</span><span class="result">: <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a> { type AgentType = A }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.simulation.Simulatable$@apply[T&lt;:virtufin.util.TimePoint[T],S,A&lt;:virtufin.simulation.Agent{typeTimeType=T;typeStateType=S}](c:()=&gt;A):virtufin.simulation.Simulatable{typeTimeType=T;typeStateType=S;typeAgentType=A}" title="Permalink" target="_top">
+      <a href="../../index.html#virtufin.simulation.Simulatable$@apply[A&lt;:virtufin.simulation.Agent](c:()=&gt;A):virtufin.simulation.Simulatable{typeAgentType=A}" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
     </span>
@@ -360,6 +360,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.simulation.Simulatable#props" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="props(simulatable:virtufin.simulation.Simulatable):akka.actor.Props"></a>
+      <a id="props(Simulatable):Props"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">props</span><span class="params">(<span name="simulatable">simulatable: <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a></span>)</span><span class="result">: <span class="extype" name="akka.actor.Props">Props</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.simulation.Simulatable$@props(simulatable:virtufin.simulation.Simulatable):akka.actor.Props" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -378,18 +395,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="virtufin.simulation.Simulatable#toSimulatable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="toSimulatable[T&lt;:virtufin.util.TimePoint[T],S,A&lt;:virtufin.simulation.Agent{typeTimeType=T;typeStateType=S}](creator:()=&gt;A):virtufin.simulation.Simulatable{typeTimeType=T;typeStateType=S;typeAgentType=A}"></a>
-      <a id="toSimulatable[T&lt;:TimePoint[T],S,A&lt;:Agent{.../*2definitionsintyperefinement*/}](()⇒A):Simulatable{.../*3definitionsintyperefinement*/}"></a>
+      <a id="toSimulatable[A&lt;:virtufin.simulation.Agent](creator:()=&gt;A):virtufin.simulation.Simulatable{typeAgentType=A}"></a>
+      <a id="toSimulatable[A&lt;:Agent](()⇒A):Simulatable{typeAgentType=A}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toSimulatable</span><span class="tparams">[<span name="T">T &lt;: <a href="../util/TimePoint.html" class="extype" name="virtufin.util.TimePoint">TimePoint</a>[<span class="extype" name="virtufin.simulation.Simulatable.toSimulatable.T">T</span>]</span>, <span name="S">S</span>, <span name="A">A &lt;: <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a> { ... /* 2 definitions in type refinement */ }</span>]</span><span class="params">(<span name="creator">creator: () ⇒ <span class="extype" name="virtufin.simulation.Simulatable.toSimulatable.A">A</span></span>)</span><span class="result">: <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a> { ... /* 3 definitions in type refinement */ }</span>
+        <span class="name">toSimulatable</span><span class="tparams">[<span name="A">A &lt;: <a href="Agent.html" class="extype" name="virtufin.simulation.Agent">Agent</a></span>]</span><span class="params">(<span name="creator">creator: () ⇒ <span class="extype" name="virtufin.simulation.Simulatable.toSimulatable.A">A</span></span>)</span><span class="result">: <a href="Simulatable.html" class="extype" name="virtufin.simulation.Simulatable">Simulatable</a> { type AgentType = A }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.simulation.Simulatable$@toSimulatable[T&lt;:virtufin.util.TimePoint[T],S,A&lt;:virtufin.simulation.Agent{typeTimeType=T;typeStateType=S}](creator:()=&gt;A):virtufin.simulation.Simulatable{typeTimeType=T;typeStateType=S;typeAgentType=A}" title="Permalink" target="_top">
+      <a href="../../index.html#virtufin.simulation.Simulatable$@toSimulatable[A&lt;:virtufin.simulation.Agent](creator:()=&gt;A):virtufin.simulation.Simulatable{typeAgentType=A}" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
     </span>
