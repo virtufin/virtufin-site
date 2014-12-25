@@ -98,7 +98,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Server$$AddService.html"><span class="name">AddService</span></a><span class="params">(<span name="id">id: <a href="../service/ServicesConfiguration$$ServiceIdentifier.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceIdentifier">ServiceIdentifier</a></span>, <span name="serviceFactory">serviceFactory: <a href="../service/ServicesConfiguration$$ServiceFactory.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceFactory">ServiceFactory</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Server$$AddService.html"><span class="name">AddService</span></a><span class="params">(<span name="serviceInfo">serviceInfo: <a href="../service/ServicesConfiguration$$ServiceInfo.html" class="extype" name="virtufin.service.ServicesConfiguration.ServiceInfo">ServiceInfo</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#virtufin.server.Server$@AddServiceextendsProductwithSerializable" title="Permalink" target="_top">
@@ -215,6 +215,24 @@
       </a>
     </span>
       
+    </li><li name="virtufin.server.Server.Remove" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Remove"></a>
+      <a id="Remove:Remove"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Server$$Remove$.html"><span class="name">Remove</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.server.Server$@Remove" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Removes the <a href="../service/Service.html" class="extype" name="virtufin.service.Service">virtufin.service.Service</a>, which sends this message
+</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -255,23 +273,23 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="virtufin.server.Server#defaultAkkaConfiguration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="defaultAkkaConfiguration:String"></a>
-      <a id="defaultAkkaConfiguration:String"></a>
+    </li><li name="virtufin.server.Server#defaultConfiguration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultConfiguration:String"></a>
+      <a id="defaultConfiguration:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">defaultAkkaConfiguration</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">defaultConfiguration</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.server.Server$@defaultAkkaConfiguration:String" title="Permalink" target="_top">
+      <a href="../../index.html#virtufin.server.Server$@defaultConfiguration:String" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">The Akka configuration.</p><div class="fullcomment"><div class="comment cmt"><p>The Akka configuration. It should contain an entry <code>virtufin.services.config</code> with
+      <p class="shortcomment cmt">The default location of the  configuration file.</p><div class="fullcomment"><div class="comment cmt"><p>The default location of the  configuration file. It should contain an entry <code>virtufin.services.config</code> with
 the file name of the Spring XML configuration defining the services.
 </p></div></div>
     </li><li name="virtufin.server.Server#defaultServicesConfiguration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -487,6 +505,42 @@ This value is used if the Akka configuration file  does not contain the entry <c
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.server.Server#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run(system:akka.actor.ActorSystem):akka.actor.ActorRef"></a>
+      <a id="run(ActorSystem):ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.server.Server$@run(system:akka.actor.ActorSystem):akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Use configuration <a href="#defaultConfiguration:String" class="extmbr" name="virtufin.server.Server#defaultConfiguration">Server.defaultConfiguration</a></p><div class="fullcomment"><div class="comment cmt"><p>Use configuration <a href="#defaultConfiguration:String" class="extmbr" name="virtufin.server.Server#defaultConfiguration">Server.defaultConfiguration</a></p></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p><span class="extype" name="ActorRef">ActorRef</span> to the <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor
+</p></dd></dl></div>
+    </li><li name="virtufin.server.Server#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run(system:akka.actor.ActorSystem,configurationPath:String):akka.actor.ActorRef"></a>
+      <a id="run(ActorSystem,String):ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>, <span name="configurationPath">configurationPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.server.Server$@run(system:akka.actor.ActorSystem,configurationPath:String):akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"></dd><dt class="param">configurationPath</dt><dd class="cmt"><p>path to configuration file</p></dd><dt>returns</dt><dd class="cmt"><p><span class="extype" name="ActorRef">ActorRef</span> to the <a href="Server.html" class="extype" name="virtufin.server.Server">Server</a> actor
+</p></dd></dl></div>
     </li><li name="virtufin.server.Server#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="run(system:akka.actor.ActorSystem,config:com.typesafe.config.Config,servicesConfiguration:virtufin.service.ServicesConfiguration):akka.actor.ActorRef"></a>
       <a id="run(ActorSystem,Config,ServicesConfiguration):ActorRef"></a>

@@ -1,22 +1,22 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Service - virtufin - virtufin.service.Service</title>
-          <meta name="description" content="Service - virtufin - virtufin.service.Service" />
-          <meta name="keywords" content="Service virtufin virtufin.service.Service" />
+          <title>MongoDBService - virtufin - virtufin.service.mongodb.MongoDBService</title>
+          <meta name="description" content="MongoDBService - virtufin - virtufin.service.mongodb.MongoDBService" />
+          <meta name="keywords" content="MongoDBService virtufin virtufin.service.mongodb.MongoDBService" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
-      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../lib/template.js"></script>
-      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
-      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
-            var url = '../../index.html';
-            var hash = 'virtufin.service.Service';
+            var url = '../../../index.html';
+            var hash = 'virtufin.service.mongodb.MongoDBService';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -28,11 +28,11 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="Service$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
-        <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a>.<a href="package.html" class="extype" name="virtufin.service">service</a></p>
-        <h1><a href="Service$.html" title="Go to companion">Service</a></h1> <span class="permalink">
-      <a href="../../index.html#virtufin.service.Service" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+        <img src="../../../lib/class_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.service">service</a>.<a href="package.html" class="extype" name="virtufin.service.mongodb">mongodb</a></p>
+        <h1>MongoDBService</h1> <span class="permalink">
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       </div>
@@ -40,23 +40,20 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">Service</span><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span></span>
+        <span class="name">MongoDBService</span><span class="result"> extends <a href="../Service.html" class="extype" name="virtufin.service.Service">Service</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="akka.actor.Actor">Actor</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="Echo.html" class="extype" name="virtufin.service.Echo">Echo</a>, <a href="mongodb/MongoDBService.html" class="extype" name="virtufin.service.mongodb.MongoDBService">MongoDBService</a>, <a href="PricingService.html" class="extype" name="virtufin.service.PricingService">PricingService</a>, <a href="amqp/ProxyService.html" class="extype" name="virtufin.service.amqp.ProxyService">ProxyService</a>, <a href="SimulationService.html" class="extype" name="virtufin.service.SimulationService">SimulationService</a></div>
-          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+          <div class="superTypes hiddenContent"><a href="../Service.html" class="extype" name="virtufin.service.Service">Service</a>, <span class="extype" name="akka.actor.Actor">Actor</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph335" viewBox="0.00 0.00 596.50 155.00" height="155pt" width="597pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 151)" class="graph" id="graph0"><polygon points="-4,4 -4,-151 592.5,-151 592.5,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph335_0"><g id="a_this trait|graph335_0"><a xlink:title="virtufin.service.Service (this trait)" xlink:href="#inheritance-diagram"><polygon points="313.5,-86 237.5,-86 237.5,-61 313.5,-61 313.5,-86" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-80.5" x="247.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.5" x="268.5" text-anchor="start">Service</text></a></g></g><!-- node1 --><g class="node class" id="graph335_1"><g id="a_class|graph335_1"><a xlink:title="virtufin.service.Echo" xlink:href="Echo.html#inheritance-diagram"><polygon points="67,-25 0,-25 0,-0 67,-0 67,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19.5" x="10.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="31.5" text-anchor="start">Echo</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph335_0_1"><g id="a_inheritance|graph335_0_1"><a xlink:title="Echo is a subtype of Service"><path d="M232.104,-62.6426C191.522,-53.3182 129.273,-38.743 75.5,-25 72.8631,-24.3261 70.1373,-23.6143 67.3997,-22.8886" stroke="#d4d4d4" fill="none"></path><polygon points="232.171,-64.4536 237.436,-63.8663 232.954,-61.0422 232.171,-64.4536" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph335_2"><g id="a_class|graph335_2"><a xlink:title="virtufin.service.mongodb.MongoDBService" xlink:href="mongodb/MongoDBService.html#inheritance-diagram"><polygon points="204,-25 85,-25 85,-0 204,-0 204,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19.5" x="95.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="116.5" text-anchor="start">MongoDBService</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph335_0_2"><g id="a_inheritance|graph335_0_2"><a xlink:title="MongoDBService is a subtype of Service"><path d="M245.229,-58.8663C222.595,-48.6725 191.972,-34.8805 170.452,-25.1884" stroke="#d4d4d4" fill="none"></path><polygon points="244.653,-60.5265 249.931,-60.9841 246.091,-57.3352 244.653,-60.5265" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph335_3"><g id="a_class|graph335_3"><a xlink:title="virtufin.service.PricingService" xlink:href="PricingService.html#inheritance-diagram"><polygon points="328.5,-25 222.5,-25 222.5,-0 328.5,-0 328.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19.5" x="232.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="253.5" text-anchor="start">PricingService</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph335_0_3"><g id="a_inheritance|graph335_0_3"><a xlink:title="PricingService is a subtype of Service"><path d="M275.5,-55.6874C275.5,-45.9173 275.5,-33.8534 275.5,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="273.75,-55.8435 275.5,-60.8435 277.25,-55.8435 273.75,-55.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph335_4"><g id="a_class|graph335_4"><a xlink:title="virtufin.service.amqp.ProxyService" xlink:href="amqp/ProxyService.html#inheritance-diagram"><polygon points="448.5,-25 346.5,-25 346.5,-0 448.5,-0 448.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19.5" x="356.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="377.5" text-anchor="start">ProxyService</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph335_0_4"><g id="a_inheritance|graph335_0_4"><a xlink:title="ProxyService is a subtype of Service"><path d="M303.957,-58.7381C325.009,-48.5571 353.373,-34.8399 373.331,-25.1884" stroke="#d4d4d4" fill="none"></path><polygon points="303.052,-57.2318 299.312,-60.9841 304.576,-60.3827 303.052,-57.2318" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node class" id="graph335_5"><g id="a_class|graph335_5"><a xlink:title="virtufin.service.SimulationService" xlink:href="SimulationService.html#inheritance-diagram"><polygon points="588.5,-25 466.5,-25 466.5,-0 588.5,-0 588.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-19.5" x="476.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="497.5" text-anchor="start">SimulationService</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph335_0_5"><g id="a_inheritance|graph335_0_5"><a xlink:title="SimulationService is a subtype of Service"><path d="M318.777,-62.3676C363.018,-52.0096 431.64,-35.9434 478.011,-25.0867" stroke="#d4d4d4" fill="none"></path><polygon points="318.243,-60.6954 313.773,-63.5392 319.041,-64.1032 318.243,-60.6954" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph335_6"><g id="a_trait|graph335_6"><a xlink:title="akka.actor.Actor"><polygon points="309.5,-147 241.5,-147 241.5,-122 309.5,-122 309.5,-147" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-141.5" x="251.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-131.5" x="272.5" text-anchor="start">Actor</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph335_6_0"><g id="a_inheritance|graph335_6_0"><a xlink:title="Service is a subtype of Actor"><path d="M275.5,-116.687C275.5,-106.917 275.5,-94.8534 275.5,-86.1323" stroke="#d4d4d4" fill="none"></path><polygon points="273.75,-116.843 275.5,-121.843 277.25,-116.844 273.75,-116.843" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph324" viewBox="0.00 0.00 176.00 118.00" height="118pt" width="176pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 114)" class="graph" id="graph0"><polygon points="-4,4 -4,-114 172,-114 172,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph324_0"><g id="a_this class|graph324_0"><a xlink:title="virtufin.service.mongodb.MongoDBService (this class)" xlink:href="#inheritance-diagram"><polygon points="143.5,-49 24.5,-49 24.5,-24 143.5,-24 143.5,-49" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-43.5" x="35" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33.5" x="56" text-anchor="start">MongoDBService</text></a></g></g><!-- node1 --><g class="node trait" id="graph324_1"><g id="a_trait|graph324_1"><a xlink:title="virtufin.service.Service" xlink:href="../Service.html#inheritance-diagram"><polygon points="122,-110 46,-110 46,-85 122,-85 122,-110" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-104.5" x="56" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-94.5" x="77" text-anchor="start">Service</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph324_1_0"><g id="a_inheritance|graph324_1_0"><a xlink:title="MongoDBService is a subtype of Service"><path d="M84,-79.6874C84,-69.9173 84,-57.8534 84,-49.1323" stroke="#d4d4d4" fill="none"></path><polygon points="82.2501,-79.8435 84,-84.8435 85.7501,-79.8435 82.2501,-79.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -74,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.service.Service"><span>Service</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.service.mongodb.MongoDBService"><span>MongoDBService</span></li><li class="in" name="virtufin.service.Service"><span>Service</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -92,7 +89,27 @@
 
       <div id="template">
         <div id="allMembers">
-        
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="virtufin.service.mongodb.MongoDBService#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(host:String,database:String,collection:String,user:String,password:String):virtufin.service.mongodb.MongoDBService"></a>
+      <a id="&lt;init&gt;:MongoDBService"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MongoDBService</span><span class="params">(<span name="host">host: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="database">database: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="user">user: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@&lt;init&gt;(host:String,database:String,collection:String,user:String,password:String):virtufin.service.mongodb.MongoDBService" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
@@ -108,39 +125,18 @@
         <span class="name">Receive</span><span class="result"> = <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@Receive=akka.actor.Actor.Receive" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@Receive=akka.actor.Actor.Receive" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
     </li></ol>
             </div>
 
-        <div id="values" class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="virtufin.service.Service#process" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="process(message:Any):Any"></a>
-      <a id="process(Any):Any"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">process</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@process(message:Any):Any" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl></div>
-    </li></ol>
-            </div>
+        
 
         <div id="values" class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -153,8 +149,8 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -170,8 +166,8 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@##():Int" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -187,8 +183,8 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -204,11 +200,11 @@
         <span class="name">aroundPostRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@aroundPostRestart(reason:Throwable):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@aroundPostRestart(reason:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
     </li><li name="akka.actor.Actor#aroundPostStop" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPostStop():Unit"></a>
       <a id="aroundPostStop():Unit"></a>
@@ -221,11 +217,11 @@
         <span class="name">aroundPostStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@aroundPostStop():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@aroundPostStop():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
     </li><li name="akka.actor.Actor#aroundPreRestart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPreRestart(reason:Throwable,message:Option[Any]):Unit"></a>
       <a id="aroundPreRestart(Throwable,Option[Any]):Unit"></a>
@@ -238,11 +234,11 @@
         <span class="name">aroundPreRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@aroundPreRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@aroundPreRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
     </li><li name="akka.actor.Actor#aroundPreStart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPreStart():Unit"></a>
       <a id="aroundPreStart():Unit"></a>
@@ -255,11 +251,11 @@
         <span class="name">aroundPreStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@aroundPreStart():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@aroundPreStart():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
     </li><li name="akka.actor.Actor#aroundReceive" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit"></a>
       <a id="aroundReceive(akka.actor.Actor.Receive,Any):Unit"></a>
@@ -272,11 +268,11 @@
         <span class="name">aroundReceive</span><span class="params">(<span name="receive">receive: <span class="extype" name="akka.actor.Actor.Receive">akka.actor.Actor.Receive</span></span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -289,8 +285,8 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -306,11 +302,11 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@clone():Object" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
@@ -329,8 +325,8 @@
         <span class="name">context</span><span class="result">: <span class="extype" name="akka.actor.ActorContext">ActorContext</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@context:akka.actor.ActorContext" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@context:akka.actor.ActorContext" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -346,8 +342,8 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -363,8 +359,8 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -380,11 +376,11 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[java.lang.Throwable]</span>
@@ -403,8 +399,8 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -420,8 +416,8 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -437,13 +433,13 @@
         <span class="name">init</span><span class="params">(<span name="server">server: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@init(server:akka.actor.ActorRef):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@init(server:akka.actor.ActorRef):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">This method is called when a <a href="Service$$Init$.html" class="extype" name="virtufin.service.Service.Init">virtufin.service.Service.Init</a> messages is received.</p><div class="fullcomment"><div class="comment cmt"><p>This method is called when a <a href="Service$$Init$.html" class="extype" name="virtufin.service.Service.Init">virtufin.service.Service.Init</a> messages is received.
+      <p class="shortcomment cmt">This method is called when a <a href="../Service$$Init$.html" class="extype" name="virtufin.service.Service.Init">virtufin.service.Service.Init</a> messages is received.</p><div class="fullcomment"><div class="comment cmt"><p>This method is called when a <a href="../Service$$Init$.html" class="extype" name="virtufin.service.Service.Init">virtufin.service.Service.Init</a> messages is received.
 The default implementation does nothing.</p></div><dl class="paramcmts block"><dt class="param">server</dt><dd class="cmt"><p>
-</p></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Service.html" class="extype" name="virtufin.service.Service">Service</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -456,8 +452,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -473,8 +469,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -490,8 +486,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@notify():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -507,8 +503,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -524,8 +520,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">postRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@postRestart(reason:Throwable):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@postRestart(reason:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -547,8 +543,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">postStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@postStop():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@postStop():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -570,8 +566,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">preRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@preRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@preRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -593,8 +589,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">preStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@preStart():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@preStart():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -604,6 +600,24 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="virtufin.service.mongodb.MongoDBService#process" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="process(msg:Any):Any"></a>
+      <a id="process(Any):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">process</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@process(msg:Any):Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.mongodb.MongoDBService">MongoDBService</a> → <a href="../Service.html" class="extype" name="virtufin.service.Service">Service</a></dd></dl></div>
     </li><li name="virtufin.service.Service#receive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="receive:Service.this.Receive"></a>
       <a id="receive:Receive"></a>
@@ -613,14 +627,14 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">receive</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="virtufin.service.Service.Receive">Receive</a></span>
+        <span class="name">receive</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="virtufin.service.mongodb.MongoDBService.Receive">Receive</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@receive:Service.this.Receive" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@receive:Service.this.Receive" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.Service">Service</a> → Actor</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Service.html" class="extype" name="virtufin.service.Service">Service</a> → Actor</dd></dl></div>
     </li><li name="akka.actor.Actor#self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="self:akka.actor.ActorRef"></a>
       <a id="self:ActorRef"></a>
@@ -633,8 +647,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">self</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@self:akka.actor.ActorRef" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@self:akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -650,8 +664,8 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">sender</span><span class="params">()</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@sender():akka.actor.ActorRef" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@sender():akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -667,14 +681,14 @@ The default implementation does nothing.</p></div><dl class="paramcmts block"><d
         <span class="name">shutdown</span><span class="params">(<span name="server">server: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@shutdown(server:akka.actor.ActorRef):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@shutdown(server:akka.actor.ActorRef):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">This method is called when a <a href="Service$$Shutdown$.html" class="extype" name="virtufin.service.Service.Shutdown">virtufin.service.Service.Shutdown</a> messages is received.</p><div class="fullcomment"><div class="comment cmt"><p>This method is called when a <a href="Service$$Shutdown$.html" class="extype" name="virtufin.service.Service.Shutdown">virtufin.service.Service.Shutdown</a> messages is received.
-The default implementation removes the service from the <a href="../server/Server.html" class="extype" name="virtufin.server.Server">virtufin.server.Server</a>.
+      <p class="shortcomment cmt">This method is called when a <a href="../Service$$Shutdown$.html" class="extype" name="virtufin.service.Service.Shutdown">virtufin.service.Service.Shutdown</a> messages is received.</p><div class="fullcomment"><div class="comment cmt"><p>This method is called when a <a href="../Service$$Shutdown$.html" class="extype" name="virtufin.service.Service.Shutdown">virtufin.service.Service.Shutdown</a> messages is received.
+The default implementation removes the service from the <a href="../../server/Server.html" class="extype" name="virtufin.server.Server">virtufin.server.Server</a>.
 </p></div><dl class="paramcmts block"><dt class="param">server</dt><dd class="cmt"><p>
-</p></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Service.html" class="extype" name="virtufin.service.Service">Service</a></dd></dl></div>
     </li><li name="akka.actor.Actor#supervisorStrategy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="supervisorStrategy:akka.actor.SupervisorStrategy"></a>
       <a id="supervisorStrategy:SupervisorStrategy"></a>
@@ -687,8 +701,8 @@ The default implementation removes the service from the <a href="../server/Serve
         <span class="name">supervisorStrategy</span><span class="result">: <span class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@supervisorStrategy:akka.actor.SupervisorStrategy" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@supervisorStrategy:akka.actor.SupervisorStrategy" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -704,8 +718,8 @@ The default implementation removes the service from the <a href="../server/Serve
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -721,8 +735,8 @@ The default implementation removes the service from the <a href="../server/Serve
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@toString():String" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -738,8 +752,8 @@ The default implementation removes the service from the <a href="../server/Serve
         <span class="name">unhandled</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@unhandled(message:Any):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@unhandled(message:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -755,8 +769,8 @@ The default implementation removes the service from the <a href="../server/Serve
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@wait():Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -778,8 +792,8 @@ The default implementation removes the service from the <a href="../server/Serve
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -801,8 +815,8 @@ The default implementation removes the service from the <a href="../server/Serve
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#virtufin.service.Service@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" />
+      <a href="../../../index.html#virtufin.service.mongodb.MongoDBService@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -821,7 +835,9 @@ The default implementation removes the service from the <a href="../server/Serve
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="akka.actor.Actor">
+        <div class="parent" name="virtufin.service.Service">
+              <h3>Inherited from <a href="../Service.html" class="extype" name="virtufin.service.Service">Service</a></h3>
+            </div><div class="parent" name="akka.actor.Actor">
               <h3>Inherited from <span class="extype" name="akka.actor.Actor">Actor</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
