@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Service - root - virtufin.service.Service</title>
-          <meta name="description" content="Service - root - virtufin.service.Service" />
-          <meta name="keywords" content="Service root virtufin.service.Service" />
+          <title>Service - virtufin 0.7.0-SNAPSHOT - virtufin.service.Service</title>
+          <meta name="description" content="Service - virtufin 0.7.0 - SNAPSHOT - virtufin.service.Service" />
+          <meta name="keywords" content="Service virtufin 0.7.0 SNAPSHOT virtufin.service.Service" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,9 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a href="Service.html" title="Go to companion"><img src="../../lib/object_to_trait_big.png" /></a>
+        <a href="Service.html" title="See companion trait"><img src="../../lib/object_to_trait_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="virtufin">virtufin</a>.<a href="package.html" class="extype" name="virtufin.service">service</a></p>
-        <h1><a href="Service.html" title="Go to companion">Service</a></h1> <span class="permalink">
+        <h1><a href="Service.html" title="See companion trait">Service</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Service.html" title="See companion trait">trait Service</a>
+            | <a href="package.html" class="extype" name="virtufin.service">package service</a>
+          </div></span></h3><span class="permalink">
       <a href="../../index.html#virtufin.service.Service$" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
@@ -87,7 +91,61 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.service.Service.ServiceFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServiceFactoryextendsProductwithSerializable"></a>
+      <a id="ServiceFactory:ServiceFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Service$$ServiceFactory.html"><span class="name">ServiceFactory</span></a><span class="params">(<span name="serviceClass">serviceClass: <span class="extype" name="scala.Predef.Class">Class</span>[_ &lt;: <a href="Service.html" class="extype" name="virtufin.service.Service">Service</a>]</span>, <span name="constructorArguments">constructorArguments: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.Service$@ServiceFactoryextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.service.Service.ServiceParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServiceParametersextendsProductwithSerializable"></a>
+      <a id="ServiceParameters:ServiceParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Service$$ServiceParameters.html"><span class="name">ServiceParameters</span></a><span class="params">(<span name="serviceName">serviceName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="serviceFactory">serviceFactory: <a href="Service$$ServiceFactory.html" class="extype" name="virtufin.service.Service.ServiceFactory">ServiceFactory</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.Service$@ServiceParametersextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.service.Service.UnknownMessageException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnknownMessageExceptionextendsExceptionwithProductwithSerializable"></a>
+      <a id="UnknownMessageException:UnknownMessageException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Service$$UnknownMessageException.html"><span class="name">UnknownMessageException</span></a><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.Service$@UnknownMessageExceptionextendsExceptionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         
 
@@ -379,6 +437,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="virtufin.service.Service#serviceParametersFromSpringConfiguration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="serviceParametersFromSpringConfiguration(serviceConfigPath:String):virtufin.service.Service.ServiceParameters"></a>
+      <a id="serviceParametersFromSpringConfiguration(String):ServiceParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serviceParametersFromSpringConfiguration</span><span class="params">(<span name="serviceConfigPath">serviceConfigPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Service$$ServiceParameters.html" class="extype" name="virtufin.service.Service.ServiceParameters">ServiceParameters</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#virtufin.service.Service$@serviceParametersFromSpringConfiguration(serviceConfigPath:String):virtufin.service.Service.ServiceParameters" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -510,7 +585,7 @@
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> Copyright (c) 2011-2015 </div>
 
 
     </body>
