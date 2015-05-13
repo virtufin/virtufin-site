@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>DockerClient - virtufin 0.7.0-SNAPSHOT - virtufin.service.docker.DockerClient</title>
-          <meta name="description" content="DockerClient - virtufin 0.7.0 - SNAPSHOT - virtufin.service.docker.DockerClient" />
-          <meta name="keywords" content="DockerClient virtufin 0.7.0 SNAPSHOT virtufin.service.docker.DockerClient" />
+          <title>ContainerRunner - virtufin 0.7.0-SNAPSHOT - virtufin.service.docker.ContainerRunner</title>
+          <meta name="description" content="ContainerRunner - virtufin 0.7.0 - SNAPSHOT - virtufin.service.docker.ContainerRunner" />
+          <meta name="keywords" content="ContainerRunner virtufin 0.7.0 SNAPSHOT virtufin.service.docker.ContainerRunner" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
-            var hash = 'virtufin.service.docker.DockerClient';
+            var hash = 'virtufin.service.docker.ContainerRunner';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -28,14 +28,14 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="DockerClient$.html" title="See companion object"><img src="../../../lib/class_to_object_big.png" /></a>
+        <a href="ContainerRunner$.html" title="See companion object"><img src="../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.service">service</a>.<a href="package.html" class="extype" name="virtufin.service.docker">docker</a></p>
-        <h1><a href="DockerClient$.html" title="See companion object">DockerClient</a></h1><h3><span class="morelinks"><div>
+        <h1><a href="ContainerRunner$.html" title="See companion object">ContainerRunner</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="DockerClient$.html" title="See companion object">object DockerClient</a>
+            <a href="ContainerRunner$.html" title="See companion object">object ContainerRunner</a>
             | <a href="package.html" class="extype" name="virtufin.service.docker">package docker</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -47,17 +47,17 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">DockerClient</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">ContainerRunner</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Helper class for</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Helper class for starting and stopping multiple containers using the <a href="https://github.com/docker-java/docker-java" target="_blank">docker-java</a> library</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 156.00 118.00" height="118pt" width="156pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 114)" class="graph" id="graph0"><polygon points="-4,4 -4,-114 152,-114 152,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph1_0"><g id="a_this class|graph1_0"><a xlink:title="virtufin.service.docker.DockerClient (this class)" xlink:href="#inheritance-diagram"><polygon points="124,-49 24,-49 24,-24 124,-24 124,-49" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-43.5" x="34" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33.5" x="55" text-anchor="start">DockerClient</text></a></g></g><!-- node1 --><g class="node class" id="graph1_1"><g id="a_class|graph1_1"><a xlink:title="scala.AnyRef"><polygon points="112,-110 36,-110 36,-85 112,-85 112,-110" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-104.5" x="46" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-94.5" x="67" text-anchor="start">AnyRef</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph1_1_0"><g id="a_inheritance|graph1_1_0"><a xlink:title="DockerClient is a subtype of AnyRef"><path d="M74,-79.6874C74,-69.9173 74,-57.8534 74,-49.1323" stroke="#d4d4d4" fill="none"></path><polygon points="72.2501,-79.8435 74,-84.8435 75.7501,-79.8435 72.2501,-79.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 174.00 118.00" height="118pt" width="174pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 114)" class="graph" id="graph0"><polygon points="-4,4 -4,-114 170,-114 170,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph1_0"><g id="a_this class|graph1_0"><a xlink:title="virtufin.service.docker.ContainerRunner (this class)" xlink:href="#inheritance-diagram"><polygon points="141.5,-49 24.5,-49 24.5,-24 141.5,-24 141.5,-49" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-43.5" x="35" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33.5" x="56" text-anchor="start">ContainerRunner</text></a></g></g><!-- node1 --><g class="node class" id="graph1_1"><g id="a_class|graph1_1"><a xlink:title="scala.AnyRef"><polygon points="121,-110 45,-110 45,-85 121,-85 121,-110" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-104.5" x="55" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-94.5" x="76" text-anchor="start">AnyRef</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph1_1_0"><g id="a_inheritance|graph1_1_0"><a xlink:title="ContainerRunner is a subtype of AnyRef"><path d="M83,-79.6874C83,-69.9173 83,-57.8534 83,-49.1323" stroke="#d4d4d4" fill="none"></path><polygon points="81.2501,-79.8435 83,-84.8435 84.7501,-79.8435 81.2501,-79.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -75,7 +75,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.service.docker.DockerClient"><span>DockerClient</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.service.docker.ContainerRunner"><span>ContainerRunner</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
                 <span class="filtertype">Implicitly<br />
@@ -100,23 +100,23 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="virtufin.service.docker.DockerClient#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.DockerClient.ContainerBuilder]],dockerClientConfig:com.github.dockerjava.core.DockerClientConfig):virtufin.service.docker.DockerClient"></a>
-      <a id="&lt;init&gt;:DockerClient"></a>
+              <ol><li name="virtufin.service.docker.ContainerRunner#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.ContainerRunner.ContainerBuilder]],dockerClientConfig:com.github.dockerjava.core.DockerClientConfig):virtufin.service.docker.ContainerRunner"></a>
+      <a id="&lt;init&gt;:ContainerRunner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DockerClient</span><span class="params">(<span name="containers">containers: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Product2">Product2</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="DockerClient$.html#ContainerBuilder=com.github.dockerjava.api.DockerClient=&gt;com.github.dockerjava.api.command.CreateContainerCmd" class="extmbr" name="virtufin.service.docker.DockerClient.ContainerBuilder">ContainerBuilder</a>]]</span>, <span name="dockerClientConfig">dockerClientConfig: <span class="extype" name="com.github.dockerjava.core.DockerClientConfig">DockerClientConfig</span> = <span class="defval" name="DockerClientConfig.createDefaultConfigBuilder().build()">...</span></span>)</span>
+        <span class="name">ContainerRunner</span><span class="params">(<span name="containers">containers: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Product2">Product2</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="ContainerRunner$.html#ContainerBuilder=com.github.dockerjava.api.DockerClient=&gt;com.github.dockerjava.api.command.CreateContainerCmd" class="extmbr" name="virtufin.service.docker.ContainerRunner.ContainerBuilder">ContainerBuilder</a>]]</span>, <span name="dockerClientConfig">dockerClientConfig: <span class="extype" name="com.github.dockerjava.core.DockerClientConfig">DockerClientConfig</span> = <span class="defval" name="DockerClientConfig.createDefaultConfigBuilder().build()">...</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.DockerClient.ContainerBuilder]],dockerClientConfig:com.github.dockerjava.core.DockerClientConfig):virtufin.service.docker.DockerClient" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.ContainerRunner.ContainerBuilder]],dockerClientConfig:com.github.dockerjava.core.DockerClientConfig):virtufin.service.docker.ContainerRunner" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">containers</dt><dd class="cmt"><p>Specifies, which containers should be used.
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">containers</dt><dd class="cmt"><p>Specifies, which containers to run.
                   Sequence of tuples, where the first element is the name of the container, the second it's alias as stored in <code>/etc/hosts</code></p></dd><dt class="param">dockerClientConfig</dt><dd class="cmt"><p>
 </p></dd></dl></div>
     </li></ol>
@@ -140,7 +140,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -157,7 +157,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@##():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@##():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -174,34 +174,34 @@
         <span title="gt4s: $plus" class="implicit">+</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@+(other:String):String" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@+(other:String):String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method any2stringadd in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method any2stringadd in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>any2stringadd</dd></dl></div>
     </li><li name="scala.Predef.ArrowAssoc#-&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="-&gt;[B](y:B):(A,B)"></a>
-      <a id="-&gt;[B](B):(DockerClient,B)"></a>
+      <a id="-&gt;[B](B):(ContainerRunner,B)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>, <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
+        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>, <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@-&gt;[B](y:B):(A,B)" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@-&gt;[B](y:B):(A,B)" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method ArrowAssoc in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method ArrowAssoc in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
@@ -219,7 +219,7 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -236,7 +236,7 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -253,7 +253,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@clone():Object" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@clone():Object" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -266,86 +266,86 @@
         </dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a>
-      <a id="ensuring((DockerClient)⇒Boolean,⇒Any):DockerClient"></a>
+      <a id="ensuring((ContainerRunner)⇒Boolean,⇒Any):ContainerRunner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean):A"></a>
-      <a id="ensuring((DockerClient)⇒Boolean):DockerClient"></a>
+      <a id="ensuring((ContainerRunner)⇒Boolean):ContainerRunner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@ensuring(cond:A=&gt;Boolean):A" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@ensuring(cond:A=&gt;Boolean):A" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:Boolean,msg:=&gt;Any):A"></a>
-      <a id="ensuring(Boolean,⇒Any):DockerClient"></a>
+      <a id="ensuring(Boolean,⇒Any):ContainerRunner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@ensuring(cond:Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@ensuring(cond:Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:Boolean):A"></a>
-      <a id="ensuring(Boolean):DockerClient"></a>
+      <a id="ensuring(Boolean):ContainerRunner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@ensuring(cond:Boolean):A" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@ensuring(cond:Boolean):A" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -360,7 +360,7 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -377,7 +377,7 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -394,7 +394,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -417,13 +417,13 @@
         <span class="implicit">formatted</span><span class="params">(<span name="fmtstr">fmtstr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@formatted(fmtstr:String):String" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@formatted(fmtstr:String):String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method StringFormat in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method StringFormat in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>StringFormat</dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
@@ -441,7 +441,7 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -458,7 +458,7 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -475,24 +475,24 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="virtufin.service.docker.DockerClient#killContainers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="killContainers():Any"></a>
-      <a id="killContainers():Any"></a>
+    </li><li name="virtufin.service.docker.ContainerRunner#killContainers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="killContainers():Unit"></a>
+      <a id="killContainers():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">killContainers</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+        <span class="name">killContainers</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@killContainers():Any" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@killContainers():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -509,7 +509,7 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -526,7 +526,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@notify():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -543,12 +543,12 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="virtufin.service.docker.DockerClient#startContainers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="virtufin.service.docker.ContainerRunner#startContainers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="startContainers():Unit"></a>
       <a id="startContainers():Unit"></a>
       <h4 class="signature">
@@ -560,24 +560,24 @@
         <span class="name">startContainers</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@startContainers():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@startContainers():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       
-    </li><li name="virtufin.service.docker.DockerClient#stopContainers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="stopContainers():Any"></a>
-      <a id="stopContainers():Any"></a>
+    </li><li name="virtufin.service.docker.ContainerRunner#stopContainers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="stopContainers():Unit"></a>
+      <a id="stopContainers():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">stopContainers</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+        <span class="name">stopContainers</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@stopContainers():Any" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@stopContainers():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -594,7 +594,7 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -611,7 +611,7 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@toString():String" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@toString():String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -628,7 +628,7 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@wait():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -651,7 +651,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -674,7 +674,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -687,23 +687,23 @@
         </dd></dl></div>
     </li><li name="scala.Predef.ArrowAssoc#→" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="→[B](y:B):(A,B)"></a>
-      <a id="→[B](B):(DockerClient,B)"></a>
+      <a id="→[B](B):(ContainerRunner,B)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>, <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
+        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>, <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.DockerClient@→[B](y:B):(A,B)" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@→[B](y:B):(A,B)" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to
-            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>] performed by method ArrowAssoc in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>] performed by method ArrowAssoc in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd></dl></div>
     </li></ol>
@@ -722,19 +722,19 @@
             </div>
         <div class="conversion" name="scala.Predef.any2stringadd">
               <h3>Inherited by implicit conversion any2stringadd from
-                <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>]
+                <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>]
               </h3>
             </div><div class="conversion" name="scala.Predef.StringFormat">
               <h3>Inherited by implicit conversion StringFormat from
-                <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>]
+                <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>]
               </h3>
             </div><div class="conversion" name="scala.Predef.Ensuring">
               <h3>Inherited by implicit conversion Ensuring from
-                <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>]
+                <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>]
               </h3>
             </div><div class="conversion" name="scala.Predef.ArrowAssoc">
               <h3>Inherited by implicit conversion ArrowAssoc from
-                <a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a> to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.docker.DockerClient">DockerClient</a>]
+                <a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a> to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.docker.ContainerRunner">ContainerRunner</a>]
               </h3>
             </div>
         </div>
