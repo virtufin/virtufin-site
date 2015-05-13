@@ -101,7 +101,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="virtufin.service.docker.ContainerRunner#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.ContainerRunner.ContainerBuilder]],dockerClientConfig:com.github.dockerjava.core.DockerClientConfig):virtufin.service.docker.ContainerRunner"></a>
+      <a id="&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.ContainerRunner.ContainerBuilder]],dockerClient:com.github.dockerjava.api.DockerClient):virtufin.service.docker.ContainerRunner"></a>
       <a id="&lt;init&gt;:ContainerRunner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -109,15 +109,16 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ContainerRunner</span><span class="params">(<span name="containers">containers: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Product2">Product2</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="ContainerRunner$.html#ContainerBuilder=com.github.dockerjava.api.DockerClient=&gt;com.github.dockerjava.api.command.CreateContainerCmd" class="extmbr" name="virtufin.service.docker.ContainerRunner.ContainerBuilder">ContainerBuilder</a>]]</span>, <span name="dockerClientConfig">dockerClientConfig: <span class="extype" name="com.github.dockerjava.core.DockerClientConfig">DockerClientConfig</span> = <span class="defval" name="DockerClientConfig.createDefaultConfigBuilder().build()">...</span></span>)</span>
+        <span class="name">ContainerRunner</span><span class="params">(<span name="containers">containers: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Product2">Product2</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="ContainerRunner$.html#ContainerBuilder=com.github.dockerjava.api.DockerClient=&gt;com.github.dockerjava.api.command.CreateContainerCmd" class="extmbr" name="virtufin.service.docker.ContainerRunner.ContainerBuilder">ContainerBuilder</a>]]</span>, <span name="dockerClient">dockerClient: <span class="extype" name="com.github.dockerjava.api.DockerClient">DockerClient</span> = <span class="defval" name="DockerClientBuilder.getInstance().build()">...</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.ContainerRunner.ContainerBuilder]],dockerClientConfig:com.github.dockerjava.core.DockerClientConfig):virtufin.service.docker.ContainerRunner" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.docker.ContainerRunner@&lt;init&gt;(containers:Seq[Product2[String,virtufin.service.docker.ContainerRunner.ContainerBuilder]],dockerClient:com.github.dockerjava.api.DockerClient):virtufin.service.docker.ContainerRunner" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">containers</dt><dd class="cmt"><p>Specifies, which containers to run.
-                  Sequence of tuples, where the first element is the name of the container, the second it's alias as stored in <code>/etc/hosts</code></p></dd><dt class="param">dockerClientConfig</dt><dd class="cmt"><p>
+                  Sequence of tuples, where the first element is the name of the container, the second a <a href="ContainerRunner$.html#ContainerBuilder=com.github.dockerjava.api.DockerClient=&gt;com.github.dockerjava.api.command.CreateContainerCmd" class="extmbr" name="virtufin.service.docker.ContainerRunner.ContainerBuilder">virtufin.service.docker.ContainerRunner.ContainerBuilder</a>, which
+                  defines, how the container is created</p></dd><dt class="param">dockerClient</dt><dd class="cmt"><p>instance of a <span class="extype" name="DockerClient">DockerClient</span>
 </p></dd></dl></div>
     </li></ol>
             </div>
