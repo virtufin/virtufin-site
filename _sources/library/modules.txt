@@ -1,0 +1,13 @@
+.. _modules:
+
+#######
+Modules
+#######
+
+:ref:`virtufin-core`
+	The basic building blocks of the library
+
+:ref:`virtufin-base`
+	Some of the standard products and models
+
+

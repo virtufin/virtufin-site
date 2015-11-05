@@ -1,0 +1,38 @@
+.. _montecarlo:
+
+######################
+Monte Carlo Simulation
+######################
+
+Stating the Problem
+===================
+
+In this example we consider a portfolio of :api:`plain vanilla options <virtufin.finance.product.EuropeanPlainVanillaOption>`.
+
+We are interested in simulating various 
+:api:`scenarios <virtufin.finance.scenario.Scenario>` for the underlying  
+:api:`market observables <virtufin.finance.scenario.MarketObservable>`
+and the perform the following analysis:
+
+* calculate all the transactions within the portfolio
+* filter cashflow  transaction from or to a particular portfolio node
+* price the cashflow transactions
+* aggregate the prices
+
+The Impementation
+=================
+
+* :api:`scenarios <virtufin.finance.scenario.Scenario>` are simulated with a :api:`multivariate Black-Scholes model <virtufin.finance.model.MultivariateBlackScholesScenarioModel$>`
+* The scenarios form an :playapi:`Enumerator <play.api.libs.iteratee.Enumerator>`, where each scenario is itself an :playapi:`Enumerator <play.api.libs.iteratee.Enumerator>` of :api:`quotes events <virtufin.finance.simulation.QuotesEvent>`.
+* These :playapi:`Enumerators <play.api.libs.iteratee.Enumerator>` are transformed by mapping, folding and filtering operaters, which are implemented as :playapi:`Iteratees <play.api.libs.iteratee.Iteratee>`.
+
+The source :download:`source code <../../../virtufin-examples/src/main/scala/examples/finance/simulation/MonteCarloPricingExample.scala>`.
+
+.. includecode:: ../../../virtufin-examples/src/main/scala/examples/finance/simulation/MonteCarloPricingExample.scala
+   :linenos:
+
+Running ths code yield the following output:
+
+.. includecode:: ../../../virtufin-examples/output/examples.finance.simulation.MonteCarloPricingExample
+   :language: bash
+
