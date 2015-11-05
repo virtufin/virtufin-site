@@ -1,0 +1,761 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>SimulatedFeature - virtufin 0.7.0-SNAPSHOT - virtufin.finance.simulation.SimulatedFeature</title>
+          <meta name="description" content="SimulatedFeature - virtufin 0.7.0 - SNAPSHOT - virtufin.finance.simulation.SimulatedFeature" />
+          <meta name="keywords" content="SimulatedFeature virtufin 0.7.0 SNAPSHOT virtufin.finance.simulation.SimulatedFeature" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'virtufin.finance.simulation.SimulatedFeature';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../../lib/trait_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="virtufin">virtufin</a>.<a href="../package.html" class="extype" name="virtufin.finance">finance</a>.<a href="package.html" class="extype" name="virtufin.finance.simulation">simulation</a></p>
+        <h1>SimulatedFeature</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="virtufin.finance.simulation">package simulation</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SimulatedFeature</span><span class="result"> extends <a href="../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Combines <a href="package.html#Trigger=virtufin.simulation.SimulationEventProjector{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType;typeProjectedEventsType=virtufin.finance.simulation.package.TriggerEvent}" class="extmbr" name="virtufin.finance.simulation.Trigger">virtufin.finance.simulation.Trigger</a>s with <a href="TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">virtufin.finance.simulation.TransactionsGenerator</a>s to yield <span class="extype" name="virtufin.simulation.MessagesGenerator">virtufin.simulation.MessagesGenerator</span>s
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="feature/CompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.CompositeSimulatedFeature">CompositeSimulatedFeature</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="feature/AbstractCompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.AbstractCompositeSimulatedFeature">AbstractCompositeSimulatedFeature</a>, <a href="feature/Accruing.html" class="extype" name="virtufin.finance.simulation.feature.Accruing">Accruing</a>, <a href="feature/CompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.CompositeSimulatedFeature">CompositeSimulatedFeature</a>, <a href="feature/Derivative.html" class="extype" name="virtufin.finance.simulation.feature.Derivative">Derivative</a>, <a href="feature/EuropeanExercise.html" class="extype" name="virtufin.finance.simulation.feature.EuropeanExercise">EuropeanExercise</a>, <a href="feature/EuropeanOption.html" class="extype" name="virtufin.finance.simulation.feature.EuropeanOption">EuropeanOption</a>, <a href="EuropeanPlainVanillaOption.html" class="extype" name="virtufin.finance.simulation.EuropeanPlainVanillaOption">EuropeanPlainVanillaOption</a>, <a href="FixedLeg.html" class="extype" name="virtufin.finance.simulation.FixedLeg">FixedLeg</a>, <a href="feature/FixedPositionTransfers.html" class="extype" name="virtufin.finance.simulation.feature.FixedPositionTransfers">FixedPositionTransfers</a>, <a href="FloatingLeg.html" class="extype" name="virtufin.finance.simulation.FloatingLeg">FloatingLeg</a>, <a href="feature/Maturing.html" class="extype" name="virtufin.finance.simulation.feature.Maturing">Maturing</a>, <a href="feature/MessageDispatching.html" class="extype" name="virtufin.finance.simulation.feature.MessageDispatching">MessageDispatching</a>, <a href="feature/MultipleStatefulSimulatedFeatureInstances.html" class="extype" name="virtufin.finance.simulation.feature.MultipleStatefulSimulatedFeatureInstances">MultipleStatefulSimulatedFeatureInstances</a>, <a href="feature/MultipleStatelessSimulatedFeatureInstances.html" class="extype" name="virtufin.finance.simulation.feature.MultipleStatelessSimulatedFeatureInstances">MultipleStatelessSimulatedFeatureInstances</a>, <a href="feature/Optional.html" class="extype" name="virtufin.finance.simulation.feature.Optional">Optional</a>, <a href="feature/OptionalSettling.html" class="extype" name="virtufin.finance.simulation.feature.OptionalSettling">OptionalSettling</a>, <a href="PlainVanillaInterestRateSwap.html" class="extype" name="virtufin.finance.simulation.PlainVanillaInterestRateSwap">PlainVanillaInterestRateSwap</a>, <a href="feature/Settling.html" class="extype" name="virtufin.finance.simulation.feature.Settling">Settling</a>, <a href="feature/SingleFixingDerivative.html" class="extype" name="virtufin.finance.simulation.feature.SingleFixingDerivative">SingleFixingDerivative</a>, <a href="feature/SingleMarketObservableDerivative.html" class="extype" name="virtufin.finance.simulation.feature.SingleMarketObservableDerivative">SingleMarketObservableDerivative</a>, <a href="feature/SingleSettling.html" class="extype" name="virtufin.finance.simulation.feature.SingleSettling">SingleSettling</a>, <a href="feature/Starting.html" class="extype" name="virtufin.finance.simulation.feature.Starting">Starting</a>, <a href="feature/StatefulCompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.StatefulCompositeSimulatedFeature">StatefulCompositeSimulatedFeature</a>, <a href="StatefulSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.StatefulSimulatedFeature">StatefulSimulatedFeature</a>, <a href="feature/StatelessCompositeSimulatedFeature.html" class="extype" name="virtufin.finance.simulation.feature.StatelessCompositeSimulatedFeature">StatelessCompositeSimulatedFeature</a>, <a href="feature/Transmutable.html" class="extype" name="virtufin.finance.simulation.feature.Transmutable">Transmutable</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 1244.00 155.00" height="155pt" width="1244pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 151)" class="graph" id="graph0"><polygon points="-4,4 -4,-151 1240,-151 1240,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph1_0"><g id="a_this trait|graph1_0"><a xlink:title="virtufin.finance.simulation.SimulatedFeature (this trait)" xlink:href="#inheritance-diagram"><polygon points="641,-86 520,-86 520,-61 641,-61 641,-86" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-80.5" x="530.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.5" x="551.5" text-anchor="start">SimulatedFeature</text></a></g></g><!-- node1 --><g class="node trait" id="graph1_1"><g id="a_trait|graph1_1"><a xlink:title="virtufin.finance.simulation.feature.Accruing" xlink:href="feature/Accruing.html#inheritance-diagram"><polygon points="83,-25 0,-25 0,-0 83,-0 83,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="10.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="31.5" text-anchor="start">Accruing</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph1_0_1"><g id="a_inheritance|graph1_0_1"><a xlink:title="Accruing is a subtype of SimulatedFeature"><path d="M514.459,-68.6947C420.342,-62.6778 242.415,-49.1017 92.5,-25 89.4531,-24.5102 86.316,-23.9476 83.1663,-23.3402" stroke="#d4d4d4" fill="none"></path><polygon points="514.606,-70.4575 519.707,-69.0279 514.828,-66.9645 514.606,-70.4575" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph1_2"><g id="a_trait|graph1_2"><a xlink:title="virtufin.finance.simulation.feature.CompositeSimulatedFeature" xlink:href="feature/CompositeSimulatedFeature.html#inheritance-diagram"><polygon points="269.5,-25 101.5,-25 101.5,-0 269.5,-0 269.5,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="111.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="132.5" text-anchor="start">CompositeSimulatedFeature</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph1_0_2"><g id="a_inheritance|graph1_0_2"><a xlink:title="CompositeSimulatedFeature is a subtype of SimulatedFeature"><path d="M514.305,-62.6127C444.913,-52.2477 335.981,-35.977 262.717,-25.0337" stroke="#d4d4d4" fill="none"></path><polygon points="514.443,-64.4026 519.647,-63.4106 514.96,-60.941 514.443,-64.4026" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph1_3"><g id="a_trait|graph1_3"><a xlink:title="virtufin.finance.simulation.feature.Maturing" xlink:href="feature/Maturing.html#inheritance-diagram"><polygon points="369.5,-25 287.5,-25 287.5,-0 369.5,-0 369.5,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="297.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="318.5" text-anchor="start">Maturing</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph1_0_3"><g id="a_inheritance|graph1_0_3"><a xlink:title="Maturing is a subtype of SimulatedFeature"><path d="M526.26,-59.8009C479.278,-48.8012 412.329,-33.1266 369.647,-23.1336" stroke="#d4d4d4" fill="none"></path><polygon points="526.046,-61.5482 531.314,-60.9841 526.844,-58.1403 526.046,-61.5482" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node trait" id="graph1_4"><g id="a_trait|graph1_4"><a xlink:title="virtufin.finance.simulation.feature.MessageDispatching" xlink:href="feature/MessageDispatching.html#inheritance-diagram"><polygon points="523,-25 388,-25 388,-0 523,-0 523,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="398.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="419.5" text-anchor="start">MessageDispatching</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph1_0_4"><g id="a_inheritance|graph1_0_4"><a xlink:title="MessageDispatching is a subtype of SimulatedFeature"><path d="M551.344,-58.7381C529.774,-48.5571 500.712,-34.8399 480.264,-25.1884" stroke="#d4d4d4" fill="none"></path><polygon points="550.833,-60.4325 556.102,-60.9841 552.327,-57.2673 550.833,-60.4325" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node trait" id="graph1_5"><g id="a_trait|graph1_5"><a xlink:title="virtufin.finance.simulation.feature.Settling" xlink:href="feature/Settling.html#inheritance-diagram"><polygon points="619.5,-25 541.5,-25 541.5,-0 619.5,-0 619.5,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="551.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="572.5" text-anchor="start">Settling</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph1_0_5"><g id="a_inheritance|graph1_0_5"><a xlink:title="Settling is a subtype of SimulatedFeature"><path d="M580.5,-55.6874C580.5,-45.9173 580.5,-33.8534 580.5,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="578.75,-55.8435 580.5,-60.8435 582.25,-55.8435 578.75,-55.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph1_6"><g id="a_trait|graph1_6"><a xlink:title="virtufin.finance.simulation.feature.Starting" xlink:href="feature/Starting.html#inheritance-diagram"><polygon points="715.5,-25 637.5,-25 637.5,-0 715.5,-0 715.5,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="647.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="668.5" text-anchor="start">Starting</text></a></g></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph1_0_6"><g id="a_inheritance|graph1_0_6"><a xlink:title="Starting is a subtype of SimulatedFeature"><path d="M603.965,-58.0789C620.444,-47.9511 642.2,-34.5802 657.573,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="602.81,-56.7345 599.467,-60.8435 604.643,-59.7164 602.81,-56.7345" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node trait" id="graph1_7"><g id="a_trait|graph1_7"><a xlink:title="virtufin.finance.simulation.StatefulSimulatedFeature" xlink:href="StatefulSimulatedFeature.html#inheritance-diagram"><polygon points="887.5,-25 733.5,-25 733.5,-0 887.5,-0 887.5,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="743.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="764.5" text-anchor="start">StatefulSimulatedFeature</text></a></g></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph1_0_7"><g id="a_inheritance|graph1_0_7"><a xlink:title="StatefulSimulatedFeature is a subtype of SimulatedFeature"><path d="M630.7,-59.6226C670.829,-49.3286 726.586,-35.0257 765.328,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="629.801,-58.0466 625.392,-60.9841 630.67,-61.4368 629.801,-58.0466" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node class" id="graph1_8"><g id="a_class|graph1_8"><a xlink:title="virtufin.finance.simulation.feature.StatelessCompositeSimulatedFeature" xlink:href="feature/StatelessCompositeSimulatedFeature.html#inheritance-diagram"><polygon points="1115,-25 906,-25 906,-0 1115,-0 1115,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="916.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="937.5" text-anchor="start">StatelessCompositeSimulatedFeature</text></a></g></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph1_0_8"><g id="a_inheritance|graph1_0_8"><a xlink:title="StatelessCompositeSimulatedFeature is a subtype of SimulatedFeature"><path d="M646.523,-63.4411C721.663,-53.1311 844.556,-36.269 926.471,-25.0296" stroke="#d4d4d4" fill="none"></path><polygon points="645.912,-61.7584 641.196,-64.1719 646.388,-65.2259 645.912,-61.7584" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node trait" id="graph1_9"><g id="a_trait|graph1_9"><a xlink:title="virtufin.finance.simulation.feature.Transmutable" xlink:href="feature/Transmutable.html#inheritance-diagram"><polygon points="1236,-25 1133,-25 1133,-0 1236,-0 1236,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="1143.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="1164.5" text-anchor="start">Transmutable</text></a></g></g><!-- node0&#45;&gt;node9 --><g class="edge inheritance" id="graph1_0_9"><g id="a_inheritance|graph1_0_9"><a xlink:title="Transmutable is a subtype of SimulatedFeature"><path d="M646.207,-68.9385C748.711,-62.8929 952.747,-48.8943 1124.5,-25 1127.23,-24.62 1130.03,-24.1986 1132.85,-23.7481" stroke="#d4d4d4" fill="none"></path><polygon points="645.991,-67.198 641.103,-69.2378 646.197,-70.692 645.991,-67.198" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node10 --><g class="node trait" id="graph1_10"><g id="a_trait|graph1_10"><a xlink:title="virtufin.finance.product.Feature" xlink:href="../product/Feature.html#inheritance-diagram"><polygon points="619.5,-147 541.5,-147 541.5,-122 619.5,-122 619.5,-147" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-141.5" x="551.5" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-131.5" x="572.5" text-anchor="start">Feature</text></a></g></g><!-- node10&#45;&gt;node0 --><g class="edge inheritance" id="graph1_10_0"><g id="a_inheritance|graph1_10_0"><a xlink:title="SimulatedFeature is a subtype of Feature"><path d="M580.5,-116.687C580.5,-106.917 580.5,-94.8534 580.5,-86.1323" stroke="#d4d4d4" fill="none"></path><polygon points="578.75,-116.843 580.5,-121.843 582.25,-116.844 578.75,-116.843" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="virtufin.finance.simulation.SimulatedFeature"><span>SimulatedFeature</span></li><li class="in" name="virtufin.finance.product.Feature"><span>Feature</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+                <span class="filtertype">Implicitly<br />
+                </span>
+                <ol id="implicits"> <li class="in" name="scala.Predef.any2stringadd" data-hidden="true"><span>by any2stringadd</span></li><li class="in" name="scala.Predef.StringFormat" data-hidden="true"><span>by StringFormat</span></li><li class="in" name="scala.Predef.Ensuring" data-hidden="true"><span>by Ensuring</span></li><li class="in" name="scala.Predef.ArrowAssoc" data-hidden="true"><span>by ArrowAssoc</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="virtufin.finance.simulation.SimulatedFeature.AgentType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AgentType&lt;:virtufin.finance.simulation.Agent"></a>
+      <a id="AgentType:feature.CompositeSimulatedFeature.AgentType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AgentType</span><span class="result"> &lt;: <a href="package$$Agent.html" class="extype" name="virtufin.finance.simulation.Agent">Agent</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@AgentType&lt;:virtufin.finance.simulation.Agent" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="virtufin.finance.simulation.SimulatedFeature#createMessageProcessor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="createMessageProcessor(agent:SimulatedFeature.this.AgentType):virtufin.simulation.simulatable.MessageProcessor"></a>
+      <a id="createMessageProcessor(feature.CompositeSimulatedFeature.AgentType):MessageProcessor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createMessageProcessor</span><span class="params">(<span name="agent">agent: <a href="feature/CompositeSimulatedFeature.html#AgentType&lt;:virtufin.finance.simulation.Agent" class="extmbr" name="virtufin.finance.simulation.feature.CompositeSimulatedFeature.AgentType">feature.CompositeSimulatedFeature.AgentType</a></span>)</span><span class="result">: <a href="../../simulation/simulatable/MessageProcessor.html" class="extype" name="virtufin.simulation.simulatable.MessageProcessor">MessageProcessor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@createMessageProcessor(agent:SimulatedFeature.this.AgentType):virtufin.simulation.simulatable.MessageProcessor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation.SimulatedFeature#createTransactionsGenerator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="createTransactionsGenerator(agent:SimulatedFeature.this.AgentType):virtufin.finance.simulation.TransactionsGenerator"></a>
+      <a id="createTransactionsGenerator(feature.CompositeSimulatedFeature.AgentType):TransactionsGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createTransactionsGenerator</span><span class="params">(<span name="agent">agent: <a href="feature/CompositeSimulatedFeature.html#AgentType&lt;:virtufin.finance.simulation.Agent" class="extmbr" name="virtufin.finance.simulation.feature.CompositeSimulatedFeature.AgentType">feature.CompositeSimulatedFeature.AgentType</a></span>)</span><span class="result">: <a href="TransactionsGenerator.html" class="extype" name="virtufin.finance.simulation.TransactionsGenerator">TransactionsGenerator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@createTransactionsGenerator(agent:SimulatedFeature.this.AgentType):virtufin.finance.simulation.TransactionsGenerator" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="virtufin.finance.simulation.SimulatedFeature#createTrigger" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="createTrigger(agent:SimulatedFeature.this.AgentType):virtufin.finance.simulation.Trigger"></a>
+      <a id="createTrigger(feature.CompositeSimulatedFeature.AgentType):Trigger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createTrigger</span><span class="params">(<span name="agent">agent: <a href="feature/CompositeSimulatedFeature.html#AgentType&lt;:virtufin.finance.simulation.Agent" class="extmbr" name="virtufin.finance.simulation.feature.CompositeSimulatedFeature.AgentType">feature.CompositeSimulatedFeature.AgentType</a></span>)</span><span class="result">: <a href="package.html#Trigger=virtufin.simulation.SimulationEventProjector{typeTimeType=virtufin.finance.simulation.package.DefaultTimeType;typeStateType=virtufin.finance.simulation.package.DefaultStateType;typeProjectedEventsType=virtufin.finance.simulation.package.TriggerEvent}" class="extmbr" name="virtufin.finance.simulation.Trigger">Trigger</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@createTrigger(agent:SimulatedFeature.this.AgentType):virtufin.finance.simulation.Trigger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Predef.any2stringadd#+" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="+(other:String):String"></a>
+      <a id="+(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus" class="implicit">+</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@+(other:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method any2stringadd in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>any2stringadd</dd></dl></div>
+    </li><li name="scala.Predef.ArrowAssoc#-&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="-&gt;[B](y:B):(A,B)"></a>
+      <a id="-&gt;[B](B):(SimulatedFeature,B)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>, <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@-&gt;[B](y:B):(A,B)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method ArrowAssoc in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a>
+      <a id="ensuring((SimulatedFeature)⇒Boolean,⇒Any):SimulatedFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:A=&gt;Boolean):A"></a>
+      <a id="ensuring((SimulatedFeature)⇒Boolean):SimulatedFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@ensuring(cond:A=&gt;Boolean):A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:Boolean,msg:=&gt;Any):A"></a>
+      <a id="ensuring(Boolean,⇒Any):SimulatedFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@ensuring(cond:Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:Boolean):A"></a>
+      <a id="ensuring(Boolean):SimulatedFeature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@ensuring(cond:Boolean):A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Predef.StringFormat#formatted" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formatted(fmtstr:String):String"></a>
+      <a id="formatted(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">formatted</span><span class="params">(<span name="fmtstr">fmtstr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@formatted(fmtstr:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method StringFormat in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>StringFormat</dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Predef.ArrowAssoc#→" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="→[B](y:B):(A,B)"></a>
+      <a id="→[B](B):(SimulatedFeature,B)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>, <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#virtufin.finance.simulation.SimulatedFeature@→[B](y:B):(A,B)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>] performed by method ArrowAssoc in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="virtufin.finance.product.Feature">
+              <h3>Inherited from <a href="../product/Feature.html" class="extype" name="virtufin.finance.product.Feature">Feature</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        <div class="conversion" name="scala.Predef.any2stringadd">
+              <h3>Inherited by implicit conversion any2stringadd from
+                <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>]
+              </h3>
+            </div><div class="conversion" name="scala.Predef.StringFormat">
+              <h3>Inherited by implicit conversion StringFormat from
+                <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>]
+              </h3>
+            </div><div class="conversion" name="scala.Predef.Ensuring">
+              <h3>Inherited by implicit conversion Ensuring from
+                <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>]
+              </h3>
+            </div><div class="conversion" name="scala.Predef.ArrowAssoc">
+              <h3>Inherited by implicit conversion ArrowAssoc from
+                <a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a> to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.finance.simulation.SimulatedFeature">SimulatedFeature</a>]
+              </h3>
+            </div>
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> Copyright (c) 2011-2015 Haener Consulting. All rights reserved. </div>
+
+
+    </body>
+      </html>
