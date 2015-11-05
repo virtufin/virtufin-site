@@ -47,20 +47,20 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Codec</span><span class="tparams">[<span name="T">T</span>, <span name="C">C</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <span class="name">Codec</span><span class="tparams">[<span name="I">I</span>, <span name="O">O</span>]</span><span class="result"> extends <a href="Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] with <a href="Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Encode and decode</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of object being encoded</p></dd><dt class="tparam">C</dt><dd class="cmt"><p>type of object being decoded</p></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Coding and decoding input to output data <code>I -&gt; O</code></p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>input data type</p></dd><dt class="tparam">O</dt><dd class="cmt"><p>output data type</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>], <a href="Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="json/JsonToByteArrayCodec$.html" class="extype" name="virtufin.service.serialization.json.JsonToByteArrayCodec">JsonToByteArrayCodec</a>, <a href="avro/ObjectToSpecificRecordAsByteArrayCodec.html" class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec">ObjectToSpecificRecordAsByteArrayCodec</a>, <a href="json/SchemaCodec.html" class="extype" name="virtufin.service.serialization.json.SchemaCodec">SchemaCodec</a>, <a href="avro/SpecificRecordToByteArrayCodec.html" class="extype" name="virtufin.service.serialization.avro.SpecificRecordToByteArrayCodec">SpecificRecordToByteArrayCodec</a>, <a href="Codec$$stringToByteArrayCodec$.html" class="extype" name="virtufin.service.serialization.Codec.stringToByteArrayCodec">stringToByteArrayCodec</a></div>
           </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 952.00 155.00" height="155pt" width="952pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 151)" class="graph" id="graph0"><polygon points="-4,4 -4,-151 948,-151 948,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph1_0"><g id="a_this trait|graph1_0"><a xlink:title="virtufin.service.serialization.Codec (this trait)" xlink:href="#inheritance-diagram"><polygon points="545,-86 449,-86 449,-61 545,-61 545,-86" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-80.5" x="459" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.5" x="480" text-anchor="start">Codec[T, C]</text></a></g></g><!-- node1 --><g class="node object" id="graph1_1"><g id="a_object|graph1_1"><a xlink:title="virtufin.service.serialization.json.JsonToByteArrayCodec" xlink:href="json/JsonToByteArrayCodec$.html#inheritance-diagram"><polygon points="146,-25 0,-25 0,-0 146,-0 146,-25" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-19.5" x="10" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="31" text-anchor="start">JsonToByteArrayCodec</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph1_0_1"><g id="a_inheritance|graph1_0_1"><a xlink:title="JsonToByteArrayCodec is a subtype of Codec[T, C]"><path d="M443.704,-65.1201C376.423,-55.7986 257.127,-39.2534 155,-25 152.153,-24.6026 149.249,-24.1971 146.317,-23.7872" stroke="#d4d4d4" fill="none"></path><polygon points="443.662,-66.881 448.855,-65.8337 444.143,-63.4141 443.662,-66.881" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph1_2"><g id="a_class|graph1_2"><a xlink:title="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec" xlink:href="avro/ObjectToSpecificRecordAsByteArrayCodec.html#inheritance-diagram"><polygon points="417.5,-25 164.5,-25 164.5,-0 417.5,-0 417.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="175" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="196" text-anchor="start">ObjectToSpecificRecordAsByteArrayCodec[I, O]</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph1_0_2"><g id="a_inheritance|graph1_0_2"><a xlink:title="ObjectToSpecificRecordAsByteArrayCodec[I, O] is a subtype of Codec[T, C]"><path d="M451.597,-59.4964C415.689,-49.2119 366.016,-34.9851 331.458,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="451.503,-61.2898 456.792,-60.9841 452.467,-57.925 451.503,-61.2898" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph1_3"><g id="a_class|graph1_3"><a xlink:title="virtufin.service.serialization.json.SchemaCodec" xlink:href="json/SchemaCodec.html#inheritance-diagram"><polygon points="558,-25 436,-25 436,-0 558,-0 558,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="446" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="467" text-anchor="start">SchemaCodec[O]</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph1_0_3"><g id="a_inheritance|graph1_0_3"><a xlink:title="SchemaCodec[O] is a subtype of Codec[T, C]"><path d="M497,-55.6874C497,-45.9173 497,-33.8534 497,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="495.25,-55.8435 497,-60.8435 498.75,-55.8435 495.25,-55.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph1_4"><g id="a_class|graph1_4"><a xlink:title="virtufin.service.serialization.avro.SpecificRecordToByteArrayCodec" xlink:href="avro/SpecificRecordToByteArrayCodec.html#inheritance-diagram"><polygon points="775.5,-25 576.5,-25 576.5,-0 775.5,-0 775.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="587" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="608" text-anchor="start">SpecificRecordToByteArrayCodec[I]</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph1_0_4"><g id="a_inheritance|graph1_0_4"><a xlink:title="SpecificRecordToByteArrayCodec[I] is a subtype of Codec[T, C]"><path d="M536.836,-59.3697C568.007,-49.0954 610.939,-34.9445 640.845,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="536.139,-57.7568 531.938,-60.9841 537.234,-61.0809 536.139,-57.7568" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node object" id="graph1_5"><g id="a_object|graph1_5"><a xlink:title="virtufin.service.serialization.Codec.stringToByteArrayCodec" xlink:href="Codec$$stringToByteArrayCodec$.html#inheritance-diagram"><polygon points="944,-25 794,-25 794,-0 944,-0 944,-25" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-19.5" x="804" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="825" text-anchor="start">stringToByteArrayCodec</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph1_0_5"><g id="a_inheritance|graph1_0_5"><a xlink:title="stringToByteArrayCodec is a subtype of Codec[T, C]"><path d="M550.204,-64.0617C614.757,-53.8235 723.905,-36.5124 796.212,-25.0443" stroke="#d4d4d4" fill="none"></path><polygon points="549.915,-62.3356 545.251,-64.8473 550.464,-65.7924 549.915,-62.3356" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node class" id="graph1_6"><g id="a_class|graph1_6"><a xlink:title="scala.AnyRef"><polygon points="535,-147 459,-147 459,-122 535,-122 535,-147" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-141.5" x="469" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-131.5" x="490" text-anchor="start">AnyRef</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph1_6_0"><g id="a_inheritance|graph1_6_0"><a xlink:title="Codec[T, C] is a subtype of AnyRef"><path d="M497,-116.687C497,-106.917 497,-94.8534 497,-86.1323" stroke="#d4d4d4" fill="none"></path><polygon points="495.25,-116.843 497,-121.843 498.75,-116.844 495.25,-116.843" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 952.00 155.00" height="155pt" width="952pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 151)" class="graph" id="graph0"><polygon points="-4,4 -4,-151 948,-151 948,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this trait" id="graph1_0"><g id="a_this trait|graph1_0"><a xlink:title="virtufin.service.serialization.Codec (this trait)" xlink:href="#inheritance-diagram"><polygon points="544,-86 450,-86 450,-61 544,-61 544,-86" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-80.5" x="460" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.5" x="481" text-anchor="start">Codec[I, O]</text></a></g></g><!-- node1 --><g class="node object" id="graph1_1"><g id="a_object|graph1_1"><a xlink:title="virtufin.service.serialization.json.JsonToByteArrayCodec" xlink:href="json/JsonToByteArrayCodec$.html#inheritance-diagram"><polygon points="146,-25 0,-25 0,-0 146,-0 146,-25" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-19.5" x="10" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="31" text-anchor="start">JsonToByteArrayCodec</text></a></g></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph1_0_1"><g id="a_inheritance|graph1_0_1"><a xlink:title="JsonToByteArrayCodec is a subtype of Codec[I, O]"><path d="M444.842,-65.2778C377.776,-55.9862 257.705,-39.3342 155,-25 152.153,-24.6026 149.249,-24.1971 146.317,-23.7872" stroke="#d4d4d4" fill="none"></path><polygon points="444.782,-67.0361 449.975,-65.9889 445.262,-63.5692 444.782,-67.0361" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph1_2"><g id="a_class|graph1_2"><a xlink:title="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec" xlink:href="avro/ObjectToSpecificRecordAsByteArrayCodec.html#inheritance-diagram"><polygon points="417.5,-25 164.5,-25 164.5,-0 417.5,-0 417.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="175" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="196" text-anchor="start">ObjectToSpecificRecordAsByteArrayCodec[I, O]</text></a></g></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph1_0_2"><g id="a_inheritance|graph1_0_2"><a xlink:title="ObjectToSpecificRecordAsByteArrayCodec[I, O] is a subtype of Codec[I, O]"><path d="M451.597,-59.4964C415.689,-49.2119 366.016,-34.9851 331.458,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="451.503,-61.2898 456.792,-60.9841 452.467,-57.925 451.503,-61.2898" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph1_3"><g id="a_class|graph1_3"><a xlink:title="virtufin.service.serialization.json.SchemaCodec" xlink:href="json/SchemaCodec.html#inheritance-diagram"><polygon points="558,-25 436,-25 436,-0 558,-0 558,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="446" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="467" text-anchor="start">SchemaCodec[O]</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph1_0_3"><g id="a_inheritance|graph1_0_3"><a xlink:title="SchemaCodec[O] is a subtype of Codec[I, O]"><path d="M497,-55.6874C497,-45.9173 497,-33.8534 497,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="495.25,-55.8435 497,-60.8435 498.75,-55.8435 495.25,-55.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph1_4"><g id="a_class|graph1_4"><a xlink:title="virtufin.service.serialization.avro.SpecificRecordToByteArrayCodec" xlink:href="avro/SpecificRecordToByteArrayCodec.html#inheritance-diagram"><polygon points="775.5,-25 576.5,-25 576.5,-0 775.5,-0 775.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="587" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="608" text-anchor="start">SpecificRecordToByteArrayCodec[I]</text></a></g></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph1_0_4"><g id="a_inheritance|graph1_0_4"><a xlink:title="SpecificRecordToByteArrayCodec[I] is a subtype of Codec[I, O]"><path d="M536.836,-59.3697C568.007,-49.0954 610.939,-34.9445 640.845,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="536.139,-57.7568 531.938,-60.9841 537.234,-61.0809 536.139,-57.7568" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node object" id="graph1_5"><g id="a_object|graph1_5"><a xlink:title="virtufin.service.serialization.Codec.stringToByteArrayCodec" xlink:href="Codec$$stringToByteArrayCodec$.html#inheritance-diagram"><polygon points="944,-25 794,-25 794,-0 944,-0 944,-25" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-19.5" x="804" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="825" text-anchor="start">stringToByteArrayCodec</text></a></g></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph1_0_5"><g id="a_inheritance|graph1_0_5"><a xlink:title="stringToByteArrayCodec is a subtype of Codec[I, O]"><path d="M549.057,-64.2436C613.517,-54.0201 723.679,-36.5483 796.414,-25.0123" stroke="#d4d4d4" fill="none"></path><polygon points="548.778,-62.5159 544.114,-65.0276 549.326,-65.9727 548.778,-62.5159" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node trait" id="graph1_6"><g id="a_trait|graph1_6"><a xlink:title="virtufin.service.serialization.Encoder" xlink:href="Encoder.html#inheritance-diagram"><polygon points="488,-147 386,-147 386,-122 488,-122 488,-147" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-141.5" x="396" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-131.5" x="417" text-anchor="start">Encoder[I, O]</text></a></g></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph1_6_0"><g id="a_inheritance|graph1_6_0"><a xlink:title="Codec[I, O] is a subtype of Encoder[I, O]"><path d="M452.464,-118.294C462.66,-108.268 475.809,-95.338 485.171,-86.1323" stroke="#d4d4d4" fill="none"></path><polygon points="451.192,-117.09 448.854,-121.843 453.646,-119.586 451.192,-117.09" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node trait" id="graph1_7"><g id="a_trait|graph1_7"><a xlink:title="virtufin.service.serialization.Decoder" xlink:href="Decoder.html#inheritance-diagram"><polygon points="608,-147 506,-147 506,-122 608,-122 608,-147" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-141.5" x="516" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-131.5" x="537" text-anchor="start">Decoder[I, O]</text></a></g></g><!-- node7&#45;&gt;node0 --><g class="edge inheritance" id="graph1_7_0"><g id="a_inheritance|graph1_7_0"><a xlink:title="Codec[I, O] is a subtype of Decoder[I, O]"><path d="M541.536,-118.294C531.34,-108.268 518.191,-95.338 508.829,-86.1323" stroke="#d4d4d4" fill="none"></path><polygon points="540.354,-119.586 545.146,-121.843 542.808,-117.09 540.354,-119.586" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -78,7 +78,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.service.serialization.Codec"><span>Codec</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.service.serialization.Codec"><span>Codec</span></li><li class="in" name="virtufin.service.serialization.Decoder"><span>Decoder</span></li><li class="in" name="virtufin.service.serialization.Encoder"><span>Encoder</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
                 <span class="filtertype">Implicitly<br />
@@ -106,40 +106,40 @@
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="virtufin.service.serialization.Codec#decode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="decode:virtufin.service.serialization.Decoder[C,T]"></a>
-      <a id="decode:Decoder[C,T]"></a>
+              <ol><li name="virtufin.service.serialization.Codec#decode" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="decode(output:O):scala.util.Try[I]"></a>
+      <a id="decode(O):Try[I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decode</span><span class="result">: <a href="package.html#Decoder[C,T]=Function[C,scala.util.Try[T]]" class="extmbr" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.C">C</span>, <span class="extype" name="virtufin.service.serialization.Codec.T">T</span>]</span>
+        <span class="name">decode</span><span class="params">(<span name="output">output: <span class="extype" name="virtufin.service.serialization.Codec.O">O</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.serialization.Codec@decode:virtufin.service.serialization.Decoder[C,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.serialization.Codec@decode(output:O):scala.util.Try[I]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="virtufin.service.serialization.Codec#encode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="encode:virtufin.service.serialization.Encoder[T,C]"></a>
-      <a id="encode:Encoder[T,C]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a> → <a href="Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a></dd></dl></div>
+    </li><li name="virtufin.service.serialization.Codec#encode" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="encode(input:I):scala.util.Try[O]"></a>
+      <a id="encode(I):Try[O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encode</span><span class="result">: <a href="package.html#Encoder[T,C]=Function[T,scala.util.Try[C]]" class="extmbr" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]</span>
+        <span class="name">encode</span><span class="params">(<span name="input">input: <span class="extype" name="virtufin.service.serialization.Codec.I">I</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.serialization.Codec@encode:virtufin.service.serialization.Encoder[T,C]" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.serialization.Codec@encode(input:I):scala.util.Try[O]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a> → <a href="Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -196,20 +196,20 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method any2stringadd in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method any2stringadd in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>any2stringadd</dd></dl></div>
     </li><li name="scala.Predef.ArrowAssoc#-&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="-&gt;[B](y:B):(A,B)"></a>
-      <a id="-&gt;[B](B):(Codec[T,C],B)"></a>
+      <a id="-&gt;[B](B):(Codec[I,O],B)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>], <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
+        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>], <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.service.serialization.Codec@-&gt;[B](y:B):(A,B)" title="Permalink" target="_top">
@@ -217,8 +217,8 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method ArrowAssoc in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method ArrowAssoc in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
@@ -283,14 +283,14 @@
         </dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a>
-      <a id="ensuring((Codec[T,C])⇒Boolean,⇒Any):Codec[T,C]"></a>
+      <a id="ensuring((Codec[I,O])⇒Boolean,⇒Any):Codec[I,O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]</span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.service.serialization.Codec@ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
@@ -298,20 +298,20 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean):A"></a>
-      <a id="ensuring((Codec[T,C])⇒Boolean):Codec[T,C]"></a>
+      <a id="ensuring((Codec[I,O])⇒Boolean):Codec[I,O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]</span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.service.serialization.Codec@ensuring(cond:A=&gt;Boolean):A" title="Permalink" target="_top">
@@ -319,20 +319,20 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:Boolean,msg:=&gt;Any):A"></a>
-      <a id="ensuring(Boolean,⇒Any):Codec[T,C]"></a>
+      <a id="ensuring(Boolean,⇒Any):Codec[I,O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]</span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.service.serialization.Codec@ensuring(cond:Boolean,msg:=&gt;Any):A" title="Permalink" target="_top">
@@ -340,20 +340,20 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:Boolean):A"></a>
-      <a id="ensuring(Boolean):Codec[T,C]"></a>
+      <a id="ensuring(Boolean):Codec[I,O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]</span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.service.serialization.Codec@ensuring(cond:Boolean):A" title="Permalink" target="_top">
@@ -361,8 +361,8 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -439,8 +439,8 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method StringFormat in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method StringFormat in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>StringFormat</dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
@@ -653,14 +653,14 @@
         </dd></dl></div>
     </li><li name="scala.Predef.ArrowAssoc#→" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="→[B](y:B):(A,B)"></a>
-      <a id="→[B](B):(Codec[T,C],B)"></a>
+      <a id="→[B](B):(Codec[I,O],B)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>], <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
+        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>], <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#virtufin.service.serialization.Codec@→[B](y:B):(A,B)" title="Permalink" target="_top">
@@ -668,8 +668,8 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to
-            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]] performed by method ArrowAssoc in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]] performed by method ArrowAssoc in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd></dl></div>
     </li></ol>
@@ -681,26 +681,30 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="virtufin.service.serialization.Decoder">
+              <h3>Inherited from <a href="Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</h3>
+            </div><div class="parent" name="virtufin.service.serialization.Encoder">
+              <h3>Inherited from <a href="Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         <div class="conversion" name="scala.Predef.any2stringadd">
               <h3>Inherited by implicit conversion any2stringadd from
-                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]]
+                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]]
               </h3>
             </div><div class="conversion" name="scala.Predef.StringFormat">
               <h3>Inherited by implicit conversion StringFormat from
-                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]]
+                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]]
               </h3>
             </div><div class="conversion" name="scala.Predef.Ensuring">
               <h3>Inherited by implicit conversion Ensuring from
-                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]]
+                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]]
               </h3>
             </div><div class="conversion" name="scala.Predef.ArrowAssoc">
               <h3>Inherited by implicit conversion ArrowAssoc from
-                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>] to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.T">T</span>, <span class="extype" name="virtufin.service.serialization.Codec.C">C</span>]]
+                <a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]]
               </h3>
             </div>
         </div>

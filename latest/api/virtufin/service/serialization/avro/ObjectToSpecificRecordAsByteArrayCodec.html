@@ -51,7 +51,7 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Converts an object of type <span class="extype" name="I">I</span> to a <span class="extype" name="org.apache.avro.specific.SpecificRecord">org.apache.avro.specific.SpecificRecord</span> represented by a byte array</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>input data type</p></dd><dt class="tparam">O</dt><dd class="cmt"><p>type of the <span class="extype" name="SpecificRecord">SpecificRecord</span></p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]], <a href="../Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]], <a href="../Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
@@ -73,7 +73,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec"><span>ObjectToSpecificRecordAsByteArrayCodec</span></li><li class="in" name="virtufin.service.serialization.Codec"><span>Codec</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec"><span>ObjectToSpecificRecordAsByteArrayCodec</span></li><li class="in" name="virtufin.service.serialization.Codec"><span>Codec</span></li><li class="in" name="virtufin.service.serialization.Decoder"><span>Decoder</span></li><li class="in" name="virtufin.service.serialization.Encoder"><span>Encoder</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
                 <span class="filtertype">Implicitly<br />
@@ -260,39 +260,39 @@
               
         </dd></dl></div>
     </li><li name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec#decode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="decode:virtufin.service.serialization.Decoder[Array[Byte],I]"></a>
-      <a id="decode:Decoder[Array[Byte],I]"></a>
+      <a id="decode(output:Array[Byte]):scala.util.Try[I]"></a>
+      <a id="decode(Array[Byte]):Try[I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decode</span><span class="result">: <a href="../package.html#Decoder[C,T]=Function[C,scala.util.Try[T]]" class="extmbr" name="virtufin.service.serialization.Decoder">Decoder</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>], <span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>]</span>
+        <span class="name">decode</span><span class="params">(<span name="output">output: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec@decode:virtufin.service.serialization.Decoder[Array[Byte],I]" title="Permalink" target="_top">
+      <a href="../../../../index.html#virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec@decode(output:Array[Byte]):scala.util.Try[I]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec">ObjectToSpecificRecordAsByteArrayCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec">ObjectToSpecificRecordAsByteArrayCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a> → <a href="../Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a></dd></dl></div>
     </li><li name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec#encode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="encode:virtufin.service.serialization.Encoder[I,Array[Byte]]"></a>
-      <a id="encode:Encoder[I,Array[Byte]]"></a>
+      <a id="encode(input:I):scala.util.Try[Array[Byte]]"></a>
+      <a id="encode(I):Try[Array[Byte]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encode</span><span class="result">: <a href="../package.html#Encoder[T,C]=Function[T,scala.util.Try[C]]" class="extmbr" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]]</span>
+        <span class="name">encode</span><span class="params">(<span name="input">input: <span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec@encode:virtufin.service.serialization.Encoder[I,Array[Byte]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec@encode(input:I):scala.util.Try[Array[Byte]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec">ObjectToSpecificRecordAsByteArrayCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec">ObjectToSpecificRecordAsByteArrayCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a> → <a href="../Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a></dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a>
       <a id="ensuring((ObjectToSpecificRecordAsByteArrayCodec[I,O])⇒Boolean,⇒Any):ObjectToSpecificRecordAsByteArrayCodec[I,O]"></a>
@@ -695,6 +695,10 @@
         <div id="inheritedMembers">
         <div class="parent" name="virtufin.service.serialization.Codec">
               <h3>Inherited from <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]]</h3>
+            </div><div class="parent" name="virtufin.service.serialization.Decoder">
+              <h3>Inherited from <a href="../Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]]</h3>
+            </div><div class="parent" name="virtufin.service.serialization.Encoder">
+              <h3>Inherited from <a href="../Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.avro.ObjectToSpecificRecordAsByteArrayCodec.I">I</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

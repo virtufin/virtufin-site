@@ -51,7 +51,7 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Converts <span class="extype" name="JsValue">JsValue</span>s to/from objects of type <span class="extype" name="O">O</span></p></div><dl class="paramcmts block"><dt class="tparam">O</dt><dd class="cmt"><p>output data type</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>], <a href="../Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>], <a href="../Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
@@ -73,7 +73,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="virtufin.service.serialization.json.SchemaCodec"><span>SchemaCodec</span></li><li class="in" name="virtufin.service.serialization.Codec"><span>Codec</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="virtufin.service.serialization.json.SchemaCodec"><span>SchemaCodec</span></li><li class="in" name="virtufin.service.serialization.Codec"><span>Codec</span></li><li class="in" name="virtufin.service.serialization.Decoder"><span>Decoder</span></li><li class="in" name="virtufin.service.serialization.Encoder"><span>Encoder</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
                 <span class="filtertype">Implicitly<br />
@@ -260,39 +260,39 @@
               
         </dd></dl></div>
     </li><li name="virtufin.service.serialization.json.SchemaCodec#decode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="decode:virtufin.service.serialization.Decoder[O,play.api.libs.json.JsValue]"></a>
-      <a id="decode:Decoder[O,JsValue]"></a>
+      <a id="decode(output:O):scala.util.Try[play.api.libs.json.JsValue]"></a>
+      <a id="decode(O):Try[JsValue]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decode</span><span class="result">: <a href="../package.html#Decoder[C,T]=Function[C,scala.util.Try[T]]" class="extmbr" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
+        <span class="name">decode</span><span class="params">(<span name="output">output: <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#virtufin.service.serialization.json.SchemaCodec@decode:virtufin.service.serialization.Decoder[O,play.api.libs.json.JsValue]" title="Permalink" target="_top">
+      <a href="../../../../index.html#virtufin.service.serialization.json.SchemaCodec@decode(output:O):scala.util.Try[play.api.libs.json.JsValue]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.json.SchemaCodec">SchemaCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.json.SchemaCodec">SchemaCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a> → <a href="../Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a></dd></dl></div>
     </li><li name="virtufin.service.serialization.json.SchemaCodec#encode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="encode:virtufin.service.serialization.Encoder[play.api.libs.json.JsValue,O]"></a>
-      <a id="encode:Encoder[JsValue,O]"></a>
+      <a id="encode(input:play.api.libs.json.JsValue):scala.util.Try[O]"></a>
+      <a id="encode(JsValue):Try[O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encode</span><span class="result">: <a href="../package.html#Encoder[T,C]=Function[T,scala.util.Try[C]]" class="extmbr" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>]</span>
+        <span class="name">encode</span><span class="params">(<span name="input">input: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#virtufin.service.serialization.json.SchemaCodec@encode:virtufin.service.serialization.Encoder[play.api.libs.json.JsValue,O]" title="Permalink" target="_top">
+      <a href="../../../../index.html#virtufin.service.serialization.json.SchemaCodec@encode(input:play.api.libs.json.JsValue):scala.util.Try[O]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.json.SchemaCodec">SchemaCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="virtufin.service.serialization.json.SchemaCodec">SchemaCodec</a> → <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a> → <a href="../Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a></dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a>
       <a id="ensuring((SchemaCodec[O])⇒Boolean,⇒Any):SchemaCodec[O]"></a>
@@ -695,6 +695,10 @@
         <div id="inheritedMembers">
         <div class="parent" name="virtufin.service.serialization.Codec">
               <h3>Inherited from <a href="../Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>]</h3>
+            </div><div class="parent" name="virtufin.service.serialization.Decoder">
+              <h3>Inherited from <a href="../Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>]</h3>
+            </div><div class="parent" name="virtufin.service.serialization.Encoder">
+              <h3>Inherited from <a href="../Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="virtufin.service.serialization.json.SchemaCodec.O">O</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

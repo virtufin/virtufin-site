@@ -47,35 +47,17 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
-          <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
-        </div></div>
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph1" viewBox="0.00 0.00 230.00 94.00" height="94pt" width="230pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 90)" class="graph" id="graph0"><polygon points="-4,4 -4,-90 226,-90 226,4 -4,4" stroke="none" fill="white"></polygon><!-- node0 --><g class="node trait" id="graph1_0"><g id="a_trait|graph1_0"><a xlink:title="virtufin.service.serialization.Codec" xlink:href="Codec.html#inheritance-diagram"><polygon points="158,-25 64,-25 64,-0 158,-0 158,-25" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-19.5" x="74" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.5" x="95" text-anchor="start">Codec[I, O]</text></a></g></g><!-- node1 --><g class="node trait" id="graph1_1"><g id="a_trait|graph1_1"><a xlink:title="virtufin.service.serialization.Decoder" xlink:href="Decoder.html#inheritance-diagram"><polygon points="102,-86 7.10543e-15,-86 7.10543e-15,-61 102,-61 102,-86" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-80.5" x="10" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.5" x="31" text-anchor="start">Decoder[I, O]</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph1_1_0"><g id="a_inheritance|graph1_1_0"><a xlink:title="Codec[I, O] is a subtype of Decoder[I, O]"><path d="M66.4642,-57.2936C76.6596,-47.268 89.8089,-34.338 99.1706,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="65.1922,-56.09 62.8541,-60.8435 67.6462,-58.5856 65.1922,-56.09" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node trait" id="graph1_2"><g id="a_trait|graph1_2"><a xlink:title="virtufin.service.serialization.Encoder" xlink:href="Encoder.html#inheritance-diagram"><polygon points="222,-86 120,-86 120,-61 222,-61 222,-86" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-80.5" x="130" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.5" x="151" text-anchor="start">Encoder[I, O]</text></a></g></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph1_2_0"><g id="a_inheritance|graph1_2_0"><a xlink:title="Codec[I, O] is a subtype of Encoder[I, O]"><path d="M155.536,-57.2936C145.34,-47.268 132.191,-34.338 122.829,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="154.354,-58.5856 159.146,-60.8435 156.808,-56.09 154.354,-58.5856" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
         <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
-        <div id="order">
-              <span class="filtertype">Ordering</span>
-              <ol>
-                
-                <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
-              </ol>
-            </div>
-        <div id="ancestors">
-                <span class="filtertype">Inherited<br />
-                </span>
-                <ol id="linearization">
-                  <li class="in" name="virtufin.service.serialization"><span>serialization</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
-                </ol>
-              </div><div id="ancestors">
-            <span class="filtertype"></span>
-            <ol>
-              <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
-            </ol>
-          </div>
+        
+        
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -89,22 +71,22 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="virtufin.service.serialization.Codec" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Codec[T,C]extendsAnyRef"></a>
-      <a id="Codec[T,C]:Codec[T,C]"></a>
+      <a id="Codec[I,O]extendsEncoder[I,O]withDecoder[I,O]"></a>
+      <a id="Codec[I,O]:Codec[I,O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Codec.html"><span class="name">Codec</span></a><span class="tparams">[<span name="T">T</span>, <span name="C">C</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="Codec.html"><span class="name">Codec</span></a><span class="tparams">[<span name="I">I</span>, <span name="O">O</span>]</span><span class="result"> extends <a href="Encoder.html" class="extype" name="virtufin.service.serialization.Encoder">Encoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>] with <a href="Decoder.html" class="extype" name="virtufin.service.serialization.Decoder">Decoder</a>[<span class="extype" name="virtufin.service.serialization.Codec.I">I</span>, <span class="extype" name="virtufin.service.serialization.Codec.O">O</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.serialization.package@Codec[T,C]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.serialization.package@Codec[I,O]extendsEncoder[I,O]withDecoder[I,O]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Encode and decode</p><div class="fullcomment"><div class="comment cmt"><p>Encode and decode</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of object being encoded</p></dd><dt class="tparam">C</dt><dd class="cmt"><p>type of object being decoded</p></dd></dl></div>
+      <p class="shortcomment cmt">Coding and decoding input to output data <code>I -&gt; O</code></p><div class="fullcomment"><div class="comment cmt"><p>Coding and decoding input to output data <code>I -&gt; O</code></p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>input data type</p></dd><dt class="tparam">O</dt><dd class="cmt"><p>output data type</p></dd></dl></div>
     </li><li name="virtufin.service.serialization.CodecRegistry" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="CodecRegistry[I,O]extendsAnyRef"></a>
       <a id="CodecRegistry[I,O]:CodecRegistry[I,O]"></a>
@@ -122,40 +104,40 @@
       </a>
     </span>
       <p class="shortcomment cmt">Register a <a href="Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a> for a specific <span class="extype" name="javax.activation.MimeType">javax.activation.MimeType</span></p><div class="fullcomment"><div class="comment cmt"><p>Register a <a href="Codec.html" class="extype" name="virtufin.service.serialization.Codec">Codec</a> for a specific <span class="extype" name="javax.activation.MimeType">javax.activation.MimeType</span></p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>input data type</p></dd><dt class="tparam">O</dt><dd class="cmt"><p>output data type</p></dd></dl></div>
-    </li><li name="virtufin.service.serialization.Decoder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Decoder[C,T]=Function[C,scala.util.Try[T]]"></a>
-      <a id="Decoder[C,T]:Decoder[C,T]"></a>
+    </li><li name="virtufin.service.serialization.Decoder" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Decoder[I,O]extendsAnyRef"></a>
+      <a id="Decoder[I,O]:Decoder[I,O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">type</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Decoder</span><span class="tparams">[<span name="C">C</span>, <span name="T">T</span>]</span><span class="result"> = (<span class="extype" name="virtufin.service.serialization.Decoder.C">C</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="virtufin.service.serialization.Decoder.T">T</span>]</span>
+        <a href="Decoder.html"><span class="name">Decoder</span></a><span class="tparams">[<span name="I">I</span>, <span name="O">O</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.serialization.package@Decoder[C,T]=Function[C,scala.util.Try[T]]" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.serialization.package@Decoder[I,O]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="virtufin.service.serialization.Encoder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Encoder[T,C]=Function[T,scala.util.Try[C]]"></a>
-      <a id="Encoder[T,C]:Encoder[T,C]"></a>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>input data type</p></dd><dt class="tparam">O</dt><dd class="cmt"><p>output data type</p></dd></dl></div>
+    </li><li name="virtufin.service.serialization.Encoder" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Encoder[I,O]extendsAnyRef"></a>
+      <a id="Encoder[I,O]:Encoder[I,O]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">type</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Encoder</span><span class="tparams">[<span name="T">T</span>, <span name="C">C</span>]</span><span class="result"> = (<span class="extype" name="virtufin.service.serialization.Encoder.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="virtufin.service.serialization.Encoder.C">C</span>]</span>
+        <a href="Encoder.html"><span class="name">Encoder</span></a><span class="tparams">[<span name="I">I</span>, <span name="O">O</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#virtufin.service.serialization.package@Encoder[T,C]=Function[T,scala.util.Try[C]]" title="Permalink" target="_top">
+      <a href="../../../index.html#virtufin.service.serialization.package@Encoder[I,O]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Encodes an object</p>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>input data type</p></dd><dt class="tparam">O</dt><dd class="cmt"><p>output data type</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -240,11 +222,7 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
-            </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
-            </div>
+        
         
         </div>
 
